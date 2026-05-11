@@ -34,7 +34,7 @@
             },
             {
               "id": "mp1janxko9br",
-              "text": "FundaÃ§Ã£o",
+              "text": "FundaÃÂ§ÃÂ£o",
               "done": false
             },
             {
@@ -49,7 +49,7 @@
             },
             {
               "id": "mp1janxkkmpb",
-              "text": "InstalaÃ§Ãµes",
+              "text": "InstalaÃÂ§ÃÂµes",
               "done": false
             },
             {
@@ -64,7 +64,7 @@
             },
             {
               "id": "mp1janxkppek",
-              "text": "FinalizaÃ§Ã£o",
+              "text": "FinalizaÃÂ§ÃÂ£o",
               "done": false
             }
           ]
@@ -80,7 +80,7 @@
             },
             {
               "id": "mp1janxkqnd4",
-              "text": "FundaÃ§Ã£o",
+              "text": "FundaÃÂ§ÃÂ£o",
               "done": false
             },
             {
@@ -90,12 +90,12 @@
             },
             {
               "id": "mp1janxkpbl2",
-              "text": "ConferÃªncia de medidas de janelas/portas",
+              "text": "ConferÃÂªncia de medidas de janelas/portas",
               "done": false
             },
             {
               "id": "mp1janxkfbzh",
-              "text": "ImpermeabilizaÃ§Ãµes",
+              "text": "ImpermeabilizaÃÂ§ÃÂµes",
               "done": false
             },
             {
@@ -105,7 +105,7 @@
             },
             {
               "id": "mp1janxkdsai",
-              "text": "ConduÃ­tes / Caixinhas ElÃ©tricas",
+              "text": "ConduÃÂ­tes / Caixinhas ElÃÂ©tricas",
               "done": false
             },
             {
@@ -125,12 +125,12 @@
             },
             {
               "id": "mp1janxkogl7",
-              "text": "Reboco externo concluÃ­do",
+              "text": "Reboco externo concluÃÂ­do",
               "done": false
             },
             {
               "id": "mp1janxktifo",
-              "text": "Reboco interno concluÃ­do",
+              "text": "Reboco interno concluÃÂ­do",
               "done": false
             },
             {
@@ -150,7 +150,7 @@
             },
             {
               "id": "mp1janxk66xo",
-              "text": "Requadro ou instalaÃ§Ãµes de janelas",
+              "text": "Requadro ou instalaÃÂ§ÃÂµes de janelas",
               "done": false
             },
             {
@@ -170,12 +170,12 @@
             },
             {
               "id": "mp1janxkfkhr",
-              "text": "ElÃ©trica",
+              "text": "ElÃÂ©trica",
               "done": false
             },
             {
               "id": "mp1janxkjl2g",
-              "text": "InstalaÃ§Ãµes hidrÃ¡ulicas",
+              "text": "InstalaÃÂ§ÃÂµes hidrÃÂ¡ulicas",
               "done": false
             },
             {
@@ -205,7 +205,7 @@
       "phone": "5517991452199",
       "wppApiKey": "6021060",
       "photo": "",
-      "isAdmin": false
+      "isAdmin": true
     }
   ],
   "checklistPresets": [
@@ -214,13 +214,13 @@
       "name": "Checklist Geral (MACRO)",
       "items": [
         "Terraplanagem",
-        "FundaÃÂ§ÃÂ£o",
+        "FundaÃÂÃÂ§ÃÂÃÂ£o",
         "Estrutura (paredes + laje)",
         "Cobertura",
-        "InstalaÃÂ§ÃÂµes",
+        "InstalaÃÂÃÂ§ÃÂÃÂµes",
         "Reboco",
         "Acabamento",
-        "FinalizaÃÂ§ÃÂ£o"
+        "FinalizaÃÂÃÂ§ÃÂÃÂ£o"
       ]
     },
     {
@@ -228,26 +228,26 @@
       "name": "Checklist Detalhado",
       "items": [
         "Terraplanagem",
-        "FundaÃÂ§ÃÂ£o",
+        "FundaÃÂÃÂ§ÃÂÃÂ£o",
         "Levantamento de Paredes",
-        "ConferÃÂªncia de medidas de janelas/portas",
-        "ImpermeabilizaÃÂ§ÃÂµes",
+        "ConferÃÂÃÂªncia de medidas de janelas/portas",
+        "ImpermeabilizaÃÂÃÂ§ÃÂÃÂµes",
         "Laje / Cobertura",
-        "ConduÃÂ­tes / Caixinhas ElÃÂ©tricas",
+        "ConduÃÂÃÂ­tes / Caixinhas ElÃÂÃÂ©tricas",
         "Reboco externo iniciado",
         "Reboco interno iniciado",
         "Batentes",
-        "Reboco externo concluÃÂ­do",
-        "Reboco interno concluÃÂ­do",
+        "Reboco externo concluÃÂÃÂ­do",
+        "Reboco interno concluÃÂÃÂ­do",
         "Esgoto/pluvial",
         "Conduite do poste ao quadro",
         "Telhado + pingadeiras",
-        "Requadro ou instalaÃÂ§ÃÂµes de janelas",
+        "Requadro ou instalaÃÂÃÂ§ÃÂÃÂµes de janelas",
         "Contrapiso",
         "Pisos",
         "Pintura",
-        "ElÃÂ©trica",
-        "InstalaÃÂ§ÃÂµes hidrÃÂ¡ulicas",
+        "ElÃÂÃÂ©trica",
+        "InstalaÃÂÃÂ§ÃÂÃÂµes hidrÃÂÃÂ¡ulicas",
         "Limpeza",
         "Entrega"
       ]
