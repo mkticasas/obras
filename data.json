@@ -197,7 +197,17 @@
       "log": []
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "id": "mp1j7xuoyw59",
+      "name": "teste",
+      "role": "1",
+      "phone": "5517991452199",
+      "wppApiKey": "6021060",
+      "photo": "",
+      "isAdmin": true
+    }
+  ],
   "checklistPresets": [
     {
       "id": "preset-macro",
