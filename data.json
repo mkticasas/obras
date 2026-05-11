@@ -15,7 +15,7 @@
     {
       "id": "mp1janxkqtp3",
       "name": "eqweqwe",
-      "colId": "col-default",
+      "colId": "mp1jg6ccow2u",
       "coverUrl": null,
       "addr": "tasd",
       "valor": "",
@@ -198,8 +198,13 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-11T18:27:32.888Z",
-      "log": []
+      "updatedAt": "2026-05-11T18:31:43.389Z",
+      "log": [
+        {
+          "date": "2026-05-11T18:31:43.389Z",
+          "note": "Movido para \"obras\" por lucas"
+        }
+      ]
     }
   ],
   "users": [
