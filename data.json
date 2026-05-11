@@ -30,7 +30,7 @@
             {
               "id": "mp1ix1v4tit8",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mp1ix1v4hwzj",
@@ -193,7 +193,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:16:49.840Z",
-      "updatedAt": "2026-05-11T18:17:12.522Z",
+      "updatedAt": "2026-05-11T18:25:33.054Z",
       "log": []
     }
   ],
