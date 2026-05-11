@@ -174,28 +174,6 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 </head>
 <body>
 
-<!-- SETUP OVERLAY -->
-<div class="modal-overlay" id="setup-overlay">
-  <div class="setup-box">
-    <div class="setup-title">🏗️ Configuração Inicial</div>
-    <div class="setup-sub">Configure as credenciais uma vez. Os dados ficam salvos no seu repositório GitHub.</div>
-    <div class="setup-step"><div class="step-num">1</div><div class="step-text">Crie um repositório no GitHub (pode ser privado) e faça upload de <code>index.html</code>, <code>data.json</code> e <code>.github/workflows/alerta-obras.yml</code>.</div></div>
-    <div class="setup-step"><div class="step-num">2</div><div class="step-text">Crie um <strong>Personal Access Token</strong> em <a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a> com permissão <code>repo</code>.</div></div>
-    <div class="setup-step"><div class="step-num">3</div><div class="step-text">Para imagens, crie conta gratuita em <a href="https://cloudinary.com" target="_blank">cloudinary.com</a> e copie seu <strong>Cloud Name</strong> e <strong>Upload Preset</strong> (unsigned).</div></div>
-    <div style="display:flex;flex-direction:column;gap:10px;margin-top:18px;">
-      <div class="form-group"><label>Usuário GitHub</label><input id="s-user" placeholder="seu-usuario"/></div>
-      <div class="form-group"><label>Nome do repositório</label><input id="s-repo" placeholder="kanban-obras"/></div>
-      <div class="form-group"><label>Personal Access Token</label><input type="password" id="s-token" placeholder="ghp_..."/></div>
-      <div class="form-group"><label>Cloudinary Cloud Name</label><input id="s-cloud" placeholder="meu-cloud"/></div>
-      <div class="form-group"><label>Cloudinary Upload Preset (unsigned)</label><input id="s-preset" placeholder="kanban_obras"/></div>
-    </div>
-    <div style="display:flex;gap:8px;margin-top:18px;justify-content:flex-end;">
-      <button class="btn-primary" onclick="saveSetup()">Salvar e Conectar</button>
-    </div>
-    <div id="setup-error" style="display:none;color:#fca5a5;font-size:12px;margin-top:10px;"></div>
-  </div>
-</div>
-
 <!-- HEADER -->
 <header>
   <div class="logo">🏗️ Obras<span> Kanban</span></div>
@@ -325,16 +303,10 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 
     <!-- CONFIG TAB -->
     <div class="admin-tab-panel" id="tab-config">
-      <div style="display:flex;flex-direction:column;gap:10px;">
-        <div class="form-group"><label>Usuário GitHub</label><input id="c-user"/></div>
-        <div class="form-group"><label>Repositório</label><input id="c-repo"/></div>
-        <div class="form-group"><label>Personal Access Token</label><input type="password" id="c-token" placeholder="ghp_..."/></div>
-        <div class="form-group"><label>Cloudinary Cloud Name</label><input id="c-cloud"/></div>
-        <div class="form-group"><label>Cloudinary Upload Preset</label><input id="c-preset"/></div>
-        <div class="form-group"><label>Alerta após (dias sem atualização)</label><input type="number" id="c-days" min="1" max="30" style="width:80px"/></div>
-      </div>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:14px;">Configurações gerais do sistema.</p>
+      <div class="form-group"><label>Alerta após (dias sem atualização)</label><input type="number" id="c-days" min="1" max="30" style="width:80px" value="1"/></div>
       <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:16px;">
-        <button class="btn-primary btn-sm" onclick="saveConfigTab()">Salvar configurações</button>
+        <button class="btn-primary btn-sm" onclick="saveConfigTab()">Salvar</button>
       </div>
     </div>
 
@@ -369,8 +341,8 @@ let dragCardId    = null;
 let fileSHA       = null;
 let editingCoverUrl = null;
 
-function loadCfg(){ try{ return JSON.parse(localStorage.getItem('kanban-cfg'))||{}; }catch{ return {}; } }
-function saveCfg(){ localStorage.setItem('kanban-cfg', JSON.stringify(cfg)); }
+function loadCfg(){ return { user:'mkticasas', repo:'obras', token:'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', cloud:'dokugqml2', preset:'kanban_obras', days:1 }; }
+function saveCfg(){ /* credenciais fixas no código */ }
 function loadActiveUser(){ try{ return JSON.parse(localStorage.getItem('kanban-active-user'))||null; }catch{ return null; } }
 function saveActiveUser(u){ localStorage.setItem('kanban-active-user', u ? JSON.stringify(u) : 'null'); }
 
@@ -466,7 +438,8 @@ function removeCover(){
 // ══════════════════════════════════════════════
 // SETUP
 // ══════════════════════════════════════════════
-function checkSetup(){
+function checkSetup(){ loadFromGitHub(); }
+function checkSetup_OLD(){
   if(!cfg.user||!cfg.repo||!cfg.token||!cfg.cloud||!cfg.preset){
     document.getElementById('setup-overlay').classList.add('show');
   } else { loadFromGitHub(); }
@@ -535,12 +508,7 @@ function selectUser(id){
 function openAdminModal(){
   renderUserList();
   // populate config tab
-  document.getElementById('c-user').value  = cfg.user||'';
-  document.getElementById('c-repo').value  = cfg.repo||'';
-  document.getElementById('c-token').value = cfg.token||'';
-  document.getElementById('c-cloud').value = cfg.cloud||'';
-  document.getElementById('c-preset').value= cfg.preset||'';
-  document.getElementById('c-days').value  = cfg.days||1;
+  document.getElementById('c-days').value = cfg.days||1;
   document.getElementById('admin-modal').classList.add('show');
 }
 
@@ -619,13 +587,7 @@ async function deleteUser(id){
 }
 
 function saveConfigTab(){
-  cfg.user   = document.getElementById('c-user').value.trim();
-  cfg.repo   = document.getElementById('c-repo').value.trim();
-  cfg.token  = document.getElementById('c-token').value.trim();
-  cfg.cloud  = document.getElementById('c-cloud').value.trim();
-  cfg.preset = document.getElementById('c-preset').value.trim();
-  cfg.days   = parseInt(document.getElementById('c-days').value)||1;
-  saveCfg();
+  cfg.days = parseInt(document.getElementById('c-days').value)||1;
   alert('✅ Configurações salvas!');
 }
 
