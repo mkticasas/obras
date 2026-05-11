@@ -6,24 +6,51 @@
       "color": "dot-orange"
     }
   ],
-  "cards": [
+  "cards": [],
+  "users": [],
+  "checklistPresets": [
     {
-      "id": "mp19y00uuj9l",
-      "name": "obra  1",
-      "resp": "Lugner",
-      "addr": "",
-      "colId": "col-default",
-      "coverUrl": null,
-      "assignees": [],
-      "createdAt": "2026-05-11T14:05:37.566Z",
-      "updatedAt": "2026-05-11T14:05:37.566Z",
-      "log": [
-        {
-          "date": "2026-05-11T14:05:37.566Z",
-          "note": "Obra criada"
-        }
+      "id": "preset-macro",
+      "name": "Checklist Geral (MACRO)",
+      "items": [
+        "Terraplanagem",
+        "Fundação",
+        "Estrutura (paredes + laje)",
+        "Cobertura",
+        "Instalações",
+        "Reboco",
+        "Acabamento",
+        "Finalização"
+      ]
+    },
+    {
+      "id": "preset-detail",
+      "name": "Checklist Detalhado",
+      "items": [
+        "Terraplanagem",
+        "Fundação",
+        "Levantamento de Paredes",
+        "Conferência de medidas de janelas/portas",
+        "Impermeabilizações",
+        "Laje / Cobertura",
+        "Conduítes / Caixinhas Elétricas",
+        "Reboco externo iniciado",
+        "Reboco interno iniciado",
+        "Batentes",
+        "Reboco externo concluído",
+        "Reboco interno concluído",
+        "Esgoto/pluvial",
+        "Conduite do poste ao quadro",
+        "Telhado + pingadeiras",
+        "Requadro ou instalações de janelas",
+        "Contrapiso",
+        "Pisos",
+        "Pintura",
+        "Elétrica",
+        "Instalações hidráulicas",
+        "Limpeza",
+        "Entrega"
       ]
     }
-  ],
-  "users": []
+  ]
 }
