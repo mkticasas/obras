@@ -3,7 +3,12 @@
     {
       "id": "col-default",
       "name": "Em Andamento",
-      "color": "dot-orange"
+      "color": "dot-blue"
+    },
+    {
+      "id": "mp1jg6ccow2u",
+      "name": "obras",
+      "color": "dot-blue"
     }
   ],
   "cards": [
