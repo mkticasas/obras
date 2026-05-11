@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanban de Obras</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f1117;--surface:#181c27;--surface2:#1e2433;--surface3:#242a3a;
+  --border:#2a3045;--accent:#f59e0b;--danger:#ef4444;--warn:#f97316;
+  --ok:#22c55e;--text:#e8eaf0;--muted:#6b7280;--radius:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;}
+
+/* ── HEADER ── */
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;gap:12px;}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:19px;color:var(--accent);display:flex;align-items:center;gap:8px;white-space:nowrap;}
+.logo span{color:var(--text);font-weight:400;}
+.header-center{display:flex;align-items:center;gap:10px;flex:1;justify-content:center;}
+.header-right{display:flex;align-items:center;gap:8px;}
+.sync-status{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:5px;white-space:nowrap;}
+.sync-dot{width:7px;height:7px;border-radius:50%;background:var(--muted);flex-shrink:0;}
+.sync-dot.ok{background:var(--ok);} .sync-dot.err{background:var(--danger);} .sync-dot.spin{background:var(--accent);animation:pulse 1s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* ── USER BADGE ── */
+.user-badge{display:flex;align-items:center;gap:8px;background:var(--surface2);border:1px solid var(--border);border-radius:30px;padding:5px 12px 5px 5px;cursor:pointer;transition:.15s;}
+.user-badge:hover{border-color:var(--accent);}
+.user-avatar{width:28px;height:28px;border-radius:50%;object-fit:cover;background:var(--border);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--accent);flex-shrink:0;overflow:hidden;}
+.user-avatar img{width:100%;height:100%;object-fit:cover;}
+.user-name{font-size:12px;font-weight:500;max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.no-user{font-size:12px;color:var(--muted);}
+
+/* ── BUTTONS ── */
+button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius:8px;font-size:13px;font-weight:500;transition:all .15s;}
+.btn-primary{background:var(--accent);color:#0f1117;padding:8px 16px;font-weight:600;}
+.btn-primary:hover{background:#fbbf24;transform:translateY(-1px);}
+.btn-secondary{background:var(--surface2);color:var(--text);padding:8px 14px;border:1px solid var(--border);}
+.btn-secondary:hover{background:var(--border);}
+.btn-ghost{background:transparent;color:var(--muted);padding:6px 10px;border:1px solid var(--border);}
+.btn-ghost:hover{color:var(--text);border-color:#3d4a6b;}
+.btn-danger{background:#7f1d1d;color:#fca5a5;padding:6px 10px;font-size:12px;}
+.btn-danger:hover{background:var(--danger);color:#fff;}
+.btn-icon{background:transparent;color:var(--muted);padding:4px 6px;font-size:15px;border-radius:4px;}
+.btn-icon:hover{color:var(--text);background:var(--border);}
+.btn-sm{padding:5px 10px;font-size:12px;}
+
+/* ── ALERT BANNER ── */
+#alert-banner{display:none;background:linear-gradient(90deg,#7c2d12,#92400e);border-bottom:1px solid #b45309;padding:9px 24px;font-size:13px;color:#fed7aa;gap:10px;align-items:center;flex-wrap:wrap;}
+#alert-banner.show{display:flex;}
+.alert-tag{background:var(--warn);color:#0f1117;font-weight:700;padding:2px 8px;border-radius:4px;font-size:11px;}
+
+/* ── BOARD ── */
+#board{display:flex;gap:14px;padding:20px 24px;overflow-x:auto;min-height:calc(100vh - 120px);align-items:flex-start;}
+#board::-webkit-scrollbar{height:6px;}
+#board::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+
+/* ── COLUMN ── */
+.column{min-width:280px;max-width:280px;background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);display:flex;flex-direction:column;max-height:calc(100vh - 150px);}
+.column-header{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 10px;border-bottom:1px solid var(--border);flex-shrink:0;}
+.column-title-wrap{display:flex;align-items:center;gap:7px;flex:1;min-width:0;}
+.column-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.col-name-input{background:transparent;border:none;color:var(--text);font-family:'Syne',sans-serif;font-weight:600;font-size:13px;width:100%;cursor:pointer;border-radius:4px;padding:2px 4px;}
+.col-name-input:focus{outline:none;background:var(--surface2);cursor:text;}
+.col-count{background:var(--surface2);color:var(--muted);font-size:11px;font-weight:600;padding:2px 7px;border-radius:20px;flex-shrink:0;}
+.col-actions{display:flex;gap:2px;}
+.cards-container{flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column;gap:9px;min-height:60px;}
+.cards-container::-webkit-scrollbar{width:3px;}
+.cards-container::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+.add-card-btn{margin:0 10px 10px;background:transparent;border:1px dashed var(--border);color:var(--muted);padding:7px;border-radius:8px;font-size:12px;text-align:center;flex-shrink:0;}
+.add-card-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(245,158,11,.05);}
+.add-column-btn{min-width:52px;max-width:52px;height:52px;background:var(--surface);border:1px dashed var(--border);border-radius:var(--radius);color:var(--muted);font-size:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;align-self:flex-start;}
+.add-column-btn:hover{border-color:var(--accent);color:var(--accent);}
+
+/* ── CARD ── */
+.card{background:var(--surface2);border-radius:10px;border:1px solid var(--border);cursor:pointer;transition:all .15s;position:relative;overflow:hidden;user-select:none;}
+.card:hover{border-color:#3d4a6b;transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,0,0,.35);}
+.card.dragging{opacity:.4;}
+.card-cover{width:100%;height:130px;object-fit:cover;display:block;border-bottom:1px solid var(--border);}
+.card-cover-placeholder{display:none;}
+.card-body{padding:12px;}
+.card-status-bar{position:absolute;left:0;top:0;bottom:0;width:3px;}
+.card-title{font-family:'Syne',sans-serif;font-weight:600;font-size:13px;margin-bottom:8px;line-height:1.4;padding-left:4px;}
+.card-meta{display:flex;flex-direction:column;gap:4px;padding-left:4px;}
+.card-meta-row{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);}
+.card-meta-row span{color:var(--text);opacity:.85;}
+.card-assignees{display:flex;gap:4px;margin-top:6px;padding-left:4px;flex-wrap:wrap;}
+.assignee-chip{display:flex;align-items:center;gap:5px;background:var(--surface3);border:1px solid var(--border);border-radius:20px;padding:2px 8px 2px 3px;font-size:11px;}
+.assignee-chip-avatar{width:18px;height:18px;border-radius:50%;object-fit:cover;overflow:hidden;background:var(--border);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--accent);flex-shrink:0;}
+.assignee-chip-avatar img{width:100%;height:100%;object-fit:cover;}
+.card-alert{margin:8px 4px 0;padding:5px 8px;border-radius:6px;font-size:11px;font-weight:600;display:flex;align-items:center;gap:5px;}
+.card-alert.danger{background:rgba(239,68,68,.15);color:#fca5a5;border:1px solid rgba(239,68,68,.3);}
+.card-alert.warn{background:rgba(249,115,22,.15);color:#fdba74;border:1px solid rgba(249,115,22,.3);}
+.card-footer{display:flex;justify-content:flex-end;margin-top:8px;padding-left:4px;}
+.card-days-badge{font-size:10px;padding:2px 7px;border-radius:20px;font-weight:600;}
+.drop-target{border:2px dashed var(--accent)!important;background:rgba(245,158,11,.03);}
+
+/* ── MODAL ── */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;align-items:center;justify-content:center;padding:16px;}
+.modal-overlay.show{display:flex;}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px;width:100%;max-width:520px;max-height:90vh;overflow-y:auto;animation:mIn .2s ease;}
+.modal.wide{max-width:680px;}
+@keyframes mIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.modal-title{font-family:'Syne',sans-serif;font-weight:700;font-size:17px;margin-bottom:18px;color:var(--accent);}
+.form-group{margin-bottom:13px;}
+.form-group label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:5px;}
+.form-group input,.form-group textarea,.form-group select{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:8px 11px;font-family:'DM Sans',sans-serif;font-size:13px;}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--accent);}
+.form-group textarea{resize:vertical;min-height:72px;}
+.form-group select option{background:var(--surface2);}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:18px;flex-wrap:wrap;}
+
+/* ── COVER UPLOAD ── */
+.cover-upload-area{border:2px dashed var(--border);border-radius:10px;padding:20px;text-align:center;color:var(--muted);font-size:13px;cursor:pointer;transition:.15s;position:relative;margin-bottom:13px;}
+.cover-upload-area:hover{border-color:var(--accent);color:var(--accent);}
+.cover-preview{width:100%;height:140px;object-fit:cover;border-radius:8px;display:none;margin-bottom:8px;}
+.cover-preview.show{display:block;}
+.cover-upload-area input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;}
+.uploading-label{font-size:12px;color:var(--accent);display:none;}
+.uploading-label.show{display:block;}
+
+/* ── LOG ── */
+.update-log{margin-top:12px;border-top:1px solid var(--border);padding-top:12px;}
+.update-log-title{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;}
+.log-entry{font-size:11px;color:var(--muted);padding:5px 0;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:baseline;}
+.log-entry:last-child{border-bottom:none;}
+.log-date{color:var(--accent);font-size:10px;flex-shrink:0;}
+
+/* ── USER SELECT MODAL ── */
+#user-select-modal .modal{max-width:380px;}
+.user-option{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;cursor:pointer;border:1px solid transparent;transition:.15s;margin-bottom:6px;}
+.user-option:hover{background:var(--surface2);border-color:var(--border);}
+.user-option.selected{border-color:var(--accent);background:rgba(245,158,11,.07);}
+.user-option-avatar{width:38px;height:38px;border-radius:50%;object-fit:cover;overflow:hidden;background:var(--border);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:var(--accent);flex-shrink:0;}
+.user-option-avatar img{width:100%;height:100%;object-fit:cover;}
+.user-option-info{flex:1;min-width:0;}
+.user-option-name{font-weight:600;font-size:13px;}
+.user-option-phone{font-size:11px;color:var(--muted);margin-top:1px;}
+
+/* ── ADMIN PANEL ── */
+#admin-modal .modal{max-width:640px;}
+.admin-tabs{display:flex;gap:0;margin-bottom:20px;border-bottom:1px solid var(--border);}
+.admin-tab{padding:8px 16px;font-size:13px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;border-radius:0;}
+.admin-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
+.admin-tab-panel{display:none;}
+.admin-tab-panel.active{display:block;}
+.user-row{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--surface2);border-radius:9px;border:1px solid var(--border);margin-bottom:8px;}
+.user-row-avatar{width:36px;height:36px;border-radius:50%;overflow:hidden;background:var(--border);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:700;color:var(--accent);font-size:14px;flex-shrink:0;}
+.user-row-avatar img{width:100%;height:100%;object-fit:cover;}
+.user-row-info{flex:1;min-width:0;}
+.user-row-name{font-weight:600;font-size:13px;}
+.user-row-meta{font-size:11px;color:var(--muted);}
+.user-row-badge{font-size:10px;padding:2px 7px;border-radius:10px;font-weight:600;background:rgba(245,158,11,.15);color:var(--accent);}
+
+/* ── SETUP ── */
+#setup-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:300;align-items:center;justify-content:center;padding:20px;}
+#setup-overlay.show{display:flex;}
+.setup-box{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px;width:100%;max-width:500px;animation:mIn .2s ease;}
+.setup-title{font-family:'Syne',sans-serif;font-weight:800;font-size:21px;color:var(--accent);margin-bottom:6px;}
+.setup-sub{color:var(--muted);font-size:13px;margin-bottom:22px;line-height:1.6;}
+.setup-step{display:flex;gap:12px;margin-bottom:14px;}
+.step-num{background:var(--accent);color:#0f1117;font-weight:700;font-size:11px;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.step-text{font-size:13px;color:var(--text);line-height:1.6;}
+.step-text a{color:var(--accent);}
+.step-text code{background:var(--surface2);padding:1px 5px;border-radius:4px;font-size:12px;}
+
+/* COLORS */
+.dot-orange{background:#f97316}.dot-blue{background:#3b82f6}.dot-purple{background:#a855f7}
+.dot-green{background:#22c55e}.dot-red{background:#ef4444}.dot-yellow{background:#eab308}
+.dot-cyan{background:#06b6d4}.dot-pink{background:#ec4899}
+</style>
+</head>
+<body>
+
+<!-- SETUP OVERLAY -->
+<div class="modal-overlay" id="setup-overlay">
+  <div class="setup-box">
+    <div class="setup-title">🏗️ Configuração Inicial</div>
+    <div class="setup-sub">Configure as credenciais uma vez. Os dados ficam salvos no seu repositório GitHub.</div>
+    <div class="setup-step"><div class="step-num">1</div><div class="step-text">Crie um repositório no GitHub (pode ser privado) e faça upload de <code>index.html</code>, <code>data.json</code> e <code>.github/workflows/alerta-obras.yml</code>.</div></div>
+    <div class="setup-step"><div class="step-num">2</div><div class="step-text">Crie um <strong>Personal Access Token</strong> em <a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a> com permissão <code>repo</code>.</div></div>
+    <div class="setup-step"><div class="step-num">3</div><div class="step-text">Para imagens, crie conta gratuita em <a href="https://cloudinary.com" target="_blank">cloudinary.com</a> e copie seu <strong>Cloud Name</strong> e <strong>Upload Preset</strong> (unsigned).</div></div>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-top:18px;">
+      <div class="form-group"><label>Usuário GitHub</label><input id="s-user" placeholder="seu-usuario"/></div>
+      <div class="form-group"><label>Nome do repositório</label><input id="s-repo" placeholder="kanban-obras"/></div>
+      <div class="form-group"><label>Personal Access Token</label><input type="password" id="s-token" placeholder="ghp_..."/></div>
+      <div class="form-group"><label>Cloudinary Cloud Name</label><input id="s-cloud" placeholder="meu-cloud"/></div>
+      <div class="form-group"><label>Cloudinary Upload Preset (unsigned)</label><input id="s-preset" placeholder="kanban_obras"/></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:18px;justify-content:flex-end;">
+      <button class="btn-primary" onclick="saveSetup()">Salvar e Conectar</button>
+    </div>
+    <div id="setup-error" style="display:none;color:#fca5a5;font-size:12px;margin-top:10px;"></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">🏗️ Obras<span> Kanban</span></div>
+  <div class="header-center">
+    <div class="sync-status"><div class="sync-dot" id="sync-dot"></div><span id="sync-label">—</span></div>
+  </div>
+  <div class="header-right">
+    <div class="user-badge" onclick="openUserSelect()" id="user-badge">
+      <div class="user-avatar" id="header-avatar">?</div>
+      <span class="user-name" id="header-name">Selecionar</span>
+    </div>
+    <button class="btn-secondary btn-sm" onclick="openAdminModal()">⚙️ Admin</button>
+    <button class="btn-primary btn-sm" onclick="openNewCardModal()">+ Nova Obra</button>
+  </div>
+</header>
+
+<!-- ALERT BANNER -->
+<div id="alert-banner">
+  <span class="alert-tag">⚠️ ALERTA</span>
+  <span id="alert-text"></span>
+</div>
+
+<!-- BOARD -->
+<div id="board">
+  <button class="add-column-btn" onclick="addColumn()" title="Nova coluna">+</button>
+</div>
+
+<!-- USER SELECT MODAL -->
+<div class="modal-overlay" id="user-select-modal">
+  <div class="modal" style="max-width:380px;">
+    <div class="modal-title">👤 Quem é você?</div>
+    <div id="user-options-list"></div>
+    <div class="modal-actions">
+      <button class="btn-secondary" onclick="closeModal('user-select-modal')">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<!-- CARD MODAL -->
+<div class="modal-overlay" id="card-modal">
+  <div class="modal wide">
+    <div class="modal-title" id="modal-title">Nova Obra</div>
+
+    <!-- Cover image -->
+    <div class="cover-upload-area" id="cover-drop-area" onclick="document.getElementById('cover-file').click()">
+      <img class="cover-preview" id="cover-preview" src="" alt="Capa"/>
+      <input type="file" id="cover-file" accept="image/*" style="display:none" onchange="handleCoverUpload(this)"/>
+      <div id="cover-placeholder">🖼️ Clique para adicionar imagem de capa</div>
+      <div class="uploading-label" id="uploading-label">⏳ Enviando imagem...</div>
+    </div>
+    <div id="cover-remove-wrap" style="display:none;margin-bottom:12px;">
+      <button class="btn-ghost btn-sm" onclick="removeCover()">✕ Remover capa</button>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div class="form-group" style="grid-column:1/-1"><label>Nome da Obra *</label><input type="text" id="f-name" placeholder="Ex: Residencial Flores — Bloco A"/></div>
+      <div class="form-group"><label>Responsável</label><input type="text" id="f-resp" placeholder="Engenheiro/encarregado"/></div>
+      <div class="form-group"><label>Coluna</label><select id="f-col"></select></div>
+      <div class="form-group" style="grid-column:1/-1"><label>Endereço</label><input type="text" id="f-addr" placeholder="Rua, número, bairro"/></div>
+    </div>
+
+    <!-- Assignees -->
+    <div class="form-group">
+      <label>Membros atribuídos</label>
+      <div id="assignee-checkboxes" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;"></div>
+    </div>
+
+    <div class="form-group"><label>Observação / atualização</label><textarea id="f-obs" placeholder="O que aconteceu? Qual o status atual?"></textarea></div>
+
+    <div id="update-log-wrap" style="display:none;">
+      <div class="update-log">
+        <div class="update-log-title">Histórico</div>
+        <div id="log-entries"></div>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-secondary" onclick="closeModal('card-modal')">Cancelar</button>
+      <button class="btn-danger" id="btn-delete-card" style="display:none" onclick="deleteCurrentCard()">Excluir obra</button>
+      <button class="btn-primary" onclick="saveCard()">Salvar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN MODAL -->
+<div class="modal-overlay" id="admin-modal">
+  <div class="modal wide">
+    <div class="modal-title">⚙️ Painel Admin</div>
+    <div class="admin-tabs">
+      <button class="admin-tab active" onclick="switchAdminTab('users')">👥 Usuários</button>
+      <button class="admin-tab" onclick="switchAdminTab('config')">🔧 Configurações</button>
+    </div>
+
+    <!-- USERS TAB -->
+    <div class="admin-tab-panel active" id="tab-users">
+      <div id="user-list" style="margin-bottom:16px;"></div>
+      <div style="border-top:1px solid var(--border);padding-top:16px;">
+        <div style="font-family:'Syne',sans-serif;font-weight:600;font-size:13px;margin-bottom:12px;color:var(--accent);">
+          Adicionar / Editar usuário
+        </div>
+        <input type="hidden" id="u-id"/>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <div class="form-group"><label>Nome</label><input id="u-name" placeholder="João Silva"/></div>
+          <div class="form-group"><label>Função</label><input id="u-role" placeholder="Engenheiro, Mestre de obras..."/></div>
+          <div class="form-group"><label>WhatsApp (com DDI)</label><input id="u-phone" placeholder="5517991234567"/></div>
+          <div class="form-group"><label>API Key CallMeBot</label><input id="u-wppkey" placeholder="Cole a key"/></div>
+          <div class="form-group" style="grid-column:1/-1;">
+            <label>Foto (Cloudinary)</label>
+            <div class="cover-upload-area" style="padding:14px;" onclick="document.getElementById('u-photo-file').click()">
+              <img class="cover-preview" id="u-photo-preview" style="height:80px;width:80px;border-radius:50%;object-fit:cover;" src="" alt=""/>
+              <input type="file" id="u-photo-file" accept="image/*" style="display:none" onchange="handleUserPhotoUpload(this)"/>
+              <div id="u-photo-placeholder">📷 Clique para adicionar foto</div>
+              <div class="uploading-label" id="u-uploading-label">⏳ Enviando...</div>
+            </div>
+            <input type="hidden" id="u-photo-url"/>
+          </div>
+          <div class="form-group">
+            <label>Admin?</label>
+            <select id="u-admin"><option value="false">Não</option><option value="true">Sim</option></select>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:4px;">
+          <button class="btn-secondary btn-sm" onclick="clearUserForm()">Limpar</button>
+          <button class="btn-primary btn-sm" onclick="saveUser()">Salvar usuário</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONFIG TAB -->
+    <div class="admin-tab-panel" id="tab-config">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div class="form-group"><label>Usuário GitHub</label><input id="c-user"/></div>
+        <div class="form-group"><label>Repositório</label><input id="c-repo"/></div>
+        <div class="form-group"><label>Personal Access Token</label><input type="password" id="c-token" placeholder="ghp_..."/></div>
+        <div class="form-group"><label>Cloudinary Cloud Name</label><input id="c-cloud"/></div>
+        <div class="form-group"><label>Cloudinary Upload Preset</label><input id="c-preset"/></div>
+        <div class="form-group"><label>Alerta após (dias sem atualização)</label><input type="number" id="c-days" min="1" max="30" style="width:80px"/></div>
+      </div>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:16px;">
+        <button class="btn-primary btn-sm" onclick="saveConfigTab()">Salvar configurações</button>
+      </div>
+    </div>
+
+    <div class="modal-actions" style="border-top:1px solid var(--border);padding-top:14px;margin-top:4px;">
+      <button class="btn-secondary" onclick="closeModal('admin-modal')">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<!-- CONFIRM MODAL -->
+<div class="modal-overlay" id="confirm-modal">
+  <div class="modal" style="max-width:340px;">
+    <div class="modal-title" style="color:var(--danger);">⚠️ Confirmar exclusão</div>
+    <p style="color:var(--muted);font-size:14px;" id="confirm-text"></p>
+    <div class="modal-actions">
+      <button class="btn-secondary" onclick="closeModal('confirm-modal')">Cancelar</button>
+      <button class="btn-danger" id="confirm-ok" style="padding:8px 16px;">Excluir</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════
+// CONFIG & STATE
+// ══════════════════════════════════════════════
+const COLORS = ['dot-orange','dot-blue','dot-purple','dot-green','dot-red','dot-yellow','dot-cyan','dot-pink'];
+let cfg   = loadCfg();
+let state = { columns:[], cards:[], users:[] };
+let currentUser   = null; // { id, name, ... }
+let editingCardId = null;
+let dragCardId    = null;
+let fileSHA       = null;
+let editingCoverUrl = null;
+
+function loadCfg(){ try{ return JSON.parse(localStorage.getItem('kanban-cfg'))||{}; }catch{ return {}; } }
+function saveCfg(){ localStorage.setItem('kanban-cfg', JSON.stringify(cfg)); }
+function loadActiveUser(){ try{ return JSON.parse(localStorage.getItem('kanban-active-user'))||null; }catch{ return null; } }
+function saveActiveUser(u){ localStorage.setItem('kanban-active-user', u ? JSON.stringify(u) : 'null'); }
+
+// ══════════════════════════════════════════════
+// GITHUB API
+// ══════════════════════════════════════════════
+function ghUrl(){ return `https://api.github.com/repos/${cfg.user}/${cfg.repo}/contents/data.json`; }
+function ghHeaders(){ return { 'Authorization':`token ${cfg.token}`, 'Accept':'application/vnd.github.v3+json', 'Content-Type':'application/json' }; }
+
+async function loadFromGitHub(){
+  setSyncStatus('spin','Carregando...');
+  try{
+    const res  = await fetch(ghUrl(), { headers: ghHeaders() });
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    fileSHA    = json.sha;
+    state      = JSON.parse(atob(json.content.replace(/\n/g,'')));
+    if(!state.users)   state.users   = [];
+    if(!state.columns) state.columns = [];
+    if(!state.cards)   state.cards   = [];
+    setSyncStatus('ok','Sincronizado');
+    // restore active user
+    const saved = loadActiveUser();
+    if(saved){ const found = state.users.find(u=>u.id===saved.id); currentUser = found||null; }
+    updateHeaderUser();
+    render();
+    checkAlerts();
+  } catch(e){ setSyncStatus('err','Erro ao carregar'); console.error(e); }
+}
+
+async function saveToGitHub(){
+  setSyncStatus('spin','Salvando...');
+  try{
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state,null,2))));
+    const res = await fetch(ghUrl(),{ method:'PUT', headers:ghHeaders(), body:JSON.stringify({ message:'Kanban atualizado', content, sha:fileSHA }) });
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    fileSHA = json.content.sha;
+    setSyncStatus('ok','Salvo ✓');
+  } catch(e){ setSyncStatus('err','Erro ao salvar'); console.error(e); }
+}
+
+function setSyncStatus(s,label){ document.getElementById('sync-dot').className='sync-dot '+s; document.getElementById('sync-label').textContent=label; }
+
+// ══════════════════════════════════════════════
+// CLOUDINARY UPLOAD
+// ══════════════════════════════════════════════
+async function uploadToCloudinary(file){
+  const fd = new FormData();
+  fd.append('file', file);
+  fd.append('upload_preset', cfg.preset);
+  const res = await fetch(`https://api.cloudinary.com/v1_1/${cfg.cloud}/image/upload`, { method:'POST', body:fd });
+  if(!res.ok) throw new Error('Cloudinary error');
+  const json = await res.json();
+  return json.secure_url;
+}
+
+async function handleCoverUpload(input){
+  if(!input.files||!input.files[0]) return;
+  document.getElementById('uploading-label').classList.add('show');
+  document.getElementById('cover-placeholder').style.display='none';
+  try{
+    const url = await uploadToCloudinary(input.files[0]);
+    editingCoverUrl = url;
+    const prev = document.getElementById('cover-preview');
+    prev.src = url; prev.classList.add('show');
+    document.getElementById('cover-remove-wrap').style.display='block';
+  } catch(e){ alert('Erro ao enviar imagem. Verifique o Cloudinary.'); }
+  finally{ document.getElementById('uploading-label').classList.remove('show'); }
+}
+
+async function handleUserPhotoUpload(input){
+  if(!input.files||!input.files[0]) return;
+  document.getElementById('u-uploading-label').classList.add('show');
+  document.getElementById('u-photo-placeholder').style.display='none';
+  try{
+    const url = await uploadToCloudinary(input.files[0]);
+    document.getElementById('u-photo-url').value = url;
+    const prev = document.getElementById('u-photo-preview');
+    prev.src = url; prev.classList.add('show');
+  } catch(e){ alert('Erro ao enviar foto.'); }
+  finally{ document.getElementById('u-uploading-label').classList.remove('show'); }
+}
+
+function removeCover(){
+  editingCoverUrl = null;
+  const prev = document.getElementById('cover-preview');
+  prev.src=''; prev.classList.remove('show');
+  document.getElementById('cover-placeholder').style.display='block';
+  document.getElementById('cover-remove-wrap').style.display='none';
+}
+
+// ══════════════════════════════════════════════
+// SETUP
+// ══════════════════════════════════════════════
+function checkSetup(){
+  if(!cfg.user||!cfg.repo||!cfg.token||!cfg.cloud||!cfg.preset){
+    document.getElementById('setup-overlay').classList.add('show');
+  } else { loadFromGitHub(); }
+}
+
+async function saveSetup(){
+  const user=document.getElementById('s-user').value.trim();
+  const repo=document.getElementById('s-repo').value.trim();
+  const token=document.getElementById('s-token').value.trim();
+  const cloud=document.getElementById('s-cloud').value.trim();
+  const preset=document.getElementById('s-preset').value.trim();
+  const err=document.getElementById('setup-error');
+  if(!user||!repo||!token||!cloud||!preset){ err.style.display='block'; err.textContent='Preencha todos os campos.'; return; }
+  err.style.display='none';
+  cfg={...cfg,user,repo,token,cloud,preset};
+  saveCfg();
+  document.getElementById('setup-overlay').classList.remove('show');
+  await loadFromGitHub();
+}
+
+// ══════════════════════════════════════════════
+// USER
+// ══════════════════════════════════════════════
+function updateHeaderUser(){
+  const avatar = document.getElementById('header-avatar');
+  const name   = document.getElementById('header-name');
+  if(currentUser){
+    name.textContent = currentUser.name;
+    if(currentUser.photo){ avatar.innerHTML=`<img src="${currentUser.photo}" alt=""/>`; }
+    else{ avatar.textContent = currentUser.name[0].toUpperCase(); avatar.innerHTML = `<span>${currentUser.name[0].toUpperCase()}</span>`; }
+  } else {
+    name.textContent='Selecionar';
+    avatar.innerHTML='?';
+  }
+}
+
+function openUserSelect(){
+  const list = document.getElementById('user-options-list');
+  if(!state.users.length){ list.innerHTML='<p style="color:var(--muted);font-size:13px;text-align:center;padding:20px">Nenhum usuário cadastrado ainda.<br>Um admin precisa criar os perfis em ⚙️ Admin.</p>'; }
+  else{
+    list.innerHTML = state.users.map(u=>`
+      <div class="user-option ${currentUser&&currentUser.id===u.id?'selected':''}" onclick="selectUser('${u.id}')">
+        <div class="user-option-avatar">${u.photo?`<img src="${u.photo}" alt=""/>`:`<span>${u.name[0].toUpperCase()}</span>`}</div>
+        <div class="user-option-info">
+          <div class="user-option-name">${u.name}</div>
+          <div class="user-option-phone">${u.role||''}</div>
+        </div>
+        ${u.isAdmin?'<span style="font-size:10px;background:rgba(245,158,11,.15);color:var(--accent);padding:2px 7px;border-radius:10px;font-weight:600;">Admin</span>':''}
+      </div>`).join('');
+  }
+  document.getElementById('user-select-modal').classList.add('show');
+}
+
+function selectUser(id){
+  const u = state.users.find(u=>u.id===id);
+  if(!u) return;
+  currentUser = u;
+  saveActiveUser(u);
+  updateHeaderUser();
+  closeModal('user-select-modal');
+}
+
+// ══════════════════════════════════════════════
+// ADMIN
+// ══════════════════════════════════════════════
+function openAdminModal(){
+  renderUserList();
+  // populate config tab
+  document.getElementById('c-user').value  = cfg.user||'';
+  document.getElementById('c-repo').value  = cfg.repo||'';
+  document.getElementById('c-token').value = cfg.token||'';
+  document.getElementById('c-cloud').value = cfg.cloud||'';
+  document.getElementById('c-preset').value= cfg.preset||'';
+  document.getElementById('c-days').value  = cfg.days||1;
+  document.getElementById('admin-modal').classList.add('show');
+}
+
+function renderUserList(){
+  const list = document.getElementById('user-list');
+  if(!state.users.length){ list.innerHTML='<p style="color:var(--muted);font-size:13px;">Nenhum usuário cadastrado.</p>'; return; }
+  list.innerHTML = state.users.map(u=>`
+    <div class="user-row">
+      <div class="user-row-avatar">${u.photo?`<img src="${u.photo}" alt=""/>`:`<span>${u.name[0].toUpperCase()}</span>`}</div>
+      <div class="user-row-info">
+        <div class="user-row-name">${u.name}</div>
+        <div class="user-row-meta">${u.role||''} ${u.phone?'· '+u.phone:''}</div>
+      </div>
+      ${u.isAdmin?'<span class="user-row-badge">Admin</span>':''}
+      <button class="btn-icon" onclick="editUser('${u.id}')">✏️</button>
+      <button class="btn-icon" onclick="confirmDeleteUser('${u.id}')">🗑</button>
+    </div>`).join('');
+}
+
+function switchAdminTab(tab){
+  document.querySelectorAll('.admin-tab').forEach((t,i)=>t.classList.toggle('active',['users','config'][i]===tab));
+  document.querySelectorAll('.admin-tab-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+}
+
+function clearUserForm(){
+  ['u-id','u-name','u-role','u-phone','u-wppkey','u-photo-url'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('u-admin').value='false';
+  const prev=document.getElementById('u-photo-preview'); prev.src=''; prev.classList.remove('show');
+  document.getElementById('u-photo-placeholder').style.display='block';
+}
+
+function editUser(id){
+  const u=state.users.find(u=>u.id===id); if(!u)return;
+  document.getElementById('u-id').value      = u.id;
+  document.getElementById('u-name').value    = u.name;
+  document.getElementById('u-role').value    = u.role||'';
+  document.getElementById('u-phone').value   = u.phone||'';
+  document.getElementById('u-wppkey').value  = u.wppApiKey||'';
+  document.getElementById('u-admin').value   = u.isAdmin?'true':'false';
+  document.getElementById('u-photo-url').value = u.photo||'';
+  if(u.photo){ const prev=document.getElementById('u-photo-preview'); prev.src=u.photo; prev.classList.add('show'); document.getElementById('u-photo-placeholder').style.display='none'; }
+}
+
+async function saveUser(){
+  const name=document.getElementById('u-name').value.trim();
+  if(!name){ alert('Nome obrigatório.'); return; }
+  const id=document.getElementById('u-id').value||uid();
+  const existing=state.users.find(u=>u.id===id);
+  const user={
+    id, name,
+    role:    document.getElementById('u-role').value.trim(),
+    phone:   document.getElementById('u-phone').value.trim(),
+    wppApiKey: document.getElementById('u-wppkey').value.trim(),
+    photo:   document.getElementById('u-photo-url').value.trim(),
+    isAdmin: document.getElementById('u-admin').value==='true'
+  };
+  if(existing){ Object.assign(existing,user); }
+  else { state.users.push(user); }
+  renderUserList(); clearUserForm();
+  // update currentUser if it's the same person
+  if(currentUser&&currentUser.id===id){ currentUser=user; saveActiveUser(user); updateHeaderUser(); }
+  await saveToGitHub();
+}
+
+function confirmDeleteUser(id){
+  const u=state.users.find(u=>u.id===id);
+  document.getElementById('confirm-text').textContent=`Excluir o usuário "${u.name}"?`;
+  document.getElementById('confirm-ok').onclick=async()=>{ await deleteUser(id); closeModal('confirm-modal'); };
+  document.getElementById('confirm-modal').classList.add('show');
+}
+async function deleteUser(id){
+  state.users=state.users.filter(u=>u.id!==id);
+  if(currentUser&&currentUser.id===id){ currentUser=null; saveActiveUser(null); updateHeaderUser(); }
+  renderUserList(); await saveToGitHub();
+}
+
+function saveConfigTab(){
+  cfg.user   = document.getElementById('c-user').value.trim();
+  cfg.repo   = document.getElementById('c-repo').value.trim();
+  cfg.token  = document.getElementById('c-token').value.trim();
+  cfg.cloud  = document.getElementById('c-cloud').value.trim();
+  cfg.preset = document.getElementById('c-preset').value.trim();
+  cfg.days   = parseInt(document.getElementById('c-days').value)||1;
+  saveCfg();
+  alert('✅ Configurações salvas!');
+}
+
+// ══════════════════════════════════════════════
+// RENDER
+// ══════════════════════════════════════════════
+function render(){
+  const board  = document.getElementById('board');
+  const addBtn = board.querySelector('.add-column-btn');
+  board.querySelectorAll('.column').forEach(e=>e.remove());
+  (state.columns||[]).forEach(col=>{
+    const cards=(state.cards||[]).filter(c=>c.colId===col.id);
+    const el=document.createElement('div');
+    el.className='column'; el.dataset.colId=col.id;
+    el.innerHTML=`
+      <div class="column-header">
+        <div class="column-title-wrap">
+          <div class="column-dot ${col.color}"></div>
+          <input class="col-name-input" value="${col.name}" onchange="renameCol('${col.id}',this.value)"/>
+          <div class="col-count">${cards.length}</div>
+        </div>
+        <div class="col-actions">
+          <button class="btn-icon" onclick="cycleColor('${col.id}')">🎨</button>
+          <button class="btn-icon" onclick="confirmDeleteCol('${col.id}')">🗑</button>
+        </div>
+      </div>
+      <div class="cards-container" id="drop-${col.id}"
+        ondragover="onDragOver(event,'${col.id}')"
+        ondragleave="onDragLeave(event,'${col.id}')"
+        ondrop="onDrop(event,'${col.id}')">
+        ${cards.map(c=>cardHTML(c)).join('')}
+      </div>
+      <button class="add-card-btn" onclick="openNewCardModal('${col.id}')">+ Adicionar obra</button>`;
+    board.insertBefore(el,addBtn);
+  });
+  checkAlerts();
+}
+
+function cardHTML(card){
+  const days=daysDiff(card.updatedAt), limit=cfg.days||1;
+  const isAlert=days>=limit, isWarn=days>=(Math.max(1,limit-1))&&!isAlert;
+  const bar =isAlert?'#ef4444':isWarn?'#f97316':'#22c55e';
+  const bbg =isAlert?'rgba(239,68,68,.15)':isWarn?'rgba(249,115,22,.15)':'rgba(34,197,94,.15)';
+  const bcl =isAlert?'#fca5a5':isWarn?'#fdba74':'#86efac';
+  const alertHTML=isAlert?`<div class="card-alert danger">⚠️ ${days}d sem atualização</div>`:isWarn?`<div class="card-alert warn">⏰ Atualizar em breve</div>`:'';
+
+  // assignees
+  const assignees=(card.assignees||[]).map(aid=>{
+    const u=state.users.find(u=>u.id===aid);
+    if(!u) return '';
+    return `<div class="assignee-chip"><div class="assignee-chip-avatar">${u.photo?`<img src="${u.photo}" alt=""/>`:`<span>${u.name[0].toUpperCase()}</span>`}</div><span>${u.name.split(' ')[0]}</span></div>`;
+  }).join('');
+
+  const coverHTML=card.coverUrl?`<img class="card-cover" src="${card.coverUrl}" alt="capa" loading="lazy"/>`:'';
+
+  return `
+    <div class="card" id="card-${card.id}" draggable="true"
+      ondragstart="onDragStart(event,'${card.id}')" ondragend="onDragEnd()"
+      onclick="openEditCardModal('${card.id}')">
+      ${coverHTML}
+      <div class="card-body">
+        <div class="card-status-bar" style="background:${bar}"></div>
+        <div class="card-title">${card.name}</div>
+        <div class="card-meta">
+          ${card.resp?`<div class="card-meta-row">👤 <span>${card.resp}</span></div>`:''}
+          ${card.addr?`<div class="card-meta-row">📍 <span>${card.addr}</span></div>`:''}
+          <div class="card-meta-row">🕒 <span>${fmtDate(card.updatedAt)}</span></div>
+        </div>
+        ${assignees?`<div class="card-assignees">${assignees}</div>`:''}
+        ${alertHTML}
+        <div class="card-footer"><span class="card-days-badge" style="background:${bbg};color:${bcl}">${days}d atrás</span></div>
+      </div>
+    </div>`;
+}
+
+// ══════════════════════════════════════════════
+// ALERTS
+// ══════════════════════════════════════════════
+function checkAlerts(){
+  const limit=cfg.days||1;
+  const overdue=(state.cards||[]).filter(c=>daysDiff(c.updatedAt)>=limit);
+  const banner=document.getElementById('alert-banner');
+  if(overdue.length>0){
+    banner.classList.add('show');
+    document.getElementById('alert-text').textContent=`${overdue.length} obra${overdue.length>1?'s':''} sem atualização há ${limit}+ dia${limit>1?'s':''}: ${overdue.map(c=>c.name).join(', ')}`;
+  } else { banner.classList.remove('show'); }
+}
+
+// ══════════════════════════════════════════════
+// COLUMNS
+// ══════════════════════════════════════════════
+async function addColumn(){
+  const name=prompt('Nome da nova coluna:'); if(!name||!name.trim())return;
+  state.columns.push({id:uid(),name:name.trim(),color:COLORS[state.columns.length%COLORS.length]});
+  render(); await saveToGitHub();
+}
+function renameCol(id,val){ const c=(state.columns||[]).find(c=>c.id===id); if(c){c.name=val.trim()||c.name; saveToGitHub();} }
+function cycleColor(id){ const c=(state.columns||[]).find(c=>c.id===id); if(!c)return; c.color=COLORS[(COLORS.indexOf(c.color)+1)%COLORS.length]; render(); saveToGitHub(); }
+function confirmDeleteCol(id){
+  const col=(state.columns||[]).find(c=>c.id===id);
+  const count=(state.cards||[]).filter(c=>c.colId===id).length;
+  document.getElementById('confirm-text').textContent=`Excluir "${col.name}"?${count>0?` Os ${count} card(s) também serão excluídos.`:''}`;
+  document.getElementById('confirm-ok').onclick=async()=>{ state.columns=state.columns.filter(c=>c.id!==id); state.cards=state.cards.filter(c=>c.colId!==id); closeModal('confirm-modal'); render(); await saveToGitHub(); };
+  document.getElementById('confirm-modal').classList.add('show');
+}
+
+// ══════════════════════════════════════════════
+// CARDS
+// ══════════════════════════════════════════════
+function populateColSelect(sel){
+  document.getElementById('f-col').innerHTML=(state.columns||[]).map(c=>`<option value="${c.id}"${c.id===sel?' selected':''}>${c.name}</option>`).join('');
+}
+
+function renderAssigneeCheckboxes(selected=[]){
+  const wrap=document.getElementById('assignee-checkboxes');
+  if(!state.users.length){ wrap.innerHTML='<span style="font-size:12px;color:var(--muted)">Nenhum usuário cadastrado</span>'; return; }
+  wrap.innerHTML=state.users.map(u=>{
+    const checked=selected.includes(u.id);
+    return `<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:var(--surface3);border:1px solid ${checked?'var(--accent)':'var(--border)'};border-radius:20px;padding:4px 10px 4px 5px;font-size:12px;transition:.15s;" id="alabel-${u.id}">
+      <input type="checkbox" value="${u.id}" ${checked?'checked':''} style="display:none" onchange="toggleAssignLabel('${u.id}',this)"/>
+      <div class="assignee-chip-avatar">${u.photo?`<img src="${u.photo}" alt=""/>`:`<span>${u.name[0].toUpperCase()}</span>`}</div>
+      ${u.name.split(' ')[0]}
+    </label>`;
+  }).join('');
+}
+
+function toggleAssignLabel(uid, input){
+  const label=document.getElementById('alabel-'+uid);
+  label.style.borderColor=input.checked?'var(--accent)':'var(--border)';
+}
+
+function openNewCardModal(colId){
+  editingCardId=null; editingCoverUrl=null;
+  document.getElementById('modal-title').textContent='Nova Obra';
+  ['f-name','f-resp','f-addr','f-obs'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('update-log-wrap').style.display='none';
+  document.getElementById('btn-delete-card').style.display='none';
+  const prev=document.getElementById('cover-preview'); prev.src=''; prev.classList.remove('show');
+  document.getElementById('cover-placeholder').style.display='block';
+  document.getElementById('cover-remove-wrap').style.display='none';
+  populateColSelect(colId||(state.columns||[])[0]?.id);
+  renderAssigneeCheckboxes(currentUser?[currentUser.id]:[]);
+  document.getElementById('card-modal').classList.add('show');
+  setTimeout(()=>document.getElementById('f-name').focus(),100);
+}
+
+function openEditCardModal(cardId){
+  const card=(state.cards||[]).find(c=>c.id===cardId); if(!card)return;
+  editingCardId=cardId; editingCoverUrl=card.coverUrl||null;
+  document.getElementById('modal-title').textContent='Editar Obra';
+  document.getElementById('f-name').value=card.name;
+  document.getElementById('f-resp').value=card.resp||'';
+  document.getElementById('f-addr').value=card.addr||'';
+  document.getElementById('f-obs').value='';
+  document.getElementById('btn-delete-card').style.display='inline-block';
+  populateColSelect(card.colId);
+  renderAssigneeCheckboxes(card.assignees||[]);
+  // cover
+  const prev=document.getElementById('cover-preview');
+  if(card.coverUrl){ prev.src=card.coverUrl; prev.classList.add('show'); document.getElementById('cover-placeholder').style.display='none'; document.getElementById('cover-remove-wrap').style.display='block'; }
+  else { prev.src=''; prev.classList.remove('show'); document.getElementById('cover-placeholder').style.display='block'; document.getElementById('cover-remove-wrap').style.display='none'; }
+  // log
+  const logWrap=document.getElementById('update-log-wrap');
+  if(card.log&&card.log.length){ logWrap.style.display='block'; document.getElementById('log-entries').innerHTML=[...card.log].reverse().slice(0,6).map(l=>`<div class="log-entry"><span class="log-date">${fmtDate(l.date)}</span><span>${l.note||'Atualizado'}</span></div>`).join(''); }
+  else { logWrap.style.display='none'; }
+  document.getElementById('card-modal').classList.add('show');
+}
+
+async function saveCard(){
+  const name=document.getElementById('f-name').value.trim(); if(!name){alert('Nome é obrigatório.');return;}
+  const colId=document.getElementById('f-col').value;
+  const resp=document.getElementById('f-resp').value.trim();
+  const addr=document.getElementById('f-addr').value.trim();
+  const obs=document.getElementById('f-obs').value.trim();
+  const now=new Date().toISOString();
+  const assignees=[...document.querySelectorAll('#assignee-checkboxes input:checked')].map(i=>i.value);
+  if(!state.cards)state.cards=[];
+  if(editingCardId){
+    const card=state.cards.find(c=>c.id===editingCardId); if(!card)return;
+    card.name=name;card.resp=resp;card.addr=addr;card.colId=colId;card.updatedAt=now;
+    card.coverUrl=editingCoverUrl||null;card.assignees=assignees;
+    if(!card.log)card.log=[];
+    card.log.push({date:now,note:obs||'Card atualizado'+(currentUser?` por ${currentUser.name}`:'')});
+  } else {
+    state.cards.push({id:uid(),name,resp,addr,colId,coverUrl:editingCoverUrl||null,assignees,
+      createdAt:now,updatedAt:now,log:[{date:now,note:'Obra criada'+(obs?': '+obs:'')+(currentUser?` por ${currentUser.name}`:'')}]});
+  }
+  closeModal('card-modal'); render(); await saveToGitHub();
+}
+
+function deleteCurrentCard(){
+  if(!editingCardId)return;
+  const card=state.cards.find(c=>c.id===editingCardId);
+  closeModal('card-modal');
+  document.getElementById('confirm-text').textContent=`Excluir a obra "${card.name}"?`;
+  document.getElementById('confirm-ok').onclick=async()=>{ state.cards=state.cards.filter(c=>c.id!==editingCardId); closeModal('confirm-modal'); render(); await saveToGitHub(); };
+  document.getElementById('confirm-modal').classList.add('show');
+}
+
+// ══════════════════════════════════════════════
+// DRAG & DROP
+// ══════════════════════════════════════════════
+function onDragStart(e,id){dragCardId=id;setTimeout(()=>document.getElementById('card-'+id)?.classList.add('dragging'),0);}
+function onDragEnd(){document.querySelectorAll('.card').forEach(c=>c.classList.remove('dragging'));document.querySelectorAll('.cards-container').forEach(z=>z.classList.remove('drop-target'));}
+function onDragOver(e,colId){e.preventDefault();document.getElementById('drop-'+colId)?.classList.add('drop-target');}
+function onDragLeave(e,colId){document.getElementById('drop-'+colId)?.classList.remove('drop-target');}
+async function onDrop(e,colId){
+  e.preventDefault();document.getElementById('drop-'+colId)?.classList.remove('drop-target');
+  if(!dragCardId)return;
+  const card=state.cards.find(c=>c.id===dragCardId);
+  if(card&&card.colId!==colId){
+    card.colId=colId;card.updatedAt=new Date().toISOString();
+    if(!card.log)card.log=[];
+    const colName=(state.columns||[]).find(c=>c.id===colId)?.name||colId;
+    card.log.push({date:card.updatedAt,note:`Movido para "${colName}"${currentUser?` por ${currentUser.name}`:''}`});
+  }
+  dragCardId=null;render();await saveToGitHub();
+}
+
+// ══════════════════════════════════════════════
+// UTILS
+// ══════════════════════════════════════════════
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
+function daysDiff(d){return Math.floor((Date.now()-new Date(d))/86400000);}
+function fmtDate(iso){const d=new Date(iso);return d.toLocaleDateString('pt-BR')+' '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});}
+function closeModal(id){document.getElementById(id).classList.remove('show');}
+
+// ══════════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════════
+checkSetup();
+</script>
+</body>
+</html>

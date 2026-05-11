@@ -1,0 +1,72 @@
+name: Alerta de Obras Paradas
+
+on:
+  schedule:
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+
+jobs:
+  check-obras:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Checar obras paradas e enviar WhatsApp
+        env:
+          ALERT_DAYS: ${{ secrets.ALERT_DAYS }}
+        run: |
+          python3 - << 'PYEOF'
+          import json, urllib.request, urllib.parse, os, sys
+          from datetime import datetime, timezone
+
+          with open("data.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          days_limit = int(os.environ.get("ALERT_DAYS", "1"))
+          now = datetime.now(timezone.utc)
+          col_map = {c["id"]: c["name"] for c in data.get("columns", [])}
+          users   = data.get("users", [])
+          cards   = data.get("cards", [])
+
+          overdue = []
+          for card in cards:
+              updated = card.get("updatedAt", card.get("createdAt", ""))
+              if not updated: continue
+              try:
+                  dt   = datetime.fromisoformat(updated.replace("Z", "+00:00"))
+                  diff = (now - dt).days
+                  if diff >= days_limit:
+                      overdue.append({"name": card.get("name","—"), "resp": card.get("resp","—"),
+                          "addr": card.get("addr","—"), "col": col_map.get(card.get("colId",""),"—"),
+                          "days": diff, "updated": dt.strftime("%d/%m/%Y %H:%M")})
+              except Exception as e:
+                  print(f"Erro: {e}")
+
+          if not overdue:
+              print("Nenhuma obra parada.")
+              sys.exit(0)
+
+          lines = ["Kanban de Obras - Alerta Diario", ""]
+          for o in overdue:
+              lines += [f"ATENCAO: {o['name']}", f"Coluna: {o['col']}", f"Responsavel: {o['resp']}",
+                        f"Endereco: {o['addr']}", f"Ultima atualizacao: {o['updated']} ({o['days']}d atras)", ""]
+          lines.append("Acesse o Kanban e atualize os cards!")
+          msg = "\n".join(lines)
+
+          recipients = [u for u in users if u.get("phone") and u.get("wppApiKey")]
+          if not recipients:
+              print("Nenhum usuario com WhatsApp.")
+              sys.exit(0)
+
+          for user in recipients:
+              url = (f"https://api.callmebot.com/whatsapp.php"
+                     f"?phone={urllib.parse.quote(user['phone'].strip())}"
+                     f"&text={urllib.parse.quote(msg)}"
+                     f"&apikey={urllib.parse.quote(user['wppApiKey'].strip())}")
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url), timeout=15) as r:
+                      print(f"Enviado para {user.get('name','?')}: {r.read().decode()[:80]}")
+              except Exception as e:
+                  print(f"Erro para {user.get('name','?')}: {e}")
+          PYEOF
