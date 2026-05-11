@@ -206,9 +206,45 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .uploading-label{font-size:11px;color:var(--accent);display:none;margin-top:4px;}
 .uploading-label.show{display:block;}
 
+
 .dot-orange{background:#f97316}.dot-blue{background:#3b82f6}.dot-purple{background:#a855f7}
 .dot-green{background:#22c55e}.dot-red{background:#ef4444}.dot-yellow{background:#eab308}
-.dot-cyan{background:#06b6d4}.dot-pink{background:#ec4899}
+.dot-cyan{background:#06b6d4}.dot-pink{background:#ec4899}.dot-amber{background:#f59e0b}
+.dot-lime{background:#84cc16}.dot-teal{background:#14b8a6}.dot-indigo{background:#6366f1}
+.dot-rose{background:#f43f5e}.dot-slate{background:#64748b}.dot-stone{background:#78716c}
+.dot-white{background:#e2e8f0}.dot-brown{background:#92400e}.dot-gold{background:#ca8a04}
+
+
+/* ── COLUMN MENU ── */
+.col-menu-wrap{position:relative;}
+.col-menu-btn{background:transparent;color:var(--muted);padding:4px 7px;font-size:17px;border-radius:4px;line-height:1;}
+.col-menu-btn:hover{color:var(--text);background:var(--border);}
+.col-dropdown{display:none;position:absolute;right:0;top:110%;background:var(--surface);border:1px solid var(--border);border-radius:10px;min-width:180px;z-index:150;box-shadow:0 8px 32px rgba(0,0,0,.5);overflow:hidden;}
+.col-dropdown.open{display:block;}
+.col-dropdown-item{display:flex;align-items:center;gap:9px;padding:9px 14px;font-size:13px;cursor:pointer;transition:.12s;color:var(--text);}
+.col-dropdown-item:hover{background:var(--surface2);}
+.col-dropdown-item.danger{color:#fca5a5;}
+.col-dropdown-item.danger:hover{background:rgba(239,68,68,.1);}
+.col-dropdown-divider{height:1px;background:var(--border);margin:3px 0;}
+
+/* ── COLOR PICKER MODAL ── */
+.color-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:10px;}
+.color-swatch{width:36px;height:36px;border-radius:8px;cursor:pointer;border:3px solid transparent;transition:.15s;}
+.color-swatch:hover{transform:scale(1.12);}
+.color-swatch.selected{border-color:#fff;box-shadow:0 0 0 2px var(--accent);}
+
+/* ── FAB ── */
+.fab{position:fixed;bottom:28px;right:28px;width:54px;height:54px;border-radius:50%;background:var(--accent);color:#0f1117;font-size:26px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(245,158,11,.4);z-index:90;transition:.2s;line-height:1;}
+.fab:hover{background:#fbbf24;transform:scale(1.08);box-shadow:0 6px 28px rgba(245,158,11,.5);}
+
+/* ── HEADER HAMBURGER ── */
+.header-menu-wrap{position:relative;}
+.header-hamburger{background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:7px 10px;border-radius:8px;font-size:17px;line-height:1;}
+.header-hamburger:hover{background:var(--border);}
+.header-dropdown{display:none;position:absolute;right:0;top:110%;background:var(--surface);border:1px solid var(--border);border-radius:10px;min-width:160px;z-index:150;box-shadow:0 8px 32px rgba(0,0,0,.5);overflow:hidden;}
+.header-dropdown.open{display:block;}
+.header-dropdown-item{display:flex;align-items:center;gap:9px;padding:10px 14px;font-size:13px;cursor:pointer;transition:.12s;color:var(--text);}
+.header-dropdown-item:hover{background:var(--surface2);}
 </style>
 </head>
 <body>
@@ -221,8 +257,13 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       <div class="user-avatar" id="header-avatar">?</div>
       <span class="user-name" id="header-name">Selecionar</span>
     </div>
-    <button class="btn-secondary btn-sm" onclick="openAdminModal()">⚙️ Admin</button>
-    <button class="btn-primary btn-sm" onclick="openNewCard()">+ Nova Obra</button>
+    <div class="header-menu-wrap">
+      <button class="header-hamburger" onclick="toggleHeaderMenu(event)" title="Menu">☰</button>
+      <div class="header-dropdown" id="header-dropdown">
+        <div class="header-dropdown-item" onclick="openAdminModal();closeHeaderMenu()">⚙️ Admin</div>
+        <div class="header-dropdown-item" onclick="addColumn();closeHeaderMenu()">＋ Nova coluna</div>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -231,6 +272,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
   <span id="alert-text"></span>
 </div>
 
+<button class="fab" onclick="openNewCard()" title="Nova Obra">+</button>
 <div id="board">
   <button class="add-column-btn" onclick="addColumn()" title="Nova coluna">+</button>
 </div>
@@ -357,8 +399,8 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;">
           <div class="form-group"><label>Nome</label><input id="u-name" placeholder="João Silva"/></div>
           <div class="form-group"><label>Função</label><input id="u-role" placeholder="Engenheiro..."/></div>
-          <div class="form-group"><label>WhatsApp (DDI)</label><input id="u-phone" placeholder="5517991234567"/></div>
-          <div class="form-group"><label>API Key CallMeBot</label><input id="u-wppkey" placeholder="123456"/></div>
+          <div class="form-group"><label>Telegram Chat ID</label><input id="u-tgid" placeholder="Ex: 123456789" title="O usuário manda /start pro bot e recebe o ID"/></div>
+          <div class="form-group"><label>WhatsApp (opcional, fallback)</label><input id="u-phone" placeholder="5517991234567"/></div>
           <div class="form-group" style="grid-column:1/-1;">
             <label>Foto</label>
             <div class="cover-upload-area" style="padding:12px;" onclick="document.getElementById('u-photo-file').click()">
@@ -399,11 +441,23 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
           </div>
         </div>
       </div>
+      <div style="background:var(--surface3);border:1px solid var(--border);border-radius:8px;padding:12px;margin-bottom:10px;">
+        <div style="font-size:11px;font-weight:600;color:var(--accent);margin-bottom:6px;">🤖 Configuração do Bot Telegram</div>
+        <div style="font-size:11px;color:var(--muted);line-height:1.8;">
+          1. Fale com <strong style="color:var(--text);">@BotFather</strong> no Telegram<br>
+          2. Envie <code style="background:var(--border);padding:1px 5px;border-radius:3px;">/newbot</code> e siga as instruções<br>
+          3. Copie o <strong style="color:var(--text);">Token</strong> e adicione como Secret no GitHub:<br>
+          <code style="background:var(--border);padding:1px 5px;border-radius:3px;">TELEGRAM_TOKEN</code><br>
+          4. Cada usuário entra no bot e manda <code style="background:var(--border);padding:1px 5px;border-radius:3px;">/start</code><br>
+          5. Use <a href="https://t.me/userinfobot" target="_blank" style="color:var(--accent);">@userinfobot</a> para descobrir o Chat ID de cada usuário<br>
+          6. Cadastre o Chat ID no perfil do usuário em ⚙️ Admin → Usuários
+        </div>
+      </div>
       <div style="background:var(--surface3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:14px;">
         <div style="font-size:11px;color:var(--muted);line-height:1.6;">
-          ⚙️ Para aplicar os dias no GitHub Actions, vá em:<br>
+          ⚙️ Secrets necessários no GitHub Actions:<br>
           <strong style="color:var(--text);">Repositório → Settings → Secrets → Actions</strong><br>
-          e atualize os secrets <code style="background:var(--border);padding:1px 5px;border-radius:3px;">ALERT_DAYS</code> e <code style="background:var(--border);padding:1px 5px;border-radius:3px;">CHECKLIST_DAYS</code>
+          <code style="background:var(--border);padding:1px 5px;border-radius:3px;">TELEGRAM_TOKEN</code> · <code style="background:var(--border);padding:1px 5px;border-radius:3px;">ALERT_DAYS</code> · <code style="background:var(--border);padding:1px 5px;border-radius:3px;">CHECKLIST_DAYS</code>
         </div>
       </div>
       <div style="display:flex;gap:8px;justify-content:flex-end;">
@@ -574,9 +628,14 @@ function render(){
           <input class="col-name-input" value="${col.name}" onchange="renameCol('${col.id}',this.value)"/>
           <div class="col-count">${cards.length}</div>
         </div>
-        <div class="col-actions">
-          <button class="btn-icon" onclick="cycleColor('${col.id}')">🎨</button>
-          <button class="btn-icon" onclick="confirmDeleteCol('${col.id}')">🗑</button>
+        <div class="col-menu-wrap">
+          <button class="col-menu-btn" onclick="toggleColMenu(event,'${col.id}')">⋯</button>
+          <div class="col-dropdown" id="colmenu-${col.id}">
+            <div class="col-dropdown-item" onclick="startRenameCol('${col.id}')">✏️ Renomear</div>
+            <div class="col-dropdown-item" onclick="openColorPicker('${col.id}')">🎨 Alterar cor</div>
+            <div class="col-dropdown-divider"></div>
+            <div class="col-dropdown-item danger" onclick="confirmDeleteCol('${col.id}')">🗑 Excluir coluna</div>
+          </div>
         </div>
       </div>
       <div class="cards-container" id="drop-${col.id}"
@@ -948,7 +1007,7 @@ function renderUserList(){
   list.innerHTML=state.users.map(u=>`
     <div class="user-row">
       <div class="user-row-avatar">${u.photo?`<img src="${u.photo}" alt=""/>`:`<span>${u.name[0].toUpperCase()}</span>`}</div>
-      <div class="user-row-info"><div class="user-row-name">${u.name}</div><div class="user-row-meta">${u.role||''} ${u.phone?'· '+u.phone:''}</div></div>
+      <div class="user-row-info"><div class="user-row-name">${u.name}</div><div class="user-row-meta">${u.role||''} ${u.telegramChatId?'· TG: '+u.telegramChatId:u.phone?'· '+u.phone:''}</div></div>
       ${u.isAdmin?'<span style="font-size:10px;background:rgba(245,158,11,.15);color:var(--accent);padding:2px 7px;border-radius:10px;font-weight:600;">Admin</span>':''}
       <button class="btn-icon" onclick="editUser('${u.id}')">✏️</button>
       <button class="btn-icon" onclick="confirmDeleteUser('${u.id}')">🗑</button>
@@ -960,7 +1019,7 @@ function switchAdminTab(tab){
   document.getElementById('tab-'+tab).classList.add('active');
 }
 function clearUserForm(){
-  ['u-id','u-name','u-role','u-phone','u-wppkey','u-photo-url'].forEach(id=>document.getElementById(id).value='');
+  ['u-id','u-name','u-role','u-phone','u-tgid','u-photo-url'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('u-admin').value='false';
   document.getElementById('u-photo-preview').style.display='none';
   document.getElementById('u-photo-placeholder').style.display='block';
@@ -969,7 +1028,7 @@ function editUser(id){
   const u=state.users.find(u=>u.id===id);if(!u)return;
   document.getElementById('u-id').value=u.id;document.getElementById('u-name').value=u.name;
   document.getElementById('u-role').value=u.role||'';document.getElementById('u-phone').value=u.phone||'';
-  document.getElementById('u-wppkey').value=u.wppApiKey||'';document.getElementById('u-admin').value=u.isAdmin?'true':'false';
+  document.getElementById('u-tgid').value=u.telegramChatId||'';document.getElementById('u-admin').value=u.isAdmin?'true':'false';
   document.getElementById('u-photo-url').value=u.photo||'';
   if(u.photo){const p=document.getElementById('u-photo-preview');p.src=u.photo;p.style.display='block';document.getElementById('u-photo-placeholder').style.display='none';}
 }
@@ -977,7 +1036,8 @@ async function saveUser(){
   const name=document.getElementById('u-name').value.trim();if(!name){alert('Nome obrigatório.');return;}
   const id=document.getElementById('u-id').value||uid();
   const user={id,name,role:document.getElementById('u-role').value.trim(),phone:document.getElementById('u-phone').value.trim(),
-    wppApiKey:document.getElementById('u-wppkey').value.trim(),photo:document.getElementById('u-photo-url').value.trim(),
+    telegramChatId:document.getElementById('u-tgid').value.trim(),
+    photo:document.getElementById('u-photo-url').value.trim(),
     isAdmin:document.getElementById('u-admin').value==='true'};
   const ex=state.users.find(u=>u.id===id);
   if(ex)Object.assign(ex,user);else state.users.push(user);
@@ -1142,6 +1202,90 @@ function importChecklist(){
   closeModal('import-modal');
 }
 
+
+// ══════ COLUMN MENU ══════
+function toggleColMenu(e, colId){
+  e.stopPropagation();
+  const all=document.querySelectorAll('.col-dropdown');
+  const menu=document.getElementById('colmenu-'+colId);
+  const isOpen=menu.classList.contains('open');
+  all.forEach(m=>m.classList.remove('open'));
+  if(!isOpen)menu.classList.add('open');
+}
+document.addEventListener('click',()=>document.querySelectorAll('.col-dropdown').forEach(m=>m.classList.remove('open')));
+
+function startRenameCol(id){
+  document.querySelectorAll('.col-dropdown').forEach(m=>m.classList.remove('open'));
+  const input=document.querySelector(`[data-col-id="${id}"] .col-name-input`);
+  if(input){input.focus();input.select();}
+}
+
+// ══════ COLOR PICKER ══════
+const COLUMN_COLORS=[
+  {id:'dot-orange',   hex:'#f97316',label:'Laranja'},
+  {id:'dot-amber',    hex:'#f59e0b',label:'Âmbar'},
+  {id:'dot-yellow',   hex:'#eab308',label:'Amarelo'},
+  {id:'dot-lime',     hex:'#84cc16',label:'Lima'},
+  {id:'dot-green',    hex:'#22c55e',label:'Verde'},
+  {id:'dot-teal',     hex:'#14b8a6',label:'Teal'},
+  {id:'dot-cyan',     hex:'#06b6d4',label:'Ciano'},
+  {id:'dot-blue',     hex:'#3b82f6',label:'Azul'},
+  {id:'dot-indigo',   hex:'#6366f1',label:'Índigo'},
+  {id:'dot-purple',   hex:'#a855f7',label:'Roxo'},
+  {id:'dot-pink',     hex:'#ec4899',label:'Rosa'},
+  {id:'dot-red',      hex:'#ef4444',label:'Vermelho'},
+  {id:'dot-rose',     hex:'#f43f5e',label:'Rosê'},
+  {id:'dot-slate',    hex:'#64748b',label:'Cinza'},
+  {id:'dot-stone',    hex:'#78716c',label:'Pedra'},
+  {id:'dot-white',    hex:'#e2e8f0',label:'Branco'},
+  {id:'dot-brown',    hex:'#92400e',label:'Marrom'},
+  {id:'dot-gold',     hex:'#ca8a04',label:'Dourado'},
+];
+
+let colorPickerColId=null;
+let colorPickerSelected=null;
+
+function openColorPicker(colId){
+  document.querySelectorAll('.col-dropdown').forEach(m=>m.classList.remove('open'));
+  colorPickerColId=colId;
+  const col=(state.columns||[]).find(c=>c.id===colId);
+  colorPickerSelected=col?col.color:null;
+  const grid=document.getElementById('color-grid');
+  grid.innerHTML=COLUMN_COLORS.map(c=>`
+    <div class="color-swatch${colorPickerSelected===c.id?' selected':''}"
+      style="background:${c.hex};"
+      title="${c.label}"
+      data-cid="${c.id}"
+      onclick="selectColorSwatch(this,'${c.id}')">
+    </div>`).join('');
+  document.getElementById('color-modal').classList.add('show');
+}
+
+function selectColorSwatch(el,cid){
+  document.querySelectorAll('.color-swatch').forEach(s=>s.classList.remove('selected'));
+  el.classList.add('selected');
+  colorPickerSelected=cid;
+}
+
+function applyColumnColor(){
+  if(!colorPickerColId||!colorPickerSelected)return;
+  const col=(state.columns||[]).find(c=>c.id===colorPickerColId);
+  if(!col)return;
+  col.color=colorPickerSelected;
+  closeModal('color-modal');
+  render();saveGH();
+}
+
+// ══════ HEADER HAMBURGER ══════
+function toggleHeaderMenu(e){
+  e.stopPropagation();
+  document.getElementById('header-dropdown').classList.toggle('open');
+}
+function closeHeaderMenu(){
+  document.getElementById('header-dropdown').classList.remove('open');
+}
+document.addEventListener('click',()=>document.getElementById('header-dropdown')?.classList.remove('open'));
+
 // ══════ INIT ══════
 loadGH();
 </script>
@@ -1189,5 +1333,17 @@ loadGH();
   </div>
 </div>
 
+
+<!-- COLOR PICKER MODAL -->
+<div class="modal-overlay" id="color-modal">
+  <div class="modal" style="max-width:340px;">
+    <div class="modal-title">🎨 Cor da coluna</div>
+    <div class="color-grid" id="color-grid"></div>
+    <div class="modal-actions" style="margin-top:18px;">
+      <button class="btn-secondary" onclick="closeModal('color-modal')">Cancelar</button>
+      <button class="btn-primary btn-sm" onclick="applyColumnColor()">Aplicar</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
