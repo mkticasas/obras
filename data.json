@@ -3,7 +3,7 @@
     {
       "id": "col-default",
       "name": "Em Andamento",
-      "color": "dot-orange"
+      "color": "dot-blue"
     }
   ],
   "cards": [],
@@ -14,13 +14,13 @@
       "name": "Checklist Geral (MACRO)",
       "items": [
         "Terraplanagem",
-        "Fundação",
+        "FundaÃ§Ã£o",
         "Estrutura (paredes + laje)",
         "Cobertura",
-        "Instalações",
+        "InstalaÃ§Ãµes",
         "Reboco",
         "Acabamento",
-        "Finalização"
+        "FinalizaÃ§Ã£o"
       ]
     },
     {
@@ -28,26 +28,26 @@
       "name": "Checklist Detalhado",
       "items": [
         "Terraplanagem",
-        "Fundação",
+        "FundaÃ§Ã£o",
         "Levantamento de Paredes",
-        "Conferência de medidas de janelas/portas",
-        "Impermeabilizações",
+        "ConferÃªncia de medidas de janelas/portas",
+        "ImpermeabilizaÃ§Ãµes",
         "Laje / Cobertura",
-        "Conduítes / Caixinhas Elétricas",
+        "ConduÃ­tes / Caixinhas ElÃ©tricas",
         "Reboco externo iniciado",
         "Reboco interno iniciado",
         "Batentes",
-        "Reboco externo concluído",
-        "Reboco interno concluído",
+        "Reboco externo concluÃ­do",
+        "Reboco interno concluÃ­do",
         "Esgoto/pluvial",
         "Conduite do poste ao quadro",
         "Telhado + pingadeiras",
-        "Requadro ou instalações de janelas",
+        "Requadro ou instalaÃ§Ãµes de janelas",
         "Contrapiso",
         "Pisos",
         "Pintura",
-        "Elétrica",
-        "Instalações hidráulicas",
+        "ElÃ©trica",
+        "InstalaÃ§Ãµes hidrÃ¡ulicas",
         "Limpeza",
         "Entrega"
       ]
