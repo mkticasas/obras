@@ -1,7 +1,29 @@
 {
   "columns": [
-    { "id": "col-default", "name": "Em Andamento", "color": "dot-orange" }
+    {
+      "id": "col-default",
+      "name": "Em Andamento",
+      "color": "dot-orange"
+    }
   ],
-  "cards": [],
+  "cards": [
+    {
+      "id": "mp19y00uuj9l",
+      "name": "obra  1",
+      "resp": "Lugner",
+      "addr": "",
+      "colId": "col-default",
+      "coverUrl": null,
+      "assignees": [],
+      "createdAt": "2026-05-11T14:05:37.566Z",
+      "updatedAt": "2026-05-11T14:05:37.566Z",
+      "log": [
+        {
+          "date": "2026-05-11T14:05:37.566Z",
+          "note": "Obra criada"
+        }
+      ]
+    }
+  ],
   "users": []
 }
