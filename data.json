@@ -237,14 +237,14 @@
     },
     {
       "id": "mp43pcaqvrp9",
-      "name": "",
+      "name": "Teste 2",
       "colId": "col-default",
       "coverUrl": null,
-      "addr": "",
+      "addr": "Teste 2",
       "valor": "",
       "inicio": "",
       "prazo": "",
-      "resp": "",
+      "resp": "Teste 2",
       "equipe": "",
       "status": "",
       "obs": "",
@@ -421,7 +421,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-13T13:34:14.403Z",
-      "updatedAt": "2026-05-13T13:34:14.403Z",
+      "updatedAt": "2026-05-13T14:47:58.453Z",
       "log": []
     },
     {
