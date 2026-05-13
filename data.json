@@ -427,6 +427,35 @@
         "Acabamento",
         "Finalização"
       ]
+    },
+    {
+      "id": "mp4414dmw1xq",
+      "name": "Checklist Detalhado",
+      "items": [
+        "Terraplanagem",
+        "Fundação",
+        "Levantamento de Paredes",
+        "Conferencia de medidas de janelas/portas",
+        "impermeabilizações",
+        "Laje / Cobertura",
+        "Conduites/ Caixinhas Eletricas",
+        "Reboco externo iniciado",
+        "Reboco interno iniciado",
+        "Batentes",
+        "Reboco externo concluido",
+        "Reboco interno concluido",
+        "Esgoto/pluvial",
+        "Conduite do poste ao quadro",
+        "Telhado + pingadeiras",
+        "Requadro ou instalações de janelas",
+        "Contrapiso",
+        "Pisos",
+        "Pintura",
+        "Eletrica",
+        "Instalações hidráulicas",
+        "Limpeza",
+        "Entrega"
+      ]
     }
   ]
 }
