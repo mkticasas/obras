@@ -18,7 +18,7 @@
       "colId": "col-default",
       "coverUrl": null,
       "addr": "tasd",
-      "valor": "https://res.cloudinary.com/dokugqml2/image/upload/v1778679306/wwq8opbo10epxwqmbnr8.jpg",
+      "valor": "",
       "inicio": "",
       "prazo": "",
       "resp": "",
@@ -200,7 +200,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T13:35:14.831Z",
+      "updatedAt": "2026-05-13T13:35:19.165Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
