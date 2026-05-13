@@ -20,7 +20,7 @@
     {
       "id": "mp1janxkqtp3",
       "name": "eqweqwe",
-      "colId": "col-default",
+      "colId": "mp1jg6ccow2u",
       "coverUrl": null,
       "addr": "tasd",
       "valor": "",
@@ -207,7 +207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T13:44:29.941Z",
+      "updatedAt": "2026-05-13T13:57:34.184Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
@@ -216,6 +216,10 @@
         {
           "date": "2026-05-11T18:31:44.343Z",
           "note": "Movido para \"Em Andamento\" por lucas"
+        },
+        {
+          "date": "2026-05-13T13:57:34.184Z",
+          "note": "Movido para \"obras\" por lucas"
         }
       ]
     },
