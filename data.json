@@ -16,9 +16,9 @@
       "id": "mp1janxkqtp3",
       "name": "eqweqwe",
       "colId": "col-default",
-      "coverUrl": "https://res.cloudinary.com/dokugqml2/image/upload/v1778679306/wwq8opbo10epxwqmbnr8.jpg",
+      "coverUrl": null,
       "addr": "tasd",
-      "valor": "",
+      "valor": "https://res.cloudinary.com/dokugqml2/image/upload/v1778679306/wwq8opbo10epxwqmbnr8.jpg",
       "inicio": "",
       "prazo": "",
       "resp": "",
@@ -200,7 +200,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T13:35:09.061Z",
+      "updatedAt": "2026-05-13T13:35:14.831Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
