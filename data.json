@@ -647,6 +647,21 @@
       "telegramChatId": "1463787845"
     }
   ],
-  "checklistPresets": [],
+  "checklistPresets": [
+    {
+      "id": "mp464mz9ztam",
+      "name": "Checklist Geral (MACRO)",
+      "items": [
+        "Terraplanagem",
+        "Fundação",
+        "Estrutura (paredes + laje)",
+        "Cobertura",
+        "Instalações",
+        "Reboco",
+        "Acabamento",
+        "Finalização"
+      ]
+    }
+  ],
   "tags": []
 }
