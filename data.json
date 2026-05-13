@@ -30,8 +30,7 @@
       "equipe": "",
       "obs": "",
       "tags": [
-        "ok",
-        "mp4hct4bikfk"
+        "ok"
       ],
       "assignees": [
         "mp1jfffep8yb"
@@ -2361,12 +2360,6 @@
     }
   ],
   "tags": [
-    {
-      "id": "mp4hct4bikfk",
-      "name": "Urgente",
-      "bg": "#",
-      "text": "f"
-    },
     {
       "id": "mp4ih8i6bddg",
       "name": "Urgente",
