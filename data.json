@@ -24,7 +24,7 @@
       "coverUrl": "https://res.cloudinary.com/dokugqml2/image/upload/v1778680660/uucmlxc6qq8kbzetz6mu.jpg",
       "addr": "Teste 1",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-02-20",
       "prazo": "2027-03-25",
       "resp": "Teste 1",
       "equipe": "",
@@ -37,7 +37,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T14:47:50.658Z",
+      "updatedAt": "2026-05-13T19:20:08.082Z",
       "log": [],
       "checklists": [
         {
