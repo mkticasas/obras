@@ -2294,6 +2294,17 @@
       "photo": "https://res.cloudinary.com/dokugqml2/image/upload/v1778684993/olvl8fvk7u0qydtgqhff.png",
       "isAdmin": true,
       "log": []
+    },
+    {
+      "id": "mp4gew4c3szt",
+      "name": "Luquinha",
+      "role": "",
+      "phone": "",
+      "login": "lucasgomes",
+      "passwordHash": "a4ee85642ff930acd05dab26a10d6f5e7f706113a23c630c383ee90297b99abc",
+      "telegramChatId": "",
+      "photo": "",
+      "isAdmin": false
     }
   ],
   "checklistPresets": [
