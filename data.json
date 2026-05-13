@@ -38,52 +38,6 @@
       ],
       "checklists": [
         {
-          "id": "mp1janxk9huz",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mp1janxk1kx9",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mp1janxko9br",
-              "text": "FundaÃÂÃÂ§ÃÂÃÂ£o",
-              "done": false
-            },
-            {
-              "id": "mp1janxkah15",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mp1janxkymi4",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mp1janxkkmpb",
-              "text": "InstalaÃÂÃÂ§ÃÂÃÂµes",
-              "done": false
-            },
-            {
-              "id": "mp1janxkpeto",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mp1janxkrax8",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mp1janxkppek",
-              "text": "FinalizaÃÂÃÂ§ÃÂÃÂ£o",
-              "done": false
-            }
-          ]
-        },
-        {
           "id": "mp1janxk20od",
           "name": "Checklist Detalhado",
           "items": [
@@ -207,7 +161,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T13:58:38.391Z",
+      "updatedAt": "2026-05-13T14:31:42.756Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
