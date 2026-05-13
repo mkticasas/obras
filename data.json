@@ -807,11 +807,11 @@
       "name": "Obra em coluna obra teste",
       "colId": "mp1jg6ccow2u",
       "coverUrl": null,
-      "addr": "",
+      "addr": "Obra em coluna obra teste",
       "valor": "",
       "inicio": "",
       "prazo": "",
-      "resp": "",
+      "resp": "Obra em coluna obra teste",
       "equipe": "",
       "status": "",
       "obs": "",
@@ -988,7 +988,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-13T14:48:44.669Z",
-      "updatedAt": "2026-05-13T14:48:54.991Z",
+      "updatedAt": "2026-05-13T14:49:00.606Z",
       "log": []
     }
   ],
