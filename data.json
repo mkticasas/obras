@@ -426,7 +426,7 @@
     },
     {
       "id": "mp456wvlr3lo",
-      "name": "",
+      "name": "Obra de teste",
       "colId": "col-default",
       "coverUrl": null,
       "addr": "Rua teste",
@@ -610,7 +610,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-13T14:15:53.842Z",
-      "updatedAt": "2026-05-13T14:16:23.101Z",
+      "updatedAt": "2026-05-13T14:16:31.559Z",
       "log": []
     }
   ],
