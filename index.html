@@ -492,6 +492,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
               <div class="uploading-label" id="u-uploading-label">⏳ Enviando...</div>
             </div>
             <input type="hidden" id="u-photo-url"/>
+            <button type="button" id="u-photo-remove-btn" onclick="removeUserPhoto()" style="display:none;margin-top:6px;background:transparent;border:1px solid var(--danger);color:#fca5a5;padding:4px 10px;border-radius:6px;font-size:11px;cursor:pointer;width:100%;">✕ Remover foto</button>
           </div>
           <div class="form-group"><label>Admin?</label><select id="u-admin"><option value="false">Não</option><option value="true">Sim</option></select></div>
         </div>
@@ -660,8 +661,17 @@ async function handleUserPhotoUpload(input){
     const url=await uploadImg(input.files[0]);
     document.getElementById('u-photo-url').value=url;
     const prev=document.getElementById('u-photo-preview');prev.src=url;prev.style.display='block';
+    document.getElementById('u-photo-remove-btn').style.display='block';
   }catch(e){alert('Erro ao enviar foto.');}
   finally{lbl.classList.remove('show');}
+}
+
+function removeUserPhoto(){
+  document.getElementById('u-photo-url').value='';
+  const prev=document.getElementById('u-photo-preview');prev.src='';prev.style.display='none';
+  document.getElementById('u-photo-placeholder').style.display='block';
+  document.getElementById('u-photo-remove-btn').style.display='none';
+  document.getElementById('u-photo-file').value='';
 }
 
 function toggleCoverArea(){
@@ -1118,6 +1128,7 @@ function switchAdminTab(tab){
 }
 function clearUserForm(){
   ['u-id','u-name','u-role','u-login','u-pass','u-phone','u-tgid','u-photo-url'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('u-photo-remove-btn').style.display='none';
   document.getElementById('u-admin').value='false';
   document.getElementById('u-photo-preview').style.display='none';
   document.getElementById('u-photo-placeholder').style.display='block';
@@ -1130,7 +1141,7 @@ function editUser(id){
   document.getElementById('u-pass').value='';//senha nao é exibida
   document.getElementById('u-tgid').value=u.telegramChatId||'';document.getElementById('u-admin').value=u.isAdmin?'true':'false';
   document.getElementById('u-photo-url').value=u.photo||'';
-  if(u.photo){const p=document.getElementById('u-photo-preview');p.src=u.photo;p.style.display='block';document.getElementById('u-photo-placeholder').style.display='none';}
+  if(u.photo){const p=document.getElementById('u-photo-preview');p.src=u.photo;p.style.display='block';document.getElementById('u-photo-placeholder').style.display='none';document.getElementById('u-photo-remove-btn').style.display='block';}else{document.getElementById('u-photo-remove-btn').style.display='none';}
 }
 async function saveUser(){
   const name=document.getElementById('u-name').value.trim();if(!name){alert('Nome obrigatório.');return;}
