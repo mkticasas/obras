@@ -1,0 +1,154 @@
+name: Alerta de Obras Paradas
+
+on:
+  schedule:
+    - cron: '0 11 * * *'  # 8h Brasília — ajuste conforme necessário
+  workflow_dispatch:
+
+jobs:
+  check-obras:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Verificar obras e enviar alertas via Telegram
+        env:
+          TELEGRAM_TOKEN:  ${{ secrets.TELEGRAM_TOKEN }}
+          ALERT_VALUE:     ${{ secrets.ALERT_VALUE }}
+          ALERT_UNIT:      ${{ secrets.ALERT_UNIT }}
+          CHECKLIST_VALUE: ${{ secrets.CHECKLIST_VALUE }}
+          CHECKLIST_UNIT:  ${{ secrets.CHECKLIST_UNIT }}
+        run: |
+          python3 - << 'PYEOF'
+          import json, urllib.request, os, sys
+          from datetime import datetime, timezone
+
+          with open("data.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          token = os.environ.get("TELEGRAM_TOKEN","").strip()
+
+          # ── Converte valor + unidade para segundos ────────────
+          def to_seconds(value_str, unit_str):
+              value = float(value_str) if value_str else 1
+              unit  = (unit_str or "days").strip().lower()
+              mul   = {"minutes":60, "hours":3600, "days":86400}
+              return value * mul.get(unit, 86400)
+
+          alert_secs     = to_seconds(os.environ.get("ALERT_VALUE","1"),     os.environ.get("ALERT_UNIT","days"))
+          checklist_secs = to_seconds(os.environ.get("CHECKLIST_VALUE","3"), os.environ.get("CHECKLIST_UNIT","days"))
+
+          now     = datetime.now(timezone.utc)
+          col_map = {c["id"]: c["name"] for c in data.get("columns",[])}
+          users   = data.get("users",[])
+          cards   = data.get("cards",[])
+
+          def seconds_since(iso):
+              try:
+                  dt = datetime.fromisoformat(iso.replace("Z","+00:00"))
+                  return (now - dt).total_seconds()
+              except:
+                  return 0
+
+          def elapsed_label(secs):
+              if secs < 3600:   return f"{int(secs//60)}min"
+              if secs < 86400:  return f"{secs/3600:.1f}h"
+              return f"{int(secs//86400)}d"
+
+          def fmt(iso):
+              try:
+                  dt = datetime.fromisoformat(iso.replace("Z","+00:00"))
+                  return dt.strftime("%d/%m/%Y %H:%M")
+              except:
+                  return iso
+
+          # ── Alerta 1: card sem atualização ───────────────────
+          overdue_update = []
+          for card in cards:
+              upd = card.get("updatedAt", card.get("createdAt",""))
+              if upd and seconds_since(upd) >= alert_secs:
+                  overdue_update.append({
+                      "name": card.get("name","—"),
+                      "col":  col_map.get(card.get("colId",""),"—"),
+                      "resp": card.get("resp","—"),
+                      "addr": card.get("addr","—"),
+                      "elapsed": elapsed_label(seconds_since(upd)),
+                      "upd":  fmt(upd),
+                  })
+
+          # ── Alerta 2: checklist sem progresso ─────────────────
+          overdue_cl = []
+          for card in cards:
+              for cl in card.get("checklists",[]):
+                  items = cl.get("items",[])
+                  if not items: continue
+                  if any(i.get("done") for i in items): continue
+                  ref = card.get("createdAt", card.get("updatedAt",""))
+                  if ref and seconds_since(ref) >= checklist_secs:
+                      overdue_cl.append({
+                          "card":    card.get("name","—"),
+                          "col":     col_map.get(card.get("colId",""),"—"),
+                          "cl":      cl.get("name","—"),
+                          "elapsed": elapsed_label(seconds_since(ref)),
+                          "tot":     len(items),
+                      })
+
+          if not overdue_update and not overdue_cl:
+              print("Nenhum alerta necessário.")
+              sys.exit(0)
+
+          # ── Monta mensagem ────────────────────────────────────
+          def esc(t):
+              for c in r'_*[]()~`>#+-=|{}.!\\':
+                  t = t.replace(c, '\\'+c)
+              return t
+
+          lines = ["🏗️ *Kanban de Obras — Alerta*",""]
+
+          if overdue_update:
+              lines.append(f"⏰ *SEM ATUALIZAÇÃO — {len(overdue_update)} obra\\(s\\)*")
+              lines.append("")
+              for o in overdue_update:
+                  lines += [
+                      f"▸ *{esc(o['name'])}*",
+                      f"  📋 {esc(o['col'])}  |  👤 {esc(o['resp'])}",
+                      f"  📍 {esc(o['addr'])}",
+                      f"  🕒 {esc(o['upd'])} \\({esc(o['elapsed'])} atrás\\)",
+                      ""
+                  ]
+
+          if overdue_cl:
+              lines.append(f"✅ *CHECKLIST SEM PROGRESSO — {len(overdue_cl)} checklist\\(s\\)*")
+              lines.append("")
+              for o in overdue_cl:
+                  lines += [
+                      f"▸ *{esc(o['card'])}* — {esc(o['cl'])}",
+                      f"  📋 {esc(o['col'])}  |  {o['tot']} itens, nenhum marcado",
+                      f"  ⏳ {esc(o['elapsed'])} sem progresso",
+                      ""
+                  ]
+
+          lines.append("👉 Acesse o Kanban e atualize\\!")
+          msg = "\n".join(lines)
+
+          # ── Envia para cada usuário com Chat ID ───────────────
+          recipients = [u for u in users if u.get("telegramChatId")]
+          if not recipients:
+              print("Nenhum usuário com Telegram Chat ID.")
+              sys.exit(0)
+
+          def send_tg(chat_id, text):
+              url     = f"https://api.telegram.org/bot{token}/sendMessage"
+              payload = json.dumps({"chat_id":chat_id,"text":text,"parse_mode":"MarkdownV2"}).encode()
+              req     = urllib.request.Request(url, data=payload, headers={"Content-Type":"application/json"})
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  return json.loads(r.read().decode())
+
+          for user in recipients:
+              try:
+                  send_tg(user["telegramChatId"], msg)
+                  print(f"✅ Enviado para {user.get('name','?')}")
+              except Exception as e:
+                  print(f"❌ Erro para {user.get('name','?')}: {e}")
+          PYEOF
