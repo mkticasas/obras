@@ -36,10 +36,57 @@
       "assignees": [
         "mp1jfffep8yb"
       ],
-      "checklists": [],
+      "checklists": [
+        {
+          "id": "mp45rkhl1gwf",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mp45rkhlgb32",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mp45rkhljexj",
+              "text": "FundaÃÂÃÂ§ÃÂÃÂ£o",
+              "done": false
+            },
+            {
+              "id": "mp45rkhlamo2",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mp45rkhlcotk",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mp45rkhlek0z",
+              "text": "InstalaÃÂÃÂ§ÃÂÃÂµes",
+              "done": false
+            },
+            {
+              "id": "mp45rkhl4ve7",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mp45rkhlqv36",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mp45rkhlmai5",
+              "text": "FinalizaÃÂÃÂ§ÃÂÃÂ£o",
+              "done": false
+            }
+          ]
+        }
+      ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T14:31:55.734Z",
+      "updatedAt": "2026-05-13T14:31:57.561Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
