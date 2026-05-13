@@ -618,7 +618,7 @@
       "name": "",
       "colId": "col-default",
       "coverUrl": null,
-      "addr": "",
+      "addr": "Teste 3",
       "valor": "",
       "inicio": "",
       "prazo": "",
@@ -799,7 +799,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-13T14:41:18.310Z",
-      "updatedAt": "2026-05-13T14:41:18.310Z",
+      "updatedAt": "2026-05-13T14:48:22.447Z",
       "log": []
     }
   ],
