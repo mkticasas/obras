@@ -196,11 +196,16 @@
               "done": false
             }
           ]
+        },
+        {
+          "id": "mp43yt5dxpzk",
+          "name": "Checklist Geral (MACRO)",
+          "items": []
         }
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T13:39:08.165Z",
+      "updatedAt": "2026-05-13T13:41:36.145Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
