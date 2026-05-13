@@ -20,7 +20,7 @@
     {
       "id": "mp1janxkqtp3",
       "name": "eqweqwe",
-      "colId": "mp1jg6ccow2u",
+      "colId": "mp44j4gncbh1",
       "coverUrl": "https://res.cloudinary.com/dokugqml2/image/upload/v1778680660/uucmlxc6qq8kbzetz6mu.jpg",
       "addr": "tasd",
       "valor": "",
@@ -207,7 +207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T13:57:42.833Z",
+      "updatedAt": "2026-05-13T13:57:47.751Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
@@ -220,6 +220,10 @@
         {
           "date": "2026-05-13T13:57:34.184Z",
           "note": "Movido para \"obras\" por lucas"
+        },
+        {
+          "date": "2026-05-13T13:57:47.751Z",
+          "note": "Movido para \"teste\" por lucas"
         }
       ]
     },
