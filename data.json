@@ -221,9 +221,7 @@
       "resp": "Teste 2",
       "equipe": "",
       "obs": "",
-      "tags": [
-        "mp4gbqkuwybb"
-      ],
+      "tags": [],
       "assignees": [],
       "comments": [],
       "createdAt": "2026-05-13T13:34:14.403Z",
@@ -787,9 +785,7 @@
       "resp": "Obra em coluna obra teste",
       "equipe": "",
       "obs": "",
-      "tags": [
-        "mp4gbqkuwybb"
-      ],
+      "tags": [],
       "assignees": [],
       "comments": [],
       "createdAt": "2026-05-13T14:48:44.669Z",
@@ -2363,12 +2359,5 @@
       ]
     }
   ],
-  "tags": [
-    {
-      "id": "mp4gbqkuwybb",
-      "name": "asdasd",
-      "bg": "#",
-      "text": "0"
-    }
-  ]
+  "tags": []
 }
