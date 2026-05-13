@@ -221,11 +221,13 @@
       "resp": "Teste 2",
       "equipe": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "mp4gbqkuwybb"
+      ],
       "assignees": [],
       "comments": [],
       "createdAt": "2026-05-13T13:34:14.403Z",
-      "updatedAt": "2026-05-13T19:27:05.330Z",
+      "updatedAt": "2026-05-13T19:27:37.302Z",
       "log": [],
       "checklists": [
         {
