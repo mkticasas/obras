@@ -825,12 +825,12 @@
             {
               "id": "mp46d5ktmbzv",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mp46d5ktt1ki",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mp46d5ktxr10",
@@ -988,7 +988,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-13T14:48:44.669Z",
-      "updatedAt": "2026-05-13T14:49:05.995Z",
+      "updatedAt": "2026-05-13T14:49:10.115Z",
       "log": []
     }
   ],
