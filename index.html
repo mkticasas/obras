@@ -80,7 +80,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .add-column-btn:hover{border-color:var(--accent);color:var(--accent);}
 
 /* CARD */
-.card{background:var(--surface2);border-radius:10px;border:1px solid var(--border);cursor:pointer;transition:all .15s;position:relative;overflow:hidden;user-select:none;}
+.card{background:var(--surface2);border-radius:10px;border:1px solid var(--border);cursor:pointer;transition:all .15s;overflow:hidden;user-select:none;}
 .card:hover{border-color:#3d4a6b;transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,0,0,.35);}
 .card.dragging{opacity:.4;}
 .card-cover{width:100%;height:120px;object-fit:cover;display:block;}
@@ -307,13 +307,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .logout-btn{font-size:11px;color:var(--muted);background:transparent;border:none;cursor:pointer;padding:2px 6px;border-radius:4px;}
 .logout-btn:hover{color:var(--danger);}
 
-/* ── UNIFORM CARDS ── */
-.card { height: 90px !important; overflow: hidden; }
-.card.has-cover { height: 180px !important; }
-.card-cover { height: 90px !important; object-fit: cover; width: 100%; display: block; }
-.card-body { padding: 10px 12px; height: 90px; overflow: hidden; }
-.card.has-cover .card-body { height: 90px; }
-.card-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; }
+/* ── SCROLLBAR ── */
 .cards-container::-webkit-scrollbar { width: 4px; }
 .cards-container::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 .cards-container::-webkit-scrollbar-track { background: transparent; }
@@ -770,56 +764,43 @@ function cardHTML(card){
   const days=daysDiff(card.updatedAt),limit=CFG.days||1;
   const isAlert=days>=limit,isWarn=days>=(Math.max(1,limit-1))&&!isAlert;
   const bar=isAlert?'#ef4444':isWarn?'#f97316':'#22c55e';
-  const bbg=isAlert?'rgba(239,68,68,.15)':isWarn?'rgba(249,115,22,.15)':'rgba(34,197,94,.15)';
-  const bcl=isAlert?'#fca5a5':isWarn?'#fdba74':'#86efac';
 
-  // progress from all checklists
-  const cls=card.checklists||[];
-  const total=cls.reduce((a,cl)=>a+(cl.items||[]).length,0);
-  const done=cls.reduce((a,cl)=>a+(cl.items||[]).filter(i=>i.done).length,0);
-  const pct=total>0?Math.round(done/total*100):null;
-
-  // tags — lookup from state.tags
+  // tags
   const tagDefs=state.tags||[];
   const tags=(card.tags||[]).map(tid=>{
     const def=tagDefs.find(t=>t.id===tid);
     if(!def)return '';
-    return `<span class="tag" style="background:${def.bg};color:${def.text};">${def.name}</span>`;
+    return `<span class="tag" style="background:${def.bg};color:${def.text};font-size:10px;padding:2px 6px;">${def.name}</span>`;
   }).join('');
 
-  // assignees
-  const assignees=(card.assignees||[]).map(aid=>{
-    const u=state.users.find(u=>u.id===aid);if(!u)return '';
-    return `<div class="mini-avatar" title="${u.name}">${u.photo?`<img src="${u.photo}" alt=""/>`:`<span>${u.name[0].toUpperCase()}</span>`}</div>`;
-  }).join('');
+  const alertDot=isAlert?`<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#ef4444;margin-left:4px;vertical-align:middle;" title="${days}d sem atualização"></span>`:
+    isWarn?`<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#f97316;margin-left:4px;vertical-align:middle;"></span>`:'';
 
-  // deadline
-  let deadlineHTML='';
-  if(card.prazo){
-    const dpr=new Date(card.prazo),isLate=dpr<new Date();
-    deadlineHTML=`<span class="card-deadline${isLate?' late':''}" title="Prazo">📅 ${fmtDateShort(card.prazo)}</span>`;
+  const inicioStr=card.inicio?`<span style="font-size:10px;color:var(--muted);">📅 ${fmtDateShort(card.inicio)}</span>`:'';
+
+  if(card.coverUrl){
+    return `
+    <div class="card" id="card-${card.id}" draggable="true"
+      ondragstart="onDragStart(event,'${card.id}')" ondragend="onDragEnd()"
+      onclick="openCard('${card.id}')"
+      style="height:180px;display:flex;flex-direction:column;">
+      <img src="${card.coverUrl}" alt="capa" loading="lazy" style="width:100%;height:100px;object-fit:cover;display:block;flex-shrink:0;"/>
+      <div style="padding:8px 12px 8px;border-left:3px solid ${bar};flex:1;overflow:hidden;">
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:12px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${card.name||'(sem nome)'}${alertDot}</div>
+        <div style="margin-top:4px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;">${inicioStr}${tags}</div>
+      </div>
+    </div>`;
   }
 
-  const alertHTML=isAlert?`<div class="card-alert danger">⚠️ ${days}d sem atualização</div>`:isWarn?`<div class="card-alert warn">⏰ Atualizar em breve</div>`:'';
-
   return `
-    <div class="card${card.coverUrl?' has-cover':''}" id="card-${card.id}" draggable="true"
+    <div class="card" id="card-${card.id}" draggable="true"
       ondragstart="onDragStart(event,'${card.id}')" ondragend="onDragEnd()"
-      onclick="openCard('${card.id}')">
-      ${card.coverUrl?`<img class="card-cover" src="${card.coverUrl}" alt="capa" loading="lazy"/>`:''}
-      <div class="card-body">
-        <div class="card-status-bar" style="background:${bar}"></div>
-        <div class="card-title">${card.name}</div>
-        ${tags?`<div class="card-tags">${tags}</div>`:''}
-        <div class="card-meta">
-          ${card.addr?`<div class="card-meta-row">📍 <span>${card.addr}</span></div>`:''}
-          ${card.valor?`<div class="card-meta-row">💰 <span>${(parseInt(card.valor||'0')/100).toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</span></div>`:''}
-          ${card.resp?`<div class="card-meta-row">👤 <span>${card.resp}</span></div>`:''}
-        </div>
-        ${pct!==null?`<div class="card-progress"><div class="progress-label"><span>Progresso</span><span>${pct}%</span></div><div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div></div>`:''}
-        ${assignees?`<div class="card-assignees">${assignees}</div>`:''}
-        ${alertHTML}
-        <div class="card-footer">${deadlineHTML}<span class="card-days-badge" style="background:${bbg};color:${bcl}">${days}d atrás</span></div>
+      onclick="openCard('${card.id}')"
+      style="height:80px;display:flex;align-items:stretch;">
+      <div style="width:3px;background:${bar};flex-shrink:0;border-radius:10px 0 0 10px;"></div>
+      <div style="padding:10px 12px;flex:1;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:5px;">
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:12.5px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${card.name||'(sem nome)'}${alertDot}</div>
+        <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;overflow:hidden;">${inicioStr}${tags}</div>
       </div>
     </div>`;
 }
