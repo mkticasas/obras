@@ -413,5 +413,20 @@
       "isAdmin": true
     }
   ],
-  "checklistPresets": []
+  "checklistPresets": [
+    {
+      "id": "mp440zu9ilb1",
+      "name": "Checklist Geral (MACRO)",
+      "items": [
+        "Terraplanagem",
+        "Fundação",
+        "Estrutura (paredes + laje)",
+        "Cobertura",
+        "Instalações",
+        "Reboco",
+        "Acabamento",
+        "Finalização"
+      ]
+    }
+  ]
 }
