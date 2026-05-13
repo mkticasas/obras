@@ -647,36 +647,6 @@
       "telegramChatId": "1463787845"
     }
   ],
-  "checklistPresets": [
-    {
-      "id": "mp4414dmw1xq",
-      "name": "Checklist Detalhado",
-      "items": [
-        "Terraplanagem",
-        "FundaÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂ£o",
-        "Levantamento de Paredes",
-        "Conferencia de medidas de janelas/portas",
-        "impermeabilizaÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂµes",
-        "Laje / Cobertura",
-        "Conduites/ Caixinhas Eletricas",
-        "Reboco externo iniciado",
-        "Reboco interno iniciado",
-        "Batentes",
-        "Reboco externo concluido",
-        "Reboco interno concluido",
-        "Esgoto/pluvial",
-        "Conduite do poste ao quadro",
-        "Telhado + pingadeiras",
-        "Requadro ou instalaÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂµes de janelas",
-        "Contrapiso",
-        "Pisos",
-        "Pintura",
-        "Eletrica",
-        "InstalaÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂµes hidrÃÂÃÂÃÂÃÂ¡ulicas",
-        "Limpeza",
-        "Entrega"
-      ]
-    }
-  ],
+  "checklistPresets": [],
   "tags": []
 }
