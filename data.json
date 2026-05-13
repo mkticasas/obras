@@ -433,7 +433,7 @@
       "valor": "1144000",
       "inicio": "2027-10-10",
       "prazo": "",
-      "resp": "",
+      "resp": "Teste Tecnico",
       "equipe": "",
       "status": "",
       "obs": "",
@@ -610,7 +610,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-13T14:15:53.842Z",
-      "updatedAt": "2026-05-13T14:16:15.838Z",
+      "updatedAt": "2026-05-13T14:16:23.101Z",
       "log": []
     }
   ],
