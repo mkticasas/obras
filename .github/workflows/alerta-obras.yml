@@ -17,11 +17,9 @@ jobs:
           TELEGRAM_TOKEN:  ${{ secrets.TELEGRAM_TOKEN }}
           ALERT_VALUE:     ${{ secrets.ALERT_VALUE }}
           ALERT_UNIT:      ${{ secrets.ALERT_UNIT }}
-          CHECKLIST_VALUE: ${{ secrets.CHECKLIST_VALUE }}
-          CHECKLIST_UNIT:  ${{ secrets.CHECKLIST_UNIT }}
         run: |
           python3 - << 'PYEOF'
-          import json, urllib.request, urllib.parse, os, sys
+          import json, urllib.request, os, sys
           from datetime import datetime, timezone
 
           with open("data.json", "r", encoding="utf-8") as f:
@@ -35,12 +33,11 @@ jobs:
               mul   = {"minutes":60,"hours":3600,"days":86400}
               return value * mul.get(unit, 86400)
 
-          alert_secs     = to_seconds(os.environ.get("ALERT_VALUE","1"), os.environ.get("ALERT_UNIT","days"))
-          checklist_secs = to_seconds(os.environ.get("CHECKLIST_VALUE","3"), os.environ.get("CHECKLIST_UNIT","days"))
-          now            = datetime.now(timezone.utc)
-          col_map        = {c["id"]: c["name"] for c in data.get("columns",[])}
-          users          = data.get("users",[])
-          cards          = data.get("cards",[])
+          alert_secs = to_seconds(os.environ.get("ALERT_VALUE","1"), os.environ.get("ALERT_UNIT","days"))
+          now        = datetime.now(timezone.utc)
+          col_map    = {c["id"]: c["name"] for c in data.get("columns",[])}
+          users      = data.get("users",[])
+          cards      = data.get("cards",[])
 
           def seconds_since(iso):
               try:
@@ -61,86 +58,60 @@ jobs:
               except:
                   return iso
 
-          overdue_update = []
+          # Obras sem atualização
+          overdue = []
           for card in cards:
               upd = card.get("updatedAt", card.get("createdAt",""))
               if upd and seconds_since(upd) >= alert_secs:
-                  overdue_update.append({
-                      "name": card.get("name","—"),
-                      "col":  col_map.get(card.get("colId",""),"—"),
-                      "resp": card.get("resp","—"),
-                      "addr": card.get("addr","—"),
+                  overdue.append({
+                      "name":    card.get("name","(sem nome)"),
+                      "col":     col_map.get(card.get("colId",""),"—"),
+                      "resp":    card.get("resp","—"),
+                      "addr":    card.get("addr","—"),
                       "elapsed": elapsed(seconds_since(upd)),
-                      "upd": fmt(upd),
+                      "upd":     fmt(upd),
                   })
 
-          overdue_cl = []
-          for card in cards:
-              for cl in card.get("checklists",[]):
-                  items = cl.get("items",[])
-                  if not items: continue
-                  if any(i.get("done") for i in items): continue
-                  ref = card.get("createdAt", card.get("updatedAt",""))
-                  if ref and seconds_since(ref) >= checklist_secs:
-                      overdue_cl.append({
-                          "card": card.get("name","—"),
-                          "col":  col_map.get(card.get("colId",""),"—"),
-                          "cl":   cl.get("name","—"),
-                          "elapsed": elapsed(seconds_since(ref)),
-                          "tot":  len(items),
-                      })
-
-          if not overdue_update and not overdue_cl:
-              print("Nenhum alerta necessario.")
+          if not overdue:
+              print("Nenhuma obra com atraso.")
               sys.exit(0)
 
-          # Monta mensagem SEM MarkdownV2 — texto simples
-          lines = ["Kanban de Obras - Alerta", ""]
-
-          if overdue_update:
-              lines.append(f"SEM ATUALIZACAO ({len(overdue_update)} obra(s)):")
-              lines.append("")
-              for o in overdue_update:
-                  lines += [
-                      f"  Obra: {o['name']}",
-                      f"  Coluna: {o['col']}",
-                      f"  Responsavel: {o['resp']}",
-                      f"  Endereco: {o['addr']}",
-                      f"  Ultima atualizacao: {o['upd']} ({o['elapsed']} atras)",
-                      ""
-                  ]
-
-          if overdue_cl:
-              lines.append(f"CHECKLIST SEM PROGRESSO ({len(overdue_cl)} checklist(s)):")
-              lines.append("")
-              for o in overdue_cl:
-                  lines += [
-                      f"  Obra: {o['card']}",
-                      f"  Coluna: {o['col']}",
-                      f"  Checklist: {o['cl']} ({o['tot']} itens, nenhum marcado)",
-                      f"  {o['elapsed']} sem progresso",
-                      ""
-                  ]
-
-          lines.append("Acesse o Kanban e atualize!")
+          # Mensagem com HTML (negrito via <b>)
+          lines = [f"🏗 <b>Kanban de Obras — Alerta</b>", ""]
+          lines.append(f"⏰ <b>{len(overdue)} obra(s) sem atualização:</b>")
+          lines.append("")
+          for o in overdue:
+              lines += [
+                  f"▸ <b>{o['name']}</b>",
+                  f"  📋 {o['col']}",
+                  f"  👤 {o['resp']}",
+                  f"  📍 {o['addr']}",
+                  f"  🕒 {o['upd']} ({o['elapsed']} atrás)",
+                  ""
+              ]
+          lines.append("👉 Acesse o Kanban e atualize!")
           msg = "\n".join(lines)
 
           recipients = [u for u in users if u.get("telegramChatId")]
           if not recipients:
-              print("Nenhum usuario com Telegram Chat ID.")
+              print("Nenhum usuário com Telegram Chat ID.")
               sys.exit(0)
 
           def send_tg(chat_id, text):
               url     = f"https://api.telegram.org/bot{token}/sendMessage"
-              payload = json.dumps({"chat_id": str(chat_id), "text": text}).encode()
-              req     = urllib.request.Request(url, data=payload, headers={"Content-Type":"application/json"})
+              payload = json.dumps({
+                  "chat_id":    str(chat_id),
+                  "text":       text,
+                  "parse_mode": "HTML"
+              }).encode()
+              req = urllib.request.Request(url, data=payload, headers={"Content-Type":"application/json"})
               with urllib.request.urlopen(req, timeout=15) as r:
                   return json.loads(r.read().decode())
 
           for user in recipients:
               try:
                   send_tg(user["telegramChatId"], msg)
-                  print(f"Enviado para {user.get('name','?')} (chat_id: {user['telegramChatId']})")
+                  print(f"Enviado para {user.get('name','?')}")
               except Exception as e:
                   print(f"Erro para {user.get('name','?')}: {e}")
           PYEOF
