@@ -276,9 +276,9 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .tag-pill:hover{opacity:1;}
 .tag-pill-del{font-size:10px;opacity:.6;margin-left:2px;}
 .tag-pill-del:hover{opacity:1;}
-.color-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;}
-.tag-color-opt{width:22px;height:22px;border-radius:50%;cursor:pointer;border:2px solid transparent;transition:.12s;}
-.tag-color-opt:hover,.tag-color-opt.sel{border-color:#fff;transform:scale(1.15);}
+.color-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;}
+.tag-color-opt{width:28px;height:28px;border-radius:50%;cursor:pointer;border:3px solid transparent;transition:.12s;display:inline-block;}
+.tag-color-opt:hover,.tag-color-opt.sel{border-color:#fff;box-shadow:0 0 0 2px var(--accent);transform:scale(1.1);}
 
 /* ── NEXT COL BUTTON ── */
 .btn-next-col{background:linear-gradient(135deg,var(--icasas-orange),var(--accent2));color:#fff;font-weight:700;padding:9px;width:100%;border-radius:8px;font-size:12px;display:flex;align-items:center;justify-content:center;gap:6px;}
@@ -553,7 +553,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 </div>
 
 <!-- CONFIRM -->
-<div class="modal-overlay" id="confirm-modal">
+<div class="modal-overlay" id="confirm-modal" style="z-index:400;">
   <div class="modal" style="max-width:320px;">
     <div class="modal-title" style="color:var(--danger);">⚠️ Confirmar</div>
     <p style="color:var(--muted);font-size:13px;" id="confirm-text"></p>
@@ -1480,7 +1480,7 @@ function renderTagColorPicker(){
   const row=document.getElementById('tag-color-row');
   const current=document.getElementById('new-tag-color').value;
   row.innerHTML=TAG_PALETTE.map(([bg,text])=>
-    `<div class="tag-color-opt${bg===current?' sel':''}" style="background:${bg};" onclick="selectTagColor('${bg}','${text}',this)" title="${bg}"></div>`
+    `<div class="tag-color-opt${bg===current?' sel':''}" style="background:${bg};background-color:${bg};" onclick="selectTagColor('${bg}','${text}',this)" title="${bg}"></div>`
   ).join('');
 }
 
@@ -1615,7 +1615,7 @@ loadGH();
 </script>
 
 <!-- PRESET MODAL -->
-<div class="modal-overlay" id="preset-modal">
+<div class="modal-overlay" id="preset-modal" style="z-index:300;">
   <div class="modal" style="max-width:500px;">
     <div class="modal-title">📋 Predefinições de Checklist</div>
     <p style="font-size:12px;color:var(--muted);margin-bottom:14px;">Escolha uma predefinição para adicionar ao card, ou salve um checklist existente como nova predefinição.</p>
@@ -1671,7 +1671,7 @@ loadGH();
 </div>
 
 <!-- TAG MANAGER MODAL -->
-<div class="modal-overlay" id="tag-manager-modal">
+<div class="modal-overlay" id="tag-manager-modal" style="z-index:300;">
   <div class="modal" style="max-width:460px;">
     <div class="modal-title">🏷️ Gerenciar Etiquetas</div>
     <p style="font-size:12px;color:var(--muted);margin-bottom:14px;">Crie etiquetas personalizadas. Elas ficam disponíveis para todos os cards.</p>
