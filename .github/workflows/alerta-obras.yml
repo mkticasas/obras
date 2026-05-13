@@ -56,7 +56,7 @@ jobs:
                   from datetime import timedelta
                   dt = datetime.fromisoformat(iso.replace("Z","+00:00"))
                   dt_br = dt - timedelta(hours=3)  # UTC-3 Brasilia
-                  return dt_br.strftime("%d/%m/%Y %H:%M") + " (Brasilia)"
+                  return dt_br.strftime("%d/%m/%Y %H:%M")
               except:
                   return iso
 
