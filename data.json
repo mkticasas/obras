@@ -423,6 +423,195 @@
       "createdAt": "2026-05-13T13:34:14.403Z",
       "updatedAt": "2026-05-13T13:34:14.403Z",
       "log": []
+    },
+    {
+      "id": "mp456wvlr3lo",
+      "name": "",
+      "colId": "col-default",
+      "coverUrl": null,
+      "addr": "Rua teste",
+      "valor": "",
+      "inicio": "",
+      "prazo": "",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mp456wvlzltw",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mp456wvmrs0n",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mp456wvmspkt",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mp456wvmbzqv",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mp456wvm5ogx",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mp456wvmae33",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mp456wvmm42o",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mp456wvmyh3t",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mp456wvm3s5p",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mp456wvmmu4x",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mp456wvm5d5k",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mp456wvmz2pp",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mp456wvmu324",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mp456wvmjgau",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mp456wvmg281",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mp456wvmaed9",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mp456wvmkykt",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mp456wvmsvbp",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mp456wvm7pmf",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mp456wvm7tc9",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mp456wvm7bgi",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mp456wvm1rep",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mp456wvmqb7p",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mp456wvmfpab",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mp456wvml7kt",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mp456wvmojg2",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mp456wvmjisi",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mp456wvmba3j",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mp456wvmgmbc",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mp456wvm8r9i",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mp456wvmoxxi",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mp456wvm1qtm",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mp456wvmbh4j",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-05-13T14:15:53.842Z",
+      "updatedAt": "2026-05-13T14:15:58.962Z",
+      "log": []
     }
   ],
   "users": [
