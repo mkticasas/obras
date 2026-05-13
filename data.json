@@ -20,7 +20,7 @@
     {
       "id": "mp1janxkqtp3",
       "name": "eqweqwe",
-      "colId": "mp1jg6ccow2u",
+      "colId": "col-default",
       "coverUrl": "https://res.cloudinary.com/dokugqml2/image/upload/v1778680660/uucmlxc6qq8kbzetz6mu.jpg",
       "addr": "tasd",
       "valor": "",
@@ -48,7 +48,7 @@
             },
             {
               "id": "mp1janxko9br",
-              "text": "FundaÃ§Ã£o",
+              "text": "FundaÃÂ§ÃÂ£o",
               "done": false
             },
             {
@@ -63,7 +63,7 @@
             },
             {
               "id": "mp1janxkkmpb",
-              "text": "InstalaÃ§Ãµes",
+              "text": "InstalaÃÂ§ÃÂµes",
               "done": false
             },
             {
@@ -78,7 +78,7 @@
             },
             {
               "id": "mp1janxkppek",
-              "text": "FinalizaÃ§Ã£o",
+              "text": "FinalizaÃÂ§ÃÂ£o",
               "done": false
             }
           ]
@@ -94,7 +94,7 @@
             },
             {
               "id": "mp1janxkqnd4",
-              "text": "FundaÃ§Ã£o",
+              "text": "FundaÃÂ§ÃÂ£o",
               "done": false
             },
             {
@@ -109,7 +109,7 @@
             },
             {
               "id": "mp1janxkfbzh",
-              "text": "impermeabilizaÃ§Ãµes",
+              "text": "impermeabilizaÃÂ§ÃÂµes",
               "done": false
             },
             {
@@ -164,7 +164,7 @@
             },
             {
               "id": "mp1janxk66xo",
-              "text": "Requadro ou instalaÃ§Ãµes de janelas",
+              "text": "Requadro ou instalaÃÂ§ÃÂµes de janelas",
               "done": false
             },
             {
@@ -189,7 +189,7 @@
             },
             {
               "id": "mp1janxkjl2g",
-              "text": "InstalaÃ§Ãµes hidrÃ¡ulicas",
+              "text": "InstalaÃÂ§ÃÂµes hidrÃÂ¡ulicas",
               "done": false
             },
             {
@@ -207,7 +207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T13:57:50.295Z",
+      "updatedAt": "2026-05-13T13:58:38.391Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
@@ -228,6 +228,10 @@
         {
           "date": "2026-05-13T13:57:50.295Z",
           "note": "Movido para \"obras\" por lucas"
+        },
+        {
+          "date": "2026-05-13T13:58:38.391Z",
+          "note": "Movido para \"Em Andamento\""
         }
       ]
     },
@@ -258,7 +262,7 @@
             },
             {
               "id": "mp43pcaqv8vn",
-              "text": "FundaÃ§Ã£o",
+              "text": "FundaÃÂ§ÃÂ£o",
               "done": false
             },
             {
@@ -273,7 +277,7 @@
             },
             {
               "id": "mp43pcaq2yjg",
-              "text": "InstalaÃ§Ãµes",
+              "text": "InstalaÃÂ§ÃÂµes",
               "done": false
             },
             {
@@ -288,7 +292,7 @@
             },
             {
               "id": "mp43pcaq0fxv",
-              "text": "FinalizaÃ§Ã£o",
+              "text": "FinalizaÃÂ§ÃÂ£o",
               "done": false
             }
           ]
@@ -304,7 +308,7 @@
             },
             {
               "id": "mp43pcaqhj0y",
-              "text": "FundaÃ§Ã£o",
+              "text": "FundaÃÂ§ÃÂ£o",
               "done": false
             },
             {
@@ -314,12 +318,12 @@
             },
             {
               "id": "mp43pcaq3kow",
-              "text": "ConferÃªncia de medidas de janelas/portas",
+              "text": "ConferÃÂªncia de medidas de janelas/portas",
               "done": false
             },
             {
               "id": "mp43pcaqfsbx",
-              "text": "ImpermeabilizaÃ§Ãµes",
+              "text": "ImpermeabilizaÃÂ§ÃÂµes",
               "done": false
             },
             {
@@ -329,7 +333,7 @@
             },
             {
               "id": "mp43pcaqv54x",
-              "text": "ConduÃ­tes / Caixinhas ElÃ©tricas",
+              "text": "ConduÃÂ­tes / Caixinhas ElÃÂ©tricas",
               "done": false
             },
             {
@@ -349,12 +353,12 @@
             },
             {
               "id": "mp43pcaq9j5n",
-              "text": "Reboco externo concluÃ­do",
+              "text": "Reboco externo concluÃÂ­do",
               "done": false
             },
             {
               "id": "mp43pcaqdlcg",
-              "text": "Reboco interno concluÃ­do",
+              "text": "Reboco interno concluÃÂ­do",
               "done": false
             },
             {
@@ -374,7 +378,7 @@
             },
             {
               "id": "mp43pcaqvjzj",
-              "text": "Requadro ou instalaÃ§Ãµes de janelas",
+              "text": "Requadro ou instalaÃÂ§ÃÂµes de janelas",
               "done": false
             },
             {
@@ -394,12 +398,12 @@
             },
             {
               "id": "mp43pcaqky71",
-              "text": "ElÃ©trica",
+              "text": "ElÃÂ©trica",
               "done": false
             },
             {
               "id": "mp43pcaq2r8f",
-              "text": "InstalaÃ§Ãµes hidrÃ¡ulicas",
+              "text": "InstalaÃÂ§ÃÂµes hidrÃÂ¡ulicas",
               "done": false
             },
             {
@@ -439,13 +443,13 @@
       "name": "Checklist Geral (MACRO)",
       "items": [
         "Terraplanagem",
-        "FundaÃ§Ã£o",
+        "FundaÃÂ§ÃÂ£o",
         "Estrutura (paredes + laje)",
         "Cobertura",
-        "InstalaÃ§Ãµes",
+        "InstalaÃÂ§ÃÂµes",
         "Reboco",
         "Acabamento",
-        "FinalizaÃ§Ã£o"
+        "FinalizaÃÂ§ÃÂ£o"
       ]
     },
     {
@@ -453,10 +457,10 @@
       "name": "Checklist Detalhado",
       "items": [
         "Terraplanagem",
-        "FundaÃ§Ã£o",
+        "FundaÃÂ§ÃÂ£o",
         "Levantamento de Paredes",
         "Conferencia de medidas de janelas/portas",
-        "impermeabilizaÃ§Ãµes",
+        "impermeabilizaÃÂ§ÃÂµes",
         "Laje / Cobertura",
         "Conduites/ Caixinhas Eletricas",
         "Reboco externo iniciado",
@@ -467,15 +471,16 @@
         "Esgoto/pluvial",
         "Conduite do poste ao quadro",
         "Telhado + pingadeiras",
-        "Requadro ou instalaÃ§Ãµes de janelas",
+        "Requadro ou instalaÃÂ§ÃÂµes de janelas",
         "Contrapiso",
         "Pisos",
         "Pintura",
         "Eletrica",
-        "InstalaÃ§Ãµes hidrÃ¡ulicas",
+        "InstalaÃÂ§ÃÂµes hidrÃÂ¡ulicas",
         "Limpeza",
         "Entrega"
       ]
     }
-  ]
+  ],
+  "tags": []
 }
