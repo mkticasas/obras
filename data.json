@@ -622,7 +622,7 @@
       "valor": "",
       "inicio": "",
       "prazo": "",
-      "resp": "",
+      "resp": "Atualizado",
       "equipe": "",
       "status": "",
       "obs": "",
@@ -799,7 +799,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-13T14:41:18.310Z",
-      "updatedAt": "2026-05-13T14:48:22.447Z",
+      "updatedAt": "2026-05-13T14:48:29.580Z",
       "log": []
     }
   ],
