@@ -411,8 +411,9 @@
       "role": "teste",
       "phone": "5517991452199",
       "wppApiKey": "6021060",
-      "photo": "",
-      "isAdmin": true
+      "photo": "https://res.cloudinary.com/dokugqml2/image/upload/v1778679883/efnu35edbnvfm6sgwiqc.jpg",
+      "isAdmin": true,
+      "telegramChatId": ""
     }
   ],
   "checklistPresets": [
