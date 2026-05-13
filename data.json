@@ -808,7 +808,7 @@
       "colId": "mp1jg6ccow2u",
       "coverUrl": null,
       "addr": "Obra em coluna obra teste",
-      "valor": "",
+      "valor": "200000000",
       "inicio": "",
       "prazo": "",
       "resp": "Obra em coluna obra teste",
@@ -988,7 +988,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-13T14:48:44.669Z",
-      "updatedAt": "2026-05-13T14:49:00.606Z",
+      "updatedAt": "2026-05-13T14:49:05.995Z",
       "log": []
     }
   ],
