@@ -19,10 +19,10 @@
   "cards": [
     {
       "id": "mp1janxkqtp3",
-      "name": "eqweqwe",
+      "name": "Teste 1",
       "colId": "col-default",
       "coverUrl": "https://res.cloudinary.com/dokugqml2/image/upload/v1778680660/uucmlxc6qq8kbzetz6mu.jpg",
-      "addr": "tasd",
+      "addr": "Teste 1",
       "valor": "",
       "inicio": "",
       "prazo": "2027-03-25",
@@ -207,7 +207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T14:42:25.999Z",
+      "updatedAt": "2026-05-13T14:47:46.798Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
