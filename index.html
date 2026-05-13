@@ -599,19 +599,27 @@ async function loadGH(){
     if(!r.ok)throw new Error(r.status);
     const j=await r.json();
     fileSHA=j.sha;
-    state=JSON.parse(atob(j.content.replace(/\n/g,'')));
+    const raw=atob(j.content.replace(/\n/g,''));
+    const bytes=Uint8Array.from(raw,c=>c.charCodeAt(0));
+    state=JSON.parse(new TextDecoder('utf-8').decode(bytes));
     ['users','columns','cards','checklistPresets','tags'].forEach(k=>{if(!state[k])state[k]=[];});
     setSS('ok','Sincronizado');
     restoreUser();
-    if(!currentUser){showLoginScreen();}
-    else{hideLoginScreen();updateHeaderUser();render();checkAlerts();}
+    if(!currentUser){
+      showLoginScreen();
+      render(); // render board in background but keep login on top
+    } else {
+      hideLoginScreen();updateHeaderUser();render();checkAlerts();
+    }
   }catch(e){setSS('err','Erro ao carregar');console.error(e);}
 }
 
 async function saveGH(){
   setSS('spin','Salvando...');
   try{
-    const content=btoa(unescape(encodeURIComponent(JSON.stringify(state,null,2))));
+    const jsonStr=JSON.stringify(state,null,2);
+    const bytes2=new TextEncoder().encode(jsonStr);
+    const content=btoa(String.fromCharCode(...bytes2));
     const r=await fetch(ghUrl(),{method:'PUT',headers:ghH(),body:JSON.stringify({message:'Kanban atualizado',content,sha:fileSHA})});
     if(!r.ok)throw new Error(r.status);
     fileSHA=(await r.json()).content.sha;
@@ -1571,12 +1579,19 @@ function showLoginScreen(){
   document.getElementById('login-screen').classList.add('show');
   document.getElementById('board').style.display='none';
   document.getElementById('alert-banner').style.display='none';
+  // hide header controls
+  document.getElementById('user-badge').style.visibility='hidden';
+  document.querySelector('.header-menu-wrap').style.visibility='hidden';
+  document.querySelector('.fab').style.display='none';
   setTimeout(()=>document.getElementById('login-user').focus(),100);
 }
 
 function hideLoginScreen(){
   document.getElementById('login-screen').classList.remove('show');
   document.getElementById('board').style.display='flex';
+  document.getElementById('user-badge').style.visibility='visible';
+  document.querySelector('.header-menu-wrap').style.visibility='visible';
+  document.querySelector('.fab').style.display='flex';
 }
 
 async function doLogin(){
