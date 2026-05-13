@@ -20,7 +20,7 @@
       "addr": "tasd",
       "valor": "",
       "inicio": "",
-      "prazo": "",
+      "prazo": "1997-03-25",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -200,7 +200,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T13:36:30.033Z",
+      "updatedAt": "2026-05-13T13:36:33.876Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
