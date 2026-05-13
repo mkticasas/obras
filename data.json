@@ -28,7 +28,9 @@
       "tags": [
         "ok"
       ],
-      "assignees": [],
+      "assignees": [
+        "mp1jfffep8yb"
+      ],
       "checklists": [
         {
           "id": "mp1janxk9huz",
@@ -200,7 +202,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T13:44:18.961Z",
+      "updatedAt": "2026-05-13T13:44:29.941Z",
       "log": [
         {
           "date": "2026-05-11T18:31:43.389Z",
