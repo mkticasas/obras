@@ -778,7 +778,7 @@
     {
       "id": "mp46d5kt6quj",
       "name": "Obra em coluna obra teste",
-      "colId": "mp1jg6ccow2u",
+      "colId": "mp44j4gncbh1",
       "coverUrl": null,
       "addr": "Obra em coluna obra teste",
       "valor": "200000000",
@@ -791,8 +791,13 @@
       "assignees": [],
       "comments": [],
       "createdAt": "2026-05-13T14:48:44.669Z",
-      "updatedAt": "2026-05-13T14:49:10.115Z",
-      "log": [],
+      "updatedAt": "2026-05-13T19:56:11.163Z",
+      "log": [
+        {
+          "date": "2026-05-13T19:56:11.163Z",
+          "note": "Avançado para \"teste\" por Lugner"
+        }
+      ],
       "checklists": [
         {
           "id": "19e22bdb602aaw5",
