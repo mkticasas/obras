@@ -430,7 +430,7 @@
       "colId": "col-default",
       "coverUrl": null,
       "addr": "Rua teste",
-      "valor": "",
+      "valor": "1144000",
       "inicio": "",
       "prazo": "",
       "resp": "",
@@ -610,7 +610,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-13T14:15:53.842Z",
-      "updatedAt": "2026-05-13T14:15:58.962Z",
+      "updatedAt": "2026-05-13T14:16:02.755Z",
       "log": []
     }
   ],
