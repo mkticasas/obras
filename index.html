@@ -308,12 +308,36 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .logout-btn:hover{color:var(--danger);}
 
 /* ── CARD UNIFORM HEIGHT ── */
-.card{height:190px;}
-.card.has-cover{height:290px;}
-.card-body{overflow:hidden;position:relative;}
-.card-body::after{content:'';position:absolute;bottom:0;left:0;right:0;height:28px;background:linear-gradient(transparent,var(--surface2));pointer-events:none;}
-.card-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.card-meta-row span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:150px;display:inline-block;}
+.card { height: 160px; }
+.card.has-cover { height: 260px; }
+.card-cover { height: 100px !important; }
+.card-body { 
+  height: 160px; 
+  overflow: hidden; 
+  position: relative; 
+}
+.card.has-cover .card-body { height: 160px; }
+.card-body::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 24px;
+  background: linear-gradient(transparent, var(--surface2));
+  pointer-events: none;
+}
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-meta-row span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 140px;
+  display: inline-block;
+  vertical-align: middle;
+}
 </style>
 </head>
 <body>
