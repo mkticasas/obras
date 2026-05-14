@@ -2450,11 +2450,57 @@
               "done": false
             }
           ]
+        },
+        {
+          "id": "mp5j4ow9kvck",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mp5j4ow982k6",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mp5j4ow9bt1w",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mp5j4ow98pmj",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mp5j4ow95etc",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mp5j4ow9sjuk",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mp5j4ow95ogf",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mp5j4ow9b8sr",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mp5j4ow9p8u8",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
         }
       ],
       "comments": [],
       "createdAt": "2026-05-14T13:33:11.978Z",
-      "updatedAt": "2026-05-14T13:33:45.786Z",
+      "updatedAt": "2026-05-14T13:33:50.985Z",
       "log": []
     }
   ],
