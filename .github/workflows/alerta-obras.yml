@@ -2,7 +2,7 @@ name: Alerta de Obras Paradas
 
 on:
   schedule:
-    - cron: '0 11 * * *'
+    - cron: '0 11 * * *'  # 8h Brasília (11h UTC)
   workflow_dispatch:
 
 jobs:
@@ -14,9 +14,7 @@ jobs:
 
       - name: Verificar obras e enviar alertas via Telegram
         env:
-          TELEGRAM_TOKEN:  ${{ secrets.TELEGRAM_TOKEN }}
-          ALERT_VALUE:     ${{ secrets.ALERT_VALUE }}
-          ALERT_UNIT:      ${{ secrets.ALERT_UNIT }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         run: |
           python3 - << 'PYEOF'
           import json, urllib.request, os, sys
@@ -27,17 +25,15 @@ jobs:
 
           token = os.environ.get("TELEGRAM_TOKEN","").strip()
 
-          def to_seconds(value_str, unit_str):
-              value = float(value_str) if value_str else 1
-              unit  = (unit_str or "days").strip().lower()
-              mul   = {"minutes":60,"hours":3600,"days":86400}
-              return value * mul.get(unit, 86400)
+          # Ler dias de alerta do data.json (configurado pelo site)
+          config        = data.get("config", {})
+          alert_days    = int(config.get("alertDays", 1))
+          alert_secs    = alert_days * 86400
 
-          alert_secs = to_seconds(os.environ.get("ALERT_VALUE","1"), os.environ.get("ALERT_UNIT","days"))
-          now        = datetime.now(timezone.utc)
-          col_map    = {c["id"]: c["name"] for c in data.get("columns",[])}
-          users      = data.get("users",[])
-          cards      = data.get("cards",[])
+          now     = datetime.now(timezone.utc)
+          col_map = {c["id"]: c["name"] for c in data.get("columns",[])}
+          users   = data.get("users",[])
+          cards   = data.get("cards",[])
 
           def seconds_since(iso):
               try:
@@ -55,12 +51,11 @@ jobs:
               try:
                   from datetime import timedelta
                   dt = datetime.fromisoformat(iso.replace("Z","+00:00"))
-                  dt_br = dt - timedelta(hours=3)  # UTC-3 Brasilia
-                  return dt_br.strftime("%d/%m/%Y %H:%M")
+                  dt_br = dt - timedelta(hours=3)
+                  return dt_br.strftime("%d/%m/%Y %H:%M") + " (Brasilia)"
               except:
                   return iso
 
-          # Obras sem atualização
           overdue = []
           for card in cards:
               upd = card.get("updatedAt", card.get("createdAt",""))
@@ -75,38 +70,33 @@ jobs:
                   })
 
           if not overdue:
-              print("Nenhuma obra com atraso.")
+              print(f"Nenhuma obra parada (limite: {alert_days}d). Nenhuma mensagem enviada.")
               sys.exit(0)
 
-          # Mensagem com HTML (negrito via <b>)
-          lines = [f"🏗 <b>Kanban de Obras — Alerta</b>", ""]
-          lines.append(f"⏰ <b>{len(overdue)} obra(s) sem atualização:</b>")
-          lines.append("")
+          print(f"{len(overdue)} obra(s) parada(s) ha mais de {alert_days}d.")
+
+          lines = [f"Kanban de Obras - Alerta", f"({len(overdue)} obra(s) sem atualizacao ha mais de {alert_days} dia(s))", ""]
           for o in overdue:
               lines += [
-                  f"▸ <b>{o['name']}</b>",
-                  f"  📋 {o['col']}",
-                  f"  👤 {o['resp']}",
-                  f"  📍 {o['addr']}",
-                  f"  🕒 {o['upd']} ({o['elapsed']} atrás)",
+                  f"Obra: {o['name']}",
+                  f"Coluna: {o['col']}",
+                  f"Responsavel: {o['resp']}",
+                  f"Endereco: {o['addr']}",
+                  f"Ultima atualizacao: {o['upd']} ({o['elapsed']} atras)",
                   ""
               ]
-          lines.append("👉 Acesse o Kanban e atualize!")
+          lines.append("Acesse o Kanban e atualize!")
           msg = "\n".join(lines)
 
           recipients = [u for u in users if u.get("telegramChatId")]
           if not recipients:
-              print("Nenhum usuário com Telegram Chat ID.")
+              print("Nenhum usuario com Telegram Chat ID.")
               sys.exit(0)
 
           def send_tg(chat_id, text):
               url     = f"https://api.telegram.org/bot{token}/sendMessage"
-              payload = json.dumps({
-                  "chat_id":    str(chat_id),
-                  "text":       text,
-                  "parse_mode": "HTML"
-              }).encode()
-              req = urllib.request.Request(url, data=payload, headers={"Content-Type":"application/json"})
+              payload = json.dumps({"chat_id": str(chat_id), "text": text}).encode()
+              req     = urllib.request.Request(url, data=payload, headers={"Content-Type":"application/json"})
               with urllib.request.urlopen(req, timeout=15) as r:
                   return json.loads(r.read().decode())
 
