@@ -790,7 +790,7 @@
       "assignees": [],
       "comments": [],
       "createdAt": "2026-05-13T14:48:44.669Z",
-      "updatedAt": "2026-05-13T19:56:15.762Z",
+      "updatedAt": "2026-05-14T12:43:22.067Z",
       "log": [
         {
           "date": "2026-05-13T19:56:11.163Z",
@@ -809,12 +809,12 @@
             {
               "id": "19e22bdb602wlrf",
               "text": "Terraplanagem",
-              "done": true
+              "done": false
             },
             {
               "id": "19e22bdb6020x60",
               "text": "Fundação",
-              "done": true
+              "done": false
             },
             {
               "id": "19e22bdb6023y7d",
