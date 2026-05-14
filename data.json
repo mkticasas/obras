@@ -2323,7 +2323,7 @@
       "passwordHash": "85b9fb15b9877abc5beca1cf700784b56a40f6aeac37103b6c5de2fa8e1e4b60",
       "telegramChatId": "",
       "photo": "",
-      "isAdmin": false
+      "isAdmin": true
     }
   ],
   "checklistPresets": [
