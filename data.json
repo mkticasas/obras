@@ -20,7 +20,7 @@
     {
       "id": "mp1janxkqtp3",
       "name": "Teste 1",
-      "colId": "mp44j4gncbh1",
+      "colId": "mp1jg6ccow2u",
       "coverUrl": "https://res.cloudinary.com/dokugqml2/image/upload/v1778680660/uucmlxc6qq8kbzetz6mu.jpg",
       "addr": "Teste 1",
       "valor": "",
@@ -38,7 +38,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-14T13:32:57.873Z",
+      "updatedAt": "2026-05-14T13:33:02.132Z",
       "log": [
         {
           "date": "2026-05-14T13:32:48.654Z",
@@ -55,6 +55,10 @@
         {
           "date": "2026-05-14T13:32:57.873Z",
           "note": "Avançado para \"teste\" por Lugner"
+        },
+        {
+          "date": "2026-05-14T13:33:02.132Z",
+          "note": "Movido para \"obras\" por Lugner"
         }
       ],
       "checklists": [
