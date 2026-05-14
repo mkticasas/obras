@@ -2296,7 +2296,7 @@
       "name": "Lugner",
       "role": "Administrador",
       "login": "lugner",
-      "passwordHash": "e0e1cbe10c42605f88db4cee9406dbb6b569d4caa6fb18ef4a71091f8a7006c4",
+      "passwordHash": "85b9fb15b9877abc5beca1cf700784b56a40f6aeac37103b6c5de2fa8e1e4b60",
       "phone": "",
       "telegramChatId": "1463787845",
       "photo": "",
@@ -2367,5 +2367,6 @@
       "bg": "#166534",
       "text": "#fff"
     }
-  ]
+  ],
+  "config": {}
 }
