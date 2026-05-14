@@ -2293,10 +2293,10 @@
   "users": [
     {
       "id": "6a0490ad4zlb",
-      "name": "Lugner",
-      "role": "Administrador",
-      "login": "lugner",
-      "passwordHash": "85b9fb15b9877abc5beca1cf700784b56a40f6aeac37103b6c5de2fa8e1e4b60",
+      "name": "Lucas",
+      "role": "Marketing",
+      "login": "lucas",
+      "passwordHash": "83c8021abe29a775ca013cca3f39b9601971a5c09802fa7697716ea1328f98df",
       "phone": "",
       "telegramChatId": "1463787845",
       "photo": "",
