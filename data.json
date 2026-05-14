@@ -259,7 +259,7 @@
       "assignees": [],
       "comments": [],
       "createdAt": "2026-05-13T13:34:14.403Z",
-      "updatedAt": "2026-05-13T19:27:37.302Z",
+      "updatedAt": "2026-05-14T19:36:46.801Z",
       "log": [],
       "checklists": [
         {
@@ -269,7 +269,7 @@
             {
               "id": "19e22bdb602ap4n",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "19e22bdb602denh",
