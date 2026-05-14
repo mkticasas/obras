@@ -503,7 +503,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       </div>
     </div>
     <div class="admin-tab-panel" id="tab-config">
-      <p style="font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.6;">Configure os prazos para disparo automático de alertas no WhatsApp. Os alertas rodam todo dia às 8h via GitHub Actions.</p>
+      <p style="font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.6;">Configure os prazos abaixo e clique em <b style="color:var(--accent);">Salvar</b> — as alterações são aplicadas automaticamente no GitHub Actions sem precisar alterar nenhum Secret.</p>
       <div style="background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:14px;margin-bottom:10px;">
         <div style="font-size:11px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;">⏰ Card sem atualização</div>
         <div class="form-group" style="margin-bottom:0;">
@@ -538,9 +538,9 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       </div>
       <div style="background:var(--surface3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:14px;">
         <div style="font-size:11px;color:var(--muted);line-height:1.6;">
-          ⚙️ Secrets necessários no GitHub Actions:<br>
+          ⚙️ Secret necessário no GitHub Actions (apenas uma vez):<br>
           <strong style="color:var(--text);">Repositório → Settings → Secrets → Actions</strong><br>
-          <code style="background:var(--border);padding:1px 5px;border-radius:3px;">TELEGRAM_TOKEN</code> · <code style="background:var(--border);padding:1px 5px;border-radius:3px;">ALERT_DAYS</code> · <code style="background:var(--border);padding:1px 5px;border-radius:3px;">CHECKLIST_DAYS</code>
+          <code style="background:var(--border);padding:1px 5px;border-radius:3px;">TELEGRAM_TOKEN</code> — os dias de alerta são configurados aqui no site.
         </div>
       </div>
       <div style="display:flex;gap:8px;justify-content:flex-end;">
@@ -604,6 +604,7 @@ async function loadGH(){
     const bytes=Uint8Array.from(raw,c=>c.charCodeAt(0));
     state=JSON.parse(new TextDecoder('utf-8').decode(bytes));
     ['users','columns','cards','checklistPresets','tags'].forEach(k=>{if(!state[k])state[k]=[];});
+    if(!state.config)state.config={};
     setSS('ok','Sincronizado');
     restoreUser();
     if(!currentUser){
@@ -1174,10 +1175,17 @@ function confirmDeleteUser(id){
   };
   document.getElementById('confirm-modal').classList.add('show');
 }
-function saveConfigTab(){
-  CFG.days=parseInt(document.getElementById('c-days').value)||1;
-  CFG.cldays=parseInt(document.getElementById('c-cldays').value)||3;
-  alert('✅ Salvo! Lembre de atualizar os Secrets no GitHub também.');
+async function saveConfigTab(){
+  const days   = parseInt(document.getElementById('c-days').value)||1;
+  const cldays = parseInt(document.getElementById('c-cldays').value)||3;
+  CFG.days   = days;
+  CFG.cldays = cldays;
+  // Save to data.json so GitHub Actions reads from there
+  if(!state.config) state.config = {};
+  state.config.alertDays     = days;
+  state.config.checklistDays = cldays;
+  await saveGH();
+  alert('✅ Configurações salvas e aplicadas automaticamente!');
 }
 
 // ══════ ALERTS ══════
