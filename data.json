@@ -20,7 +20,7 @@
     {
       "id": "mp1janxkqtp3",
       "name": "Teste 1",
-      "colId": "col-default",
+      "colId": "mp1jg6ccow2u",
       "coverUrl": "https://res.cloudinary.com/dokugqml2/image/upload/v1778680660/uucmlxc6qq8kbzetz6mu.jpg",
       "addr": "Teste 1",
       "valor": "",
@@ -38,8 +38,13 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-14T13:32:24.393Z",
-      "log": [],
+      "updatedAt": "2026-05-14T13:32:48.654Z",
+      "log": [
+        {
+          "date": "2026-05-14T13:32:48.654Z",
+          "note": "Movido para \"obras\" por Lugner"
+        }
+      ],
       "checklists": [
         {
           "id": "19e22bdb602c8a1",
