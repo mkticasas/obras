@@ -38,7 +38,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-11T18:27:24.968Z",
-      "updatedAt": "2026-05-13T20:28:15.260Z",
+      "updatedAt": "2026-05-14T13:32:19.242Z",
       "log": [],
       "checklists": [
         {
@@ -2323,7 +2323,8 @@
       "passwordHash": "85b9fb15b9877abc5beca1cf700784b56a40f6aeac37103b6c5de2fa8e1e4b60",
       "telegramChatId": "",
       "photo": "",
-      "isAdmin": true
+      "isAdmin": true,
+      "log": []
     }
   ],
   "checklistPresets": [
