@@ -24,6 +24,11 @@
       "id": "mpb8563uusn7",
       "name": "ESTRUTURA (PAREDES + LAJE)",
       "color": "dot-red"
+    },
+    {
+      "id": "mpb85ka3gujh",
+      "name": "REBOCO/COBERTURA/INSTALAÇÕES",
+      "color": "dot-yellow"
     }
   ],
   "cards": [],
