@@ -107,5 +107,9 @@
       "text": "#fff"
     }
   ],
-  "config": {}
+  "config": {
+    "alertDays": 1,
+    "checklistDays": 2,
+    "checklistAlertOn": true
+  }
 }
