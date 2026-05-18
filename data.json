@@ -336,6 +336,12 @@
       "name": "Normal",
       "bg": "#166534",
       "text": "#fff"
+    },
+    {
+      "id": "mpb8bjvuy2j4",
+      "name": "Atenção",
+      "bg": "#eab308",
+      "text": "#0f1117"
     }
   ],
   "config": {
