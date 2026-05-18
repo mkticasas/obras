@@ -439,7 +439,7 @@
     {
       "id": "mp456wvlr3lo",
       "name": "Obra de teste",
-      "colId": "col-default",
+      "colId": "mp1jg6ccow2u",
       "coverUrl": null,
       "addr": "Rua teste",
       "valor": "1144000",
@@ -452,8 +452,13 @@
       "assignees": [],
       "comments": [],
       "createdAt": "2026-05-13T14:15:53.842Z",
-      "updatedAt": "2026-05-13T14:48:11.021Z",
-      "log": [],
+      "updatedAt": "2026-05-18T12:42:03.187Z",
+      "log": [
+        {
+          "date": "2026-05-18T12:42:03.187Z",
+          "note": "Movido para \"obras\" por Marketing"
+        }
+      ],
       "checklists": [
         {
           "id": "19e22bdb602j5ej",
