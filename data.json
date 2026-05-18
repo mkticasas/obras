@@ -810,7 +810,7 @@
     {
       "id": "mp46d5kt6quj",
       "name": "Obra em coluna obra teste",
-      "colId": "mp44j4gncbh1",
+      "colId": "mp1jg6ccow2u",
       "coverUrl": null,
       "addr": "Obra em coluna obra teste",
       "valor": "200000000",
@@ -823,7 +823,7 @@
       "assignees": [],
       "comments": [],
       "createdAt": "2026-05-13T14:48:44.669Z",
-      "updatedAt": "2026-05-18T12:41:46.653Z",
+      "updatedAt": "2026-05-18T12:41:48.793Z",
       "log": [
         {
           "date": "2026-05-13T19:56:11.163Z",
@@ -836,6 +836,10 @@
         {
           "date": "2026-05-18T12:41:46.653Z",
           "note": "Movido para \"teste\" por Marketing"
+        },
+        {
+          "date": "2026-05-18T12:41:48.793Z",
+          "note": "Movido para \"obras\" por Marketing"
         }
       ],
       "checklists": [
