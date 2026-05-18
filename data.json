@@ -823,7 +823,7 @@
       "coverUrl": null,
       "addr": "",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-04-10",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -1004,7 +1004,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-05-18T13:27:36.770Z",
+      "updatedAt": "2026-05-18T13:27:44.847Z",
       "log": []
     }
   ],
