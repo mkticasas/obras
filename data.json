@@ -39,6 +39,11 @@
       "id": "mpb860ya3ela",
       "name": "FINALIZALÇAO",
       "color": "dot-pink"
+    },
+    {
+      "id": "mpb8667uojn3",
+      "name": "ENTREGUES",
+      "color": "dot-orange"
     }
   ],
   "cards": [],
