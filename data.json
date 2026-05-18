@@ -243,7 +243,7 @@
       "coverUrl": null,
       "addr": "",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-04-17",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -424,7 +424,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:21:25.171Z",
-      "updatedAt": "2026-05-18T13:21:38.699Z",
+      "updatedAt": "2026-05-18T13:21:56.426Z",
       "log": []
     }
   ],
