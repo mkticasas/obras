@@ -342,6 +342,12 @@
       "name": "Atenção",
       "bg": "#eab308",
       "text": "#0f1117"
+    },
+    {
+      "id": "mpb8bofmzsfn",
+      "name": "Atrasada",
+      "bg": "#ef4444",
+      "text": "#fff"
     }
   ],
   "config": {
