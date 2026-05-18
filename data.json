@@ -52,6 +52,17 @@
       "photo": "",
       "isAdmin": true,
       "log": []
+    },
+    {
+      "id": "mpb7nnfzx9fz",
+      "name": "Tamires",
+      "role": "",
+      "phone": "",
+      "login": "tamires",
+      "passwordHash": "37bd210ff7812fd2403139807ab213d10c06b9d88dedce89b245ce922b2b078b",
+      "telegramChatId": "",
+      "photo": "",
+      "isAdmin": false
     }
   ],
   "checklistPresets": [
