@@ -621,7 +621,7 @@
     {
       "id": "mpb8ks4imkjl",
       "name": "LARISSA E GABRIEL - PLANALTO",
-      "colId": "col-default",
+      "colId": "mp1jg6ccow2u",
       "coverUrl": null,
       "addr": "",
       "valor": "",
@@ -804,8 +804,13 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:25:02.946Z",
-      "updatedAt": "2026-05-18T13:25:17.594Z",
-      "log": []
+      "updatedAt": "2026-05-18T13:27:19.973Z",
+      "log": [
+        {
+          "date": "2026-05-18T13:27:19.973Z",
+          "note": "Movido para \"INICIALIZAR\" por Lugner"
+        }
+      ]
     }
   ],
   "users": [
