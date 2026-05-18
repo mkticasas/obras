@@ -19,6 +19,11 @@
       "id": "mpb84so22w1c",
       "name": "FUNDAÇÃO",
       "color": "dot-green"
+    },
+    {
+      "id": "mpb8563uusn7",
+      "name": "ESTRUTURA (PAREDES + LAJE)",
+      "color": "dot-red"
     }
   ],
   "cards": [],
