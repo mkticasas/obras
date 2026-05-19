@@ -1123,7 +1123,7 @@
   ],
   "config": {
     "alertDays": 1,
-    "checklistDays": 2,
+    "checklistDays": 1,
     "checklistAlertOn": true
   }
 }
