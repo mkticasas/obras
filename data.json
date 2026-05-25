@@ -8,7 +8,7 @@
     {
       "id": "mp1jg6ccow2u",
       "name": "INICIALIZAR",
-      "color": "dot-orange"
+      "color": "dot-blue"
     },
     {
       "id": "mp44j4gncbh1",
@@ -17,7 +17,7 @@
     },
     {
       "id": "mpb84so22w1c",
-      "name": "FUNDAÇÃO",
+      "name": "FUNDAÃÃO",
       "color": "dot-brown"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "id": "mpb85ka3gujh",
-      "name": "REBOCO/COBERTURA/INSTALAÇÕES",
+      "name": "REBOCO/COBERTURA/INSTALAÃÃES",
       "color": "dot-cyan"
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "id": "mpb860ya3ela",
-      "name": "FINALIZALÇAO",
+      "name": "FINALIZALÃAO",
       "color": "dot-teal"
     },
     {
@@ -49,7 +49,7 @@
   "cards": [
     {
       "id": "mpb8asyrdy0f",
-      "name": "STEFANE E YURI-L25 Q11/SÃO THOMAZ 2",
+      "name": "STEFANE E YURI-L25 Q11/SÃO THOMAZ 2",
       "colId": "col-default",
       "coverUrl": null,
       "addr": "",
@@ -76,7 +76,7 @@
             },
             {
               "id": "mpb8asyrvtmx",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -91,7 +91,7 @@
             },
             {
               "id": "mpb8asyr0wgc",
-              "text": "Instalações",
+              "text": "InstalaÃ§Ãµes",
               "done": false
             },
             {
@@ -106,7 +106,7 @@
             },
             {
               "id": "mpb8asyrxxcs",
-              "text": "Finalização",
+              "text": "FinalizaÃ§Ã£o",
               "done": false
             }
           ]
@@ -122,7 +122,7 @@
             },
             {
               "id": "mpb8asyr5g6p",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -132,12 +132,12 @@
             },
             {
               "id": "mpb8asyrx0dd",
-              "text": "Conferência de medidas de janelas/portas",
+              "text": "ConferÃªncia de medidas de janelas/portas",
               "done": false
             },
             {
               "id": "mpb8asyrhw4w",
-              "text": "Impermeabilizações",
+              "text": "ImpermeabilizaÃ§Ãµes",
               "done": false
             },
             {
@@ -147,7 +147,7 @@
             },
             {
               "id": "mpb8asyrm3mw",
-              "text": "Conduítes / Caixinhas Elétricas",
+              "text": "ConduÃ­tes / Caixinhas ElÃ©tricas",
               "done": false
             },
             {
@@ -167,12 +167,12 @@
             },
             {
               "id": "mpb8asyrzhea",
-              "text": "Reboco externo concluído",
+              "text": "Reboco externo concluÃ­do",
               "done": false
             },
             {
               "id": "mpb8asyr552i",
-              "text": "Reboco interno concluído",
+              "text": "Reboco interno concluÃ­do",
               "done": false
             },
             {
@@ -192,7 +192,7 @@
             },
             {
               "id": "mpb8asyrl2la",
-              "text": "Requadro ou instalações de janelas",
+              "text": "Requadro ou instalaÃ§Ãµes de janelas",
               "done": false
             },
             {
@@ -212,12 +212,12 @@
             },
             {
               "id": "mpb8asyrs7ie",
-              "text": "Elétrica",
+              "text": "ElÃ©trica",
               "done": false
             },
             {
               "id": "mpb8asyryxme",
-              "text": "Instalações hidráulicas",
+              "text": "InstalaÃ§Ãµes hidrÃ¡ulicas",
               "done": false
             },
             {
@@ -267,7 +267,7 @@
             },
             {
               "id": "mpb8g437fpku",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -282,7 +282,7 @@
             },
             {
               "id": "mpb8g437fnus",
-              "text": "Instalações",
+              "text": "InstalaÃ§Ãµes",
               "done": false
             },
             {
@@ -297,7 +297,7 @@
             },
             {
               "id": "mpb8g4376g8h",
-              "text": "Finalização",
+              "text": "FinalizaÃ§Ã£o",
               "done": false
             }
           ]
@@ -313,7 +313,7 @@
             },
             {
               "id": "mpb8g437bvz0",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -323,12 +323,12 @@
             },
             {
               "id": "mpb8g437zq5x",
-              "text": "Conferência de medidas de janelas/portas",
+              "text": "ConferÃªncia de medidas de janelas/portas",
               "done": false
             },
             {
               "id": "mpb8g437dj9w",
-              "text": "Impermeabilizações",
+              "text": "ImpermeabilizaÃ§Ãµes",
               "done": false
             },
             {
@@ -338,7 +338,7 @@
             },
             {
               "id": "mpb8g437n0z0",
-              "text": "Conduítes / Caixinhas Elétricas",
+              "text": "ConduÃ­tes / Caixinhas ElÃ©tricas",
               "done": false
             },
             {
@@ -358,12 +358,12 @@
             },
             {
               "id": "mpb8g43747vf",
-              "text": "Reboco externo concluído",
+              "text": "Reboco externo concluÃ­do",
               "done": false
             },
             {
               "id": "mpb8g437o0ka",
-              "text": "Reboco interno concluído",
+              "text": "Reboco interno concluÃ­do",
               "done": false
             },
             {
@@ -383,7 +383,7 @@
             },
             {
               "id": "mpb8g437wrdo",
-              "text": "Requadro ou instalações de janelas",
+              "text": "Requadro ou instalaÃ§Ãµes de janelas",
               "done": false
             },
             {
@@ -403,12 +403,12 @@
             },
             {
               "id": "mpb8g437hlkk",
-              "text": "Elétrica",
+              "text": "ElÃ©trica",
               "done": false
             },
             {
               "id": "mpb8g4373bze",
-              "text": "Instalações hidráulicas",
+              "text": "InstalaÃ§Ãµes hidrÃ¡ulicas",
               "done": false
             },
             {
@@ -456,7 +456,7 @@
             },
             {
               "id": "mpb8k4ibmq72",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -471,7 +471,7 @@
             },
             {
               "id": "mpb8k4ibao7i",
-              "text": "Instalações",
+              "text": "InstalaÃ§Ãµes",
               "done": false
             },
             {
@@ -486,7 +486,7 @@
             },
             {
               "id": "mpb8k4ibyhzq",
-              "text": "Finalização",
+              "text": "FinalizaÃ§Ã£o",
               "done": false
             }
           ]
@@ -502,7 +502,7 @@
             },
             {
               "id": "mpb8k4ibau83",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -512,12 +512,12 @@
             },
             {
               "id": "mpb8k4ib00b3",
-              "text": "Conferência de medidas de janelas/portas",
+              "text": "ConferÃªncia de medidas de janelas/portas",
               "done": false
             },
             {
               "id": "mpb8k4ibz97x",
-              "text": "Impermeabilizações",
+              "text": "ImpermeabilizaÃ§Ãµes",
               "done": false
             },
             {
@@ -527,7 +527,7 @@
             },
             {
               "id": "mpb8k4ibmsx8",
-              "text": "Conduítes / Caixinhas Elétricas",
+              "text": "ConduÃ­tes / Caixinhas ElÃ©tricas",
               "done": false
             },
             {
@@ -547,12 +547,12 @@
             },
             {
               "id": "mpb8k4ibsadn",
-              "text": "Reboco externo concluído",
+              "text": "Reboco externo concluÃ­do",
               "done": false
             },
             {
               "id": "mpb8k4ibpa5f",
-              "text": "Reboco interno concluído",
+              "text": "Reboco interno concluÃ­do",
               "done": false
             },
             {
@@ -572,7 +572,7 @@
             },
             {
               "id": "mpb8k4ibsf9w",
-              "text": "Requadro ou instalações de janelas",
+              "text": "Requadro ou instalaÃ§Ãµes de janelas",
               "done": false
             },
             {
@@ -592,12 +592,12 @@
             },
             {
               "id": "mpb8k4ib1q32",
-              "text": "Elétrica",
+              "text": "ElÃ©trica",
               "done": false
             },
             {
               "id": "mpb8k4ibjz9k",
-              "text": "Instalações hidráulicas",
+              "text": "InstalaÃ§Ãµes hidrÃ¡ulicas",
               "done": false
             },
             {
@@ -645,7 +645,7 @@
             },
             {
               "id": "mpb8ks4ipkeq",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -660,7 +660,7 @@
             },
             {
               "id": "mpb8ks4ihuxl",
-              "text": "Instalações",
+              "text": "InstalaÃ§Ãµes",
               "done": false
             },
             {
@@ -675,7 +675,7 @@
             },
             {
               "id": "mpb8ks4i7dmf",
-              "text": "Finalização",
+              "text": "FinalizaÃ§Ã£o",
               "done": false
             }
           ]
@@ -691,7 +691,7 @@
             },
             {
               "id": "mpb8ks4is3uf",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -701,12 +701,12 @@
             },
             {
               "id": "mpb8ks4iw6tp",
-              "text": "Conferência de medidas de janelas/portas",
+              "text": "ConferÃªncia de medidas de janelas/portas",
               "done": false
             },
             {
               "id": "mpb8ks4i3w83",
-              "text": "Impermeabilizações",
+              "text": "ImpermeabilizaÃ§Ãµes",
               "done": false
             },
             {
@@ -716,7 +716,7 @@
             },
             {
               "id": "mpb8ks4ift37",
-              "text": "Conduítes / Caixinhas Elétricas",
+              "text": "ConduÃ­tes / Caixinhas ElÃ©tricas",
               "done": false
             },
             {
@@ -736,12 +736,12 @@
             },
             {
               "id": "mpb8ks4izn68",
-              "text": "Reboco externo concluído",
+              "text": "Reboco externo concluÃ­do",
               "done": false
             },
             {
               "id": "mpb8ks4i1iif",
-              "text": "Reboco interno concluído",
+              "text": "Reboco interno concluÃ­do",
               "done": false
             },
             {
@@ -761,7 +761,7 @@
             },
             {
               "id": "mpb8ks4ipaqy",
-              "text": "Requadro ou instalações de janelas",
+              "text": "Requadro ou instalaÃ§Ãµes de janelas",
               "done": false
             },
             {
@@ -781,12 +781,12 @@
             },
             {
               "id": "mpb8ks4is2pm",
-              "text": "Elétrica",
+              "text": "ElÃ©trica",
               "done": false
             },
             {
               "id": "mpb8ks4i6ov0",
-              "text": "Instalações hidráulicas",
+              "text": "InstalaÃ§Ãµes hidrÃ¡ulicas",
               "done": false
             },
             {
@@ -845,7 +845,7 @@
             },
             {
               "id": "mpb8ny3605av",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -860,7 +860,7 @@
             },
             {
               "id": "mpb8ny3676k1",
-              "text": "Instalações",
+              "text": "InstalaÃ§Ãµes",
               "done": false
             },
             {
@@ -875,7 +875,7 @@
             },
             {
               "id": "mpb8ny37hozk",
-              "text": "Finalização",
+              "text": "FinalizaÃ§Ã£o",
               "done": false
             }
           ]
@@ -891,7 +891,7 @@
             },
             {
               "id": "mpb8ny37fp5g",
-              "text": "Fundação",
+              "text": "FundaÃ§Ã£o",
               "done": false
             },
             {
@@ -901,12 +901,12 @@
             },
             {
               "id": "mpb8ny37kod3",
-              "text": "Conferência de medidas de janelas/portas",
+              "text": "ConferÃªncia de medidas de janelas/portas",
               "done": false
             },
             {
               "id": "mpb8ny3713lw",
-              "text": "Impermeabilizações",
+              "text": "ImpermeabilizaÃ§Ãµes",
               "done": false
             },
             {
@@ -916,7 +916,7 @@
             },
             {
               "id": "mpb8ny37k0zs",
-              "text": "Conduítes / Caixinhas Elétricas",
+              "text": "ConduÃ­tes / Caixinhas ElÃ©tricas",
               "done": false
             },
             {
@@ -936,12 +936,12 @@
             },
             {
               "id": "mpb8ny37p6du",
-              "text": "Reboco externo concluído",
+              "text": "Reboco externo concluÃ­do",
               "done": false
             },
             {
               "id": "mpb8ny37cb7t",
-              "text": "Reboco interno concluído",
+              "text": "Reboco interno concluÃ­do",
               "done": false
             },
             {
@@ -961,7 +961,7 @@
             },
             {
               "id": "mpb8ny37dh34",
-              "text": "Requadro ou instalações de janelas",
+              "text": "Requadro ou instalaÃ§Ãµes de janelas",
               "done": false
             },
             {
@@ -981,12 +981,12 @@
             },
             {
               "id": "mpb8ny37mq6a",
-              "text": "Elétrica",
+              "text": "ElÃ©trica",
               "done": false
             },
             {
               "id": "mpb8ny37n9ax",
-              "text": "Instalações hidráulicas",
+              "text": "InstalaÃ§Ãµes hidrÃ¡ulicas",
               "done": false
             },
             {
@@ -1062,13 +1062,13 @@
       "name": "Checklist Geral (MACRO)",
       "items": [
         "Terraplanagem",
-        "Fundação",
+        "FundaÃ§Ã£o",
         "Estrutura (paredes + laje)",
         "Cobertura",
-        "Instalações",
+        "InstalaÃ§Ãµes",
         "Reboco",
         "Acabamento",
-        "Finalização"
+        "FinalizaÃ§Ã£o"
       ]
     },
     {
@@ -1076,26 +1076,26 @@
       "name": "Checklist Detalhado",
       "items": [
         "Terraplanagem",
-        "Fundação",
+        "FundaÃ§Ã£o",
         "Levantamento de Paredes",
-        "Conferência de medidas de janelas/portas",
-        "Impermeabilizações",
+        "ConferÃªncia de medidas de janelas/portas",
+        "ImpermeabilizaÃ§Ãµes",
         "Laje / Cobertura",
-        "Conduítes / Caixinhas Elétricas",
+        "ConduÃ­tes / Caixinhas ElÃ©tricas",
         "Reboco externo iniciado",
         "Reboco interno iniciado",
         "Batentes",
-        "Reboco externo concluído",
-        "Reboco interno concluído",
+        "Reboco externo concluÃ­do",
+        "Reboco interno concluÃ­do",
         "Esgoto/pluvial",
         "Conduite do poste ao quadro",
         "Telhado + pingadeiras",
-        "Requadro ou instalações de janelas",
+        "Requadro ou instalaÃ§Ãµes de janelas",
         "Contrapiso",
         "Pisos",
         "Pintura",
-        "Elétrica",
-        "Instalações hidráulicas",
+        "ElÃ©trica",
+        "InstalaÃ§Ãµes hidrÃ¡ulicas",
         "Limpeza",
         "Entrega"
       ]
@@ -1110,7 +1110,7 @@
     },
     {
       "id": "mpb8bjvuy2j4",
-      "name": "Atenção",
+      "name": "AtenÃ§Ã£o",
       "bg": "#eab308",
       "text": "#0f1117"
     },
