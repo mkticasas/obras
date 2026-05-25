@@ -2440,7 +2440,7 @@
       "coverUrl": null,
       "addr": "",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-02-27",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -2619,7 +2619,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:55:40.071Z",
-      "updatedAt": "2026-05-25T20:55:43.891Z",
+      "updatedAt": "2026-05-25T20:55:48.379Z",
       "log": []
     }
   ],
