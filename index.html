@@ -282,7 +282,11 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       <div class="detail-section">
         <div class="detail-section-title" style="justify-content:space-between;">
           <span>✅ Checklists</span>
-          <button class="btn-ghost" onclick="addChecklist()">+ Novo checklist</button>
+          <div style="display:flex;gap:5px;">
+            <button class="btn-ghost" onclick="addChecklistPreset('macro')" title="Checklist Geral com 8 etapas principais">📋 Predefinições</button>
+            <button class="btn-ghost" onclick="addChecklistPreset('detail')" title="Checklist Detalhado com 23 etapas">📋 Importar</button>
+            <button class="btn-ghost" onclick="addChecklist()">+ Em branco</button>
+          </div>
         </div>
         <div id="d-checklists"></div>
       </div>
@@ -581,11 +585,11 @@ function cardHTML(card){
     return `<span class="tag ${map[t]||''}">${labels[t]||t}</span>`;
   }).join('');
 
-  // assignees
+  // assignees (only show valid users)
   const assignees=(card.assignees||[]).map(aid=>{
     const u=state.users.find(u=>u.id===aid);if(!u)return '';
     return `<div class="mini-avatar" title="${u.name}">${u.photo?`<img src="${u.photo}" alt=""/>`:`<span>${u.name[0].toUpperCase()}</span>`}</div>`;
-  }).join('');
+  }).filter(Boolean).join('');
 
   // deadline
   let deadlineHTML='';
@@ -607,7 +611,7 @@ function cardHTML(card){
         ${tags?`<div class="card-tags">${tags}</div>`:''}
         <div class="card-meta">
           ${card.addr?`<div class="card-meta-row">📍 <span>${card.addr}</span></div>`:''}
-          ${card.resp?`<div class="card-meta-row">👤 <span>${card.resp}</span></div>`:''}
+          ${card.resp&&card.resp.includes(' ')?`<div class="card-meta-row">👤 <span>${card.resp}</span></div>`:''}
           ${card.status?`<div class="card-meta-row">🔧 <span>${card.status}</span></div>`:''}
         </div>
         ${pct!==null?`<div class="card-progress"><div class="progress-label"><span>Progresso</span><span>${pct}%</span></div><div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div></div>`:''}
@@ -827,6 +831,18 @@ function renameChecklist(clId,val){
   debSave();
 }
 
+
+function addChecklistPreset(type){
+  const card=getOpenCard();if(!card)return;
+  if(!card.checklists)card.checklists=[];
+  if(type==='macro'){
+    card.checklists.push({id:uid(),name:'Checklist Geral (MACRO)',items:CHECKLIST_MACRO.map(t=>({id:uid(),text:t,done:false}))});
+  } else {
+    card.checklists.push({id:uid(),name:'Checklist Detalhado',items:CHECKLIST_DETAIL.map(t=>({id:uid(),text:t,done:false}))});
+  }
+  card.updatedAt=now();
+  renderChecklists();debSave();
+}
 function addChecklist(){
   const card=getOpenCard();if(!card)return;
   if(!card.checklists)card.checklists=[];
