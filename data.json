@@ -1111,7 +1111,7 @@
       "coverUrl": null,
       "addr": "",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-03-31",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -1290,7 +1290,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:42:09.079Z",
-      "updatedAt": "2026-05-25T20:42:18.682Z",
+      "updatedAt": "2026-05-25T20:42:25.785Z",
       "log": []
     }
   ],
