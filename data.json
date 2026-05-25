@@ -2063,7 +2063,7 @@
       "addr": "Bady Bassitt - SP",
       "valor": "210.000,00",
       "inicio": "2026-04-14",
-      "prazo": "",
+      "prazo": "2026-10-14",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -2241,7 +2241,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-05-25T20:53:48.815Z",
+      "updatedAt": "2026-05-25T20:53:54.365Z",
       "log": []
     }
   ],
