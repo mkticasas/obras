@@ -1173,12 +1173,12 @@
             {
               "id": "mplo9v07tvln",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mplo9v07bowo",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mplo9v0774lk",
@@ -1290,7 +1290,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:42:09.079Z",
-      "updatedAt": "2026-05-25T20:42:49.929Z",
+      "updatedAt": "2026-05-25T20:42:54.811Z",
       "log": []
     }
   ],
