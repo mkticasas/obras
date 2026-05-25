@@ -2252,7 +2252,7 @@
       "addr": "",
       "valor": "",
       "inicio": "2026-02-06",
-      "prazo": "",
+      "prazo": "2026-09-06",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -2267,12 +2267,12 @@
             {
               "id": "mplopymbg48u",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymbru49",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymbaig2",
@@ -2430,7 +2430,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:54:40.259Z",
-      "updatedAt": "2026-05-25T20:54:59.471Z",
+      "updatedAt": "2026-05-25T20:55:10.527Z",
       "log": []
     }
   ],
