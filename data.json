@@ -918,9 +918,7 @@
       "status": "",
       "obs": "",
       "tags": [],
-      "assignees": [
-        "mp5ix10a2onz"
-      ],
+      "assignees": [],
       "checklists": [
         {
           "id": "mpb8ny364tja",
@@ -1092,7 +1090,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-05-25T20:41:37.942Z",
+      "updatedAt": "2026-05-25T20:41:41.269Z",
       "log": [
         {
           "date": "2026-05-25T20:41:37.942Z",
