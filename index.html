@@ -440,6 +440,11 @@ async function loadGH(){
     state=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
     ['users','columns','cards'].forEach(k=>{if(!state[k])state[k]=[];});
     setSS('ok','Sincronizado');
+    // clean legacy ID values in resp/equipe fields
+    (state.cards||[]).forEach(c=>{
+      if(c.resp&&!c.resp.includes(' ')&&c.resp.length>8)c.resp='';
+      if(c.equipe&&!c.equipe.includes(' ')&&c.equipe.length>8)c.equipe='';
+    });
     restoreUser(); updateHeaderUser(); render(); checkAlerts();
   }catch(e){setSS('err','Erro ao carregar');console.error(e);}
 }
@@ -610,8 +615,8 @@ function cardHTML(card){
         <div class="card-title">${card.name}</div>
         ${tags?`<div class="card-tags">${tags}</div>`:''}
         <div class="card-meta">
-          ${card.addr?`<div class="card-meta-row">📍 <span>${card.addr}</span></div>`:''}
-          ${card.resp&&card.resp.includes(' ')?`<div class="card-meta-row">👤 <span>${card.resp}</span></div>`:''}
+          ${card.addr&&card.addr.trim().length>3?`<div class="card-meta-row">📍 <span>${card.addr}</span></div>`:''}
+          ${card.resp&&card.resp.trim().includes(' ')&&card.resp.length<40?`<div class="card-meta-row">👤 <span>${card.resp}</span></div>`:''}
           ${card.status?`<div class="card-meta-row">🔧 <span>${card.status}</span></div>`:''}
         </div>
         ${pct!==null?`<div class="card-progress"><div class="progress-label"><span>Progresso</span><span>${pct}%</span></div><div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div></div>`:''}
@@ -1073,6 +1078,12 @@ async function hashPass(pass){
     <div style="display:flex;flex-direction:column;gap:10px;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.4 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Predefinições de checklist + correções</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Botões de predefinição de checklist (MACRO, Detalhado, Em branco). Fix de emojis, encoding UTF-8 e limpeza de dados legados nos cards.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.3 — Mai 2025</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Troca de senha pelo usuário</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Cada usuário pode alterar a própria senha pelo botão 🔑 ao lado do nome no header.</div>
