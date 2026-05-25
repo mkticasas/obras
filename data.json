@@ -422,11 +422,103 @@
               "done": false
             }
           ]
+        },
+        {
+          "id": "mpl7glbidec7",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpl7glbipxe9",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpl7glbiqbc8",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpl7glbi6lqf",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mpl7glbixfp4",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpl7glbi5jb8",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mpl7glbifdwy",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mpl7glbijo7x",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpl7glbibx7o",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mpl7gmbeb0d0",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpl7gmbej5od",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbekwuu",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbelb4o",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbe090s",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbeuyaw",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbea40b",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbeqdh0",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbeanet",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
         }
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:21:25.171Z",
-      "updatedAt": "2026-05-18T13:22:01.483Z",
+      "updatedAt": "2026-05-25T12:51:30.938Z",
       "log": []
     },
     {
