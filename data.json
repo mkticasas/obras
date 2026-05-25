@@ -2065,7 +2065,7 @@
       "inicio": "2026-04-14",
       "prazo": "2026-10-14",
       "resp": "Lucas",
-      "equipe": "",
+      "equipe": "Pedreiro Pedro",
       "status": "",
       "obs": "",
       "tags": [],
@@ -2078,12 +2078,12 @@
             {
               "id": "mploocyt948w",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytuq5p",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocyt6inw",
@@ -2241,7 +2241,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-05-25T20:53:57.043Z",
+      "updatedAt": "2026-05-25T20:54:12.561Z",
       "log": []
     }
   ],
