@@ -2124,12 +2124,12 @@
             {
               "id": "mploocytiq3j",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytp4vn",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocyt83c1",
@@ -2241,7 +2241,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-05-25T20:54:12.561Z",
+      "updatedAt": "2026-05-25T20:54:16.179Z",
       "log": []
     }
   ],
