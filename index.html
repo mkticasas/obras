@@ -441,11 +441,13 @@ async function loadGH(){
     ['users','columns','cards'].forEach(k=>{if(!state[k])state[k]=[];});
     setSS('ok','Sincronizado');
     // clean legacy ID values in resp/equipe fields
+    let needsSave=false;
     (state.cards||[]).forEach(c=>{
-      if(c.resp&&!c.resp.includes(' ')&&c.resp.length>8)c.resp='';
-      if(c.equipe&&!c.equipe.includes(' ')&&c.equipe.length>8)c.equipe='';
+      if(c.resp&&!c.resp.includes(' ')&&c.resp.length>8){c.resp='';needsSave=true;}
+      if(c.equipe&&!c.equipe.includes(' ')&&c.equipe.length>8){c.equipe='';needsSave=true;}
     });
     restoreUser(); updateHeaderUser(); render(); checkAlerts();
+    if(needsSave)saveGH();
   }catch(e){setSS('err','Erro ao carregar');console.error(e);}
 }
 
