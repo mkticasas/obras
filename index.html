@@ -433,7 +433,7 @@ async function loadGH(){
     if(!r.ok)throw new Error(r.status);
     const j=await r.json();
     fileSHA=j.sha;
-    state=JSON.parse(atob(j.content.replace(/\n/g,'')));
+    state=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
     ['users','columns','cards'].forEach(k=>{if(!state[k])state[k]=[];});
     setSS('ok','Sincronizado');
     restoreUser(); updateHeaderUser(); render(); checkAlerts();
