@@ -2251,7 +2251,7 @@
       "coverUrl": null,
       "addr": "",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-02-06",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -2430,7 +2430,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:54:40.259Z",
-      "updatedAt": "2026-05-25T20:54:53.333Z",
+      "updatedAt": "2026-05-25T20:54:59.471Z",
       "log": []
     }
   ],
