@@ -1499,7 +1499,9 @@
       "equipe": "",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "ok"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -1672,7 +1674,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-05-25T20:47:00.803Z",
+      "updatedAt": "2026-05-25T20:47:02.371Z",
       "log": []
     }
   ],
