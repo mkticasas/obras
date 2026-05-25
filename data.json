@@ -1555,7 +1555,7 @@
             {
               "id": "mplofrmbs5rv",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbir0v",
@@ -1672,7 +1672,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-05-25T20:46:56.631Z",
+      "updatedAt": "2026-05-25T20:47:00.803Z",
       "log": []
     }
   ],
