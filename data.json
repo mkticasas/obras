@@ -2134,7 +2134,7 @@
             {
               "id": "mploocyt83c1",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocyt3il4",
@@ -2241,7 +2241,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-05-25T20:54:16.179Z",
+      "updatedAt": "2026-05-25T20:54:17.717Z",
       "log": []
     }
   ],
