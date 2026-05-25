@@ -2445,7 +2445,7 @@
       "resp": "",
       "equipe": "",
       "status": "",
-      "obs": "",
+      "obs": "DEMOROU UM POUCO MAIS PRA SAIR O REGISTRO EM CARTÓRIO.",
       "tags": [],
       "assignees": [],
       "checklists": [
@@ -2456,12 +2456,12 @@
             {
               "id": "mplor8rrhugz",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mplor8rrivck",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mplor8rrco4o",
@@ -2619,7 +2619,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:55:40.071Z",
-      "updatedAt": "2026-05-25T20:56:00.245Z",
+      "updatedAt": "2026-05-25T20:56:08.749Z",
       "log": []
     }
   ],
