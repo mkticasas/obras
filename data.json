@@ -63,7 +63,9 @@
       "tags": [
         "mpb8bjvuy2j4"
       ],
-      "assignees": [],
+      "assignees": [
+        "mp5ix10a2onz"
+      ],
       "checklists": [
         {
           "id": "mpb8asyrh7nz",
@@ -235,7 +237,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:17:17.475Z",
-      "updatedAt": "2026-05-25T12:34:08.678Z",
+      "updatedAt": "2026-05-25T12:51:41.116Z",
       "log": []
     },
     {
