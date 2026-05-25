@@ -220,7 +220,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
     <div class="user-badge" id="user-badge" style="cursor:default;">
       <div class="user-avatar" id="header-avatar" onclick="openUserSelect()" style="cursor:pointer;" title="Trocar usuário">?</div>
       <span class="user-name" id="header-name" onclick="openUserSelect()" style="cursor:pointer;">Selecionar</span>
-      <button class="btn-icon" id="btn-change-pass" onclick="openChangePass()" title="Alterar senha" style="display:none;font-size:12px;padding:2px 5px;">🔑</button>
+      <button class="btn-icon" id="btn-change-pass" onclick="openChangePass()" title="Alterar senha" style="display:none;font-size:12px;padding:2px 5px;background:none;border:none;color:var(--muted);cursor:pointer;">🔑</button>
     </div>
     <button class="btn-secondary btn-sm" onclick="openAdminModal()">⚙️ Admin</button>
     <button class="btn-primary btn-sm" onclick="openNewCard()">+ Nova Obra</button>
@@ -511,9 +511,8 @@ function updateHeaderUser(){
   const av=document.getElementById('header-avatar'),nm=document.getElementById('header-name');
   if(currentUser){nm.textContent=currentUser.name;av.innerHTML=currentUser.photo?`<img src="${currentUser.photo}" alt=""/>`:`<span>${currentUser.name[0].toUpperCase()}</span>`;}
   else{nm.textContent='Selecionar';av.innerHTML='?';}
-  // show/hide change password button
   const kBtn=document.getElementById('btn-change-pass');
-  if(kBtn) kBtn.style.display=currentUser?'inline-block':'none';
+  if(kBtn)kBtn.style.display=currentUser?'inline-block':'none';
   // comment avatar
   const ca=document.getElementById('comment-avatar');
   if(ca){ca.innerHTML=currentUser?(currentUser.photo?`<img src="${currentUser.photo}" alt=""/>`:`<span>${currentUser.name[0].toUpperCase()}</span>`):'?';}
@@ -1005,58 +1004,90 @@ function fmtDate(iso){const d=new Date(iso);return d.toLocaleDateString('pt-BR')
 function fmtDateShort(iso){if(!iso)return '';const d=new Date(iso+'T00:00:00');return d.toLocaleDateString('pt-BR',{day:'2-digit',month:'short'});}
 function closeModal(id){document.getElementById(id).classList.remove('show');}
 
+// ══════ INIT ══════
+loadGH();
 
-
-// ══════ PATCH NOTES ══════
+// PATCH NOTES
 function openPatchNotes(){
   document.getElementById('patch-modal').classList.add('show');
 }
-// ══════ CHANGE PASSWORD ══════
+
+// CHANGE PASSWORD
 function openChangePass(){
   if(!currentUser){alert('Selecione um usuário primeiro.');return;}
-  document.getElementById('cp-current').value='';
-  document.getElementById('cp-new').value='';
-  document.getElementById('cp-confirm').value='';
-  document.getElementById('cp-error').style.display='none';
+  ['cp-current','cp-new','cp-confirm'].forEach(function(id){document.getElementById(id).value='';});
+  var e=document.getElementById('cp-error');e.style.display='none';
   document.getElementById('change-pass-modal').classList.add('show');
 }
 
 async function doChangePass(){
-  const errEl=document.getElementById('cp-error');
+  var errEl=document.getElementById('cp-error');
   errEl.style.display='none';
-  const current=document.getElementById('cp-current').value;
-  const newPass=document.getElementById('cp-new').value;
-  const confirm=document.getElementById('cp-confirm').value;
+  var current=document.getElementById('cp-current').value;
+  var newPass=document.getElementById('cp-new').value;
+  var confirm=document.getElementById('cp-confirm').value;
   if(!current||!newPass||!confirm){errEl.textContent='Preencha todos os campos.';errEl.style.display='block';return;}
-  if(newPass!==confirm){errEl.textContent='A nova senha e a confirmação não coincidem.';errEl.style.display='block';return;}
-  if(newPass.length<4){errEl.textContent='A senha deve ter pelo menos 4 caracteres.';errEl.style.display='block';return;}
-  // Verify current password (simple hash compare)
-  const currentHash=await hashPass(current);
-  if(currentUser.passwordHash && currentHash!==currentUser.passwordHash){
-    // try plain text fallback for legacy users
-    if(current!==currentUser.password){
-      errEl.textContent='Senha atual incorreta.';errEl.style.display='block';return;
-    }
-  }
-  // Save new password hash
-  const newHash=await hashPass(newPass);
+  if(newPass!==confirm){errEl.textContent='Nova senha e confirmação não coincidem.';errEl.style.display='block';return;}
+  if(newPass.length<4){errEl.textContent='Mínimo de 4 caracteres.';errEl.style.display='block';return;}
+  var currentHash=await hashPass(current);
+  var storedHash=currentUser.passwordHash||(await hashPass(currentUser.password||''));
+  if(currentHash!==storedHash){errEl.textContent='Senha atual incorreta.';errEl.style.display='block';return;}
+  var newHash=await hashPass(newPass);
   currentUser.passwordHash=newHash;
-  delete currentUser.password; // remove plain text if exists
-  const u=state.users.find(u=>u.id===currentUser.id);
+  delete currentUser.password;
+  var u=state.users.find(function(u){return u.id===currentUser.id;});
   if(u){u.passwordHash=newHash;delete u.password;}
   saveActiveUser();
   await saveGH();
   closeModal('change-pass-modal');
-  alert('✅ Senha alterada com sucesso!');
+  alert('Senha alterada com sucesso!');
 }
 
 async function hashPass(pass){
-  const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(pass));
-  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  if(!pass)return'';
+  var buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(pass));
+  return Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,'0');}).join('');
 }
-// ══════ INIT ══════
-loadGH();
+
 </script>
+
+<!-- PATCH NOTES -->
+<div class="modal-overlay" id="patch-modal">
+  <div class="modal" style="max-width:420px;">
+    <div class="modal-title">🏗️ Novidades</div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+
+      <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.3 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Troca de senha pelo usuário</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Cada usuário pode alterar a própria senha pelo botão 🔑 ao lado do nome no header.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.2 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Alerta automático via Telegram</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Bot envia mensagem de seg a sex às 9h listando obras sem atualização.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.1 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Checklists, comentários e etiquetas</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Cards com checklist MACRO e Detalhado, comentários, histórico e etiquetas coloridas.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.0 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Lançamento</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Kanban de obras com GitHub como backend, imagens via Cloudinary, login por seleção e drag & drop.</div>
+      </div>
+
+    </div>
+    <div class="modal-actions" style="margin-top:16px;">
+      <button class="btn-secondary" onclick="closeModal('patch-modal')">Fechar</button>
+    </div>
+  </div>
+</div>
+
 
 <!-- CHANGE PASSWORD -->
 <div class="modal-overlay" id="change-pass-modal">
@@ -1068,45 +1099,7 @@ loadGH();
     <div id="cp-error" style="color:#fca5a5;font-size:12px;display:none;margin-top:4px;"></div>
     <div class="modal-actions">
       <button class="btn-secondary" onclick="closeModal('change-pass-modal')">Cancelar</button>
-      <button class="btn-primary btn-sm" onclick="doChangePass()">Salvar senha</button>
-    </div>
-  </div>
-</div>
-
-
-<!-- PATCH NOTES -->
-<div class="modal-overlay" id="patch-modal">
-  <div class="modal" style="max-width:420px;">
-    <div class="modal-title" style="display:flex;align-items:center;gap:8px;">🏗️ <span>Novidades</span></div>
-    <div style="display:flex;flex-direction:column;gap:10px;">
-
-      <div style="border-left:3px solid var(--accent);padding-left:12px;">
-        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.3 — Mai 2025</div>
-        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Troca de senha pelo usuário</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Cada usuário agora pode alterar a própria senha pelo botão 🔑 ao lado do nome no header. A senha fica salva com hash seguro.</div>
-      </div>
-
-      <div style="border-left:3px solid var(--border);padding-left:12px;">
-        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.2 — Mai 2025</div>
-        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Alerta automático via Telegram</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Bot envia mensagem diária de seg a sex às 9h listando obras sem atualização.</div>
-      </div>
-
-      <div style="border-left:3px solid var(--border);padding-left:12px;">
-        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.1 — Mai 2025</div>
-        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Checklists, comentários e etiquetas</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Cards com checklist MACRO e Detalhado, comentários, histórico de atividade, etiquetas coloridas e membros atribuídos.</div>
-      </div>
-
-      <div style="border-left:3px solid var(--border);padding-left:12px;">
-        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v1.0 — Mai 2025</div>
-        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Lançamento</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Kanban de obras com GitHub como backend, imagens via Cloudinary, login por seleção de usuário e drag & drop.</div>
-      </div>
-
-    </div>
-    <div class="modal-actions" style="margin-top:16px;">
-      <button class="btn-secondary" onclick="closeModal('patch-modal')">Fechar</button>
+      <button class="btn-primary btn-sm" onclick="doChangePass()">Salvar</button>
     </div>
   </div>
 </div>
