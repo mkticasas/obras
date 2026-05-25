@@ -57,7 +57,7 @@
       "inicio": "2026-05-12",
       "prazo": "2026-12-12",
       "resp": "Teste 1",
-      "equipe": "rwerwerwer",
+      "equipe": "",
       "status": "",
       "obs": "",
       "tags": [
@@ -237,7 +237,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:17:17.475Z",
-      "updatedAt": "2026-05-25T12:52:37.432Z",
+      "updatedAt": "2026-05-25T12:52:45.611Z",
       "log": []
     },
     {
