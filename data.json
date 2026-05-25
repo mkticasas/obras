@@ -1115,7 +1115,7 @@
       "prazo": "2026-10-31",
       "resp": "",
       "equipe": "",
-      "status": "Fundação",
+      "status": "",
       "obs": "",
       "tags": [
         "ok"
@@ -1292,7 +1292,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:42:09.079Z",
-      "updatedAt": "2026-05-25T20:43:03.769Z",
+      "updatedAt": "2026-05-25T20:43:10.845Z",
       "log": []
     }
   ],
