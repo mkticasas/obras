@@ -432,6 +432,7 @@ const ghH=()=>({'Authorization':`token ${CFG.token}`,'Accept':'application/vnd.g
 
 async function loadGH(){
   setSS('spin','Carregando...');
+  localStorage.removeItem('kanban-state-cache');
   try{
     const r=await fetch(ghUrl(),{headers:ghH()});
     if(!r.ok)throw new Error(r.status);
@@ -514,7 +515,14 @@ function removeCover(){
 
 // ══════ USER ══════
 function restoreUser(){
-  try{const s=JSON.parse(localStorage.getItem('kanban-user'));if(s){const f=state.users.find(u=>u.id===s.id);currentUser=f||null;}}catch{}
+  try{
+    const s=JSON.parse(localStorage.getItem('kanban-user'));
+    if(s){
+      const f=state.users.find(u=>u.id===s.id);
+      currentUser=f||null;
+      if(!f)localStorage.removeItem('kanban-user');
+    }
+  }catch{}
 }
 function saveActiveUser(){localStorage.setItem('kanban-user',currentUser?JSON.stringify(currentUser):'null');}
 function updateHeaderUser(){
