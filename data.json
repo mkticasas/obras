@@ -2313,17 +2313,17 @@
             {
               "id": "mplopymbyfnd",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymbxogx",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymbg9kd",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymbixs7",
@@ -2430,7 +2430,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:54:40.259Z",
-      "updatedAt": "2026-05-25T20:55:10.527Z",
+      "updatedAt": "2026-05-25T20:55:14.693Z",
       "log": []
     }
   ],
