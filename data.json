@@ -1873,7 +1873,7 @@
       "coverUrl": null,
       "addr": "",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-03-13",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -2052,7 +2052,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:52:42.083Z",
-      "updatedAt": "2026-05-25T20:52:46.861Z",
+      "updatedAt": "2026-05-25T20:52:52.787Z",
       "log": []
     }
   ],
