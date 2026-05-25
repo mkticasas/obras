@@ -60,7 +60,9 @@
       "equipe": "",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "atencao"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -233,7 +235,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:17:17.475Z",
-      "updatedAt": "2026-05-25T13:16:48.747Z",
+      "updatedAt": "2026-05-25T20:41:51.961Z",
       "log": []
     },
     {
