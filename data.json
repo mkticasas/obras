@@ -1700,12 +1700,12 @@
             {
               "id": "mplom1glnd5i",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gl10kr",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gleph3",
@@ -1746,17 +1746,17 @@
             {
               "id": "mplom1gldh9h",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1glju0i",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gl8rr5",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gl6qhn",
@@ -1863,7 +1863,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:51:37.317Z",
-      "updatedAt": "2026-05-25T20:51:43.534Z",
+      "updatedAt": "2026-05-25T20:51:59.935Z",
       "log": []
     }
   ],
