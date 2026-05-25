@@ -907,7 +907,7 @@
     {
       "id": "mpb8ny36m22t",
       "name": "ANTONIO E BEATRIZ - MORADA DO SOL",
-      "colId": "mp1jg6ccow2u",
+      "colId": "mp44j4gncbh1",
       "coverUrl": null,
       "addr": "",
       "valor": "",
@@ -1092,8 +1092,13 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-05-25T12:47:19.650Z",
-      "log": []
+      "updatedAt": "2026-05-25T20:41:37.942Z",
+      "log": [
+        {
+          "date": "2026-05-25T20:41:37.942Z",
+          "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
+        }
+      ]
     }
   ],
   "users": [
