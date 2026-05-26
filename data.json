@@ -2819,7 +2819,7 @@
       "addr": "EPLENUM",
       "valor": "",
       "inicio": "2026-03-01",
-      "prazo": "",
+      "prazo": "2027-04-30",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -2834,17 +2834,17 @@
             {
               "id": "mpmqk8qura0k",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmqk8quaclb",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmqk8qu981p",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmqk8qumcnk",
@@ -2997,7 +2997,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T14:33:58.854Z",
-      "updatedAt": "2026-05-26T14:34:16.209Z",
+      "updatedAt": "2026-05-26T14:34:26.939Z",
       "log": []
     }
   ],
