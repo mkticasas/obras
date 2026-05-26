@@ -4655,57 +4655,57 @@
             {
               "id": "mpmtwz84gyau",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84ge9t",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84dyvp",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84h9rw",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84jvxl",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84yv9f",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84lmqi",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84ptcn",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84ivhi",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84ba71",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz8406em",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84qxze",
@@ -4742,7 +4742,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:07:51.892Z",
-      "updatedAt": "2026-05-26T16:08:11.665Z",
+      "updatedAt": "2026-05-26T16:08:21.010Z",
       "log": []
     }
   ],
