@@ -78,7 +78,10 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .card-meta{display:flex;flex-direction:column;gap:4px;padding-left:5px;}
 .card-meta-row{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);}
 .card-meta-row span{color:var(--text);opacity:.85;}
-.card-tags{display:flex;gap:4px;flex-wrap:wrap;padding-left:5px;margin-top:6px;}
+.card-tags{display:flex;gap:4px;flex-wrap:wrap;padding-left:5px;margin-top:2px;align-items:center;}
+.card-tag-dot{width:10px;height:10px;border-radius:50%;display:inline-block;cursor:pointer;flex-shrink:0;transition:.15s;}
+.card-tag-dot:hover{transform:scale(1.3);}
+.tag{transition:all .15s;}
 .tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:4px;}
 .tag-atencao{background:#78350f;color:#fde68a;}
 .tag-ok{background:#14532d;color:#86efac;}
@@ -451,6 +454,7 @@ const CFG={user:'mkticasas',repo:'obras',token:'ghp_b0giRwUEOypWNkEdz8b9yU5prq3h
 let state={columns:[],cards:[],users:[]};
 let currentUser=null;
 let openCardId=null;
+let compactTags=JSON.parse(localStorage.getItem('kanban-compact-tags')||'{}');
 let dragCardId=null;
 let fileSHA=null;
 
@@ -630,10 +634,13 @@ function cardHTML(card){
   const pct=total>0?Math.round(done/total*100):null;
 
   // tags (dynamic from state.tags)
+  const tagCompact=(compactTags[card.id]||false);
   const tags=(card.tags||[]).map(tid=>{
     const td=(state.tags||[]).find(t=>t.id===tid);if(!td)return '';
+    if(tagCompact)return `<span class="card-tag-dot" title="${td.name}" style="background:${td.bg};" onclick="event.stopPropagation();toggleTagCompact('${card.id}')"></span>`;
     return `<span class="tag" style="background:${td.bg};color:${td.color};">${td.name}</span>`;
   }).filter(Boolean).join('');
+  const tagsToggleBtn=card.tags&&card.tags.length?`<span onclick="event.stopPropagation();toggleTagCompact('${card.id}')" title="${tagCompact?'Expandir tags':'Recolher tags'}" style="cursor:pointer;font-size:9px;color:var(--muted);padding:2px 4px;border-radius:3px;background:var(--surface);border:1px solid var(--border);line-height:1;flex-shrink:0;">${tagCompact?'▶':'◀'}</span>`:'';
 
   // assignees (only show valid users)
   const assignees=(card.assignees||[]).map(aid=>{
@@ -658,7 +665,7 @@ function cardHTML(card){
       <div class="card-body">
         <div class="card-status-bar" style="background:${bar}"></div>
         <div class="card-title">${card.name}</div>
-        ${tags?`<div class="card-tags">${tags}</div>`:''}
+        ${tags?`<div class="card-tags">${tags}${tagsToggleBtn}</div>`:''}
         <div class="card-meta">
           ${card.addr&&card.addr.trim().length>3?`<div class="card-meta-row">📍 <span>${card.addr}</span></div>`:''}
           ${card.resp&&card.resp.trim().includes(' ')&&card.resp.length<40?`<div class="card-meta-row">👤 <span>${card.resp}</span></div>`:''}
@@ -773,6 +780,13 @@ function toggleTag(el){
   if(card.tags.includes(tag)){card.tags=card.tags.filter(t=>t!==tag);el.classList.remove('selected');}
   else{card.tags.push(tag);el.classList.add('selected');}
   card.updatedAt=now();renderCardInBoard(card);debSave();
+}
+
+function toggleTagCompact(cardId){
+  compactTags[cardId]=!compactTags[cardId];
+  localStorage.setItem('kanban-compact-tags',JSON.stringify(compactTags));
+  const card=state.cards.find(c=>c.id===cardId);
+  if(card)renderCardInBoard(card);
 }
 
 function renderDetailAssignees(card){
