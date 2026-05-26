@@ -913,7 +913,7 @@
     {
       "id": "mpb8ny36m22t",
       "name": "ANTONIO E BEATRIZ",
-      "colId": "mp44j4gncbh1",
+      "colId": "mp1jg6ccow2u",
       "coverUrl": null,
       "addr": "MORADA DO SOL",
       "valor": "",
@@ -1099,11 +1099,15 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-05-26T15:43:08.938Z",
+      "updatedAt": "2026-05-26T16:37:29.056Z",
       "log": [
         {
           "date": "2026-05-25T20:41:37.942Z",
           "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
+        },
+        {
+          "date": "2026-05-26T16:37:29.056Z",
+          "note": "Movido para \"INICIALIZAR\" por Marketing"
         }
       ]
     },
