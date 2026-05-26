@@ -6379,12 +6379,12 @@
             {
               "id": "mpmudwv97ki8",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9olib",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9vbyu",
@@ -6481,7 +6481,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:21:01.989Z",
-      "updatedAt": "2026-05-26T16:21:46.428Z",
+      "updatedAt": "2026-05-26T16:21:49.596Z",
       "log": []
     }
   ],
