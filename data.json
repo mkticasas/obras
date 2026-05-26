@@ -3885,7 +3885,7 @@
             {
               "id": "mpmtoz8wsywv",
               "text": "Laje / Cobertura",
-              "done": true
+              "done": false
             },
             {
               "id": "mpmtoz8wgosl",
@@ -3977,7 +3977,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-05-26T16:02:15.301Z",
+      "updatedAt": "2026-05-26T16:02:18.032Z",
       "log": []
     }
   ],
