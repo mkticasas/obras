@@ -2460,7 +2460,9 @@
       "equipe": "",
       "status": "",
       "obs": "DEMOROU UM POUCO MAIS PRA SAIR O REGISTRO EM CARTÓRIO.",
-      "tags": [],
+      "tags": [
+        "mp4ih8i6bddg"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -2633,7 +2635,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:55:40.071Z",
-      "updatedAt": "2026-05-26T14:30:38.729Z",
+      "updatedAt": "2026-05-26T15:43:48.646Z",
       "log": []
     },
     {
