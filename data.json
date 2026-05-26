@@ -6571,77 +6571,77 @@
             {
               "id": "mpmufpatved9",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatcp5l",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpathwve",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpat3lct",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpat4irm",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatocre",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpat2yn4",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatggn0",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatl73d",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpats8iv",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatnhve",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpat9vp2",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatfdqo",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpat6pcm",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpauete6",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpauhm05",
@@ -6673,7 +6673,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:22:25.494Z",
-      "updatedAt": "2026-05-26T16:22:50.208Z",
+      "updatedAt": "2026-05-26T16:23:04.685Z",
       "log": []
     }
   ],
