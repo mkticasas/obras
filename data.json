@@ -5344,12 +5344,15 @@
       "addr": "FLORIDA PARK",
       "valor": "",
       "inicio": "2025-08-14",
-      "prazo": "",
+      "prazo": "2026-03-14",
       "resp": "",
       "equipe": "",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "mp4ih8i6bddg",
+        "mpb8bofmzsfn"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -5522,7 +5525,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:14:16.431Z",
-      "updatedAt": "2026-05-26T16:14:31.317Z",
+      "updatedAt": "2026-05-26T16:14:38.866Z",
       "log": []
     }
   ],
