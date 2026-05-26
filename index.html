@@ -354,6 +354,8 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
     <div class="admin-tabs">
       <button class="admin-tab active" onclick="switchAdminTab('users')">👥 Usuários</button>
       <button class="admin-tab" onclick="switchAdminTab('config')">⚙️ Config</button>
+      <button class="admin-tab" onclick="switchAdminTab('tags')">🏷️ Etiquetas</button>
+      <button class="admin-tab" onclick="switchAdminTab('tags')">🏷️ Etiquetas</button>
     </div>
     <div class="admin-tab-panel active" id="tab-users">
       <div id="user-list" style="margin-bottom:14px;"></div>
@@ -389,6 +391,28 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
         <button class="btn-primary btn-sm" onclick="saveConfigTab()">Salvar</button>
       </div>
     </div>
+
+    <div class="admin-tab-panel" id="tab-tags">
+      <div id="tags-list" style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px;"></div>
+      <div style="border-top:1px solid var(--border);padding-top:12px;">
+        <div class="form-group"><label>Nome da etiqueta</label><input id="tag-name-input" placeholder="Ex: Vistoria" style="width:100%;"/></div>
+        <div class="form-group"><label>Cor</label>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;" id="tag-color-picker">
+            <div onclick="selectTagColor('#78350f','#fde68a',this)" style="width:28px;height:28px;border-radius:50%;background:#78350f;cursor:pointer;border:3px solid transparent;" title="Laranja"></div>
+            <div onclick="selectTagColor('#7f1d1d','#fca5a5',this)" style="width:28px;height:28px;border-radius:50%;background:#7f1d1d;cursor:pointer;border:3px solid transparent;" title="Vermelho"></div>
+            <div onclick="selectTagColor('#14532d','#86efac',this)" style="width:28px;height:28px;border-radius:50%;background:#14532d;cursor:pointer;border:3px solid transparent;" title="Verde"></div>
+            <div onclick="selectTagColor('#1e3a5f','#93c5fd',this)" style="width:28px;height:28px;border-radius:50%;background:#1e3a5f;cursor:pointer;border:3px solid transparent;" title="Azul"></div>
+            <div onclick="selectTagColor('#4c1d95','#c4b5fd',this)" style="width:28px;height:28px;border-radius:50%;background:#4c1d95;cursor:pointer;border:3px solid transparent;" title="Roxo"></div>
+            <div onclick="selectTagColor('#1f2937','#9ca3af',this)" style="width:28px;height:28px;border-radius:50%;background:#1f2937;cursor:pointer;border:3px solid transparent;" title="Cinza"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px;">
+          <button class="btn-secondary" onclick="clearTagForm()">Limpar</button>
+          <button class="btn-primary btn-sm" onclick="saveTag()">Salvar etiqueta</button>
+        </div>
+      </div>
+    </div>
+
     <div class="modal-actions" style="border-top:1px solid var(--border);padding-top:12px;margin-top:4px;">
       <button class="btn-secondary" onclick="closeModal('admin-modal')">Fechar</button>
     </div>
@@ -452,6 +476,13 @@ async function loadGH(){
       if(c.resp&&!c.resp.includes(' ')&&c.resp.length>8){c.resp='';needsSave=true;}
       if(c.equipe&&!c.equipe.includes(' ')&&c.equipe.length>8){c.equipe='';needsSave=true;}
     });
+    if(!state.tags)state.tags=[
+      {id:'atencao',name:'Atenção',bg:'#78350f',color:'#fde68a'},
+      {id:'urgente',name:'Urgente',bg:'#7f1d1d',color:'#fca5a5'},
+      {id:'ok',name:'OK',bg:'#14532d',color:'#86efac'},
+      {id:'info',name:'Info',bg:'#1e3a5f',color:'#93c5fd'}
+    ];
+    if(!state.tags)state.tags=[{id:'atencao',name:'Atenção',bg:'#78350f',color:'#fde68a'},{id:'urgente',name:'Urgente',bg:'#7f1d1d',color:'#fca5a5'},{id:'ok',name:'OK',bg:'#14532d',color:'#86efac'},{id:'info',name:'Info',bg:'#1e3a5f',color:'#93c5fd'}];
     restoreUser(); updateHeaderUser(); render(); checkAlerts();
     if(needsSave)saveGH();
   }catch(e){setSS('err','Erro ao carregar');console.error(e);}
@@ -692,9 +723,7 @@ function openCard(id){
   cs.innerHTML=(state.columns||[]).map(c=>`<option value="${c.id}"${c.id===card.colId?' selected':''}>${c.name}</option>`).join('');
 
   // tags
-  document.querySelectorAll('.tag-opt').forEach(el=>{
-    el.classList.toggle('selected',(card.tags||[]).includes(el.dataset.tag));
-  });
+  renderTagOptions(););
 
   // assignees
   renderDetailAssignees(card);
@@ -1090,6 +1119,56 @@ function clearSearch(){
   const input = document.getElementById('search-input');
   if(input){ input.value = ''; filterCards(''); input.focus(); }
 }
+
+// TAG MANAGEMENT
+let editingTagId=null,selectedTagBg='#78350f',selectedTagFg='#fde68a';
+
+function selectTagColor(bg,fg,el){
+  selectedTagBg=bg;selectedTagFg=fg;
+  document.querySelectorAll('#tag-color-picker div').forEach(d=>d.style.borderColor='transparent');
+  el.style.borderColor='#fff';
+}
+
+function renderTagsList(){
+  const wrap=document.getElementById('tags-list');if(!wrap)return;
+  const tags=state.tags||[];
+  if(!tags.length){wrap.innerHTML='<p style="font-size:12px;color:var(--muted);">Nenhuma etiqueta.</p>';return;}
+  wrap.innerHTML=tags.map(t=>`<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;background:var(--surface2);border:1px solid var(--border);"><span style="background:${t.bg};color:${t.color};padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;">${t.name}</span><div style="display:flex;gap:6px;"><button onclick="startEditTag('${t.id}')" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:13px;">✏️</button><button onclick="deleteTag('${t.id}')" style="background:none;border:none;color:#f87171;cursor:pointer;font-size:13px;">🗑</button></div></div>`).join('');
+}
+
+function startEditTag(id){
+  const t=(state.tags||[]).find(t=>t.id===id);if(!t)return;
+  editingTagId=id;
+  document.getElementById('tag-name-input').value=t.name;
+  selectedTagBg=t.bg;selectedTagFg=t.color;
+}
+
+function clearTagForm(){
+  editingTagId=null;
+  document.getElementById('tag-name-input').value='';
+  document.querySelectorAll('#tag-color-picker div').forEach(d=>d.style.borderColor='transparent');
+}
+
+function saveTag(){
+  const name=document.getElementById('tag-name-input').value.trim();
+  if(!name){alert('Digite um nome.');return;}
+  if(!state.tags)state.tags=[];
+  if(editingTagId){
+    const t=state.tags.find(t=>t.id===editingTagId);
+    if(t){t.name=name;t.bg=selectedTagBg;t.color=selectedTagFg;}
+  } else {
+    state.tags.push({id:uid(),name,bg:selectedTagBg,color:selectedTagFg});
+  }
+  clearTagForm();renderTagsList();renderTagOptions();saveGH();
+}
+
+function deleteTag(id){
+  if(!confirm('Excluir esta etiqueta?'))return;
+  state.tags=(state.tags||[]).filter(t=>t.id!==id);
+  state.cards.forEach(c=>{c.tags=(c.tags||[]).filter(t=>t!==id);});
+  renderTagsList();renderTagOptions();saveGH();
+}
+
 // PATCH NOTES
 function openPatchNotes(){
   document.getElementById('patch-modal').classList.add('show');
@@ -1144,6 +1223,12 @@ async function hashPass(pass){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.0 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Gerenciador de etiquetas</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Nova aba Etiquetas no Admin — criar, editar nome/cor e excluir etiquetas. Etiquetas dinâmicas nos cards.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v2.9 — Mai 2025</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Busca, comentários e melhorias</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Campo de busca no header, editar/excluir comentários, indicador de comentários no card, patch notes com scroll e X fixo.</div>
