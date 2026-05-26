@@ -4994,17 +4994,17 @@
             {
               "id": "mpmu1y6sxfdy",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu1y6s4gdq",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu1y6svz6d",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu1y6syrka",
@@ -5142,7 +5142,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:11:43.828Z",
-      "updatedAt": "2026-05-26T16:12:55.441Z",
+      "updatedAt": "2026-05-26T16:12:58.206Z",
       "log": []
     }
   ],
