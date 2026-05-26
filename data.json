@@ -5920,7 +5920,7 @@
       "addr": "SANTA REGINA",
       "valor": "",
       "inicio": "2025-10-24",
-      "prazo": "",
+      "prazo": "2026-05-24",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -5935,32 +5935,32 @@
             {
               "id": "mpmub07ci996",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07cicgm",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07cm80h",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07ciblw",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07cc5o4",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07c4lal",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07cz7qt",
@@ -6098,7 +6098,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:18:46.344Z",
-      "updatedAt": "2026-05-26T16:19:07.993Z",
+      "updatedAt": "2026-05-26T16:19:23.030Z",
       "log": []
     }
   ],
