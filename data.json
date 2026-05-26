@@ -3824,7 +3824,7 @@
             {
               "id": "mpmtoz8wd2w1",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8w12ok",
@@ -3977,7 +3977,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-05-26T16:02:06.683Z",
+      "updatedAt": "2026-05-26T16:02:08.388Z",
       "log": []
     }
   ],
