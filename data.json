@@ -914,7 +914,7 @@
       "colId": "mp44j4gncbh1",
       "coverUrl": null,
       "addr": "MORADA DO SOL",
-      "valor": "",
+      "valor": "200",
       "inicio": "2026-04-10",
       "prazo": "2026-11-10",
       "resp": "",
@@ -1096,7 +1096,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-05-26T14:43:39.508Z",
+      "updatedAt": "2026-05-26T14:53:17.569Z",
       "log": [
         {
           "date": "2026-05-25T20:41:37.942Z",
