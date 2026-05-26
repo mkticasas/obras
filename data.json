@@ -4561,7 +4561,7 @@
       "name": "WILSON",
       "colId": "mpb85pbuoftb",
       "coverUrl": null,
-      "addr": "",
+      "addr": "LOTE 07",
       "valor": "",
       "inicio": "",
       "prazo": "",
@@ -4579,32 +4579,32 @@
             {
               "id": "mpmtwz84eq6t",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84msm5",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84p8zx",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84cl4o",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz847z9j",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84hs4q",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84izr8",
@@ -4742,7 +4742,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:07:51.892Z",
-      "updatedAt": "2026-05-26T16:07:55.980Z",
+      "updatedAt": "2026-05-26T16:08:04.578Z",
       "log": []
     }
   ],
