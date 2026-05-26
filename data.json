@@ -6419,37 +6419,37 @@
             {
               "id": "mpmudwv91dp4",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9xtcg",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9680z",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9umim",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9af0j",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9d16c",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9jyft",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9gisc",
@@ -6481,7 +6481,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:21:01.989Z",
-      "updatedAt": "2026-05-26T16:21:31.838Z",
+      "updatedAt": "2026-05-26T16:21:41.688Z",
       "log": []
     }
   ],
