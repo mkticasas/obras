@@ -523,10 +523,10 @@
     },
     {
       "id": "mpb8k4ibgszp",
-      "name": "MATHEUS E CAROL - SETSUL 2",
+      "name": "MATHEUS E CAROL",
       "colId": "col-default",
       "coverUrl": null,
-      "addr": "",
+      "addr": "SETSUL 2",
       "valor": "",
       "inicio": "2026-04-14",
       "prazo": "2026-11-14",
@@ -707,7 +707,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:24:32.339Z",
-      "updatedAt": "2026-05-18T13:24:56.882Z",
+      "updatedAt": "2026-05-26T14:08:15.050Z",
       "log": []
     },
     {
