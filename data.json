@@ -7422,24 +7422,24 @@
             {
               "id": "mpmulubjgb5d",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmulubjgbxk",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmulubjcslp",
               "text": "Entrega",
-              "done": false
+              "done": true
             }
           ]
         }
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:27:11.935Z",
-      "updatedAt": "2026-05-26T16:27:39.036Z",
+      "updatedAt": "2026-05-26T16:27:43.886Z",
       "log": []
     }
   ],
