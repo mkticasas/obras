@@ -724,7 +724,7 @@ function openCard(id){
   cs.innerHTML=(state.columns||[]).map(c=>`<option value="${c.id}"${c.id===card.colId?' selected':''}>${c.name}</option>`).join('');
 
   // tags
-  renderTagOptions(););
+  renderTagOptions();
 
   // assignees
   renderDetailAssignees(card);
