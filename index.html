@@ -802,7 +802,34 @@ function openUserSelect(){
 }
 function selectUser(id){
   const u=state.users.find(u=>u.id===id);if(!u)return;
-  currentUser=u;saveActiveUser();updateHeaderUser();closeModal('user-select-modal');
+  // If user has no password set, log in directly
+  if(!u.passwordHash&&!u.password){currentUser=u;saveActiveUser();updateHeaderUser();closeModal('user-select-modal');return;}
+  // Otherwise ask for password
+  pendingLoginUserId=id;
+  document.getElementById('login-user-name').textContent=u.name;
+  document.getElementById('login-pass-input').value='';
+  document.getElementById('login-pass-error').style.display='none';
+  closeModal('user-select-modal');
+  document.getElementById('login-modal').classList.add('show');
+  setTimeout(()=>document.getElementById('login-pass-input').focus(),100);
+}
+
+let pendingLoginUserId=null;
+
+async function confirmLogin(){
+  const u=state.users.find(u=>u.id===pendingLoginUserId);if(!u)return;
+  const pass=document.getElementById('login-pass-input').value;
+  const errEl=document.getElementById('login-pass-error');
+  const hash=await hashPass(pass);
+  const stored=u.passwordHash||(u.password?await hashPass(u.password):null);
+  if(!stored||hash===stored){
+    currentUser=u;saveActiveUser();updateHeaderUser();
+    closeModal('login-modal');pendingLoginUserId=null;
+  } else {
+    errEl.textContent='Senha incorreta.';errEl.style.display='block';
+    document.getElementById('login-pass-input').value='';
+    document.getElementById('login-pass-input').focus();
+  }
 }
 
 // ══════ RENDER BOARD ══════
@@ -1574,6 +1601,12 @@ function closeMobileMenu(){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.9 — Mai 2026 · 15:25</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Senha obrigatória ao trocar de usuário</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Ao selecionar qualquer usuário, o sistema pede a senha antes de logar. Usuários sem senha cadastrada entram diretamente.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.8 — Mai 2026 · 15:16</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Menu sanduíche no mobile</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Header mobile reorganizado: logo + busca + hambúrguer. Menu lateral com usuário, Nova Obra, Admin e status de sincronização.</div>
@@ -1770,5 +1803,23 @@ function closeMobileMenu(){
   </div>
 </div>
 
+
+<!-- LOGIN MODAL -->
+<div class="modal-overlay" id="login-modal">
+  <div class="modal" style="max-width:340px;">
+    <div class="modal-title" style="margin-bottom:16px;">🔐 Entrar como</div>
+    <div style="font-size:16px;font-weight:700;color:var(--accent);margin-bottom:16px;text-align:center;" id="login-user-name"></div>
+    <div class="form-group">
+      <label>Senha</label>
+      <input type="password" id="login-pass-input" placeholder="••••••••" style="width:100%;"
+        onkeydown="if(event.key==='Enter')confirmLogin()"/>
+      <div id="login-pass-error" style="display:none;color:var(--danger);font-size:12px;margin-top:6px;"></div>
+    </div>
+    <div class="modal-actions" style="margin-top:16px;">
+      <button class="btn-secondary" onclick="closeModal('login-modal');pendingLoginUserId=null;">Cancelar</button>
+      <button class="btn-primary" onclick="confirmLogin()">Entrar</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
