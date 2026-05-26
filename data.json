@@ -2818,7 +2818,7 @@
       "coverUrl": null,
       "addr": "EPLENUM",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-03-01",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -2997,7 +2997,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T14:33:58.854Z",
-      "updatedAt": "2026-05-26T14:34:10.497Z",
+      "updatedAt": "2026-05-26T14:34:16.209Z",
       "log": []
     }
   ],
