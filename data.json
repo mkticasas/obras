@@ -5760,12 +5760,12 @@
             {
               "id": "mpmu8mq2ar0g",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu8mq224jc",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu8mq2j668",
@@ -5903,7 +5903,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:16:55.562Z",
-      "updatedAt": "2026-05-26T16:17:03.064Z",
+      "updatedAt": "2026-05-26T16:17:07.682Z",
       "log": []
     }
   ],
