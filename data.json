@@ -6928,7 +6928,7 @@
             {
               "id": "mpmuie3vyb0h",
               "text": "Finalização",
-              "done": false
+              "done": true
             }
           ]
         },
@@ -7056,7 +7056,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:24:30.955Z",
-      "updatedAt": "2026-05-26T16:24:49.252Z",
+      "updatedAt": "2026-05-26T16:24:58.670Z",
       "log": []
     }
   ],
