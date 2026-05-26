@@ -1094,15 +1094,7 @@
           ]
         }
       ],
-      "comments": [
-        {
-          "type": "comment",
-          "id": "mpmqwibx9qe4",
-          "userId": "6a0490ad4zlb",
-          "text": "Teste",
-          "date": "2026-05-26T14:43:31.149Z"
-        }
-      ],
+      "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
       "updatedAt": "2026-05-26T14:43:39.508Z",
       "log": [
