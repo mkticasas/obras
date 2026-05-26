@@ -4181,12 +4181,15 @@
       "addr": "MARIO DE MATTOS",
       "valor": "",
       "inicio": "2025-09-12",
-      "prazo": "",
+      "prazo": "2026-04-12",
       "resp": "",
       "equipe": "",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "mpb8bjvuy2j4",
+        "mp4ih8i6bddg"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -4359,7 +4362,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:03:30.978Z",
-      "updatedAt": "2026-05-26T16:03:46.868Z",
+      "updatedAt": "2026-05-26T16:03:56.762Z",
       "log": []
     }
   ],
