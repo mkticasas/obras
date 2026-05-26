@@ -650,9 +650,12 @@ function cardHTML(card){
 
   // deadline
   let deadlineHTML='';
-  if(card.prazo){
-    const dpr=new Date(card.prazo),isLate=dpr<new Date();
-    deadlineHTML=`<span class="card-deadline${isLate?' late':''}" title="Prazo">📅 ${fmtDateShort(card.prazo)}</span>`;
+  if(card.inicio||card.prazo){
+    const isLate=card.prazo&&new Date(card.prazo)<new Date();
+    const inicioStr=card.inicio?fmtDateShort(card.inicio):'';
+    const prazoStr=card.prazo?fmtDateShort(card.prazo):'';
+    const dateStr=inicioStr&&prazoStr?`${inicioStr} → ${prazoStr}`:inicioStr||prazoStr;
+    deadlineHTML=`<span class="card-deadline${isLate?' late':''}" title="Período da obra">📅 ${dateStr}</span>`;
   }
 
   const alertHTML=isAlert?`<div class="card-alert danger">⚠️ ${days}d sem atualização</div>`:isWarn?`<div class="card-alert warn">⏰ Atualizar em breve</div>`:'';
@@ -1247,6 +1250,24 @@ async function hashPass(pass){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.3 — Mai 2026</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Data de início e prazo no card</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Cards com período completo: início → prazo. Se só um estiver preenchido, mostra apenas ele.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.2 — Mai 2026</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Tags compactas + fixes gerais</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Toggle compacto nas tags do card (clique para recolher em bolinhas coloridas). Fix aba Etiquetas duplicada no Admin. Fix etiquetas não listadas no Admin. Fix tags hardcoded — agora 100% dinâmicas via state.tags.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.1 — Mai 2026</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Fixes de carregamento e abertura de cards</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Fix decode UTF-8 (acentos quebravam carregamento). Fix função renderTagOptions indefinida (cards não abriam). Fix ) extra que quebrava o JS.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.0 — Mai 2025</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Gerenciador de etiquetas</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Nova aba Etiquetas no Admin — criar, editar nome/cor e excluir etiquetas. Etiquetas dinâmicas nos cards.</div>
