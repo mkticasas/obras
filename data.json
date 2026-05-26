@@ -4958,7 +4958,7 @@
       "name": "MARIA EDUARDA",
       "colId": "mpb85pbuoftb",
       "coverUrl": null,
-      "addr": "",
+      "addr": "LOTE 10",
       "valor": "",
       "inicio": "",
       "prazo": "",
@@ -4966,7 +4966,10 @@
       "equipe": "",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "mpb8bjvuy2j4",
+        "mpb8bofmzsfn"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -5139,7 +5142,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:11:43.828Z",
-      "updatedAt": "2026-05-26T16:11:52.040Z",
+      "updatedAt": "2026-05-26T16:12:12.794Z",
       "log": []
     }
   ],
