@@ -3804,7 +3804,9 @@
       "equipe": "",
       "status": "",
       "obs": "- DEMOROU A SAIR O REGIRTRO EM CARTÓRIO.",
-      "tags": [],
+      "tags": [
+        "mp4ih8i6bddg"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -3977,7 +3979,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-05-26T16:02:18.032Z",
+      "updatedAt": "2026-05-26T16:02:25.894Z",
       "log": []
     }
   ],
