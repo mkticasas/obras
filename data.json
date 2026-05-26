@@ -6112,12 +6112,14 @@
       "addr": "MORADA DO SOL",
       "valor": "",
       "inicio": "2025-10-10",
-      "prazo": "",
+      "prazo": "2026-05-10",
       "resp": "",
       "equipe": "",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "mp4ih8i6bddg"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -6290,7 +6292,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:19:58.462Z",
-      "updatedAt": "2026-05-26T16:20:14.363Z",
+      "updatedAt": "2026-05-26T16:20:22.234Z",
       "log": []
     }
   ],
