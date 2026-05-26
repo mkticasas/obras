@@ -6556,17 +6556,17 @@
             {
               "id": "mpmufpatlsom",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatc5gs",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatx4np",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatved9",
@@ -6673,7 +6673,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:22:25.494Z",
-      "updatedAt": "2026-05-26T16:23:04.685Z",
+      "updatedAt": "2026-05-26T16:23:08.344Z",
       "log": []
     }
   ],
