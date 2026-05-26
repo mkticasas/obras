@@ -3981,6 +3981,197 @@
       "createdAt": "2026-05-26T16:01:38.672Z",
       "updatedAt": "2026-05-26T16:02:25.894Z",
       "log": []
+    },
+    {
+      "id": "mpmtqbnncm2j",
+      "name": "Fernando e Micheli",
+      "colId": "mpb85ka3gujh",
+      "coverUrl": null,
+      "addr": "",
+      "valor": "",
+      "inicio": "",
+      "prazo": "",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [
+        "mp4ih8i6bddg"
+      ],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mpmtqbnnz8kp",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpmtqbnnvzdt",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnh0kj",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnni68y",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnn8rn2",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnngv5x",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnno93s",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnn2cig",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnn6rte",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mpmtqbnn02pm",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mpmtqbnnvcqm",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnsle8",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnn7fhu",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnn84oo",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnf1jw",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnzt1p",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnfrfg",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnlxv2",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnr92m",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnvo0l",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnntv0d",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnn3l2d",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnqc1c",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnqugw",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnyz16",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnnla6",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnsahf",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnfdzb",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnuvfb",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnns2ok",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnzlax",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnnlhzh",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mpmtqbnn9a4c",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-05-26T16:02:41.411Z",
+      "updatedAt": "2026-05-26T16:02:49.593Z",
+      "log": []
     }
   ],
   "users": [
