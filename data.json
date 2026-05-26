@@ -7608,17 +7608,17 @@
             {
               "id": "mpmumm96excr",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm963e10",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96vq4m",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm965my6",
@@ -7630,7 +7630,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:27:48.138Z",
-      "updatedAt": "2026-05-26T16:28:20.766Z",
+      "updatedAt": "2026-05-26T16:28:27.048Z",
       "log": []
     }
   ],
