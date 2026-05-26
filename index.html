@@ -1130,6 +1130,13 @@ function selectTagColor(bg,fg,el){
   el.style.borderColor='#fff';
 }
 
+function renderTagOptions(){
+  const card=getOpenCard();if(!card)return;
+  document.querySelectorAll('#d-tags .tag-opt').forEach(el=>{
+    el.classList.toggle('selected',(card.tags||[]).includes(el.dataset.tag));
+  });
+}
+
 function renderTagsList(){
   const wrap=document.getElementById('tags-list');if(!wrap)return;
   const tags=state.tags||[];
