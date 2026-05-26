@@ -2269,7 +2269,9 @@
       "equipe": "",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "mp4ih8i6bddg"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -2442,7 +2444,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:54:40.259Z",
-      "updatedAt": "2026-05-26T14:30:33.358Z",
+      "updatedAt": "2026-05-26T15:43:45.816Z",
       "log": []
     },
     {
