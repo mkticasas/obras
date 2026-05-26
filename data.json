@@ -7228,29 +7228,29 @@
             {
               "id": "mpmukymdpojr",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymd2umf",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdu8od",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdyo6p",
               "text": "Entrega",
-              "done": false
+              "done": true
             }
           ]
         }
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:26:30.853Z",
-      "updatedAt": "2026-05-26T16:26:56.008Z",
+      "updatedAt": "2026-05-26T16:27:00.705Z",
       "log": []
     }
   ],
