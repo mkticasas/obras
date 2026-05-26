@@ -467,7 +467,9 @@ async function loadGH(){
     if(!r.ok)throw new Error(r.status);
     const j=await r.json();
     fileSHA=j.sha;
-    state=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
+    const raw=atob(j.content.replace(/\n/g,''));
+    const bytes=Uint8Array.from(raw,c=>c.charCodeAt(0));
+    state=JSON.parse(new TextDecoder('utf-8').decode(bytes));
     ['users','columns','cards'].forEach(k=>{if(!state[k])state[k]=[];});
     setSS('ok','Sincronizado');
     // clean legacy ID values in resp/equipe fields
