@@ -7067,7 +7067,7 @@
       "name": "JENNY E LEONARDO",
       "colId": "mpb8667uojn3",
       "coverUrl": null,
-      "addr": "",
+      "addr": "SAO THOMAZ",
       "valor": "",
       "inicio": "",
       "prazo": "",
@@ -7075,7 +7075,9 @@
       "equipe": "",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "mp4ih8i6bddg"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -7248,7 +7250,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:26:30.853Z",
-      "updatedAt": "2026-05-26T16:26:34.596Z",
+      "updatedAt": "2026-05-26T16:26:36.657Z",
       "log": []
     }
   ],
