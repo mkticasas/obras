@@ -5150,7 +5150,7 @@
       "name": "KAMILLY",
       "colId": "mpb85pbuoftb",
       "coverUrl": null,
-      "addr": "",
+      "addr": "SAO THOMAZ",
       "valor": "",
       "inicio": "",
       "prazo": "",
@@ -5168,32 +5168,32 @@
             {
               "id": "mpmu47wglay1",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu47wga34g",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu47wgkx17",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu47wgzq86",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu47wg353n",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu47wgq5kz",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu47wgrzt2",
@@ -5331,7 +5331,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:13:29.728Z",
-      "updatedAt": "2026-05-26T16:13:33.233Z",
+      "updatedAt": "2026-05-26T16:13:41.158Z",
       "log": []
     }
   ],
