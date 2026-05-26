@@ -5030,7 +5030,7 @@
             {
               "id": "mpmu1y6snb0r",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu1y6s84vg",
@@ -5142,7 +5142,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:11:43.828Z",
-      "updatedAt": "2026-05-26T16:13:12.526Z",
+      "updatedAt": "2026-05-26T16:13:14.559Z",
       "log": []
     }
   ],
