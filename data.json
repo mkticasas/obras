@@ -3134,6 +3134,12 @@
       "name": "Atrasada",
       "bg": "#ef4444",
       "text": "#fff"
+    },
+    {
+      "id": "mpmt2t6cdr38",
+      "name": "Aguardando Medição",
+      "bg": "#4c1d95",
+      "color": "#c4b5fd"
     }
   ],
   "config": {
