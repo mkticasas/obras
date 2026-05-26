@@ -3477,47 +3477,47 @@
             {
               "id": "mpmtl3r8n1na",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8vpyj",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8kx28",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8axtx",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8204c",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8fwx6",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8s5z4",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8xx1b",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8qv2t",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8f0jz",
@@ -3594,7 +3594,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-05-26T15:59:11.865Z",
+      "updatedAt": "2026-05-26T15:59:21.988Z",
       "log": []
     }
   ],
