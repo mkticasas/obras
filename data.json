@@ -6750,27 +6750,27 @@
             {
               "id": "mpmugtyq259p",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyq4s3o",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqaknr",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqpwj9",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyq794v",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyq820k",
@@ -6867,7 +6867,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:23:18.194Z",
-      "updatedAt": "2026-05-26T16:24:10.190Z",
+      "updatedAt": "2026-05-26T16:24:15.992Z",
       "log": []
     }
   ],
