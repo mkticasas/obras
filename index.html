@@ -72,7 +72,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .card:hover{border-color:#3d4a6b;transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,0,0,.35);}
 .card.dragging{opacity:.4;}
 .card-cover{width:100%;height:120px;object-fit:cover;display:block;}
-.card-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);height:100%;overflow:hidden;display:flex;flex-direction:column;margin:0;}
+.card-body{padding:11px 12px 10px;display:flex;flex-direction:column;gap:5px;}
 .card-status-bar{position:absolute;left:0;top:0;bottom:0;width:3px;}
 .card-title{font-family:'Syne',sans-serif;font-weight:700;font-size:12.5px;margin-bottom:7px;line-height:1.4;padding-left:5px;text-transform:uppercase;letter-spacing:.3px;}
 .card-meta{display:flex;flex-direction:column;gap:4px;padding-left:5px;}
@@ -1088,6 +1088,12 @@ async function hashPass(pass){
     <div style="display:flex;flex-direction:column;gap:10px;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v2.5 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Padding interno dos cards corrigido</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Cards com espaçamento interno adequado entre conteúdo e borda.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v2.4 — Mai 2025</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Scroll por coluna (fix completo)</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Cadeia flex correta: html→body→board→column→cards. Header e botão com flex-shrink:0. Scroll garantido.</div>
