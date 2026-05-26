@@ -3416,7 +3416,7 @@
       "addr": "SAO THOMAZ",
       "valor": "",
       "inicio": "2025-11-28",
-      "prazo": "",
+      "prazo": "2026-06-28",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -3431,17 +3431,17 @@
             {
               "id": "mpmtl3r8xw3k",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8vxnb",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8lwaj",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8tqxc",
@@ -3594,7 +3594,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-05-26T15:58:51.436Z",
+      "updatedAt": "2026-05-26T15:59:05.064Z",
       "log": []
     }
   ],
