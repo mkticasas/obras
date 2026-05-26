@@ -2,14 +2,14 @@ name: Alerta de Obras Paradas
 
 on:
   schedule:
-    - cron: '0 12 * * 1-5'  # 8h Brasília (11h UTC)
+    - cron: '0 12 * * 1-5'  # 9h Brasilia (12h UTC), segunda a sexta
   workflow_dispatch:
 
 jobs:
   check-obras:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repositório
+      - name: Checkout repositorio
         uses: actions/checkout@v4
 
       - name: Verificar obras e enviar alertas via Telegram
@@ -24,16 +24,20 @@ jobs:
               data = json.load(f)
 
           token = os.environ.get("TELEGRAM_TOKEN","").strip()
-
-          # Ler dias de alerta do data.json (configurado pelo site)
-          config        = data.get("config", {})
-          alert_days    = int(config.get("alertDays", 1))
-          alert_secs    = alert_days * 86400
-
+          config     = data.get("config", {})
+          alert_days = int(config.get("alertDays", 1))
+          alert_secs = alert_days * 86400
           now     = datetime.now(timezone.utc)
-          col_map = {c["id"]: c["name"] for c in data.get("columns",[])}
-          users   = data.get("users",[])
-          cards   = data.get("cards",[])
+          columns = data.get("columns", [])
+          col_map = {c["id"]: c["name"] for c in columns}
+
+          SKIP_COLS = set()
+          for c in columns:
+              if "entregue" in c["name"].lower():
+                  SKIP_COLS.add(c["id"])
+
+          users = data.get("users", [])
+          cards = data.get("cards", [])
 
           def seconds_since(iso):
               try:
@@ -58,13 +62,15 @@ jobs:
 
           overdue = []
           for card in cards:
+              if card.get("colId","") in SKIP_COLS:
+                  continue
               upd = card.get("updatedAt", card.get("createdAt",""))
               if upd and seconds_since(upd) >= alert_secs:
                   overdue.append({
                       "name":    card.get("name","(sem nome)"),
-                      "col":     col_map.get(card.get("colId",""),"—"),
-                      "resp":    card.get("resp","—"),
-                      "addr":    card.get("addr","—"),
+                      "col":     col_map.get(card.get("colId",""),"--"),
+                      "resp":    card.get("resp","--"),
+                      "addr":    card.get("addr","--"),
                       "elapsed": elapsed(seconds_since(upd)),
                       "upd":     fmt(upd),
                   })
@@ -74,8 +80,7 @@ jobs:
               sys.exit(0)
 
           print(f"{len(overdue)} obra(s) parada(s) ha mais de {alert_days}d.")
-
-          lines = [f"Kanban de Obras - Alerta", f"({len(overdue)} obra(s) sem atualizacao ha mais de {alert_days} dia(s))", ""]
+          lines = ["Kanban de Obras - Alerta", f"({len(overdue)} obra(s) sem atualizacao ha mais de {alert_days} dia(s))", ""]
           for o in overdue:
               lines += [
                   f"Obra: {o['name']}",
