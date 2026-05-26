@@ -3170,7 +3170,7 @@
             {
               "id": "mpmtfibarsmi",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibaysh4",
@@ -3207,7 +3207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-05-26T15:55:23.172Z",
+      "updatedAt": "2026-05-26T15:55:25.432Z",
       "log": []
     }
   ],
