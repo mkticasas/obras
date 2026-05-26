@@ -6795,12 +6795,12 @@
             {
               "id": "mpmugtyqyv18",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqocgn",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqt9l9",
@@ -6867,7 +6867,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:23:18.194Z",
-      "updatedAt": "2026-05-26T16:24:04.006Z",
+      "updatedAt": "2026-05-26T16:24:06.493Z",
       "log": []
     }
   ],
