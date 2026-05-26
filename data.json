@@ -6704,7 +6704,7 @@
             {
               "id": "mpmugtyqa3yk",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqz9mk",
@@ -6867,7 +6867,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:23:18.194Z",
-      "updatedAt": "2026-05-26T16:23:53.780Z",
+      "updatedAt": "2026-05-26T16:23:55.763Z",
       "log": []
     }
   ],
