@@ -4752,7 +4752,7 @@
       "name": "WILSON",
       "colId": "mpb85pbuoftb",
       "coverUrl": null,
-      "addr": "",
+      "addr": "LOTE 08",
       "valor": "",
       "inicio": "",
       "prazo": "",
@@ -4933,7 +4933,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:08:37.630Z",
-      "updatedAt": "2026-05-26T16:08:39.759Z",
+      "updatedAt": "2026-05-26T16:08:44.100Z",
       "log": []
     }
   ],
