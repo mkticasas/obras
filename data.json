@@ -7392,32 +7392,32 @@
             {
               "id": "mpmulubj81kg",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmulubjd24j",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmulubj57pz",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmulubjqqye",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmulubj15pc",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmulubj0krb",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmulubjgb5d",
@@ -7439,7 +7439,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:27:11.935Z",
-      "updatedAt": "2026-05-26T16:27:33.143Z",
+      "updatedAt": "2026-05-26T16:27:39.036Z",
       "log": []
     }
   ],
