@@ -7467,42 +7467,42 @@
             {
               "id": "mpmumm962a8t",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96bcpw",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96alb4",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96ypd6",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm966y3n",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96j8b6",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96fk7m",
               "text": "Acabamento",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96vl6y",
               "text": "Finalização",
-              "done": false
+              "done": true
             }
           ]
         },
@@ -7513,62 +7513,62 @@
             {
               "id": "mpmumm96ulug",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96ynka",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96d007",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm962icn",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96p8i2",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96hcvn",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96ygnj",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96z87f",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96lfa4",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96232u",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96ty5n",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96zmz4",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96wv3l",
@@ -7630,7 +7630,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:27:48.138Z",
-      "updatedAt": "2026-05-26T16:28:01.953Z",
+      "updatedAt": "2026-05-26T16:28:14.942Z",
       "log": []
     }
   ],
