@@ -5362,32 +5362,32 @@
             {
               "id": "mpmu57xrjy2m",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xr69w8",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xro2wk",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xr0gzm",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xr3c0t",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xri660",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xrzhxd",
@@ -5525,7 +5525,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:14:16.431Z",
-      "updatedAt": "2026-05-26T16:14:38.866Z",
+      "updatedAt": "2026-05-26T16:14:51.220Z",
       "log": []
     }
   ],
