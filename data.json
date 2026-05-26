@@ -6775,22 +6775,22 @@
             {
               "id": "mpmugtyq820k",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqqd6q",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqt49k",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqi5x8",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqyv18",
@@ -6867,7 +6867,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:23:18.194Z",
-      "updatedAt": "2026-05-26T16:24:06.493Z",
+      "updatedAt": "2026-05-26T16:24:10.190Z",
       "log": []
     }
   ],
