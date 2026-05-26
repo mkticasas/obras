@@ -105,7 +105,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .detail-overlay.show{display:flex;}
 .detail-wrap{display:flex;gap:16px;width:100%;max-width:960px;margin:auto;align-items:flex-start;}
 .detail-main{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;flex:1;min-width:0;}
-.detail-side{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:20px;width:220px;flex-shrink:0;display:flex;flex-direction:column;gap:8px;}
+.detail-side{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:20px;width:240px;flex-shrink:0;display:flex;flex-direction:column;gap:8px;overflow-y:auto;}
 .detail-side-title{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;margin-top:10px;}
 .detail-side-title:first-child{margin-top:0;}
 .detail-col-badge{font-size:11px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:5px 10px;color:var(--text);}
@@ -145,8 +145,8 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 
 /* TAGS */
 .tag-selector{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;}
-.tag-opt{font-size:11px;font-weight:600;padding:4px 10px;border-radius:5px;cursor:pointer;border:2px solid transparent;transition:.15s;opacity:.6;}
-.tag-opt.selected{opacity:1;border-color:rgba(255,255,255,.3);}
+.tag-opt{font-size:11px;font-weight:600;padding:4px 10px;border-radius:5px;cursor:pointer;border:2px solid transparent;transition:.15s;opacity:.35;}
+.tag-opt.selected{opacity:1;border-color:rgba(255,255,255,.3);transform:scale(1.05);}
 
 /* COMMENTS */
 .comment-entry{display:flex;gap:10px;margin-bottom:12px;}
@@ -291,21 +291,11 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
         <div id="d-checklists"></div>
       </div>
 
-      <!-- COMMENTS -->
-      <div class="detail-section">
-        <div class="detail-section-title">💬 Comentários e Atividade</div>
-        <div id="d-comments" style="margin-bottom:12px;"></div>
-        <div class="comment-input-row">
-          <div class="comment-avatar" id="comment-avatar">?</div>
-          <textarea id="d-comment-input" placeholder="Escrever um comentário..." rows="2"></textarea>
-          <button class="btn-primary btn-sm" onclick="addComment()" style="flex-shrink:0;">Enviar</button>
-        </div>
-      </div>
     </div>
 
     <!-- SIDE PANEL -->
     <div class="detail-side">
-      <button class="btn-ghost" style="width:100%;text-align:center;" onclick="closeDetail()">✕ Fechar</button>
+      <button class="btn-ghost" style="width:100%;text-align:center;position:sticky;top:0;z-index:10;background:var(--surface);" onclick="closeDetail()">✕ Fechar</button>
 
       <div class="detail-side-title">Coluna</div>
       <select id="d-col" class="detail-col-badge" onchange="autoSaveCard()" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:5px 8px;font-size:11px;"></select>
@@ -325,7 +315,16 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       <div class="detail-side-title">Membros</div>
       <div id="d-assignees" class="assignee-check-list"></div>
 
-      <div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--border);">
+      <div class="detail-side-title" style="margin-top:10px;">💬 Comentários</div>
+      <div id="d-comments" style="display:flex;flex-direction:column;gap:8px;max-height:220px;overflow-y:auto;margin-bottom:8px;"></div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div class="comment-input-row" style="flex-direction:column;gap:6px;">
+          <textarea id="d-comment-input" placeholder="Escrever um comentário..." rows="2" style="width:100%;resize:vertical;"></textarea>
+          <button class="btn-primary btn-sm" onclick="addComment()" style="width:100%;">Enviar</button>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
         <button class="btn-danger" style="width:100%;padding:8px;" onclick="deleteCurrentCard()">🗑 Excluir obra</button>
       </div>
     </div>
@@ -1114,10 +1113,19 @@ async function hashPass(pass){
 <!-- PATCH NOTES -->
 <div class="modal-overlay" id="patch-modal">
   <div class="modal" style="max-width:420px;">
-    <div class="modal-title">🏗️ Novidades</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <div class="modal-title" style="margin-bottom:0;">🏗️ Novidades</div>
+      <button onclick="closeModal('patch-modal')" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:20px;padding:0;line-height:1;flex-shrink:0;">✕</button>
+    </div>
     <div style="display:flex;flex-direction:column;gap:10px;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v2.8 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Melhorias no card</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Comentários movidos para lateral, botão fechar fixo no topo, patch notes com X fixo, etiquetas corrigidas.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v2.7 — Mai 2025</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Busca por obra</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Campo de busca no header — filtra cards em tempo real por nome, cidade, bairro, responsável, equipe, etc.</div>
