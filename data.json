@@ -2246,10 +2246,10 @@
     },
     {
       "id": "mplopymboykp",
-      "name": "JOAO LIBEANO - SAO THOMAZ",
+      "name": "JOAO LIBEANO",
       "colId": "mpb8563uusn7",
       "coverUrl": null,
-      "addr": "",
+      "addr": "SAO THOMAZ",
       "valor": "",
       "inicio": "2026-02-06",
       "prazo": "2026-09-06",
@@ -2430,7 +2430,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:54:40.259Z",
-      "updatedAt": "2026-05-25T20:55:14.693Z",
+      "updatedAt": "2026-05-26T14:30:33.358Z",
       "log": []
     },
     {
