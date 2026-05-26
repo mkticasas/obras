@@ -38,12 +38,12 @@
     {
       "id": "mpb860ya3ela",
       "name": "FINALIZAÇÃO",
-      "color": "dot-teal"
+      "color": "dot-orange"
     },
     {
       "id": "mpb8667uojn3",
       "name": "ENTREGUES",
-      "color": "dot-orange"
+      "color": "dot-green"
     }
   ],
   "cards": [
