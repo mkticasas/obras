@@ -3029,7 +3029,7 @@
       "addr": "VILA MADALENA",
       "valor": "",
       "inicio": "2025-09-17",
-      "prazo": "",
+      "prazo": "2025-04-17",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -3207,7 +3207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-05-26T15:54:33.805Z",
+      "updatedAt": "2026-05-26T15:54:42.231Z",
       "log": []
     }
   ],
