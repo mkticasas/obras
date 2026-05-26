@@ -5541,7 +5541,9 @@
       "equipe": "",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "mpb8bofmzsfn"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -5714,7 +5716,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:15:14.976Z",
-      "updatedAt": "2026-05-26T16:16:34.715Z",
+      "updatedAt": "2026-05-26T16:17:52.453Z",
       "log": []
     },
     {
