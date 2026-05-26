@@ -3686,12 +3686,12 @@
             {
               "id": "mpmtnehs0lsy",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsdybs",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehstlnu",
@@ -3788,7 +3788,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:00:25.120Z",
-      "updatedAt": "2026-05-26T16:01:07.656Z",
+      "updatedAt": "2026-05-26T16:01:12.884Z",
       "log": []
     }
   ],
