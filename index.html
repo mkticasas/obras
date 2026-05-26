@@ -233,15 +233,17 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
   .detail-overlay{
     padding:0;
     align-items:flex-start;
-    overflow:hidden;
+    overflow-y:auto;
+    overflow-x:hidden;
+    -webkit-overflow-scrolling:touch;
   }
   .detail-wrap{
     flex-direction:column;
     width:100%;
-    height:100vh;
+    min-height:100vh;
     max-width:100%;
     border-radius:0;
-    overflow:hidden;
+    overflow:visible;
     margin:0;
     position:relative;
   }
@@ -254,9 +256,11 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
     padding:14px 16px 12px;
     background:var(--surface);
     border-bottom:1px solid var(--border);
-    position:sticky;
+    position:fixed;
     top:0;
-    z-index:20;
+    left:0;
+    right:0;
+    z-index:300;
     flex-shrink:0;
   }
   .mobile-close-bar .card-title-bar{
@@ -280,6 +284,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
     border-radius:0;
     border:none;
     border-bottom:8px solid var(--bg);
+    margin-top:56px;
   }
   .detail-side{
     width:100%;
@@ -290,7 +295,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
     border-top:none;
     border-radius:0;
     border:none;
-    padding-bottom:80px;
+    padding-bottom:40px;
   }
 
   /* Ocultar botões fechar duplicados no side */
@@ -299,7 +304,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 
   /* Scroll do overlay inteiro */
   .detail-overlay.show{
-    overflow-y:auto;
+    display:block;
   }
 
   /* Grid campos — 1 coluna */
@@ -1486,6 +1491,12 @@ async function hashPass(pass){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.7 — Mai 2026 · 15:12</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Fix scroll mobile no card</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Card agora scrolla até o final no mobile. Barra de fechar fixada no topo com position:fixed. Overlay passa a ser o elemento scrollável.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.6 — Mai 2026</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Layout mobile do card reformulado</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Card abre em tela cheia no mobile. Barra fixa no topo com botão ✕ e nome da obra. Scroll único com main + side em coluna. Checklist e campos com toque otimizado.</div>
