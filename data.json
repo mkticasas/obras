@@ -7387,7 +7387,7 @@
             {
               "id": "mpmulubj30po",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmulubj81kg",
@@ -7439,7 +7439,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:27:11.935Z",
-      "updatedAt": "2026-05-26T16:27:31.320Z",
+      "updatedAt": "2026-05-26T16:27:33.143Z",
       "log": []
     }
   ],
