@@ -355,7 +355,6 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       <button class="admin-tab active" onclick="switchAdminTab('users')">👥 Usuários</button>
       <button class="admin-tab" onclick="switchAdminTab('config')">⚙️ Config</button>
       <button class="admin-tab" onclick="switchAdminTab('tags')">🏷️ Etiquetas</button>
-      <button class="admin-tab" onclick="switchAdminTab('tags')">🏷️ Etiquetas</button>
     </div>
     <div class="admin-tab-panel active" id="tab-users">
       <div id="user-list" style="margin-bottom:14px;"></div>
@@ -1011,9 +1010,10 @@ function renderUserList(){
     </div>`).join('');
 }
 function switchAdminTab(tab){
-  document.querySelectorAll('.admin-tab').forEach((t,i)=>t.classList.toggle('active',['users','config'][i]===tab));
+  document.querySelectorAll('.admin-tab').forEach((t,i)=>t.classList.toggle('active',['users','config','tags'][i]===tab));
   document.querySelectorAll('.admin-tab-panel').forEach(p=>p.classList.remove('active'));
   document.getElementById('tab-'+tab).classList.add('active');
+  if(tab==='tags')renderTagsList();
 }
 function clearUserForm(){
   ['u-id','u-name','u-role','u-phone','u-wppkey','u-photo-url'].forEach(id=>document.getElementById(id).value='');
