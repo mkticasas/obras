@@ -7573,37 +7573,37 @@
             {
               "id": "mpmumm96wv3l",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96is7b",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96fk13",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm960w30",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm9686wh",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm9669bf",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96mrnl",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmumm96excr",
@@ -7630,7 +7630,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:27:48.138Z",
-      "updatedAt": "2026-05-26T16:28:14.942Z",
+      "updatedAt": "2026-05-26T16:28:20.766Z",
       "log": []
     }
   ],
