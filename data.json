@@ -6175,87 +6175,87 @@
             {
               "id": "mpmucjum6kbh",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumsrli",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjum47d2",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumtjlu",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumr5mi",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumcz8q",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumzern",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumq9z5",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjum778u",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumb3dh",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumilup",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjummw7w",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumcvs0",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumoktf",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumlz3d",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjum7s7t",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjum6flo",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjumpnmt",
@@ -6292,7 +6292,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:19:58.462Z",
-      "updatedAt": "2026-05-26T16:20:31.973Z",
+      "updatedAt": "2026-05-26T16:20:47.746Z",
       "log": []
     }
   ],
