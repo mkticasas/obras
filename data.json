@@ -3989,7 +3989,7 @@
       "coverUrl": null,
       "addr": "EPLATZ",
       "valor": "",
-      "inicio": "",
+      "inicio": "2025-12-10",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -4170,7 +4170,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:02:41.411Z",
-      "updatedAt": "2026-05-26T16:02:54.418Z",
+      "updatedAt": "2026-05-26T16:02:59.901Z",
       "log": []
     }
   ],
