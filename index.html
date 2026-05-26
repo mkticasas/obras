@@ -80,6 +80,8 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .card-meta-row span{color:var(--text);opacity:.85;}
 .card-tags{display:flex;gap:4px;flex-wrap:wrap;padding-left:5px;margin-top:2px;align-items:center;}
 .card-tag-dot{width:10px;height:10px;border-radius:50%;display:inline-block;cursor:pointer;flex-shrink:0;transition:.15s;}
+.cover-color-opt{width:26px;height:26px;border-radius:6px;cursor:pointer;border:2px solid transparent;transition:.15s;display:inline-block;}
+.cover-color-opt:hover{border-color:var(--accent);transform:scale(1.1);}
 .card-tag-dot:hover{transform:scale(1.3);}
 .tag{transition:all .15s;}
 .tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:4px;}
@@ -138,7 +140,9 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .checklist-fill{height:100%;background:var(--ok);border-radius:3px;transition:width .3s;}
 .checklist-item{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);}
 .checklist-item:last-child{border-bottom:none;}
-.checklist-item input[type=checkbox]{width:15px;height:15px;accent-color:var(--accent);cursor:pointer;flex-shrink:0;}
+.checklist-item input[type=checkbox]{width:16px;height:16px;cursor:pointer;flex-shrink:0;appearance:none;-webkit-appearance:none;border:2px solid var(--border);border-radius:4px;background:var(--bg);transition:.15s;position:relative;}
+.checklist-item input[type=checkbox]:checked{background:#3b82f6;border-color:#3b82f6;}
+.checklist-item input[type=checkbox]:checked::after{content:'✓';position:absolute;top:-1px;left:2px;font-size:11px;color:#fff;font-weight:700;}
 .checklist-item-text{flex:1;font-size:12.5px;color:var(--text);background:transparent;border:none;font-family:'DM Sans',sans-serif;padding:2px 4px;border-radius:3px;}
 .checklist-item-text:focus{outline:none;background:var(--surface3);}
 .checklist-item-text.done{text-decoration:line-through;color:var(--muted);}
@@ -212,6 +216,31 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .dot-orange{background:#f97316}.dot-blue{background:#3b82f6}.dot-purple{background:#a855f7}
 .dot-green{background:#22c55e}.dot-red{background:#ef4444}.dot-yellow{background:#eab308}
 .dot-cyan{background:#06b6d4}.dot-pink{background:#ec4899}
+
+@media(max-width:768px){
+  header{padding:10px 14px;gap:8px;}
+  header .logo{font-size:16px;}
+  #search-wrap{display:none;}
+  .header-right{gap:6px;}
+  .btn-primary{padding:6px 10px;font-size:12px;}
+  .btn-ghost{padding:5px 8px;font-size:11px;}
+  #board{padding:12px 10px;gap:10px;}
+  .column{min-width:260px;max-width:260px;}
+  .detail-overlay{padding:0;align-items:flex-end;}
+  .detail-wrap{flex-direction:column;max-height:95vh;width:100%;border-radius:16px 16px 0 0;overflow:hidden;}
+  .detail-main{max-height:60vh;overflow-y:auto;padding:16px;}
+  .detail-side{width:100%;max-height:35vh;overflow-y:auto;padding:12px;border-left:none;border-top:1px solid var(--border);}
+  .detail-side .btn-ghost:first-child{display:none;}
+  .detail-grid{grid-template-columns:1fr;}
+  .detail-field.full{grid-column:span 1;}
+  .modal-panel{width:100%;max-width:100%;margin:0;border-radius:16px 16px 0 0;}
+  .modal-overlay{align-items:flex-end;padding:0;}
+  #admin-modal .modal-panel{max-height:90vh;}
+}
+@media(max-width:480px){
+  .column{min-width:240px;max-width:240px;}
+  .card{padding:10px 12px;}
+}
 </style>
 </head>
 <body>
@@ -304,7 +333,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 
     <!-- SIDE PANEL -->
     <div class="detail-side">
-      <button class="btn-ghost" style="width:100%;text-align:center;position:sticky;top:0;z-index:10;background:var(--surface);" onclick="closeDetail()">✕ Fechar</button>
+      <button class="btn-ghost" style="width:100%;text-align:center;position:sticky;top:0;z-index:10;background:var(--surface);margin-bottom:8px;" onclick="closeDetail()">✕ Fechar</button>
 
       <div class="detail-side-title">Coluna</div>
       <select id="d-col" class="detail-col-badge" onchange="autoSaveCard()" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:5px 8px;font-size:11px;"></select>
@@ -318,6 +347,16 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       </div>
 
       <div class="detail-side-title">Capa</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;" id="cover-colors">
+        <span class="cover-color-opt" style="background:#1e3a5f;" onclick="setCoverColor('#1e3a5f')" title="Azul escuro"></span>
+        <span class="cover-color-opt" style="background:#1a3d2b;" onclick="setCoverColor('#1a3d2b')" title="Verde escuro"></span>
+        <span class="cover-color-opt" style="background:#3d1a1a;" onclick="setCoverColor('#3d1a1a')" title="Vermelho escuro"></span>
+        <span class="cover-color-opt" style="background:#2d1f3d;" onclick="setCoverColor('#2d1f3d')" title="Roxo"></span>
+        <span class="cover-color-opt" style="background:#3d2d0a;" onclick="setCoverColor('#3d2d0a')" title="Âmbar"></span>
+        <span class="cover-color-opt" style="background:#0a2d3d;" onclick="setCoverColor('#0a2d3d')" title="Petróleo"></span>
+        <span class="cover-color-opt" style="background:#1c1c2e;" onclick="setCoverColor('#1c1c2e')" title="Grafite"></span>
+        <span class="cover-color-opt" style="background:#2d1b0e;" onclick="setCoverColor('#2d1b0e')" title="Marrom"></span>
+      </div>
       <button class="btn-ghost" style="width:100%;font-size:11px;" onclick="toggleCoverArea()">🖼️ Alterar capa</button>
       <button class="btn-ghost" style="width:100%;font-size:11px;" id="d-remove-cover-btn" onclick="removeCover()" style="display:none;">✕ Remover capa</button>
 
@@ -336,6 +375,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
         <button class="btn-danger" style="width:100%;padding:8px;" onclick="deleteCurrentCard()">🗑 Excluir obra</button>
       </div>
+    <button class="btn-ghost" style="width:100%;text-align:center;position:sticky;bottom:0;z-index:10;background:var(--surface);margin-top:12px;" onclick="closeDetail()">✕ Fechar</button>
     </div>
 
   </div>
@@ -454,7 +494,7 @@ const CFG={user:'mkticasas',repo:'obras',token:'ghp_b0giRwUEOypWNkEdz8b9yU5prq3h
 let state={columns:[],cards:[],users:[]};
 let currentUser=null;
 let openCardId=null;
-let compactTags=JSON.parse(localStorage.getItem('kanban-compact-tags')||'{}');
+let globalCompact=JSON.parse(localStorage.getItem('kanban-compact-global')||'false');
 let dragCardId=null;
 let fileSHA=null;
 
@@ -633,14 +673,15 @@ function cardHTML(card){
   const done=cls.reduce((a,cl)=>a+(cl.items||[]).filter(i=>i.done).length,0);
   const pct=total>0?Math.round(done/total*100):null;
 
+  // cover color bar
+  const coverBg=card.coverUrl&&card.coverUrl.startsWith('color:')?card.coverUrl.replace('color:',''):null;
   // tags (dynamic from state.tags)
-  const tagCompact=(compactTags[card.id]||false);
   const tags=(card.tags||[]).map(tid=>{
     const td=(state.tags||[]).find(t=>t.id===tid);if(!td)return '';
-    if(tagCompact)return `<span class="card-tag-dot" title="${td.name}" style="background:${td.bg};" onclick="event.stopPropagation();toggleTagCompact('${card.id}')"></span>`;
-    return `<span class="tag" style="background:${td.bg};color:${td.color};">${td.name}</span>`;
+    if(globalCompact)return `<span class="card-tag-dot" title="${td.name}" style="background:${td.bg};" onclick="event.stopPropagation();toggleGlobalCompact()"></span>`;
+    return `<span class="tag" style="background:${td.bg};color:${td.color};cursor:pointer;" onclick="event.stopPropagation();toggleGlobalCompact()">${td.name}</span>`;
   }).filter(Boolean).join('');
-  const tagsToggleBtn=card.tags&&card.tags.length?`<span onclick="event.stopPropagation();toggleTagCompact('${card.id}')" title="${tagCompact?'Expandir tags':'Recolher tags'}" style="cursor:pointer;font-size:9px;color:var(--muted);padding:2px 4px;border-radius:3px;background:var(--surface);border:1px solid var(--border);line-height:1;flex-shrink:0;">${tagCompact?'▶':'◀'}</span>`:'';
+  const tagsToggleBtn='';
 
   // assignees (only show valid users)
   const assignees=(card.assignees||[]).map(aid=>{
@@ -691,9 +732,10 @@ function renderCardInBoard(card){
 }
 
 // ══════ CARD DETAIL ══════
+let pendingNewCard=null;
 function openNewCard(colId){
   const id=uid(),colFinal=colId||(state.columns[0]?.id)||'';
-  const card={
+  pendingNewCard={
     id,name:'',colId:colFinal,coverUrl:null,
     addr:'',valor:'',inicio:'',prazo:'',resp:'',equipe:'',status:'',obs:'',
     tags:[],assignees:[],
@@ -704,18 +746,26 @@ function openNewCard(colId){
     comments:[],
     createdAt:now(),updatedAt:now(),log:[]
   };
-  state.cards.push(card);
-  openCard(id);
+  openCard(id,true);
 }
 
-function openCard(id){
-  const card=state.cards.find(c=>c.id===id);if(!card)return;
+function openCard(id,isPending){
+  const card=isPending?pendingNewCard:state.cards.find(c=>c.id===id);if(!card)return;
   openCardId=id;
 
   // cover
   const img=document.getElementById('d-cover-img');
-  if(card.coverUrl){img.src=card.coverUrl;img.classList.add('show');document.getElementById('d-cover-area').style.display='none';document.getElementById('d-remove-cover-btn').style.display='block';}
-  else{img.src='';img.classList.remove('show');document.getElementById('d-cover-area').style.display='block';document.getElementById('d-remove-cover-btn').style.display='none';}
+  let colorBar=document.getElementById('d-cover-color-bar');
+  if(!colorBar){colorBar=document.createElement('div');colorBar.id='d-cover-color-bar';colorBar.style.cssText='height:120px;border-radius:10px;margin-bottom:20px;';document.getElementById('d-cover-wrap').prepend(colorBar);}
+  if(card.coverUrl&&card.coverUrl.startsWith('color:')){
+    const c=card.coverUrl.replace('color:','');
+    colorBar.style.background=c;colorBar.style.display='block';
+    img.src='';img.classList.remove('show');document.getElementById('d-cover-area').style.display='none';document.getElementById('d-remove-cover-btn').style.display='block';
+  } else if(card.coverUrl){
+    colorBar.style.display='none';img.src=card.coverUrl;img.classList.add('show');document.getElementById('d-cover-area').style.display='none';document.getElementById('d-remove-cover-btn').style.display='block';
+  } else {
+    colorBar.style.display='none';img.src='';img.classList.remove('show');document.getElementById('d-cover-area').style.display='block';document.getElementById('d-remove-cover-btn').style.display='none';
+  }
 
   document.getElementById('d-title').value=card.name;
   document.getElementById('d-addr').value=card.addr||'';
@@ -750,13 +800,37 @@ function openCard(id){
 function getOpenCard(){return state.cards.find(c=>c.id===openCardId);}
 
 function closeDetail(){
+  if(pendingNewCard&&pendingNewCard.id===openCardId){pendingNewCard=null;}
   document.getElementById('detail-overlay').classList.remove('show');
   openCardId=null;
   render();
 }
 function onDetailOverlayClick(e){if(e.target===document.getElementById('detail-overlay'))closeDetail();}
 
+function cardHasData(card){
+  return !!(card.name||card.addr||card.valor||card.inicio||card.prazo||card.resp||card.equipe||card.obs||card.status||(card.tags&&card.tags.length)||(card.assignees&&card.assignees.length)||(card.coverUrl));
+}
 function autoSaveCard(){
+  if(pendingNewCard&&pendingNewCard.id===openCardId){
+    // read fields into pendingNewCard
+    pendingNewCard.name=document.getElementById('d-title').value.trim().toUpperCase();
+    pendingNewCard.addr=document.getElementById('d-addr').value;
+    pendingNewCard.valor=document.getElementById('d-valor').value;
+    pendingNewCard.inicio=document.getElementById('d-inicio').value;
+    pendingNewCard.prazo=document.getElementById('d-prazo').value;
+    pendingNewCard.resp=document.getElementById('d-resp').value;
+    pendingNewCard.equipe=document.getElementById('d-equipe').value;
+    pendingNewCard.status=document.getElementById('d-status').value;
+    pendingNewCard.obs=document.getElementById('d-obs').value;
+    pendingNewCard.colId=document.getElementById('d-col').value||pendingNewCard.colId;
+    if(cardHasData(pendingNewCard)){
+      state.cards.push(pendingNewCard);
+      pendingNewCard=null;
+    }
+  }
+  _autoSaveCard();
+}
+function _autoSaveCard(){
   const card=getOpenCard();if(!card)return;
   card.name=document.getElementById('d-title').value.trim()||card.name;
   card.addr=document.getElementById('d-addr').value;
@@ -785,11 +859,24 @@ function toggleTag(el){
   card.updatedAt=now();renderCardInBoard(card);debSave();
 }
 
-function toggleTagCompact(cardId){
-  compactTags[cardId]=!compactTags[cardId];
-  localStorage.setItem('kanban-compact-tags',JSON.stringify(compactTags));
-  const card=state.cards.find(c=>c.id===cardId);
-  if(card)renderCardInBoard(card);
+function setCoverColor(color){
+  const card=getOpenCard();if(!card)return;
+  card.coverUrl='color:'+color;card.updatedAt=now();
+  const img=document.getElementById('d-cover-img');
+  img.src='';img.classList.remove('show');
+  document.getElementById('d-cover-area').style.display='none';
+  document.getElementById('d-remove-cover-btn').style.display='block';
+  // show as colored bar
+  let colorBar=document.getElementById('d-cover-color-bar');
+  if(!colorBar){colorBar=document.createElement('div');colorBar.id='d-cover-color-bar';colorBar.style.cssText='height:120px;border-radius:10px;margin-bottom:20px;';document.getElementById('d-cover-wrap').prepend(colorBar);}
+  colorBar.style.background=color;colorBar.style.display='block';
+  debSave();
+}
+
+function toggleGlobalCompact(){
+  globalCompact=!globalCompact;
+  localStorage.setItem('kanban-compact-global',JSON.stringify(globalCompact));
+  render();
 }
 
 function renderDetailAssignees(card){
@@ -834,6 +921,7 @@ function checklistHTML(cl,ci){
   return `
     <div class="checklist-block" id="clblock-${cl.id}">
       <div class="checklist-header">
+        <button class="btn-ghost btn-sm" onclick="markAllCheckItems('${cl.id}')" title="Marcar todos" style="padding:3px 8px;font-size:11px;">☑ Tudo</button>
         <input class="checklist-title-input" value="${cl.name}" onblur="renameChecklist('${cl.id}',this.value)"/>
         <button class="btn-ghost btn-sm" onclick="confirmDeleteChecklist('${cl.id}')">Excluir</button>
       </div>
@@ -847,6 +935,14 @@ function checklistHTML(cl,ci){
         <button class="btn-ghost btn-sm" onclick="addCheckItem('${cl.id}')">+ Adicionar</button>
       </div>
     </div>`;
+}
+
+function markAllCheckItems(clId){
+  const card=getOpenCard();if(!card)return;
+  const cl=(card.checklists||[]).find(c=>c.id===clId);if(!cl)return;
+  const allDone=(cl.items||[]).every(i=>i.done);
+  (cl.items||[]).forEach(i=>i.done=!allDone);
+  card.updatedAt=now();renderChecklists();renderCardInBoard(card);debSave();
 }
 
 function toggleCheckItem(clId,itemId,cb){
@@ -1083,10 +1179,32 @@ function onDragEnd(){document.querySelectorAll('.card').forEach(c=>c.classList.r
 function onDragOver(e,colId){e.preventDefault();document.getElementById('drop-'+colId)?.classList.add('drop-target');}
 function onDragLeave(e,colId){document.getElementById('drop-'+colId)?.classList.remove('drop-target');}
 async function onDrop(e,colId){
-  e.preventDefault();document.getElementById('drop-'+colId)?.classList.remove('drop-target');
+  e.preventDefault();
+  document.getElementById('drop-'+colId)?.classList.remove('drop-target');
+  document.querySelectorAll('.drop-indicator').forEach(el=>el.remove());
   if(!dragCardId)return;
   const card=state.cards.find(c=>c.id===dragCardId);
-  if(card&&card.colId!==colId){
+  if(!card){dragCardId=null;return;}
+  // find drop position
+  const colCards=state.cards.filter(c=>c.colId===colId&&c.id!==dragCardId);
+  const colEl=document.getElementById('drop-'+colId);
+  const cardEls=[...colEl.querySelectorAll('.card:not([id="card-'+dragCardId+'"])')];
+  let insertBefore=null;
+  for(const el of cardEls){
+    const rect=el.getBoundingClientRect();
+    if(e.clientY<rect.top+rect.height/2){insertBefore=el.id.replace('card-','');break;}
+  }
+  // reorder state.cards
+  state.cards=state.cards.filter(c=>c.id!==dragCardId);
+  if(insertBefore){
+    const idx=state.cards.findIndex(c=>c.id===insertBefore);
+    state.cards.splice(idx,0,card);
+  } else {
+    // find last card of this col and insert after it
+    const lastIdx=state.cards.reduce((acc,c,i)=>c.colId===colId?i:acc,-1);
+    state.cards.splice(lastIdx+1,0,card);
+  }
+  if(card.colId!==colId){
     card.colId=colId;card.updatedAt=now();
     if(!card.log)card.log=[];
     const colName=(state.columns||[]).find(c=>c.id===colId)?.name||colId;
@@ -1250,6 +1368,12 @@ async function hashPass(pass){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.4 — Mai 2026</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Tags globais, checklist, drag avançado, capa colorida e mobile</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Toggle compacto de tags agora é global (afeta todos os cards). Clique direto na tag para recolher. Botão "☑ Tudo" na checklist para marcar todos. Checkboxes com estilo visual (borda visível, azul ao marcar). Botão Fechar fixo no topo e rodapé do card. Cards vazios não entram na coluna. Drag & drop com reordenação entre cards (inserir no meio). Capa colorida — 8 cores predefinidas além de imagem. Layout mobile responsivo.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.3 — Mai 2026</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Data de início e prazo no card</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Cards com período completo: início → prazo. Se só um estiver preenchido, mostra apenas ele.</div>
