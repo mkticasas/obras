@@ -4373,7 +4373,7 @@
       "addr": "SAO THOMAZ",
       "valor": "",
       "inicio": "2026-02-24",
-      "prazo": "",
+      "prazo": "2026-09-24",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -4551,7 +4551,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-05-26T16:05:20.162Z",
+      "updatedAt": "2026-05-26T16:05:27.658Z",
       "log": []
     }
   ],
