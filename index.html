@@ -482,7 +482,6 @@ async function loadGH(){
       {id:'ok',name:'OK',bg:'#14532d',color:'#86efac'},
       {id:'info',name:'Info',bg:'#1e3a5f',color:'#93c5fd'}
     ];
-    if(!state.tags)state.tags=[{id:'atencao',name:'Atenção',bg:'#78350f',color:'#fde68a'},{id:'urgente',name:'Urgente',bg:'#7f1d1d',color:'#fca5a5'},{id:'ok',name:'OK',bg:'#14532d',color:'#86efac'},{id:'info',name:'Info',bg:'#1e3a5f',color:'#93c5fd'}];
     restoreUser(); updateHeaderUser(); render(); checkAlerts();
     if(needsSave)saveGH();
   }catch(e){setSS('err','Erro ao carregar');console.error(e);}
