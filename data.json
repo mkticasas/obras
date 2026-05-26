@@ -3608,7 +3608,7 @@
       "addr": "SETSUL2",
       "valor": "",
       "inicio": "2025-11-27",
-      "prazo": "",
+      "prazo": "2026-06-27",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -3625,17 +3625,17 @@
             {
               "id": "mpmtnehs2i24",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsmxw0",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsc84k",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsxsin",
@@ -3788,7 +3788,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:00:25.120Z",
-      "updatedAt": "2026-05-26T16:00:48.032Z",
+      "updatedAt": "2026-05-26T16:00:55.618Z",
       "log": []
     }
   ],
