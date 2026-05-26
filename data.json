@@ -3446,12 +3446,12 @@
             {
               "id": "mpmtl3r8tqxc",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8ph94",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8cm8u",
@@ -3594,7 +3594,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-05-26T15:59:08.732Z",
+      "updatedAt": "2026-05-26T15:59:11.865Z",
       "log": []
     }
   ],
