@@ -6303,7 +6303,7 @@
       "addr": "SAO THOMAZ",
       "valor": "",
       "inicio": "2025-07-23",
-      "prazo": "",
+      "prazo": "2026-02-23",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -6481,7 +6481,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:21:01.989Z",
-      "updatedAt": "2026-05-26T16:21:13.801Z",
+      "updatedAt": "2026-05-26T16:21:17.903Z",
       "log": []
     }
   ],
