@@ -240,10 +240,10 @@
     },
     {
       "id": "mpb8g437cehz",
-      "name": "HIGOR E THAIS - SANTA REGINA",
+      "name": "HIGOR E THAIS",
       "colId": "col-default",
       "coverUrl": null,
-      "addr": "",
+      "addr": "SANTA REGINA",
       "valor": "",
       "inicio": "2026-04-17",
       "prazo": "2026-11-17",
@@ -518,7 +518,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:21:25.171Z",
-      "updatedAt": "2026-05-25T20:41:54.271Z",
+      "updatedAt": "2026-05-26T14:08:08.130Z",
       "log": []
     },
     {
