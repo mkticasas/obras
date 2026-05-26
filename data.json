@@ -3059,17 +3059,17 @@
             {
               "id": "mpmtfibaoomc",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibaetz5",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibatpk2",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfiba5zu3",
@@ -3207,7 +3207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-05-26T15:54:46.510Z",
+      "updatedAt": "2026-05-26T15:54:50.165Z",
       "log": []
     }
   ],
