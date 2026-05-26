@@ -4290,32 +4290,32 @@
             {
               "id": "mpmtrdwi96o9",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwi3374",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwiyc5w",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwi6oj2",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwi2iws",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwi1wsj",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwiwqs7",
@@ -4362,7 +4362,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:03:30.978Z",
-      "updatedAt": "2026-05-26T16:04:14.786Z",
+      "updatedAt": "2026-05-26T16:04:19.642Z",
       "log": []
     }
   ],
