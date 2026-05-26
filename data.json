@@ -3130,7 +3130,7 @@
             {
               "id": "mpmtfibah1v4",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfiba83is",
@@ -3207,7 +3207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-05-26T15:54:58.018Z",
+      "updatedAt": "2026-05-26T15:55:01.036Z",
       "log": []
     }
   ],
