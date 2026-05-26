@@ -2435,10 +2435,10 @@
     },
     {
       "id": "mplor8rrw1h5",
-      "name": "SOLANGE - MIRASSOL",
+      "name": "SOLANGE",
       "colId": "mpb8563uusn7",
       "coverUrl": null,
-      "addr": "",
+      "addr": "MIRASSOL",
       "valor": "",
       "inicio": "2026-02-27",
       "prazo": "2026-09-27",
@@ -2619,7 +2619,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:55:40.071Z",
-      "updatedAt": "2026-05-25T20:56:12.739Z",
+      "updatedAt": "2026-05-26T14:30:38.729Z",
       "log": []
     },
     {
