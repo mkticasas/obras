@@ -7112,17 +7112,17 @@
             {
               "id": "mpmukymdf929",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymd67ah",
               "text": "Acabamento",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdyz37",
               "text": "Finalização",
-              "done": false
+              "done": true
             }
           ]
         },
@@ -7133,97 +7133,97 @@
             {
               "id": "mpmukymd8hr9",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdkdw8",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdi018",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdf5yk",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymd1y6f",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdlx7y",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymd2e6g",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdsmm3",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymd2wjm",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymds3zt",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymd1ypa",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymd3s8j",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdgmxk",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdzbvc",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdhemr",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdi2rb",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdvzff",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdmjmp",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdccrr",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdpojr",
@@ -7250,7 +7250,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:26:30.853Z",
-      "updatedAt": "2026-05-26T16:26:42.934Z",
+      "updatedAt": "2026-05-26T16:26:56.008Z",
       "log": []
     }
   ],
