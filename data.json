@@ -4199,32 +4199,32 @@
             {
               "id": "mpmtrdwikiv7",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwias7x",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwitjpv",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwia3n6",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwij9ip",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwihzjg",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwiqokp",
@@ -4362,7 +4362,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:03:30.978Z",
-      "updatedAt": "2026-05-26T16:03:56.762Z",
+      "updatedAt": "2026-05-26T16:04:03.896Z",
       "log": []
     }
   ],
