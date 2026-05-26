@@ -71,7 +71,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .card{flex-shrink:0;background:var(--surface2);border-radius:10px;border:1px solid var(--border);cursor:pointer;transition:all .15s;position:relative;overflow:hidden;user-select:none;}
 .card:hover{border-color:#3d4a6b;transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,0,0,.35);}
 .card.dragging{opacity:.4;}
-.card-cover{width:100%;height:120px;object-fit:cover;display:block;}
+.card-cover{width:100%;height:6px;object-fit:cover;display:block;border-radius:var(--radius) var(--radius) 0 0;}
 .card-body{padding:11px 12px 10px;display:flex;flex-direction:column;gap:5px;}
 .card-status-bar{position:absolute;left:0;top:0;bottom:0;width:3px;}
 .card-title{font-family:'Syne',sans-serif;font-weight:700;font-size:12.5px;margin-bottom:7px;line-height:1.4;padding-left:5px;text-transform:uppercase;letter-spacing:.3px;}
@@ -705,7 +705,7 @@ function cardHTML(card){
     <div class="card" id="card-${card.id}" draggable="true"
       ondragstart="onDragStart(event,'${card.id}')" ondragend="onDragEnd()"
       onclick="openCard('${card.id}')">
-      ${card.coverUrl?`<img class="card-cover" src="${card.coverUrl}" alt="capa" loading="lazy"/>`:''}
+      ${card.coverUrl?card.coverUrl.startsWith('color:')?`<div style="height:6px;border-radius:var(--radius) var(--radius) 0 0;background:${card.coverUrl.replace('color:','')}"></div>`:`<img class="card-cover" src="${card.coverUrl}" alt="capa" loading="lazy"/>`:''}
       <div class="card-body">
         <div class="card-status-bar" style="background:${bar}"></div>
         <div class="card-title">${card.name}</div>
@@ -1368,6 +1368,12 @@ async function hashPass(pass){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.5 — Mai 2026</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Capa compacta no card</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Capa (cor ou imagem) agora aparece como faixa fina no topo do card, sem ocupar espaço excessivo.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.4 — Mai 2026</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Tags globais, checklist, drag avançado, capa colorida e mobile</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Toggle compacto de tags agora é global (afeta todos os cards). Clique direto na tag para recolher. Botão "☑ Tudo" na checklist para marcar todos. Checkboxes com estilo visual (borda visível, azul ao marcar). Botão Fechar fixo no topo e rodapé do card. Cards vazios não entram na coluna. Drag & drop com reordenação entre cards (inserir no meio). Capa colorida — 8 cores predefinidas além de imagem. Layout mobile responsivo.</div>
