@@ -7024,39 +7024,39 @@
             {
               "id": "mpmuie3vyu0p",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmuie3vperv",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmuie3vvsuq",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmuie3vrzht",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmuie3v76gk",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmuie3va61u",
               "text": "Entrega",
-              "done": false
+              "done": true
             }
           ]
         }
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:24:30.955Z",
-      "updatedAt": "2026-05-26T16:25:21.961Z",
+      "updatedAt": "2026-05-26T16:25:28.370Z",
       "log": []
     }
   ],
