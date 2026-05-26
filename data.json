@@ -3329,6 +3329,12 @@
       "name": "Aguardando Medição",
       "bg": "#4c1d95",
       "color": "#c4b5fd"
+    },
+    {
+      "id": "mpmthflla5ph",
+      "name": "Pendência Etapa Anterior",
+      "bg": "#78350f",
+      "color": "#fde68a"
     }
   ],
   "config": {
