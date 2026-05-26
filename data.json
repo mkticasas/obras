@@ -3522,17 +3522,17 @@
             {
               "id": "mpmtl3r8f0jz",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r886f8",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8a81j",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8rncx",
@@ -3594,7 +3594,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-05-26T15:59:21.988Z",
+      "updatedAt": "2026-05-26T15:59:30.894Z",
       "log": []
     }
   ],
