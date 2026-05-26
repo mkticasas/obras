@@ -217,6 +217,12 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
   <div class="logo" onclick="openPatchNotes()" title="Ver novidades" style="cursor:pointer;">🏗️ Obras<span> Kanban</span></div>
   <div class="header-right">
     <div class="sync-status"><div class="sync-dot" id="sync-dot"></div><span id="sync-label">—</span></div>
+    <div style="position:relative;display:flex;align-items:center;">
+      <input type="text" id="search-input" placeholder="🔍 Buscar obra..." oninput="filterCards(this.value)"
+        style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:7px 28px 7px 12px;color:var(--text);font-size:13px;width:190px;outline:none;"/>
+      <button id="search-clear" onclick="clearSearch()" title="Limpar"
+        style="display:none;position:absolute;right:6px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:13px;padding:0;">✕</button>
+    </div>
     <div class="user-badge" id="user-badge" style="cursor:default;">
       <div class="user-avatar" id="header-avatar" onclick="openUserSelect()" style="cursor:pointer;" title="Trocar usuário">?</div>
       <span class="user-name" id="header-name" onclick="openUserSelect()" style="cursor:pointer;">Selecionar</span>
@@ -631,7 +637,7 @@ function cardHTML(card){
         ${pct!==null?`<div class="card-progress"><div class="progress-label"><span>Progresso</span><span>${pct}%</span></div><div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div></div>`:''}
         ${assignees?`<div class="card-assignees">${assignees}</div>`:''}
         ${alertHTML}
-        <div class="card-footer">${deadlineHTML}<span class="card-days-badge" style="background:${bbg};color:${bcl}">${days}d atrás</span></div>
+        <div class="card-footer">${deadlineHTML}<div style="display:flex;align-items:center;gap:6px;">${(card.comments&&card.comments.length)?`<span style="font-size:10px;color:var(--muted);">💬 ${card.comments.length}</span>`:''}<span class="card-days-badge" style="background:${bbg};color:${bcl}">${days}d atrás</span></div></div>
       </div>
     </div>`;
 }
@@ -887,11 +893,13 @@ function renderComments(){
     if(item.type==='comment'){
       const u=state.users.find(u=>u.id===item.userId);
       const av=u?(u.photo?`<img src="${u.photo}" alt=""/>`:`<span>${u.name[0].toUpperCase()}</span>`):'<span>?</span>';
-      return `<div class="comment-entry">
+      const canAct=currentUser&&currentUser.id===item.userId;
+      return `<div class="comment-entry" id="ce-${item.id}">
         <div class="comment-avatar">${av}</div>
         <div class="comment-bubble">
-          <div class="comment-meta"><strong>${u?u.name:'Alguém'}</strong> · ${fmtDate(item.date)}</div>
+          <div class="comment-meta"><strong>${u?u.name:'Alguém'}</strong> · ${fmtDate(item.date)}${item.edited?' <span style=\"color:var(--muted);font-size:10px;\">(editado)</span>':''}</div>
           <div class="comment-text">${item.text}</div>
+          ${canAct?`<div style="display:flex;gap:8px;margin-top:3px;"><button onclick="editComment('${item.id}')" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:10px;padding:0;">✏️ editar</button><button onclick="deleteComment('${item.id}')" style="background:none;border:none;color:#f87171;cursor:pointer;font-size:10px;padding:0;">🗑 excluir</button></div>`:''}
         </div>
       </div>`;
     } else {
@@ -911,6 +919,22 @@ function addComment(){
   renderComments();debSave();
 }
 
+
+function editComment(commentId){
+  const card=getOpenCard();if(!card)return;
+  const c=(card.comments||[]).find(c=>c.id===commentId);if(!c)return;
+  const newText=prompt('Editar comentário:',c.text);
+  if(newText===null||!newText.trim())return;
+  c.text=newText.trim();c.edited=true;
+  renderComments();debSave();
+}
+
+function deleteComment(commentId){
+  const card=getOpenCard();if(!card)return;
+  if(!confirm('Excluir este comentário?'))return;
+  card.comments=(card.comments||[]).filter(c=>c.id!==commentId);
+  renderComments();debSave();
+}
 // ══════ DELETE CARD ══════
 function deleteCurrentCard(){
   const card=getOpenCard();if(!card)return;
@@ -1112,17 +1136,23 @@ async function hashPass(pass){
 
 <!-- PATCH NOTES -->
 <div class="modal-overlay" id="patch-modal">
-  <div class="modal" style="max-width:420px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+  <div class="modal" style="max-width:420px;display:flex;flex-direction:column;max-height:80vh;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-shrink:0;">
       <div class="modal-title" style="margin-bottom:0;">🏗️ Novidades</div>
       <button onclick="closeModal('patch-modal')" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:20px;padding:0;line-height:1;flex-shrink:0;">✕</button>
     </div>
-    <div style="display:flex;flex-direction:column;gap:10px;">
+    <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v2.9 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Busca, comentários e melhorias</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Campo de busca no header, editar/excluir comentários, indicador de comentários no card, patch notes com scroll e X fixo.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v2.8 — Mai 2025</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Melhorias no card</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Comentários movidos para lateral, botão fechar fixo no topo, patch notes com X fixo, etiquetas corrigidas.</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Comentários na lateral, botão fechar fixo, etiquetas corrigidas.</div>
       </div>
 
       <div style="border-left:3px solid var(--border);padding-left:12px;">
