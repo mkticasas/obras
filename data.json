@@ -3044,17 +3044,17 @@
             {
               "id": "mpmtfibad4zi",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibadsup",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibabvvb",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibaoomc",
@@ -3207,7 +3207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-05-26T15:54:42.231Z",
+      "updatedAt": "2026-05-26T15:54:46.510Z",
       "log": []
     }
   ],
