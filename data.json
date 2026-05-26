@@ -2078,7 +2078,9 @@
       "equipe": "Pedreiro Pedro",
       "status": "",
       "obs": "",
-      "tags": [],
+      "tags": [
+        "mp4ih8i6bddg"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -2251,7 +2253,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-05-26T14:30:26.036Z",
+      "updatedAt": "2026-05-26T15:43:43.764Z",
       "log": []
     },
     {
