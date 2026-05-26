@@ -4388,12 +4388,12 @@
             {
               "id": "mpmttak0aqi3",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0ljjv",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak02490",
@@ -4551,7 +4551,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-05-26T16:05:27.658Z",
+      "updatedAt": "2026-05-26T16:05:32.402Z",
       "log": []
     }
   ],
