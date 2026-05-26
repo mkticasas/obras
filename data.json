@@ -6495,7 +6495,7 @@
       "addr": "SAO THOMAZ",
       "valor": "",
       "inicio": "2025-06-16",
-      "prazo": "",
+      "prazo": "2026-02-16",
       "resp": "",
       "equipe": "",
       "status": "",
@@ -6510,32 +6510,32 @@
             {
               "id": "mpmufpatq99f",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpat7rwk",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatlaxa",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatkeyi",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatrow3",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpatvkus",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmufpat7vlj",
@@ -6673,7 +6673,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:22:25.494Z",
-      "updatedAt": "2026-05-26T16:22:34.816Z",
+      "updatedAt": "2026-05-26T16:22:50.208Z",
       "log": []
     }
   ],
