@@ -3155,12 +3155,12 @@
             {
               "id": "mpmtfibaupuh",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibazjui",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibafunb",
@@ -3207,7 +3207,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-05-26T15:55:18.664Z",
+      "updatedAt": "2026-05-26T15:55:23.172Z",
       "log": []
     }
   ],
