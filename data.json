@@ -3100,8 +3100,9 @@
     {
       "id": "mp4ih8i6bddg",
       "name": "Normal",
-      "bg": "#166534",
-      "text": "#fff"
+      "bg": "#1f2937",
+      "text": "#fff",
+      "color": "#9ca3af"
     },
     {
       "id": "mpb8bjvuy2j4",
