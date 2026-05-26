@@ -4325,7 +4325,7 @@
             {
               "id": "mpmtrdwikcfp",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwisx12",
@@ -4362,7 +4362,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:03:30.978Z",
-      "updatedAt": "2026-05-26T16:04:19.642Z",
+      "updatedAt": "2026-05-26T16:04:21.974Z",
       "log": []
     }
   ],
