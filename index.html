@@ -629,12 +629,11 @@ function cardHTML(card){
   const done=cls.reduce((a,cl)=>a+(cl.items||[]).filter(i=>i.done).length,0);
   const pct=total>0?Math.round(done/total*100):null;
 
-  // tags
-  const tags=(card.tags||[]).map(t=>{
-    const map={atencao:'tag-atencao',urgente:'tag-urgente',ok:'tag-ok',info:'tag-info'};
-    const labels={atencao:'Atenção',urgente:'Urgente',ok:'OK',info:'Info'};
-    return `<span class="tag ${map[t]||''}">${labels[t]||t}</span>`;
-  }).join('');
+  // tags (dynamic from state.tags)
+  const tags=(card.tags||[]).map(tid=>{
+    const td=(state.tags||[]).find(t=>t.id===tid);if(!td)return '';
+    return `<span class="tag" style="background:${td.bg};color:${td.color};">${td.name}</span>`;
+  }).filter(Boolean).join('');
 
   // assignees (only show valid users)
   const assignees=(card.assignees||[]).map(aid=>{
@@ -1132,9 +1131,12 @@ function selectTagColor(bg,fg,el){
 
 function renderTagOptions(){
   const card=getOpenCard();if(!card)return;
-  document.querySelectorAll('#d-tags .tag-opt').forEach(el=>{
-    el.classList.toggle('selected',(card.tags||[]).includes(el.dataset.tag));
-  });
+  const wrap=document.getElementById('d-tags');if(!wrap)return;
+  const tags=state.tags||[];
+  wrap.innerHTML=tags.map(t=>{
+    const sel=(card.tags||[]).includes(t.id);
+    return `<span class="tag-opt${sel?' selected':''}" data-tag="${t.id}" onclick="toggleTag(this)" style="background:${t.bg};color:${t.color};">${t.name}</span>`;
+  }).join('');
 }
 
 function renderTagsList(){
