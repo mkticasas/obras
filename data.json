@@ -3803,7 +3803,7 @@
       "resp": "",
       "equipe": "",
       "status": "",
-      "obs": "",
+      "obs": "- DEMOROU A SAIR O REGIRTRO EM CARTÓRIO.",
       "tags": [],
       "assignees": [],
       "checklists": [
@@ -3814,12 +3814,12 @@
             {
               "id": "mpmtoz8wzblb",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8wayw0",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8wd2w1",
@@ -3977,7 +3977,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-05-26T16:01:59.028Z",
+      "updatedAt": "2026-05-26T16:02:06.683Z",
       "log": []
     }
   ],
