@@ -7087,27 +7087,27 @@
             {
               "id": "mpmukymdq2iy",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymd8vra",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymd7b2a",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymddw8b",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdazng",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmukymdf929",
@@ -7250,7 +7250,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:26:30.853Z",
-      "updatedAt": "2026-05-26T16:26:36.657Z",
+      "updatedAt": "2026-05-26T16:26:42.934Z",
       "log": []
     }
   ],
