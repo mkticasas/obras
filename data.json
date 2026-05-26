@@ -4368,7 +4368,7 @@
     {
       "id": "mpmttak0cugm",
       "name": "PHABIO E ARIELE",
-      "colId": "mpb85ka3gujh",
+      "colId": "mpb85pbuoftb",
       "coverUrl": null,
       "addr": "SAO THOMAZ",
       "valor": "",
@@ -4553,7 +4553,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-05-26T16:08:55.839Z",
+      "updatedAt": "2026-05-26T16:08:59.470Z",
       "log": [
         {
           "date": "2026-05-26T16:08:54.161Z",
@@ -4562,6 +4562,10 @@
         {
           "date": "2026-05-26T16:08:55.839Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÃÃES\" por Marketing"
+        },
+        {
+          "date": "2026-05-26T16:08:59.470Z",
+          "note": "Movido para \"ACABAMENTOS\" por Marketing"
         }
       ]
     },
