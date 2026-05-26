@@ -6709,27 +6709,27 @@
             {
               "id": "mpmugtyqz9mk",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqcmnq",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqxex9",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqgd81",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqfbp9",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqd1pf",
@@ -6867,7 +6867,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:23:18.194Z",
-      "updatedAt": "2026-05-26T16:23:48.584Z",
+      "updatedAt": "2026-05-26T16:23:53.780Z",
       "log": []
     }
   ],
