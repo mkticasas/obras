@@ -5786,17 +5786,17 @@
             {
               "id": "mpmu8mq2eseo",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu8mq20coj",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu8mq22wr7",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu8mq27vtk",
@@ -5903,7 +5903,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:16:55.562Z",
-      "updatedAt": "2026-05-26T16:17:12.212Z",
+      "updatedAt": "2026-05-26T16:17:22.731Z",
       "log": []
     }
   ],
