@@ -4007,17 +4007,17 @@
             {
               "id": "mpmtqbnnvzdt",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnnh0kj",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnni68y",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnn8rn2",
@@ -4170,7 +4170,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:02:41.411Z",
-      "updatedAt": "2026-05-26T16:03:09.060Z",
+      "updatedAt": "2026-05-26T16:03:14.140Z",
       "log": []
     }
   ],
