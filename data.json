@@ -3227,7 +3227,7 @@
       "resp": "",
       "equipe": "",
       "status": "",
-      "obs": "",
+      "obs": "- ATRASO POR MUDANÇA DE PROJETO E ALTERAÇÕES NA CAIXA.",
       "tags": [
         "mp4ih8i6bddg",
         "mpb8bjvuy2j4",
@@ -3242,17 +3242,17 @@
             {
               "id": "mpmthycy0bj3",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycy4tm8",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycys8gp",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycyef6d",
@@ -3405,7 +3405,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:56:10.930Z",
-      "updatedAt": "2026-05-26T15:56:36.152Z",
+      "updatedAt": "2026-05-26T15:57:01.855Z",
       "log": []
     }
   ],
