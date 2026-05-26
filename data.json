@@ -3721,12 +3721,12 @@
             {
               "id": "mpmtnehsyrcb",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsh16a",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehs7h9z",
@@ -3788,7 +3788,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:00:25.120Z",
-      "updatedAt": "2026-05-26T16:01:12.884Z",
+      "updatedAt": "2026-05-26T16:01:23.512Z",
       "log": []
     }
   ],
