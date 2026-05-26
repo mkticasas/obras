@@ -1488,10 +1488,10 @@
     },
     {
       "id": "mplofrmbcm6z",
-      "name": "RODRIGO E RAFA - E PARQUE LESTE - CASA GO",
+      "name": "RODRIGO E RAFA",
       "colId": "mpb84so22w1c",
       "coverUrl": null,
-      "addr": "",
+      "addr": "E PARQUE LESTE - CASA GO",
       "valor": "",
       "inicio": "",
       "prazo": "",
@@ -1674,7 +1674,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-05-25T20:47:02.371Z",
+      "updatedAt": "2026-05-26T14:29:52.580Z",
       "log": []
     },
     {
