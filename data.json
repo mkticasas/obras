@@ -6389,32 +6389,32 @@
             {
               "id": "mpmudwv9vbyu",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv95lru",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv99kt6",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv93xpe",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv92ozq",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9ywx9",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv91dp4",
@@ -6481,7 +6481,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:21:01.989Z",
-      "updatedAt": "2026-05-26T16:21:41.688Z",
+      "updatedAt": "2026-05-26T16:21:46.428Z",
       "log": []
     }
   ],
