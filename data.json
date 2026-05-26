@@ -3308,12 +3308,12 @@
             {
               "id": "mpmthycyfs0z",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycyua5i",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycy0ik8",
@@ -3405,7 +3405,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:56:10.930Z",
-      "updatedAt": "2026-05-26T15:57:06.298Z",
+      "updatedAt": "2026-05-26T15:57:08.964Z",
       "log": []
     }
   ],
