@@ -1037,6 +1037,36 @@ function closeModal(id){document.getElementById(id).classList.remove('show');}
 // ══════ INIT ══════
 loadGH();
 
+
+// SEARCH / FILTER
+function filterCards(query){
+  const q = query.trim().toLowerCase();
+  const clearBtn = document.getElementById('search-clear');
+  if(clearBtn) clearBtn.style.display = q ? 'block' : 'none';
+
+  state.cards.forEach(card => {
+    const el = document.getElementById('card-' + card.id);
+    if(!el) return;
+    if(!q){
+      el.style.display = '';
+      return;
+    }
+    const searchable = [
+      card.name,
+      card.addr,
+      card.resp,
+      card.equipe,
+      card.obs,
+      card.status
+    ].filter(Boolean).join(' ').toLowerCase();
+    el.style.display = searchable.includes(q) ? '' : 'none';
+  });
+}
+
+function clearSearch(){
+  const input = document.getElementById('search-input');
+  if(input){ input.value = ''; filterCards(''); input.focus(); }
+}
 // PATCH NOTES
 function openPatchNotes(){
   document.getElementById('patch-modal').classList.add('show');
@@ -1088,6 +1118,12 @@ async function hashPass(pass){
     <div style="display:flex;flex-direction:column;gap:10px;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v2.7 — Mai 2025</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Busca por obra</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Campo de busca no header — filtra cards em tempo real por nome, cidade, bairro, responsável, equipe, etc.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v2.6 — Mai 2025</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Colunas com altura dinâmica</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Colunas recuam quando têm poucos cards e expandem com scroll quando têm muitos.</div>
