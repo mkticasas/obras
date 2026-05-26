@@ -49,10 +49,10 @@
   "cards": [
     {
       "id": "mpb8asyrdy0f",
-      "name": "STEFANE E YURI-L25 Q11/SÃO THOMAZ 2",
+      "name": "STEFANE E YURI",
       "colId": "col-default",
       "coverUrl": null,
-      "addr": "",
+      "addr": "L25 Q11/SÃO THOMAZ 2",
       "valor": "",
       "inicio": "2026-05-12",
       "prazo": "2026-12-12",
@@ -235,7 +235,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:17:17.475Z",
-      "updatedAt": "2026-05-25T20:41:51.961Z",
+      "updatedAt": "2026-05-26T14:08:01.105Z",
       "log": []
     },
     {
