@@ -3542,7 +3542,7 @@
             {
               "id": "mpmtl3r8aspv",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r86a5v",
@@ -3594,7 +3594,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-05-26T15:59:30.894Z",
+      "updatedAt": "2026-05-26T15:59:36.399Z",
       "log": []
     }
   ],
