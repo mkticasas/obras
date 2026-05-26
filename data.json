@@ -5533,7 +5533,7 @@
       "name": "INGRID E ERICK",
       "colId": "mpb85pbuoftb",
       "coverUrl": null,
-      "addr": "SÃO THOMAZPARK",
+      "addr": "SÃO THOMAZ",
       "valor": "",
       "inicio": "",
       "prazo": "",
@@ -5551,32 +5551,32 @@
             {
               "id": "mpmu6h40bc56",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu6h409g2s",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu6h40um2c",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu6h400lhr",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu6h40ykjp",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu6h4050b1",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu6h40v6dv",
@@ -5714,7 +5714,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:15:14.976Z",
-      "updatedAt": "2026-05-26T16:16:02.375Z",
+      "updatedAt": "2026-05-26T16:16:12.980Z",
       "log": []
     }
   ],
