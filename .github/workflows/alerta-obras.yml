@@ -84,17 +84,17 @@ jobs:
               sys.exit(0)
 
           print(f"{len(overdue)} obra(s) parada(s) ha mais de {alert_days}d.")
-          lines = ["🏗️ iCasas - Alerta de Obras", f"⚠️ {len(overdue)} obra(s) sem progresso na checklist ha mais de {alert_days} dia(s)", ""]
+          lines = ["iCasas - Alerta de Obras", f"ATENCAO: {len(overdue)} obra(s) sem progresso na checklist ha mais de {alert_days} dia(s)", ""]
           for o in overdue:
               lines += [
-                  f"📋 Obra: {o['name']}",
-                  f"📌 Coluna: {o['col']}",
-                  f"👤 Responsavel: {o['resp']}",
-                  f"📍 Endereco: {o['addr']}",
-                  f"🕐 Ultimo progresso: {o['upd']} ({o['elapsed']} atras)",
+                  f"Obra: {o['name']}",
+                  f"Coluna: {o['col']}",
+                  f"Responsavel: {o['resp']}",
+                  f"Endereco: {o['addr']}",
+                  f"Ultimo progresso: {o['upd']} ({o['elapsed']} atras)",
                   ""
               ]
-          lines.append("👉 Acesse o Kanban e atualize a checklist!")
+          lines.append("Acesse o Kanban e atualize a checklist!")
           msg = "\n".join(lines)
 
           recipients = [u for u in users if u.get("telegramChatId")]
