@@ -43,16 +43,26 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .btn-icon:hover{color:var(--text);background:var(--border);}
 .btn-sm{padding:5px 10px;font-size:12px;}
 
-#alert-banner{display:none;position:fixed;bottom:20px;right:20px;z-index:250;width:320px;max-width:calc(100vw - 32px);background:#1c0a00;border:1px solid #b45309;border-left:4px solid #f97316;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.5);padding:14px 16px;font-size:13px;color:#fed7aa;flex-direction:column;gap:8px;animation:slideInRight .3s ease;}
+/* ── Alert bell ── */
+#alert-bell{display:none;position:fixed;bottom:20px;right:20px;z-index:250;width:48px;height:48px;border-radius:50%;background:#92400e;border:2px solid #b45309;box-shadow:0 4px 16px rgba(0,0,0,.4);cursor:pointer;align-items:center;justify-content:center;font-size:22px;transition:.2s;animation:bellPulse 2s infinite;}
+#alert-bell.show{display:flex;}
+#alert-bell:hover{transform:scale(1.1);}
+#alert-bell .bell-badge{position:absolute;top:-4px;right:-4px;background:#ef4444;color:#fff;font-size:10px;font-weight:700;border-radius:10px;min-width:18px;height:18px;display:flex;align-items:center;justify-content:center;padding:0 4px;border:2px solid var(--bg);}
+@keyframes bellPulse{0%,100%{box-shadow:0 4px 16px rgba(0,0,0,.4);}50%{box-shadow:0 4px 24px rgba(249,115,22,.5);}}
+
+/* ── Alert panel ── */
+#alert-banner{display:none;position:fixed;bottom:20px;right:20px;z-index:250;width:320px;max-width:calc(100vw - 32px);background:#1c0a00;border:1px solid #b45309;border-left:4px solid #f97316;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.5);padding:14px 16px;font-size:13px;color:#fed7aa;flex-direction:column;gap:8px;animation:slideInRight .25s ease;}
 #alert-banner.show{display:flex;}
 @keyframes slideInRight{from{transform:translateX(120%);opacity:0;}to{transform:translateX(0);opacity:1;}}
-#alert-banner .alert-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:16px;padding:0;line-height:1;}
-#alert-banner .alert-close:hover{color:var(--text);}
+#alert-banner .alert-actions{display:flex;gap:6px;margin-left:auto;}
+#alert-banner .alert-actions button{background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;padding:2px 5px;border-radius:4px;line-height:1;}
+#alert-banner .alert-actions button:hover{color:var(--text);background:var(--surface2);}
 #alert-banner .alert-list{max-height:180px;overflow-y:auto;display:flex;flex-direction:column;gap:3px;}
 #alert-banner .alert-list::-webkit-scrollbar{width:4px;}
 #alert-banner .alert-list::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
-#alert-banner .alert-item{font-size:12px;color:#fed7aa;padding:2px 0;border-bottom:1px solid rgba(249,115,22,.15);}
+#alert-banner .alert-item{font-size:12px;color:#fed7aa;padding:4px 0;border-bottom:1px solid rgba(249,115,22,.15);cursor:pointer;}
 #alert-banner .alert-item:last-child{border-bottom:none;}
+#alert-banner .alert-item:hover{color:#fff;}
 .alert-tag{background:var(--warn);color:#0f1117;font-weight:700;padding:2px 8px;border-radius:4px;font-size:11px;}
 
 /* BOARD */
@@ -437,11 +447,21 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 </div>
 <div id="mobile-menu-overlay" onclick="closeMobileMenu()" style="display:none;position:fixed;inset:0;z-index:149;background:rgba(0,0,0,.5);"></div>
 
+<!-- Bell button -->
+<div id="alert-bell" onclick="expandAlertPanel()" title="Ver alertas">
+  🔔
+  <span class="bell-badge" id="bell-badge">0</span>
+</div>
+
+<!-- Alert panel -->
 <div id="alert-banner">
-  <button class="alert-close" onclick="document.getElementById('alert-banner').classList.remove('show')" title="Fechar">✕</button>
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
+  <div style="display:flex;align-items:center;gap:8px;">
     <span class="alert-tag" style="flex-shrink:0;">⚠️ ALERTA</span>
-    <span id="alert-count" style="font-size:12px;color:#fdba74;font-weight:600;"></span>
+    <span id="alert-count" style="font-size:12px;color:#fdba74;font-weight:600;flex:1;"></span>
+    <div class="alert-actions">
+      <button onclick="minimizeAlertPanel()" title="Minimizar">─</button>
+      <button onclick="dismissAlertPanel()" title="Fechar">✕</button>
+    </div>
   </div>
   <div class="alert-list" id="alert-list"></div>
 </div>
@@ -1394,19 +1414,39 @@ function confirmDeleteUser(id){
 function saveConfigTab(){CFG.days=parseInt(document.getElementById('c-days').value)||1;alert('✅ Salvo!');}
 
 // ══════ ALERTS ══════
+let _alertDismissed=false;
 function checkAlerts(){
   const limit=CFG.days||1;
   const skipCols=new Set((state.columns||[]).filter(c=>c.name.toLowerCase().includes('entregue')).map(c=>c.id));
   const overdue=(state.cards||[]).filter(c=>!skipCols.has(c.colId)&&daysDiff(c.updatedAt)>=limit);
+  const bell=document.getElementById('alert-bell');
   const banner=document.getElementById('alert-banner');
-  if(!overdue.length){banner.classList.remove('show');return;}
+  if(!overdue.length){bell.classList.remove('show');banner.classList.remove('show');return;}
+  // update badge and list
+  document.getElementById('bell-badge').textContent=overdue.length;
   document.getElementById('alert-count').textContent=`${overdue.length} obra${overdue.length>1?'s':''} sem atualização há ${limit}+ dia${limit>1?'s':''}`;
-  const list=document.getElementById('alert-list');
-  list.innerHTML=overdue.map(c=>{
+  document.getElementById('alert-list').innerHTML=overdue.map(c=>{
     const col=(state.columns||[]).find(col=>col.id===c.colId);
-    return `<div class="alert-item" onclick="openCard('${c.id}')" style="cursor:pointer;" title="Abrir card">⚠️ <strong>${c.name||'(sem nome)'}</strong> &mdash; ${col?col.name:'--'}</div>`;
+    return `<div class="alert-item" onclick="openCard('${c.id}')" title="Abrir card">⚠️ <strong>${c.name||'(sem nome)'}</strong> &mdash; ${col?col.name:'--'}</div>`;
   }).join('');
-  banner.classList.add('show');
+  // show bell; show panel only if not dismissed
+  bell.classList.add('show');
+  if(!_alertDismissed) banner.classList.add('show');
+}
+function expandAlertPanel(){
+  document.getElementById('alert-banner').classList.add('show');
+  document.getElementById('alert-bell').classList.remove('show');
+  _alertDismissed=false;
+}
+function minimizeAlertPanel(){
+  document.getElementById('alert-banner').classList.remove('show');
+  document.getElementById('alert-bell').classList.add('show');
+  _alertDismissed=true;
+}
+function dismissAlertPanel(){
+  document.getElementById('alert-banner').classList.remove('show');
+  document.getElementById('alert-bell').classList.remove('show');
+  _alertDismissed=true;
 }
 
 // ══════ DRAG & DROP ══════
@@ -1618,6 +1658,12 @@ function closeMobileMenu(){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.16 — Mai 2026 · 17:15</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Alerta com botão sino</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Notificação de alerta agora aparece como sino 🔔 com badge no canto inferior direito. Clica para expandir o painel. Botão ─ minimiza de volta ao sino. Botão ✕ fecha tudo.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.15 — Mai 2026 · 17:02</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Alerta como notificação flutuante</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Banner de alerta substituído por notificação no canto inferior direito. Clicável por obra, com scroll quando há muitas, botão fechar e animação de entrada.</div>
