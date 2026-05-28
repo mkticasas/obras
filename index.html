@@ -414,6 +414,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
         <span class="user-name" id="header-name" onclick="openUserSelect()" style="cursor:pointer;">Selecionar</span>
         <button class="btn-icon" id="btn-change-pass" onclick="openChangePass()" title="Alterar senha" style="display:none;font-size:12px;padding:2px 5px;background:none;border:none;color:var(--muted);cursor:pointer;">🔑</button>
       </div>
+      <a href="https://mkticasas.github.io/vitrine-icasas" target="_blank" class="btn-secondary btn-sm" style="text-decoration:none;">🏠 Vitrine</a>
       <button class="btn-secondary btn-sm" onclick="openAdminModal()">⚙️ Admin</button>
       <button class="btn-primary btn-sm" onclick="openNewCard()">+ Nova Obra</button>
     </div>
@@ -437,6 +438,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
     <div class="mobile-menu-divider"></div>
     <button class="mobile-menu-item" onclick="openNewCard();closeMobileMenu()">＋ Nova Obra</button>
     <button class="mobile-menu-item" onclick="openAdminModal();closeMobileMenu()">⚙️ Admin</button>
+    <a href="https://mkticasas.github.io/vitrine-icasas" target="_blank" class="mobile-menu-item" style="text-decoration:none;display:block;">🏠 Vitrine de Obras</a>
     <button class="mobile-menu-item" onclick="openPatchNotes();closeMobileMenu()">📋 Novidades</button>
     <div class="mobile-menu-divider"></div>
     <div class="mobile-menu-sync">
@@ -1658,6 +1660,12 @@ function closeMobileMenu(){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.17 — Mai 2026 · 17:30</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Link Vitrine de Obras</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Botão "Vitrine" adicionado no header (desktop) e no menu sanduíche (mobile), abrindo o site de vitrine em nova aba.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.16 — Mai 2026 · 17:15</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Alerta com botão sino</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Notificação de alerta agora aparece como sino 🔔 com badge no canto inferior direito. Clica para expandir o painel. Botão ─ minimiza de volta ao sino. Botão ✕ fecha tudo.</div>
