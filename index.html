@@ -462,21 +462,15 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       <div class="detail-section">
         <div class="detail-section-title">📋 Informações</div>
         <div class="detail-grid">
-          <div class="detail-field"><label>Endereço</label><input id="d-addr" placeholder="Rua, número, bairro" onblur="autoSaveCard()"/></div>
-          <div class="detail-field"><label>Valor da Obra</label><input id="d-valor" placeholder="R$ 0,00" onblur="autoSaveCard()"/></div>
+          <div class="detail-field full"><label>Endereço</label><input id="d-addr" placeholder="Rua, número, bairro" onblur="autoSaveCard()"/></div>
           <div class="detail-field"><label>Data de Início</label><input type="date" id="d-inicio" onblur="autoSaveCard()"/></div>
           <div class="detail-field"><label>Prazo de Entrega</label><input type="date" id="d-prazo" onblur="autoSaveCard()"/></div>
-          <div class="detail-field"><label>Responsável Técnico</label><input id="d-resp" placeholder="Nome do responsável" onblur="autoSaveCard()"/></div>
-          <div class="detail-field"><label>Status Atual</label>
-            <select id="d-status" onchange="autoSaveCard()">
-              <option value="">Selecione...</option>
-              <option>Terraplanagem</option><option>Fundação</option><option>Estrutura</option>
-              <option>Cobertura</option><option>Instalações</option><option>Reboco</option>
-              <option>Acabamento</option><option>Finalização</option><option>Entregue</option>
-            </select>
-          </div>
-          <div class="detail-field full"><label>Equipe</label><input id="d-equipe" placeholder="Nomes dos membros da equipe" onblur="autoSaveCard()"/></div>
           <div class="detail-field full"><label>Observações</label><textarea id="d-obs" placeholder="Anotações gerais sobre a obra..." onblur="autoSaveCard()"></textarea></div>
+          <!-- hidden fields kept for data compatibility -->
+          <input type="hidden" id="d-valor"/>
+          <input type="hidden" id="d-resp"/>
+          <input type="hidden" id="d-equipe"/>
+          <input type="hidden" id="d-status"/>
         </div>
       </div>
 
@@ -914,7 +908,7 @@ function cardHTML(card){
         ${tags?`<div class="card-tags">${tags}${tagsToggleBtn}</div>`:''}
         <div class="card-meta">
           ${card.addr&&card.addr.trim().length>3?`<div class="card-meta-row">📍 <span>${card.addr}</span></div>`:''}
-          ${card.resp&&card.resp.trim().includes(' ')&&card.resp.length<40?`<div class="card-meta-row">👤 <span>${card.resp}</span></div>`:''}
+
           ${card.status?`<div class="card-meta-row">🔧 <span>${card.status}</span></div>`:''}
         </div>
         ${pct!==null?`<div class="card-progress"><div class="progress-label"><span>Progresso</span><span>${pct}%</span></div><div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div></div>`:''}
@@ -1605,6 +1599,12 @@ function closeMobileMenu(){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.14 — Mai 2026 · 16:45</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Campos removidos do card</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Removidos os campos Valor da Obra, Responsável Técnico, Status Atual e Equipe do formulário do card.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.13 — Mai 2026 · 16:10</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">lastProgressAt — alerta de inatividade corrigido</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Campo lastProgressAt adicionado: atualiza apenas quando checklist avança. Bot do Telegram passa a usar esse campo, não mais updatedAt, evitando falsos resets por abertura de card.</div>
