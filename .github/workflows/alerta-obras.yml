@@ -64,15 +64,19 @@ jobs:
           for card in cards:
               if card.get("colId","") in SKIP_COLS:
                   continue
-              upd = card.get("updatedAt", card.get("createdAt",""))
-              if upd and seconds_since(upd) >= alert_secs:
+
+              # Usa lastProgressAt se existir, senão createdAt
+              # updatedAt é ignorado pois reseta ao abrir o card
+              progress_at = card.get("lastProgressAt") or card.get("createdAt","")
+
+              if progress_at and seconds_since(progress_at) >= alert_secs:
                   overdue.append({
                       "name":    card.get("name","(sem nome)"),
                       "col":     col_map.get(card.get("colId",""),"--"),
                       "resp":    card.get("resp","--"),
                       "addr":    card.get("addr","--"),
-                      "elapsed": elapsed(seconds_since(upd)),
-                      "upd":     fmt(upd),
+                      "elapsed": elapsed(seconds_since(progress_at)),
+                      "upd":     fmt(progress_at),
                   })
 
           if not overdue:
@@ -80,17 +84,17 @@ jobs:
               sys.exit(0)
 
           print(f"{len(overdue)} obra(s) parada(s) ha mais de {alert_days}d.")
-          lines = ["Kanban de Obras - Alerta", f"({len(overdue)} obra(s) sem atualizacao ha mais de {alert_days} dia(s))", ""]
+          lines = ["🏗️ iCasas - Alerta de Obras", f"⚠️ {len(overdue)} obra(s) sem progresso na checklist ha mais de {alert_days} dia(s)", ""]
           for o in overdue:
               lines += [
-                  f"Obra: {o['name']}",
-                  f"Coluna: {o['col']}",
-                  f"Responsavel: {o['resp']}",
-                  f"Endereco: {o['addr']}",
-                  f"Ultima atualizacao: {o['upd']} ({o['elapsed']} atras)",
+                  f"📋 Obra: {o['name']}",
+                  f"📌 Coluna: {o['col']}",
+                  f"👤 Responsavel: {o['resp']}",
+                  f"📍 Endereco: {o['addr']}",
+                  f"🕐 Ultimo progresso: {o['upd']} ({o['elapsed']} atras)",
                   ""
               ]
-          lines.append("Acesse o Kanban e atualize!")
+          lines.append("👉 Acesse o Kanban e atualize a checklist!")
           msg = "\n".join(lines)
 
           recipients = [u for u in users if u.get("telegramChatId")]
