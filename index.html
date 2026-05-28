@@ -43,8 +43,16 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .btn-icon:hover{color:var(--text);background:var(--border);}
 .btn-sm{padding:5px 10px;font-size:12px;}
 
-#alert-banner{display:none;background:linear-gradient(90deg,#7c2d12,#92400e);border-bottom:1px solid #b45309;padding:9px 24px;font-size:13px;color:#fed7aa;gap:10px;align-items:center;flex-wrap:wrap;}
+#alert-banner{display:none;position:fixed;bottom:20px;right:20px;z-index:250;width:320px;max-width:calc(100vw - 32px);background:#1c0a00;border:1px solid #b45309;border-left:4px solid #f97316;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.5);padding:14px 16px;font-size:13px;color:#fed7aa;flex-direction:column;gap:8px;animation:slideInRight .3s ease;}
 #alert-banner.show{display:flex;}
+@keyframes slideInRight{from{transform:translateX(120%);opacity:0;}to{transform:translateX(0);opacity:1;}}
+#alert-banner .alert-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:16px;padding:0;line-height:1;}
+#alert-banner .alert-close:hover{color:var(--text);}
+#alert-banner .alert-list{max-height:180px;overflow-y:auto;display:flex;flex-direction:column;gap:3px;}
+#alert-banner .alert-list::-webkit-scrollbar{width:4px;}
+#alert-banner .alert-list::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+#alert-banner .alert-item{font-size:12px;color:#fed7aa;padding:2px 0;border-bottom:1px solid rgba(249,115,22,.15);}
+#alert-banner .alert-item:last-child{border-bottom:none;}
 .alert-tag{background:var(--warn);color:#0f1117;font-weight:700;padding:2px 8px;border-radius:4px;font-size:11px;}
 
 /* BOARD */
@@ -430,8 +438,12 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 <div id="mobile-menu-overlay" onclick="closeMobileMenu()" style="display:none;position:fixed;inset:0;z-index:149;background:rgba(0,0,0,.5);"></div>
 
 <div id="alert-banner">
-  <span class="alert-tag">⚠️ ALERTA</span>
-  <span id="alert-text"></span>
+  <button class="alert-close" onclick="document.getElementById('alert-banner').classList.remove('show')" title="Fechar">✕</button>
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
+    <span class="alert-tag" style="flex-shrink:0;">⚠️ ALERTA</span>
+    <span id="alert-count" style="font-size:12px;color:#fdba74;font-weight:600;"></span>
+  </div>
+  <div class="alert-list" id="alert-list"></div>
 </div>
 
 <div id="board">
@@ -1384,10 +1396,17 @@ function saveConfigTab(){CFG.days=parseInt(document.getElementById('c-days').val
 // ══════ ALERTS ══════
 function checkAlerts(){
   const limit=CFG.days||1;
-  const overdue=(state.cards||[]).filter(c=>daysDiff(c.updatedAt)>=limit);
+  const skipCols=new Set((state.columns||[]).filter(c=>c.name.toLowerCase().includes('entregue')).map(c=>c.id));
+  const overdue=(state.cards||[]).filter(c=>!skipCols.has(c.colId)&&daysDiff(c.updatedAt)>=limit);
   const banner=document.getElementById('alert-banner');
-  if(overdue.length){banner.classList.add('show');document.getElementById('alert-text').textContent=`${overdue.length} obra${overdue.length>1?'s':''} sem atualização há ${limit}+ dia${limit>1?'s':''}: ${overdue.map(c=>c.name||'(sem nome)').join(', ')}`;}
-  else banner.classList.remove('show');
+  if(!overdue.length){banner.classList.remove('show');return;}
+  document.getElementById('alert-count').textContent=`${overdue.length} obra${overdue.length>1?'s':''} sem atualização há ${limit}+ dia${limit>1?'s':''}`;
+  const list=document.getElementById('alert-list');
+  list.innerHTML=overdue.map(c=>{
+    const col=(state.columns||[]).find(col=>col.id===c.colId);
+    return `<div class="alert-item" onclick="openCard('${c.id}')" style="cursor:pointer;" title="Abrir card">⚠️ <strong>${c.name||'(sem nome)'}</strong> &mdash; ${col?col.name:'--'}</div>`;
+  }).join('');
+  banner.classList.add('show');
 }
 
 // ══════ DRAG & DROP ══════
@@ -1599,6 +1618,12 @@ function closeMobileMenu(){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.15 — Mai 2026 · 17:02</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Alerta como notificação flutuante</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Banner de alerta substituído por notificação no canto inferior direito. Clicável por obra, com scroll quando há muitas, botão fechar e animação de entrada.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.14 — Mai 2026 · 16:45</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Campos removidos do card</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Removidos os campos Valor da Obra, Responsável Técnico, Status Atual e Equipe do formulário do card.</div>
