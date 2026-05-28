@@ -89,7 +89,6 @@ jobs:
               lines += [
                   f"🏢 Obra: {o['name']}",
                   f"📌 Coluna: {o['col']}",
-                  f"👥 Responsavel: {o['resp']}",
                   f"📍 Endereco: {o['addr']}",
                   f"🕐 Ultimo progresso: {o['upd']} ({o['elapsed']} atras)",
                   ""
