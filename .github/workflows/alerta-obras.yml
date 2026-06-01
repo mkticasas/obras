@@ -3,10 +3,27 @@ name: Alerta de Obras Paradas
 on:
   schedule:
     - cron: '0 12 * * 1-5'  # 9h Brasilia (12h UTC), segunda a sexta
+    - cron: '0 11 * * 0'    # Domingo 8h UTC — keep-alive semanal
   workflow_dispatch:
 
 jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 11 * * 0'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Keep-alive commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: keep-alive [skip ci]"
+          git push
+
   check-obras:
+    if: github.event.schedule != '0 11 * * 0' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repositorio
