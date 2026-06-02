@@ -3824,17 +3824,17 @@
             {
               "id": "mpmtqbnnfrfg",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnnlxv2",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnnr92m",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnnvo0l",
@@ -3911,8 +3911,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:02:41.411Z",
-      "updatedAt": "2026-05-26T16:03:21.262Z",
-      "log": []
+      "updatedAt": "2026-06-02T12:50:33.814Z",
+      "log": [],
+      "lastProgressAt": "2026-06-02T12:50:33.814Z"
     },
     {
       "id": "mpmtrdwipk0n",
