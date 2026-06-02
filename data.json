@@ -6047,7 +6047,7 @@
             {
               "id": "mpmu57xrrqmz",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xr4gg0",
@@ -6079,13 +6079,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:14:16.431Z",
-      "updatedAt": "2026-06-02T12:52:01.427Z",
+      "updatedAt": "2026-06-02T12:53:22.806Z",
       "log": [
         {
           "date": "2026-06-02T12:52:01.427Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:53:22.806Z"
     },
     {
       "id": "mpmu1y6szwly",
