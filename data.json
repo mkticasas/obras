@@ -7927,7 +7927,7 @@
       "resp": "",
       "equipe": "",
       "status": "",
-      "obs": "",
+      "obs": "EM CARTÓRIO.\n",
       "tags": [],
       "assignees": [],
       "checklists": [
@@ -8101,7 +8101,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-02T12:32:05.843Z",
-      "updatedAt": "2026-06-02T12:32:50.739Z",
+      "updatedAt": "2026-06-02T12:33:21.132Z",
       "log": []
     }
   ],
