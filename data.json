@@ -5458,7 +5458,7 @@
             {
               "id": "mpmu47wgvs1t",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu47wgjefm",
@@ -5485,13 +5485,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:13:29.728Z",
-      "updatedAt": "2026-06-02T12:51:54.393Z",
+      "updatedAt": "2026-06-02T12:52:53.559Z",
       "log": [
         {
           "date": "2026-06-02T12:51:54.393Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:52:53.559Z"
     },
     {
       "id": "mpmub07bfmep",
