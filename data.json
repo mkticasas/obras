@@ -1802,7 +1802,7 @@
             {
               "id": "mplofrmbms2m",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbcswh",
@@ -1848,7 +1848,7 @@
             {
               "id": "mplofrmbir0v",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmb1y74",
@@ -1858,12 +1858,12 @@
             {
               "id": "mplofrmb8ayw",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbvmc1",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbf8ah",
@@ -1960,7 +1960,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-05-26T17:58:25.119Z",
+      "updatedAt": "2026-06-02T12:48:27.870Z",
       "log": [
         {
           "date": "2026-05-26T17:58:12.543Z",
@@ -1970,7 +1970,8 @@
           "date": "2026-05-26T17:58:25.119Z",
           "note": "Movido para \"FUNDAÇÃO\" por Marketing"
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:48:27.870Z"
     },
     {
       "id": "mplom1gl8r63",
