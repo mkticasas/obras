@@ -2200,7 +2200,7 @@
             {
               "id": "mplonffng6z8",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffndptt",
@@ -2251,17 +2251,17 @@
             {
               "id": "mplonffn54vm",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffnco1t",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffn7g3f",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffnl78k",
@@ -2353,8 +2353,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:52:42.083Z",
-      "updatedAt": "2026-05-26T15:43:41.924Z",
-      "log": []
+      "updatedAt": "2026-06-02T12:48:49.454Z",
+      "log": [],
+      "lastProgressAt": "2026-06-02T12:48:49.454Z"
     },
     {
       "id": "mploocytpfo0",
