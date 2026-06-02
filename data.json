@@ -6536,12 +6536,12 @@
             {
               "id": "mpmugtyqd1pf",
               "text": "Acabamento",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqtghy",
               "text": "Finalização",
-              "done": false
+              "done": true
             }
           ]
         },
@@ -6669,9 +6669,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:23:18.194Z",
-      "updatedAt": "2026-06-02T12:53:48.302Z",
+      "updatedAt": "2026-06-02T12:53:50.182Z",
       "log": [],
-      "lastProgressAt": "2026-06-02T12:53:48.302Z"
+      "lastProgressAt": "2026-06-02T12:53:50.182Z"
     },
     {
       "id": "mpmudwv9sn3j",
