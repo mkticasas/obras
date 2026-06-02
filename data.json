@@ -3950,7 +3950,7 @@
             {
               "id": "mpmttak02490",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak09rnt",
@@ -3960,7 +3960,7 @@
             {
               "id": "mpmttak029hi",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0yq2t",
@@ -4103,7 +4103,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-06-02T12:50:52.390Z",
+      "updatedAt": "2026-06-02T12:50:56.351Z",
       "log": [
         {
           "date": "2026-05-26T16:08:54.161Z",
@@ -4122,7 +4122,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÃÃES\" por Marketing"
         }
       ],
-      "lastProgressAt": "2026-06-02T12:50:52.390Z"
+      "lastProgressAt": "2026-06-02T12:50:56.351Z"
     },
     {
       "id": "mpmtfibaz4vm",
