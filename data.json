@@ -2200,7 +2200,7 @@
             {
               "id": "mploocyt6inw",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytry4u",
@@ -2353,8 +2353,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-05-26T15:43:43.764Z",
-      "log": []
+      "updatedAt": "2026-06-02T12:48:59.654Z",
+      "log": [],
+      "lastProgressAt": "2026-06-02T12:48:59.654Z"
     },
     {
       "id": "mplopymboykp",
