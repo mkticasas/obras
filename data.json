@@ -3425,7 +3425,7 @@
             {
               "id": "mpmthycybvp0",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycyfs0z",
@@ -3440,17 +3440,17 @@
             {
               "id": "mpmthycy0ik8",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycynaxs",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycyh73r",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycy92xb",
@@ -3527,9 +3527,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:56:10.930Z",
-      "updatedAt": "2026-06-02T12:49:52.207Z",
+      "updatedAt": "2026-06-02T12:49:57.926Z",
       "log": [],
-      "lastProgressAt": "2026-06-02T12:49:52.207Z"
+      "lastProgressAt": "2026-06-02T12:49:57.926Z"
     },
     {
       "id": "mpmtl3r8s0n7",
