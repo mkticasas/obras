@@ -5042,7 +5042,7 @@
             {
               "id": "mpmtl3r8rncx",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8aspv",
@@ -5052,17 +5052,17 @@
             {
               "id": "mpmtl3r86a5v",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8mbap",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8tjnb",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8btp3",
@@ -5099,13 +5099,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-06-02T12:50:17.626Z",
+      "updatedAt": "2026-06-02T12:51:44.103Z",
       "log": [
         {
           "date": "2026-06-02T12:50:17.626Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:51:44.103Z"
     },
     {
       "id": "mpmtxyim6fhs",
