@@ -1472,12 +1472,12 @@
             {
               "id": "mplo9v07atnn",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplo9v07e4kz",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mplo9v07m4oh",
@@ -1574,8 +1574,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:42:09.079Z",
-      "updatedAt": "2026-05-26T15:41:44.291Z",
-      "log": []
+      "updatedAt": "2026-06-02T12:48:15.840Z",
+      "log": [],
+      "lastProgressAt": "2026-06-02T12:48:15.840Z"
     },
     {
       "id": "mplobyxrw3fv",
