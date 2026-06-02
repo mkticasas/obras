@@ -4364,12 +4364,12 @@
             {
               "id": "mpmtnehsxsin",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehs3ix8",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsyej3",
@@ -4440,7 +4440,7 @@
             {
               "id": "mpmtnehs2qea",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsyrcb",
@@ -4475,7 +4475,7 @@
             {
               "id": "mpmtnehsicx6",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehs9gua",
@@ -4512,14 +4512,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:00:25.120Z",
-      "updatedAt": "2026-06-02T12:51:22.326Z",
+      "updatedAt": "2026-06-02T12:51:26.334Z",
       "log": [
         {
           "date": "2026-06-02T12:50:20.691Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:51:22.326Z"
+      "lastProgressAt": "2026-06-02T12:51:26.334Z"
     },
     {
       "id": "mpmtrdwipk0n",
