@@ -4031,7 +4031,7 @@
             {
               "id": "mpmttak0uqfz",
               "text": "Batentes",
-              "done": true
+              "done": false
             },
             {
               "id": "mpmttak00i5l",
@@ -4103,7 +4103,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-06-02T12:50:50.862Z",
+      "updatedAt": "2026-06-02T12:50:52.390Z",
       "log": [
         {
           "date": "2026-05-26T16:08:54.161Z",
@@ -4122,7 +4122,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÃÃES\" por Marketing"
         }
       ],
-      "lastProgressAt": "2026-06-02T12:50:50.862Z"
+      "lastProgressAt": "2026-06-02T12:50:52.390Z"
     },
     {
       "id": "mpmtfibaz4vm",
