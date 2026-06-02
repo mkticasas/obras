@@ -6642,35 +6642,36 @@
             {
               "id": "mpmugtyqhrke",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqtki7",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqrxli",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyq04uo",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmugtyqnnqj",
               "text": "Entrega",
-              "done": false
+              "done": true
             }
           ]
         }
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:23:18.194Z",
-      "updatedAt": "2026-05-26T16:24:15.992Z",
-      "log": []
+      "updatedAt": "2026-06-02T12:53:48.302Z",
+      "log": [],
+      "lastProgressAt": "2026-06-02T12:53:48.302Z"
     },
     {
       "id": "mpmudwv9sn3j",
