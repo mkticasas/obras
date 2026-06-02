@@ -4668,7 +4668,7 @@
             {
               "id": "mpmtrdwiwqs7",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtrdwikcfp",
@@ -4710,13 +4710,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:03:30.978Z",
-      "updatedAt": "2026-06-02T12:50:42.107Z",
+      "updatedAt": "2026-06-02T12:51:32.926Z",
       "log": [
         {
           "date": "2026-06-02T12:50:42.107Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:51:32.926Z"
     },
     {
       "id": "mpmtwz84fod4",
