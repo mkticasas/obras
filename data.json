@@ -2392,7 +2392,7 @@
             {
               "id": "mplos4d969jk",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mplos4d9sxgb",
@@ -2443,17 +2443,17 @@
             {
               "id": "mplos4d9cb13",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplos4d9s4yx",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mplos4d9w096",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mplos4d93a4d",
@@ -2463,12 +2463,12 @@
             {
               "id": "mplos4d9kl8p",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mplos4d903jo",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mplos4d9njxb",
@@ -2545,8 +2545,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:56:21.021Z",
-      "updatedAt": "2026-05-26T15:43:58.230Z",
-      "log": []
+      "updatedAt": "2026-06-02T12:49:36.382Z",
+      "log": [],
+      "lastProgressAt": "2026-06-02T12:49:36.382Z"
     },
     {
       "id": "mpmqk8quyy8b",
