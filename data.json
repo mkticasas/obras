@@ -8117,7 +8117,9 @@
       "equipe": "",
       "status": "",
       "obs": "EM CARTÓRIO",
-      "tags": [],
+      "tags": [
+        "mp4ih8i6bddg"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -8290,7 +8292,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-02T12:35:06.665Z",
-      "updatedAt": "2026-06-02T12:35:47.722Z",
+      "updatedAt": "2026-06-02T12:36:18.297Z",
       "log": []
     }
   ],
