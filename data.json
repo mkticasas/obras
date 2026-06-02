@@ -5651,12 +5651,12 @@
             {
               "id": "mpmub07cbq4z",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07cpxux",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07ctqan",
@@ -5683,13 +5683,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:18:46.344Z",
-      "updatedAt": "2026-06-02T12:52:12.642Z",
+      "updatedAt": "2026-06-02T12:53:00.167Z",
       "log": [
         {
           "date": "2026-06-02T12:52:12.642Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:53:00.167Z"
     },
     {
       "id": "mpmu6h400vk3",
