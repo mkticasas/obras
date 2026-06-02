@@ -4455,22 +4455,22 @@
             {
               "id": "mpmtnehs7h9z",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsg19x",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsjtdb",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehs3r7x",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsicx6",
@@ -4512,13 +4512,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:00:25.120Z",
-      "updatedAt": "2026-06-02T12:50:20.691Z",
+      "updatedAt": "2026-06-02T12:51:22.326Z",
       "log": [
         {
           "date": "2026-06-02T12:50:20.691Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:51:22.326Z"
     },
     {
       "id": "mpmtrdwipk0n",
