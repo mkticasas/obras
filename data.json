@@ -5854,7 +5854,7 @@
             {
               "id": "mpmu6h40utxt",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu6h402v54",
@@ -5881,13 +5881,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:15:14.976Z",
-      "updatedAt": "2026-06-02T12:52:05.017Z",
+      "updatedAt": "2026-06-02T12:53:04.278Z",
       "log": [
         {
           "date": "2026-06-02T12:52:05.017Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:53:04.278Z"
     },
     {
       "id": "mpmu8mq224b3",
