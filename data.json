@@ -2392,7 +2392,7 @@
             {
               "id": "mplopymbaig2",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymbg8o1",
@@ -2443,17 +2443,17 @@
             {
               "id": "mplopymbixs7",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymbyqpr",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymbwor3",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymb25n0",
@@ -2545,8 +2545,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:54:40.259Z",
-      "updatedAt": "2026-05-26T15:43:45.816Z",
-      "log": []
+      "updatedAt": "2026-06-02T12:49:11.006Z",
+      "log": [],
+      "lastProgressAt": "2026-06-02T12:49:11.006Z"
     },
     {
       "id": "mplor8rrw1h5",
