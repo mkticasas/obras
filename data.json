@@ -4273,7 +4273,7 @@
             {
               "id": "mpmtfibafunb",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibarsmi",
@@ -4315,14 +4315,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-06-02T12:51:11.774Z",
+      "updatedAt": "2026-06-02T12:51:13.342Z",
       "log": [
         {
           "date": "2026-06-02T12:49:44.883Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:51:11.774Z"
+      "lastProgressAt": "2026-06-02T12:51:13.342Z"
     },
     {
       "id": "mpmtnehs44ng",
