@@ -5490,197 +5490,6 @@
       "log": []
     },
     {
-      "id": "mpmu47wgb1yf",
-      "name": "KAMILLY",
-      "colId": "mpb85pbuoftb",
-      "coverUrl": null,
-      "addr": "SAO THOMAZ",
-      "valor": "",
-      "inicio": "",
-      "prazo": "",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "",
-      "tags": [
-        "mpb8bjvuy2j4"
-      ],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mpmu47wg283t",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mpmu47wglay1",
-              "text": "Terraplanagem",
-              "done": true
-            },
-            {
-              "id": "mpmu47wga34g",
-              "text": "Fundação",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgkx17",
-              "text": "Estrutura (paredes + laje)",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgzq86",
-              "text": "Cobertura",
-              "done": true
-            },
-            {
-              "id": "mpmu47wg353n",
-              "text": "Instalações",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgq5kz",
-              "text": "Reboco",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgrzt2",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mpmu47wgq5bn",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mpmu47wgtr68",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mpmu47wg526o",
-              "text": "Terraplanagem",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgam6t",
-              "text": "Fundação",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgz2kp",
-              "text": "Levantamento de Paredes",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgtfns",
-              "text": "Conferência de medidas de janelas/portas",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgtl6a",
-              "text": "Impermeabilizações",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgcdhp",
-              "text": "Laje / Cobertura",
-              "done": true
-            },
-            {
-              "id": "mpmu47wg41jx",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgex5z",
-              "text": "Reboco externo iniciado",
-              "done": true
-            },
-            {
-              "id": "mpmu47wg36cs",
-              "text": "Reboco interno iniciado",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgq23b",
-              "text": "Batentes",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgre0u",
-              "text": "Reboco externo concluído",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgn355",
-              "text": "Reboco interno concluído",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgw8cd",
-              "text": "Esgoto/pluvial",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgxj8z",
-              "text": "Conduite do poste ao quadro",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgchxc",
-              "text": "Telhado + pingadeiras",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgwasl",
-              "text": "Requadro ou instalações de janelas",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgkpbw",
-              "text": "Contrapiso",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgehwo",
-              "text": "Pisos",
-              "done": true
-            },
-            {
-              "id": "mpmu47wgvs1t",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mpmu47wgjefm",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mpmu47wgk3u1",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mpmu47wg17m0",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mpmu47wgkj9m",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [],
-      "createdAt": "2026-05-26T16:13:29.728Z",
-      "updatedAt": "2026-05-26T16:14:06.428Z",
-      "log": []
-    },
-    {
       "id": "mpmu57xrww63",
       "name": "MATEUS E KAUANY",
       "colId": "mpb85pbuoftb",
@@ -6830,6 +6639,202 @@
       "createdAt": "2026-05-26T16:21:01.989Z",
       "updatedAt": "2026-05-26T16:22:05.694Z",
       "log": []
+    },
+    {
+      "id": "mpmu47wgb1yf",
+      "name": "KAMILLY",
+      "colId": "mpb860ya3ela",
+      "coverUrl": null,
+      "addr": "SAO THOMAZ",
+      "valor": "",
+      "inicio": "",
+      "prazo": "",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [
+        "mpb8bjvuy2j4"
+      ],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mpmu47wg283t",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpmu47wglay1",
+              "text": "Terraplanagem",
+              "done": true
+            },
+            {
+              "id": "mpmu47wga34g",
+              "text": "Fundação",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgkx17",
+              "text": "Estrutura (paredes + laje)",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgzq86",
+              "text": "Cobertura",
+              "done": true
+            },
+            {
+              "id": "mpmu47wg353n",
+              "text": "Instalações",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgq5kz",
+              "text": "Reboco",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgrzt2",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpmu47wgq5bn",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mpmu47wgtr68",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mpmu47wg526o",
+              "text": "Terraplanagem",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgam6t",
+              "text": "Fundação",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgz2kp",
+              "text": "Levantamento de Paredes",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgtfns",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgtl6a",
+              "text": "Impermeabilizações",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgcdhp",
+              "text": "Laje / Cobertura",
+              "done": true
+            },
+            {
+              "id": "mpmu47wg41jx",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgex5z",
+              "text": "Reboco externo iniciado",
+              "done": true
+            },
+            {
+              "id": "mpmu47wg36cs",
+              "text": "Reboco interno iniciado",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgq23b",
+              "text": "Batentes",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgre0u",
+              "text": "Reboco externo concluído",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgn355",
+              "text": "Reboco interno concluído",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgw8cd",
+              "text": "Esgoto/pluvial",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgxj8z",
+              "text": "Conduite do poste ao quadro",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgchxc",
+              "text": "Telhado + pingadeiras",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgwasl",
+              "text": "Requadro ou instalações de janelas",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgkpbw",
+              "text": "Contrapiso",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgehwo",
+              "text": "Pisos",
+              "done": true
+            },
+            {
+              "id": "mpmu47wgvs1t",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mpmu47wgjefm",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mpmu47wgk3u1",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mpmu47wg17m0",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mpmu47wgkj9m",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-05-26T16:13:29.728Z",
+      "updatedAt": "2026-06-02T12:51:54.393Z",
+      "log": [
+        {
+          "date": "2026-06-02T12:51:54.393Z",
+          "note": "Movido para \"FINALIZAÇÃO\""
+        }
+      ]
     },
     {
       "id": "mpmufpatgzc9",
