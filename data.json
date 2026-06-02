@@ -2064,7 +2064,7 @@
             {
               "id": "mplom1glmx01",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gl9qzy",
@@ -2161,8 +2161,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:51:37.317Z",
-      "updatedAt": "2026-05-26T15:43:39.946Z",
-      "log": []
+      "updatedAt": "2026-06-02T12:48:40.528Z",
+      "log": [],
+      "lastProgressAt": "2026-06-02T12:48:40.528Z"
     },
     {
       "id": "mplonffncuml",
