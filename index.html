@@ -1420,7 +1420,7 @@ let _alertDismissed=false;
 function checkAlerts(){
   const limit=CFG.days||1;
   const skipCols=new Set((state.columns||[]).filter(c=>c.name.toLowerCase().includes('entregue')).map(c=>c.id));
-  const overdue=(state.cards||[]).filter(c=>!skipCols.has(c.colId)&&daysDiff(c.updatedAt)>=limit);
+  const overdue=(state.cards||[]).filter(c=>!skipCols.has(c.colId)&&daysDiff(c.lastProgressAt||c.createdAt)>=limit);
   const bell=document.getElementById('alert-bell');
   const banner=document.getElementById('alert-banner');
   if(!overdue.length){bell.classList.remove('show');banner.classList.remove('show');return;}
@@ -1505,7 +1505,8 @@ loadGH();
 
 // SEARCH / FILTER
 function filterCards(query){
-  const q = query.trim().toLowerCase();
+  const normalize = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+  const q = normalize(query.trim());
   const clearBtn = document.getElementById('search-clear');
   if(clearBtn) clearBtn.style.display = q ? 'block' : 'none';
 
@@ -1517,12 +1518,12 @@ function filterCards(query){
       return;
     }
     const searchable = [
-      card.name,
-      card.addr,
-      card.resp,
-      card.equipe,
-      card.obs,
-      card.status
+      normalize(card.name),
+      normalize(card.addr),
+      normalize(card.resp),
+      normalize(card.equipe),
+      normalize(card.obs),
+      normalize(card.status)
     ].filter(Boolean).join(' ').toLowerCase();
     el.style.display = searchable.includes(q) ? '' : 'none';
   });
@@ -1660,6 +1661,18 @@ function closeMobileMenu(){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.19 — Jun 2026 · 09:30</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Fix alerta ignorando obras entregues</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">Sino de alerta agora usa lastProgressAt (igual ao bot do Telegram) e ignora corretamente a coluna ENTREGUES.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.18 — Mai 2026 · 17:45</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Busca sem distinção de acentos</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">"sao thomaz" agora encontra "São Thomaz". Normalização aplicada na query e em todos os campos pesquisáveis.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.17 — Mai 2026 · 17:30</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Link Vitrine de Obras</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Botão "Vitrine" adicionado no header (desktop) e no menu sanduíche (mobile), abrindo o site de vitrine em nova aba.</div>
