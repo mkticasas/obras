@@ -244,227 +244,6 @@
       ]
     },
     {
-      "id": "mpb8ny36m22t",
-      "name": "ANTONIO E BEATRIZ",
-      "colId": "mp44j4gncbh1",
-      "coverUrl": null,
-      "addr": "MORADA DO SOL",
-      "valor": "",
-      "inicio": "2026-04-10",
-      "prazo": "2026-11-10",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "",
-      "tags": [
-        "atencao",
-        "mp4ih8i6bddg"
-      ],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mpb8ny364tja",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mpb8ny36b21p",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mpb8ny3605av",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mpb8ny366q8d",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mpb8ny36cafp",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpb8ny3676k1",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mpb8ny365vje",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mpb8ny36ctkx",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37hozk",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mpb8ny37lrhx",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mpb8ny37myxe",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37fp5g",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37aafu",
-              "text": "Levantamento de Paredes",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37kod3",
-              "text": "Conferência de medidas de janelas/portas",
-              "done": false
-            },
-            {
-              "id": "mpb8ny3713lw",
-              "text": "Impermeabilizações",
-              "done": false
-            },
-            {
-              "id": "mpb8ny372v5c",
-              "text": "Laje / Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37k0zs",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37lpku",
-              "text": "Reboco externo iniciado",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37u1m7",
-              "text": "Reboco interno iniciado",
-              "done": false
-            },
-            {
-              "id": "mpb8ny377k3q",
-              "text": "Batentes",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37p6du",
-              "text": "Reboco externo concluído",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37cb7t",
-              "text": "Reboco interno concluído",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37uiwf",
-              "text": "Esgoto/pluvial",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37477n",
-              "text": "Conduite do poste ao quadro",
-              "done": false
-            },
-            {
-              "id": "mpb8ny376796",
-              "text": "Telhado + pingadeiras",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37dh34",
-              "text": "Requadro ou instalações de janelas",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37xw28",
-              "text": "Contrapiso",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37y2em",
-              "text": "Pisos",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37p4kp",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37mq6a",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37n9ax",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37agv8",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mpb8ny37g2v7",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [],
-      "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-05-28T12:41:07.044Z",
-      "log": [
-        {
-          "date": "2026-05-25T20:41:37.942Z",
-          "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
-        },
-        {
-          "date": "2026-05-26T16:37:29.056Z",
-          "note": "Movido para \"INICIALIZAR\" por Marketing"
-        },
-        {
-          "date": "2026-05-26T16:37:38.946Z",
-          "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
-        },
-        {
-          "date": "2026-05-26T17:58:07.732Z",
-          "note": "Movido para \"INICIALIZAR\" por Marketing"
-        },
-        {
-          "date": "2026-05-26T17:58:09.327Z",
-          "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
-        },
-        {
-          "date": "2026-05-27T13:02:55.543Z",
-          "note": "Movido para \"FUNDAÇÃO\""
-        },
-        {
-          "date": "2026-05-28T12:41:07.044Z",
-          "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
-        }
-      ]
-    },
-    {
       "id": "mpb8asyrdy0f",
       "name": "STEFANE E YURI",
       "colId": "col-default",
@@ -1377,6 +1156,231 @@
         {
           "date": "2026-05-18T13:27:22.077Z",
           "note": "Movido para \"NOVAS OBRAS\" por Lugner"
+        }
+      ]
+    },
+    {
+      "id": "mpb8ny36m22t",
+      "name": "ANTONIO E BEATRIZ",
+      "colId": "mpb84so22w1c",
+      "coverUrl": null,
+      "addr": "MORADA DO SOL",
+      "valor": "",
+      "inicio": "2026-04-10",
+      "prazo": "2026-11-10",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [
+        "atencao",
+        "mp4ih8i6bddg"
+      ],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mpb8ny364tja",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpb8ny36b21p",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpb8ny3605av",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpb8ny366q8d",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mpb8ny36cafp",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpb8ny3676k1",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mpb8ny365vje",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mpb8ny36ctkx",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37hozk",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mpb8ny37lrhx",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mpb8ny37myxe",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37fp5g",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37aafu",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37kod3",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mpb8ny3713lw",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mpb8ny372v5c",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37k0zs",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37lpku",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37u1m7",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mpb8ny377k3q",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37p6du",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37cb7t",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37uiwf",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37477n",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mpb8ny376796",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37dh34",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37xw28",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37y2em",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37p4kp",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37mq6a",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37n9ax",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37agv8",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mpb8ny37g2v7",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-05-18T13:27:30.643Z",
+      "updatedAt": "2026-06-02T12:47:51.002Z",
+      "log": [
+        {
+          "date": "2026-05-25T20:41:37.942Z",
+          "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
+        },
+        {
+          "date": "2026-05-26T16:37:29.056Z",
+          "note": "Movido para \"INICIALIZAR\" por Marketing"
+        },
+        {
+          "date": "2026-05-26T16:37:38.946Z",
+          "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
+        },
+        {
+          "date": "2026-05-26T17:58:07.732Z",
+          "note": "Movido para \"INICIALIZAR\" por Marketing"
+        },
+        {
+          "date": "2026-05-26T17:58:09.327Z",
+          "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
+        },
+        {
+          "date": "2026-05-27T13:02:55.543Z",
+          "note": "Movido para \"FUNDAÇÃO\""
+        },
+        {
+          "date": "2026-05-28T12:41:07.044Z",
+          "note": "Movido para \"TERRAPLANAGEM\" por Marketing"
+        },
+        {
+          "date": "2026-06-02T12:47:51.002Z",
+          "note": "Movido para \"FUNDAÇÃO\""
         }
       ]
     },
