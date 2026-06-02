@@ -4001,37 +4001,37 @@
             {
               "id": "mpmttak0kc9n",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak01vla",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak05mxq",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0e42b",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0s7u5",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0jbb8",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0uqfz",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak00i5l",
@@ -4103,7 +4103,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-05-26T16:09:01.381Z",
+      "updatedAt": "2026-06-02T12:50:50.862Z",
       "log": [
         {
           "date": "2026-05-26T16:08:54.161Z",
@@ -4121,7 +4121,8 @@
           "date": "2026-05-26T16:09:01.381Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÃÃES\" por Marketing"
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:50:50.862Z"
     },
     {
       "id": "mpmtfibaz4vm",
