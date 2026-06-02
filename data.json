@@ -2059,7 +2059,7 @@
             {
               "id": "mplom1gl6qhn",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1glmx01",
@@ -2161,9 +2161,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:51:37.317Z",
-      "updatedAt": "2026-06-02T12:48:40.528Z",
+      "updatedAt": "2026-06-02T12:48:42.391Z",
       "log": [],
-      "lastProgressAt": "2026-06-02T12:48:40.528Z"
+      "lastProgressAt": "2026-06-02T12:48:42.391Z"
     },
     {
       "id": "mplonffncuml",
