@@ -4243,17 +4243,17 @@
             {
               "id": "mpmtfiba83is",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibaid60",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfibalda7",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfiba9851",
@@ -4315,13 +4315,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-06-02T12:49:44.883Z",
+      "updatedAt": "2026-06-02T12:51:11.774Z",
       "log": [
         {
           "date": "2026-06-02T12:49:44.883Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-02T12:51:11.774Z"
     },
     {
       "id": "mpmtnehs44ng",
