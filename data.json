@@ -5353,12 +5353,12 @@
             {
               "id": "mpmudwv9sl6d",
               "text": "Acabamento",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9k44q",
               "text": "Finalização",
-              "done": false
+              "done": true
             }
           ]
         },
@@ -5459,35 +5459,36 @@
             {
               "id": "mpmudwv9gisc",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9mf9d",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9ejbr",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv96atv",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmudwv9g42f",
               "text": "Entrega",
-              "done": false
+              "done": true
             }
           ]
         }
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:21:01.989Z",
-      "updatedAt": "2026-05-26T16:22:05.694Z",
-      "log": []
+      "updatedAt": "2026-06-02T12:52:45.542Z",
+      "log": [],
+      "lastProgressAt": "2026-06-02T12:52:45.542Z"
     },
     {
       "id": "mpmu47wgb1yf",
