@@ -2251,12 +2251,12 @@
             {
               "id": "mploocyt3il4",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytq8gc",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytvlji",
@@ -2353,9 +2353,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-06-02T12:48:59.654Z",
+      "updatedAt": "2026-06-02T12:49:01.662Z",
       "log": [],
-      "lastProgressAt": "2026-06-02T12:48:59.654Z"
+      "lastProgressAt": "2026-06-02T12:49:01.662Z"
     },
     {
       "id": "mplopymboykp",
