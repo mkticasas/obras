@@ -48,6 +48,295 @@
   ],
   "cards": [
     {
+      "id": "mpb8g437cehz",
+      "name": "HIGOR E THAIS",
+      "colId": "mp1jg6ccow2u",
+      "coverUrl": null,
+      "addr": "SANTA REGINA",
+      "valor": "",
+      "inicio": "2026-04-17",
+      "prazo": "2026-11-17",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [
+        "atencao",
+        "mpb8bjvuy2j4"
+      ],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mpb8g437jp1d",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpb8g437o8p0",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpb8g437fpku",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpb8g437llgl",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mpb8g437yafy",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpb8g437fnus",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mpb8g43745lm",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mpb8g437cdmx",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpb8g4376g8h",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mpb8g437xgal",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mpb8g437nw81",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpb8g437bvz0",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpb8g437tpb4",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mpb8g437zq5x",
+              "text": "Conferênncia de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mpb8g437dj9w",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mpb8g437fofa",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpb8g437n0z0",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mpb8g437juil",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mpb8g437o9ms",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mpb8g437ipjs",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mpb8g43747vf",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mpb8g437o0ka",
+              "text": "Reboco interno concluí­do",
+              "done": false
+            },
+            {
+              "id": "mpb8g437v0vn",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mpb8g437j1rt",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mpb8g437s4i4",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mpb8g437wrdo",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mpb8g437tkep",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mpb8g437wls4",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mpb8g437l12q",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mpb8g437hlkk",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mpb8g4373bze",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mpb8g437qmff",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mpb8g437agf7",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mpl7glbidec7",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpl7glbipxe9",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpl7glbiqbc8",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpl7glbi6lqf",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mpl7glbixfp4",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpl7glbi5jb8",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mpl7glbifdwy",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mpl7glbijo7x",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpl7glbibx7o",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mpl7gmbeb0d0",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpl7gmbej5od",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbekwuu",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbelb4o",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbe090s",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbeuyaw",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbea40b",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbeqdh0",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpl7gmbeanet",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-05-18T13:21:25.171Z",
+      "updatedAt": "2026-06-08T14:32:06.937Z",
+      "log": [
+        {
+          "date": "2026-06-08T14:32:06.937Z",
+          "note": "Movido para \"INICIALIZAR\""
+        }
+      ]
+    },
+    {
       "id": "mpb8k4ibgszp",
       "name": "MATHEUS E CAROL",
       "colId": "mp1jg6ccow2u",
@@ -675,290 +964,6 @@
       "comments": [],
       "createdAt": "2026-05-18T13:17:17.475Z",
       "updatedAt": "2026-05-28T21:38:39.523Z",
-      "log": []
-    },
-    {
-      "id": "mpb8g437cehz",
-      "name": "HIGOR E THAIS",
-      "colId": "col-default",
-      "coverUrl": null,
-      "addr": "SANTA REGINA",
-      "valor": "",
-      "inicio": "2026-04-17",
-      "prazo": "2026-11-17",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "",
-      "tags": [
-        "atencao",
-        "mpb8bjvuy2j4"
-      ],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mpb8g437jp1d",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mpb8g437o8p0",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mpb8g437fpku",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mpb8g437llgl",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mpb8g437yafy",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpb8g437fnus",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mpb8g43745lm",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mpb8g437cdmx",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mpb8g4376g8h",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mpb8g437xgal",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mpb8g437nw81",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mpb8g437bvz0",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mpb8g437tpb4",
-              "text": "Levantamento de Paredes",
-              "done": false
-            },
-            {
-              "id": "mpb8g437zq5x",
-              "text": "Conferênncia de medidas de janelas/portas",
-              "done": false
-            },
-            {
-              "id": "mpb8g437dj9w",
-              "text": "Impermeabilizações",
-              "done": false
-            },
-            {
-              "id": "mpb8g437fofa",
-              "text": "Laje / Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpb8g437n0z0",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
-            },
-            {
-              "id": "mpb8g437juil",
-              "text": "Reboco externo iniciado",
-              "done": false
-            },
-            {
-              "id": "mpb8g437o9ms",
-              "text": "Reboco interno iniciado",
-              "done": false
-            },
-            {
-              "id": "mpb8g437ipjs",
-              "text": "Batentes",
-              "done": false
-            },
-            {
-              "id": "mpb8g43747vf",
-              "text": "Reboco externo concluído",
-              "done": false
-            },
-            {
-              "id": "mpb8g437o0ka",
-              "text": "Reboco interno concluí­do",
-              "done": false
-            },
-            {
-              "id": "mpb8g437v0vn",
-              "text": "Esgoto/pluvial",
-              "done": false
-            },
-            {
-              "id": "mpb8g437j1rt",
-              "text": "Conduite do poste ao quadro",
-              "done": false
-            },
-            {
-              "id": "mpb8g437s4i4",
-              "text": "Telhado + pingadeiras",
-              "done": false
-            },
-            {
-              "id": "mpb8g437wrdo",
-              "text": "Requadro ou instalações de janelas",
-              "done": false
-            },
-            {
-              "id": "mpb8g437tkep",
-              "text": "Contrapiso",
-              "done": false
-            },
-            {
-              "id": "mpb8g437wls4",
-              "text": "Pisos",
-              "done": false
-            },
-            {
-              "id": "mpb8g437l12q",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mpb8g437hlkk",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mpb8g4373bze",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mpb8g437qmff",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mpb8g437agf7",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mpl7glbidec7",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mpl7glbipxe9",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mpl7glbiqbc8",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mpl7glbi6lqf",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mpl7glbixfp4",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpl7glbi5jb8",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mpl7glbifdwy",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mpl7glbijo7x",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mpl7glbibx7o",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mpl7gmbeb0d0",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mpl7gmbej5od",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mpl7gmbekwuu",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mpl7gmbelb4o",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mpl7gmbe090s",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpl7gmbeuyaw",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mpl7gmbea40b",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mpl7gmbeqdh0",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mpl7gmbeanet",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [],
-      "createdAt": "2026-05-18T13:21:25.171Z",
-      "updatedAt": "2026-05-26T15:43:02.028Z",
       "log": []
     },
     {
