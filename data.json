@@ -2902,12 +2902,12 @@
             {
               "id": "mplor8rrv2ve",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mplor8rrxk8u",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mplor8rrq1qe",
@@ -2984,14 +2984,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:55:40.071Z",
-      "updatedAt": "2026-06-02T12:49:28.281Z",
+      "updatedAt": "2026-06-15T12:22:50.401Z",
       "log": [
         {
           "date": "2026-06-02T12:49:28.281Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:49:23.134Z"
+      "lastProgressAt": "2026-06-15T12:22:50.401Z"
     },
     {
       "id": "mplopymboykp",
