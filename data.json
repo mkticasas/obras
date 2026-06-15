@@ -1167,7 +1167,7 @@
     {
       "id": "mplofrmbcm6z",
       "name": "RODRIGO E RAFA",
-      "colId": "mpb84so22w1c",
+      "colId": "mpb8563uusn7",
       "coverUrl": null,
       "addr": "E PARQUE LESTE - CASA GO",
       "valor": "",
@@ -1353,7 +1353,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-06-02T12:48:27.870Z",
+      "updatedAt": "2026-06-15T12:20:31.853Z",
       "log": [
         {
           "date": "2026-05-26T17:58:12.543Z",
@@ -1362,6 +1362,10 @@
         {
           "date": "2026-05-26T17:58:25.119Z",
           "note": "Movido para \"FUNDAÇÃO\" por Marketing"
+        },
+        {
+          "date": "2026-06-15T12:20:31.853Z",
+          "note": "Movido para \"ESTRUTURA (PAREDES + LAJE)\""
         }
       ],
       "lastProgressAt": "2026-06-02T12:48:27.870Z"
