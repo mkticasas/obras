@@ -3687,12 +3687,12 @@
             {
               "id": "mpmtoz8w6r03",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8wflit",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8wfcih",
@@ -3769,9 +3769,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-06-02T12:50:24.910Z",
+      "updatedAt": "2026-06-15T12:23:20.153Z",
       "log": [],
-      "lastProgressAt": "2026-06-02T12:50:24.910Z"
+      "lastProgressAt": "2026-06-15T12:23:20.153Z"
     },
     {
       "id": "mpmtqbnncm2j",
