@@ -59,7 +59,7 @@
       "resp": "",
       "equipe": "",
       "status": "",
-      "obs": "",
+      "obs": "SAIU CARTÓRIO HOJE\n15/06/2026",
       "tags": [],
       "assignees": [],
       "checklists": [
@@ -233,7 +233,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:25:02.946Z",
-      "updatedAt": "2026-06-15T19:40:24.883Z",
+      "updatedAt": "2026-06-15T19:40:51.489Z",
       "log": [
         {
           "date": "2026-05-18T13:27:19.973Z",
