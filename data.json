@@ -1809,7 +1809,7 @@
     {
       "id": "mpmqk8quyy8b",
       "name": "JOAO E CAROL",
-      "colId": "mpb8563uusn7",
+      "colId": "mpb85ka3gujh",
       "coverUrl": null,
       "addr": "EPLENUM",
       "valor": "",
@@ -1995,8 +1995,13 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T14:33:58.854Z",
-      "updatedAt": "2026-05-26T15:44:01.620Z",
-      "log": []
+      "updatedAt": "2026-06-15T12:21:05.742Z",
+      "log": [
+        {
+          "date": "2026-06-15T12:21:05.742Z",
+          "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
+        }
+      ]
     },
     {
       "id": "mploocytpfo0",
