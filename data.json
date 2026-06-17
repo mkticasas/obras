@@ -8727,6 +8727,15 @@
       "telegramChatId": "",
       "photo": "",
       "isAdmin": false
+    },
+    {
+      "id": "mqi4d058rn20",
+      "name": "GIOVANA",
+      "role": "ARQUITETA",
+      "phone": "17 99648-2312",
+      "wppApiKey": "123456",
+      "photo": "",
+      "isAdmin": false
     }
   ],
   "checklistPresets": [
