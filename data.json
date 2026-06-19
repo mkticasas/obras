@@ -5916,36 +5916,36 @@
             {
               "id": "mpmub07ctqan",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07c1nuj",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07c5hc9",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07cxaru",
               "text": "Entrega",
-              "done": false
+              "done": true
             }
           ]
         }
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:18:46.344Z",
-      "updatedAt": "2026-06-19T18:08:08.104Z",
+      "updatedAt": "2026-06-19T18:08:14.696Z",
       "log": [
         {
           "date": "2026-06-02T12:52:12.642Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-06-19T18:08:08.104Z"
+      "lastProgressAt": "2026-06-19T18:08:14.696Z"
     },
     {
       "id": "mpmu57xrww63",
