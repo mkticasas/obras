@@ -5805,12 +5805,12 @@
             {
               "id": "mpmub07cz7qt",
               "text": "Acabamento",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmub07cw44i",
               "text": "Finalização",
-              "done": false
+              "done": true
             }
           ]
         },
@@ -5938,14 +5938,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:18:46.344Z",
-      "updatedAt": "2026-06-02T12:53:00.167Z",
+      "updatedAt": "2026-06-19T18:08:08.104Z",
       "log": [
         {
           "date": "2026-06-02T12:52:12.642Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:53:00.167Z"
+      "lastProgressAt": "2026-06-19T18:08:08.104Z"
     },
     {
       "id": "mpmu57xrww63",
