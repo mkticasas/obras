@@ -5936,9 +5936,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mql8ubewst2z",
+          "userId": "mqi4d058rn20",
+          "text": "ENTREGA FEITA: 15/06",
+          "date": "2026-06-19T18:09:51.944Z"
+        }
+      ],
       "createdAt": "2026-05-26T16:18:46.344Z",
-      "updatedAt": "2026-06-19T18:08:14.696Z",
+      "updatedAt": "2026-06-19T18:09:51.944Z",
       "log": [
         {
           "date": "2026-06-02T12:52:12.642Z",
