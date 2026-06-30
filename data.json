@@ -72,7 +72,7 @@
             {
               "id": "mpb8k4ib97fw",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8k4ibmq72",
@@ -118,7 +118,7 @@
             {
               "id": "mpb8k4ib434e",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8k4ibau83",
@@ -235,7 +235,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:24:32.339Z",
-      "updatedAt": "2026-06-30T12:47:10.719Z",
+      "updatedAt": "2026-06-30T13:12:38.250Z",
       "log": [
         {
           "date": "2026-06-02T12:31:14.025Z",
@@ -257,7 +257,8 @@
           "date": "2026-06-30T12:47:10.719Z",
           "note": "Movido para \"FUNDAÇÃO\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-30T13:12:38.250Z"
     },
     {
       "id": "mpb8asyrdy0f",
