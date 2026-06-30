@@ -1318,7 +1318,7 @@
             {
               "id": "mpb8g437o8p0",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8g437fpku",
@@ -1364,7 +1364,7 @@
             {
               "id": "mpb8g437nw81",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8g437bvz0",
@@ -1573,7 +1573,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:21:25.171Z",
-      "updatedAt": "2026-06-17T12:52:29.224Z",
+      "updatedAt": "2026-06-30T13:12:57.250Z",
       "log": [
         {
           "date": "2026-06-08T14:32:06.937Z",
@@ -1583,7 +1583,8 @@
           "date": "2026-06-15T12:20:43.716Z",
           "note": "Movido para \"TERRAPLANAGEM\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-06-30T13:12:57.250Z"
     },
     {
       "id": "mpb8ks4imkjl",
