@@ -1996,7 +1996,7 @@
     {
       "id": "mpb8ny36m22t",
       "name": "ANTONIO E BEATRIZ",
-      "colId": "mpb8563uusn7",
+      "colId": "mpb85ka3gujh",
       "coverUrl": null,
       "addr": "MORADA DO SOL",
       "valor": "",
@@ -2182,7 +2182,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-06-15T12:20:23.460Z",
+      "updatedAt": "2026-06-30T13:26:26.556Z",
       "log": [
         {
           "date": "2026-05-25T20:41:37.942Z",
@@ -2219,6 +2219,10 @@
         {
           "date": "2026-06-15T12:20:23.460Z",
           "note": "Movido para \"ESTRUTURA (PAREDES + LAJE)\""
+        },
+        {
+          "date": "2026-06-30T13:26:26.556Z",
+          "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
       "lastProgressAt": "2026-06-02T12:48:03.191Z"
