@@ -48,6 +48,200 @@
   ],
   "cards": [
     {
+      "id": "mqr14u2cvsy1",
+      "name": "JOSANIA E JANAINA (SETPARQUE HORIZONTE)",
+      "colId": "mp1jg6ccow2u",
+      "coverUrl": null,
+      "addr": "",
+      "valor": "",
+      "inicio": "2026-05-28",
+      "prazo": "2026-05-28",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mqr14u2ckwgi",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mqr14u2cp2cw",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mqr14u2czyde",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cb132",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cf8fi",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cyun6",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cx72x",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cerp5",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cfzqt",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mqr14u2ctaba",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mqr14u2ct4ng",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cokqk",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cbsyi",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cwx8f",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cwxws",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mqr14u2coarv",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mqr14u2csuly",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cwr2a",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cyfl3",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cx0ex",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mqr14u2ckap3",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mqr14u2ceqgf",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mqr14u2c2jue",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mqr14u2c4xhq",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cmtba",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mqr14u2c7624",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mqr14u2c7vso",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mqr14u2c7kyg",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mqr14u2c1w2z",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mqr14u2c3res",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cx15d",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mqr14u2c66nm",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mqr14u2cw4q3",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-06-23T19:20:42.804Z",
+      "updatedAt": "2026-06-30T12:05:03.531Z",
+      "log": [
+        {
+          "date": "2026-06-30T12:05:03.531Z",
+          "note": "Movido para \"INICIALIZAR\""
+        }
+      ]
+    },
+    {
       "id": "mpb8asyrdy0f",
       "name": "STEFANE E YURI",
       "colId": "mp1jg6ccow2u",
@@ -9454,195 +9648,6 @@
       "comments": [],
       "createdAt": "2026-06-23T19:18:05.596Z",
       "updatedAt": "2026-06-23T19:27:28.437Z",
-      "log": []
-    },
-    {
-      "id": "mqr14u2cvsy1",
-      "name": "JOSANIA E JANAINA (SETPARQUE HORIZONTE)",
-      "colId": "col-default",
-      "coverUrl": null,
-      "addr": "",
-      "valor": "",
-      "inicio": "2026-05-28",
-      "prazo": "2026-05-28",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "",
-      "tags": [],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mqr14u2ckwgi",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mqr14u2cp2cw",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mqr14u2czyde",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cb132",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cf8fi",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cyun6",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cx72x",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cerp5",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cfzqt",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mqr14u2ctaba",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mqr14u2ct4ng",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cokqk",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cbsyi",
-              "text": "Levantamento de Paredes",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cwx8f",
-              "text": "Conferência de medidas de janelas/portas",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cwxws",
-              "text": "Impermeabilizações",
-              "done": false
-            },
-            {
-              "id": "mqr14u2coarv",
-              "text": "Laje / Cobertura",
-              "done": false
-            },
-            {
-              "id": "mqr14u2csuly",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cwr2a",
-              "text": "Reboco externo iniciado",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cyfl3",
-              "text": "Reboco interno iniciado",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cx0ex",
-              "text": "Batentes",
-              "done": false
-            },
-            {
-              "id": "mqr14u2ckap3",
-              "text": "Reboco externo concluído",
-              "done": false
-            },
-            {
-              "id": "mqr14u2ceqgf",
-              "text": "Reboco interno concluído",
-              "done": false
-            },
-            {
-              "id": "mqr14u2c2jue",
-              "text": "Esgoto/pluvial",
-              "done": false
-            },
-            {
-              "id": "mqr14u2c4xhq",
-              "text": "Conduite do poste ao quadro",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cmtba",
-              "text": "Telhado + pingadeiras",
-              "done": false
-            },
-            {
-              "id": "mqr14u2c7624",
-              "text": "Requadro ou instalações de janelas",
-              "done": false
-            },
-            {
-              "id": "mqr14u2c7vso",
-              "text": "Contrapiso",
-              "done": false
-            },
-            {
-              "id": "mqr14u2c7kyg",
-              "text": "Pisos",
-              "done": false
-            },
-            {
-              "id": "mqr14u2c1w2z",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mqr14u2c3res",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cx15d",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mqr14u2c66nm",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mqr14u2cw4q3",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [],
-      "createdAt": "2026-06-23T19:20:42.804Z",
-      "updatedAt": "2026-06-23T19:28:06.267Z",
       "log": []
     },
     {
