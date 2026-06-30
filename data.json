@@ -1598,7 +1598,9 @@
       "equipe": "",
       "status": "",
       "obs": "PEDREIRO FERREIRA",
-      "tags": [],
+      "tags": [
+        "mpb8bjvuy2j4"
+      ],
       "assignees": [],
       "checklists": [
         {
@@ -1771,7 +1773,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:25:02.946Z",
-      "updatedAt": "2026-06-30T13:12:45.729Z",
+      "updatedAt": "2026-06-30T13:12:51.569Z",
       "log": [
         {
           "date": "2026-05-18T13:27:19.973Z",
