@@ -10514,6 +10514,15 @@
       "wppApiKey": "123456",
       "photo": "",
       "isAdmin": false
+    },
+    {
+      "id": "mr21y0n03u1e",
+      "name": "EDGARD",
+      "role": "MESTRE DE OBRA",
+      "phone": "17 99701-1300",
+      "wppApiKey": "1234",
+      "photo": "",
+      "isAdmin": false
     }
   ],
   "checklistPresets": [
