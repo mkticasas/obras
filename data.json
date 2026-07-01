@@ -1571,7 +1571,7 @@
             {
               "id": "mpb8g437bvz0",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8g437tpb4",
@@ -1775,7 +1775,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:21:25.171Z",
-      "updatedAt": "2026-06-30T13:12:57.250Z",
+      "updatedAt": "2026-07-01T12:35:41.136Z",
       "log": [
         {
           "date": "2026-06-08T14:32:06.937Z",
@@ -1786,7 +1786,7 @@
           "note": "Movido para \"TERRAPLANAGEM\""
         }
       ],
-      "lastProgressAt": "2026-06-30T13:12:57.250Z"
+      "lastProgressAt": "2026-07-01T12:35:41.139Z"
     },
     {
       "id": "mpb8ks4imkjl",
