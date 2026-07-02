@@ -6164,7 +6164,7 @@
             {
               "id": "mpmtxyime1uj",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtxyim1jnw",
@@ -6196,8 +6196,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:08:37.630Z",
-      "updatedAt": "2026-05-26T16:09:31.325Z",
-      "log": []
+      "updatedAt": "2026-07-02T20:10:18.573Z",
+      "log": [],
+      "lastProgressAt": "2026-07-02T20:10:18.573Z"
     },
     {
       "id": "mpmu1y6szwly",
