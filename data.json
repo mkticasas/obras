@@ -1499,7 +1499,7 @@
             {
               "id": "mpb8k4ibmq72",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8k4ib9pxn",
@@ -1545,12 +1545,12 @@
             {
               "id": "mpb8k4ibau83",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8k4ibih6o",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8k4ib00b3",
@@ -1657,7 +1657,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:24:32.339Z",
-      "updatedAt": "2026-07-01T12:38:08.173Z",
+      "updatedAt": "2026-07-07T11:54:41.866Z",
       "log": [
         {
           "date": "2026-06-02T12:31:14.025Z",
@@ -1684,7 +1684,7 @@
           "note": "Movido para \"ESTRUTURA (PAREDES + LAJE)\""
         }
       ],
-      "lastProgressAt": "2026-06-30T13:12:38.250Z"
+      "lastProgressAt": "2026-07-07T11:54:41.866Z"
     },
     {
       "id": "mplo9v07ehfj",
