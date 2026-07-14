@@ -11487,7 +11487,7 @@
       "coverUrl": null,
       "addr": "",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-06-01",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -11666,7 +11666,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-14T16:31:28.543Z",
-      "updatedAt": "2026-07-14T16:31:44.183Z",
+      "updatedAt": "2026-07-14T16:32:02.203Z",
       "log": []
     }
   ],
