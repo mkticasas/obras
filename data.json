@@ -4053,12 +4053,12 @@
             {
               "id": "mplos4d9c9to",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mplos4d9hhr0",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mplos4d9z5d0",
@@ -4105,14 +4105,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:56:21.021Z",
-      "updatedAt": "2026-07-16T14:28:00.823Z",
+      "updatedAt": "2026-07-16T14:28:03.888Z",
       "log": [
         {
           "date": "2026-06-02T12:49:40.266Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:28:00.823Z"
+      "lastProgressAt": "2026-07-16T14:28:03.888Z"
     },
     {
       "id": "mplor8rrw1h5",
