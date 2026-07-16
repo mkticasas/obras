@@ -5035,7 +5035,7 @@
             {
               "id": "mpmtoz8wjgus",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8wzadt",
@@ -5087,9 +5087,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-07-16T14:29:36.072Z",
+      "updatedAt": "2026-07-16T14:29:38.711Z",
       "log": [],
-      "lastProgressAt": "2026-07-16T14:29:36.072Z"
+      "lastProgressAt": "2026-07-16T14:29:38.711Z"
     },
     {
       "id": "mpmtqbnncm2j",
