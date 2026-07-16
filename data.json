@@ -5242,7 +5242,7 @@
             {
               "id": "mpmtqbnnsahf",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnnfdzb",
@@ -5279,9 +5279,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:02:41.411Z",
-      "updatedAt": "2026-07-16T14:29:55.840Z",
+      "updatedAt": "2026-07-16T14:30:07.320Z",
       "log": [],
-      "lastProgressAt": "2026-07-16T14:29:55.840Z"
+      "lastProgressAt": "2026-07-16T14:30:07.320Z"
     },
     {
       "id": "mpmttak0cugm",
