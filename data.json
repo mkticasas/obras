@@ -5429,7 +5429,7 @@
             {
               "id": "mpmttak0norj",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0lukn",
@@ -5471,7 +5471,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-07-16T14:30:45.736Z",
+      "updatedAt": "2026-07-16T18:39:22.581Z",
       "log": [
         {
           "date": "2026-05-26T16:08:54.161Z",
@@ -5490,7 +5490,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÃÃES\" por Marketing"
         }
       ],
-      "lastProgressAt": "2026-07-16T14:30:45.736Z"
+      "lastProgressAt": "2026-07-16T18:39:22.581Z"
     },
     {
       "id": "mpmtfibaz4vm",
