@@ -5469,9 +5469,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mrnv1mlm0nl0",
+          "userId": "mqi4d058rn20",
+          "text": "Janelas e vitrôs foram pedidos na MACHADO, e já foram entregues, está aqui no escritório (DATA DO PEDIDO 14/05",
+          "date": "2026-07-16T18:46:39.274Z"
+        }
+      ],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-07-16T18:39:22.581Z",
+      "updatedAt": "2026-07-16T18:46:39.274Z",
       "log": [
         {
           "date": "2026-05-26T16:08:54.161Z",
