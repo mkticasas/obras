@@ -3046,7 +3046,7 @@
             {
               "id": "mplofrmb5we4",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbfqae",
@@ -3103,7 +3103,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-07-16T14:25:24.736Z",
+      "updatedAt": "2026-07-16T14:25:28.008Z",
       "log": [
         {
           "date": "2026-05-26T17:58:12.543Z",
@@ -3122,7 +3122,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:25:24.736Z"
+      "lastProgressAt": "2026-07-16T14:25:28.008Z"
     },
     {
       "id": "mpmqk8quyy8b",
