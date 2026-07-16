@@ -2716,7 +2716,7 @@
             {
               "id": "mpb8ny366q8d",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny36cafp",
@@ -2762,7 +2762,7 @@
             {
               "id": "mpb8ny37aafu",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37kod3",
@@ -2869,7 +2869,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-06-30T13:26:26.556Z",
+      "updatedAt": "2026-07-16T14:26:53.112Z",
       "log": [
         {
           "date": "2026-05-25T20:41:37.942Z",
@@ -2912,7 +2912,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:48:03.191Z"
+      "lastProgressAt": "2026-07-16T14:26:53.112Z"
     },
     {
       "id": "mplofrmbcm6z",
