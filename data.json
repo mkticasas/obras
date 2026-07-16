@@ -5399,32 +5399,32 @@
             {
               "id": "mpmttak0uqfz",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak00i5l",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak00r2g",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0d3uq",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak00uyz",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0phbp",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0norj",
@@ -5471,7 +5471,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-07-16T14:30:28.520Z",
+      "updatedAt": "2026-07-16T14:30:42.975Z",
       "log": [
         {
           "date": "2026-05-26T16:08:54.161Z",
@@ -5490,7 +5490,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÃÃES\" por Marketing"
         }
       ],
-      "lastProgressAt": "2026-07-16T14:30:28.520Z"
+      "lastProgressAt": "2026-07-16T14:30:42.975Z"
     },
     {
       "id": "mpmtfibaz4vm",
