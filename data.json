@@ -5207,22 +5207,22 @@
             {
               "id": "mpmtqbnnvo0l",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnntv0d",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnn3l2d",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnnqc1c",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnnqugw",
@@ -5279,9 +5279,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:02:41.411Z",
-      "updatedAt": "2026-06-02T12:50:33.814Z",
+      "updatedAt": "2026-07-16T14:29:53.375Z",
       "log": [],
-      "lastProgressAt": "2026-06-02T12:50:33.814Z"
+      "lastProgressAt": "2026-07-16T14:29:53.375Z"
     },
     {
       "id": "mpmttak0cugm",
