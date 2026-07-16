@@ -3832,7 +3832,7 @@
             {
               "id": "mplobyxr2269",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxrebcu",
@@ -3904,7 +3904,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:43:47.487Z",
-      "updatedAt": "2026-07-16T14:27:19.505Z",
+      "updatedAt": "2026-07-16T14:27:27.753Z",
       "log": [
         {
           "date": "2026-06-15T12:20:29.077Z",
@@ -3915,7 +3915,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:27:19.505Z"
+      "lastProgressAt": "2026-07-16T14:27:27.753Z"
     },
     {
       "id": "mplos4d97x5b",
