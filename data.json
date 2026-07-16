@@ -4752,12 +4752,12 @@
             {
               "id": "mpmthycyeiuo",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycy8h61",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycyt3tj",
@@ -4895,9 +4895,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:56:10.930Z",
-      "updatedAt": "2026-07-16T14:29:10.632Z",
+      "updatedAt": "2026-07-16T14:29:14.448Z",
       "log": [],
-      "lastProgressAt": "2026-07-16T14:29:10.632Z"
+      "lastProgressAt": "2026-07-16T14:29:14.448Z"
     },
     {
       "id": "mpmtoz8waasu",
