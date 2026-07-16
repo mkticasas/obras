@@ -3016,17 +3016,17 @@
             {
               "id": "mplofrmb3n9f",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmb6lci",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbw9pe",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbd57x",
@@ -3103,7 +3103,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-07-16T14:25:20.568Z",
+      "updatedAt": "2026-07-16T14:25:24.736Z",
       "log": [
         {
           "date": "2026-05-26T17:58:12.543Z",
@@ -3122,7 +3122,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:25:20.568Z"
+      "lastProgressAt": "2026-07-16T14:25:24.736Z"
     },
     {
       "id": "mpmqk8quyy8b",
