@@ -2575,7 +2575,7 @@
             {
               "id": "mplo9v07m4oh",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mplo9v079yvn",
@@ -2667,7 +2667,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:42:09.079Z",
-      "updatedAt": "2026-07-16T14:25:00.092Z",
+      "updatedAt": "2026-07-16T14:25:04.232Z",
       "log": [
         {
           "date": "2026-06-15T12:20:27.341Z",
@@ -2678,7 +2678,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-01T12:42:34.171Z"
+      "lastProgressAt": "2026-07-16T14:25:04.232Z"
     },
     {
       "id": "mpb8ny36m22t",
