@@ -2787,12 +2787,12 @@
             {
               "id": "mpb8ny37lpku",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37u1m7",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny377k3q",
@@ -2812,7 +2812,7 @@
             {
               "id": "mpb8ny37uiwf",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37477n",
@@ -2869,7 +2869,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-07-16T14:26:53.112Z",
+      "updatedAt": "2026-07-16T14:26:59.288Z",
       "log": [
         {
           "date": "2026-05-25T20:41:37.942Z",
@@ -2912,7 +2912,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:26:53.112Z"
+      "lastProgressAt": "2026-07-16T14:26:59.288Z"
     },
     {
       "id": "mplofrmbcm6z",
