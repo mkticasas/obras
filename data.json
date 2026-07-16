@@ -5434,7 +5434,7 @@
             {
               "id": "mpmttak0lukn",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmttak0g1wk",
@@ -5471,7 +5471,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:04:59.952Z",
-      "updatedAt": "2026-07-16T14:30:42.975Z",
+      "updatedAt": "2026-07-16T14:30:45.736Z",
       "log": [
         {
           "date": "2026-05-26T16:08:54.161Z",
@@ -5490,7 +5490,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÃÃES\" por Marketing"
         }
       ],
-      "lastProgressAt": "2026-07-16T14:30:42.975Z"
+      "lastProgressAt": "2026-07-16T14:30:45.736Z"
     },
     {
       "id": "mpmtfibaz4vm",
