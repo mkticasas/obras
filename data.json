@@ -4639,17 +4639,17 @@
             {
               "id": "mplonffnqac9",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffnxesa",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffnp616",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffnkuhi",
@@ -4696,14 +4696,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:52:42.083Z",
-      "updatedAt": "2026-07-16T14:28:37.656Z",
+      "updatedAt": "2026-07-16T14:28:41.199Z",
       "log": [
         {
           "date": "2026-06-02T12:48:54.674Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:28:37.656Z"
+      "lastProgressAt": "2026-07-16T14:28:41.199Z"
     },
     {
       "id": "mpmthycywcac",
