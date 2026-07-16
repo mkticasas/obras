@@ -4548,7 +4548,7 @@
             {
               "id": "mplonffndptt",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffndatf",
@@ -4696,14 +4696,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:52:42.083Z",
-      "updatedAt": "2026-07-16T14:28:41.199Z",
+      "updatedAt": "2026-07-16T14:28:42.760Z",
       "log": [
         {
           "date": "2026-06-02T12:48:54.674Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:28:41.199Z"
+      "lastProgressAt": "2026-07-16T14:28:42.760Z"
     },
     {
       "id": "mpmthycywcac",
@@ -4747,7 +4747,7 @@
             {
               "id": "mpmthycyef6d",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycyeiuo",
@@ -4895,9 +4895,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:56:10.930Z",
-      "updatedAt": "2026-06-02T12:49:57.926Z",
+      "updatedAt": "2026-07-16T14:29:00.832Z",
       "log": [],
-      "lastProgressAt": "2026-06-02T12:49:57.926Z"
+      "lastProgressAt": "2026-07-16T14:29:00.832Z"
     },
     {
       "id": "mpmtoz8waasu",
