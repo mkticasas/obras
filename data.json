@@ -4211,7 +4211,7 @@
             {
               "id": "mplor8rrquj9",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplor8rrv2ve",
@@ -4226,17 +4226,17 @@
             {
               "id": "mplor8rrq1qe",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mplor8rr1zp8",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mplor8rrn7wi",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mplor8rrw5y6",
@@ -4298,14 +4298,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:55:40.071Z",
-      "updatedAt": "2026-07-16T14:24:36.344Z",
+      "updatedAt": "2026-07-16T14:24:40.744Z",
       "log": [
         {
           "date": "2026-06-02T12:49:28.281Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:24:36.344Z"
+      "lastProgressAt": "2026-07-16T14:24:40.744Z"
     },
     {
       "id": "mplopymboykp",
