@@ -4048,7 +4048,7 @@
             {
               "id": "mplos4d9uccg",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mplos4d9c9to",
@@ -4105,14 +4105,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:56:21.021Z",
-      "updatedAt": "2026-07-16T14:27:58.440Z",
+      "updatedAt": "2026-07-16T14:28:00.823Z",
       "log": [
         {
           "date": "2026-06-02T12:49:40.266Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:27:58.440Z"
+      "lastProgressAt": "2026-07-16T14:28:00.823Z"
     },
     {
       "id": "mplor8rrw1h5",
