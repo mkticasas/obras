@@ -4624,7 +4624,7 @@
             {
               "id": "mplonffngh09",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffn9cvr",
@@ -4696,14 +4696,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:52:42.083Z",
-      "updatedAt": "2026-07-16T14:28:35.584Z",
+      "updatedAt": "2026-07-16T14:28:37.656Z",
       "log": [
         {
           "date": "2026-06-02T12:48:54.674Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:28:35.584Z"
+      "lastProgressAt": "2026-07-16T14:28:37.656Z"
     },
     {
       "id": "mpmthycywcac",
