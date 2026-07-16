@@ -702,7 +702,7 @@
             {
               "id": "mpb8asyrvtmx",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8asyryww6",
@@ -860,7 +860,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:17:17.475Z",
-      "updatedAt": "2026-07-07T11:54:30.977Z",
+      "updatedAt": "2026-07-16T14:31:10.800Z",
       "log": [
         {
           "date": "2026-06-16T18:46:32.709Z",
@@ -875,7 +875,7 @@
           "note": "Movido para \"FUNDAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-06-30T13:12:42.601Z"
+      "lastProgressAt": "2026-07-16T14:31:10.800Z"
     },
     {
       "id": "mr160x9of3a8",
