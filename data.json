@@ -4609,7 +4609,7 @@
             {
               "id": "mplonffnl78k",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffna6bl",
@@ -4696,14 +4696,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:52:42.083Z",
-      "updatedAt": "2026-06-15T12:23:06.018Z",
+      "updatedAt": "2026-07-16T14:28:35.584Z",
       "log": [
         {
           "date": "2026-06-02T12:48:54.674Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-06-15T12:23:06.018Z"
+      "lastProgressAt": "2026-07-16T14:28:35.584Z"
     },
     {
       "id": "mpmthycywcac",
