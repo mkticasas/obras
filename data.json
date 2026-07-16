@@ -11726,13 +11726,14 @@
     {
       "id": "mp4gew4c3szt",
       "name": "Lucas",
-      "role": "",
+      "role": "MESTRE OBRA",
       "phone": "",
       "login": "lucasgomes",
       "passwordHash": "a4ee85642ff930acd05dab26a10d6f5e7f706113a23c630c383ee90297b99abc",
       "telegramChatId": "",
       "photo": "",
-      "isAdmin": false
+      "isAdmin": false,
+      "wppApiKey": "1234"
     },
     {
       "id": "mp5ix10a2onz",
