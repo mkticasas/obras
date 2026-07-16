@@ -5227,12 +5227,12 @@
             {
               "id": "mpmtqbnnqugw",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnnyz16",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnnnla6",
@@ -5279,9 +5279,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:02:41.411Z",
-      "updatedAt": "2026-07-16T14:29:53.375Z",
+      "updatedAt": "2026-07-16T14:29:55.840Z",
       "log": [],
-      "lastProgressAt": "2026-07-16T14:29:53.375Z"
+      "lastProgressAt": "2026-07-16T14:29:55.840Z"
     },
     {
       "id": "mpmttak0cugm",
