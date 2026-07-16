@@ -5136,12 +5136,12 @@
             {
               "id": "mpmtqbnngv5x",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnno93s",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnn2cig",
@@ -5279,9 +5279,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:02:41.411Z",
-      "updatedAt": "2026-07-16T14:30:09.919Z",
+      "updatedAt": "2026-07-16T14:30:13.272Z",
       "log": [],
-      "lastProgressAt": "2026-07-16T14:30:09.919Z"
+      "lastProgressAt": "2026-07-16T14:30:13.272Z"
     },
     {
       "id": "mpmttak0cugm",
