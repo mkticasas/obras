@@ -3417,12 +3417,12 @@
             {
               "id": "mploocytvlji",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytxdwc",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocyt505w",
@@ -3509,14 +3509,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-06-15T12:20:59.182Z",
+      "updatedAt": "2026-07-16T14:25:45.736Z",
       "log": [
         {
           "date": "2026-06-15T12:20:59.182Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:49:01.662Z"
+      "lastProgressAt": "2026-07-16T14:25:45.736Z"
     },
     {
       "id": "mplom1gl8r63",
