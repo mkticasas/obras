@@ -3553,7 +3553,7 @@
             {
               "id": "mplom1gleph3",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1glh6xj",
@@ -3706,14 +3706,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:51:37.317Z",
-      "updatedAt": "2026-07-16T14:27:05.680Z",
+      "updatedAt": "2026-07-16T14:27:08.944Z",
       "log": [
         {
           "date": "2026-06-15T12:20:55.909Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:27:05.680Z"
+      "lastProgressAt": "2026-07-16T14:27:08.944Z"
     },
     {
       "id": "mplobyxrw3fv",
