@@ -4351,7 +4351,7 @@
             {
               "id": "mplopymbg8o1",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mplopymbmza9",
@@ -4499,14 +4499,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:54:40.259Z",
-      "updatedAt": "2026-07-16T14:28:22.800Z",
+      "updatedAt": "2026-07-16T14:28:25.896Z",
       "log": [
         {
           "date": "2026-06-02T12:49:17.514Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:28:22.801Z"
+      "lastProgressAt": "2026-07-16T14:28:25.896Z"
     },
     {
       "id": "mplonffncuml",
