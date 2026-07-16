@@ -3011,7 +3011,7 @@
             {
               "id": "mplofrmbf8ah",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmb3n9f",
@@ -3103,7 +3103,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-07-16T14:25:18.440Z",
+      "updatedAt": "2026-07-16T14:25:20.568Z",
       "log": [
         {
           "date": "2026-05-26T17:58:12.543Z",
@@ -3122,7 +3122,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:25:18.440Z"
+      "lastProgressAt": "2026-07-16T14:25:20.568Z"
     },
     {
       "id": "mpmqk8quyy8b",
