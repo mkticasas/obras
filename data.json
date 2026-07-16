@@ -5000,7 +5000,7 @@
             {
               "id": "mpmtoz8wgosl",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8w6r03",
@@ -5087,9 +5087,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-06-15T12:23:20.153Z",
+      "updatedAt": "2026-07-16T14:29:23.472Z",
       "log": [],
-      "lastProgressAt": "2026-06-15T12:23:20.153Z"
+      "lastProgressAt": "2026-07-16T14:29:23.472Z"
     },
     {
       "id": "mpmtqbnncm2j",
