@@ -3614,7 +3614,7 @@
             {
               "id": "mplom1gl9qzy",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1glsthm",
@@ -3624,12 +3624,12 @@
             {
               "id": "mplom1gljuln",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1glzecs",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gllbav",
@@ -3706,14 +3706,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:51:37.317Z",
-      "updatedAt": "2026-06-15T12:20:55.909Z",
+      "updatedAt": "2026-07-16T14:27:05.680Z",
       "log": [
         {
           "date": "2026-06-15T12:20:55.909Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:48:42.391Z"
+      "lastProgressAt": "2026-07-16T14:27:05.680Z"
     },
     {
       "id": "mplobyxrw3fv",
