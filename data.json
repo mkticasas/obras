@@ -4858,7 +4858,7 @@
             {
               "id": "mpmthycygt9h",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmthycys07v",
@@ -4895,9 +4895,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:56:10.930Z",
-      "updatedAt": "2026-07-16T14:29:08.888Z",
+      "updatedAt": "2026-07-16T14:29:10.632Z",
       "log": [],
-      "lastProgressAt": "2026-07-16T14:29:08.888Z"
+      "lastProgressAt": "2026-07-16T14:29:10.632Z"
     },
     {
       "id": "mpmtoz8waasu",
