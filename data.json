@@ -3847,12 +3847,12 @@
             {
               "id": "mplobyxr4p1o",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxr85gm",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxr61xq",
@@ -3904,7 +3904,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:43:47.487Z",
-      "updatedAt": "2026-07-16T14:27:27.753Z",
+      "updatedAt": "2026-07-16T14:27:33.792Z",
       "log": [
         {
           "date": "2026-06-15T12:20:29.077Z",
@@ -3915,7 +3915,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:27:27.753Z"
+      "lastProgressAt": "2026-07-16T14:27:33.792Z"
     },
     {
       "id": "mplos4d97x5b",
