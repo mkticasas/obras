@@ -4893,9 +4893,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mrpain3dwzkt",
+          "userId": "mqi4d058rn20",
+          "text": "todas as janelas, porta da entrada e da cozinha é com o pessoal da esquadria que a cliente fechou (já entregaram os contramarco)",
+          "date": "2026-07-17T18:47:33.481Z"
+        }
+      ],
       "createdAt": "2026-05-26T15:56:10.930Z",
-      "updatedAt": "2026-07-16T14:29:14.448Z",
+      "updatedAt": "2026-07-17T18:47:33.481Z",
       "log": [],
       "lastProgressAt": "2026-07-16T14:29:14.448Z"
     },
