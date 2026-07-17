@@ -5277,9 +5277,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mrp9kfh1god9",
+          "userId": "mqi4d058rn20",
+          "text": "Todas as esquadrias são com o Pelé, e portas são kit prontas",
+          "date": "2026-07-17T18:20:57.301Z"
+        }
+      ],
       "createdAt": "2026-05-26T16:02:41.411Z",
-      "updatedAt": "2026-07-16T14:30:13.272Z",
+      "updatedAt": "2026-07-17T18:20:57.301Z",
       "log": [],
       "lastProgressAt": "2026-07-16T14:30:13.272Z"
     },
