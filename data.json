@@ -48,6 +48,200 @@
   ],
   "cards": [
     {
+      "id": "mpwmgv0ypb3o",
+      "name": "FERNANDA E RENATO-Mais Parque Rio Preto",
+      "colId": "mp1jg6ccow2u",
+      "coverUrl": null,
+      "addr": "",
+      "valor": "",
+      "inicio": "2026-05-29",
+      "prazo": "2026-12-29",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mpwmgv0yj3iu",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpwmgv0y05mc",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yni99",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0ympw3",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yimcm",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0ybcar",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0ymfau",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yb952",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yq76c",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mpwmgv0ypuna",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mpwmgv0ykuw9",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0y38ae",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yt4d7",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0y289e",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0y56ml",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0ywj6f",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0ynd1j",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0y846y",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0y017t",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0y1ryd",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yx7a3",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yv0tq",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yeqwl",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0ytjuu",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yg7ag",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yjnyu",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yko5m",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yva8e",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0y0q3h",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yeif8",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0ynfad",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0yozi1",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mpwmgv0y837l",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-06-02T12:37:04.402Z",
+      "updatedAt": "2026-07-22T17:41:25.816Z",
+      "log": [
+        {
+          "date": "2026-07-22T17:41:25.816Z",
+          "note": "Movido para \"INICIALIZAR\""
+        }
+      ]
+    },
+    {
       "id": "mpwmec6h8cr6",
       "name": "CARLA E FAMILIA - vila nobre",
       "colId": "mpb84so22w1c",
@@ -9680,195 +9874,6 @@
       "comments": [],
       "createdAt": "2026-06-23T19:22:44.089Z",
       "updatedAt": "2026-06-23T19:28:55.986Z",
-      "log": []
-    },
-    {
-      "id": "mpwmgv0ypb3o",
-      "name": "FERNANDA E RENATO-Mais Parque Rio Preto",
-      "colId": "col-default",
-      "coverUrl": null,
-      "addr": "",
-      "valor": "",
-      "inicio": "2026-05-29",
-      "prazo": "2026-12-29",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "",
-      "tags": [],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mpwmgv0yj3iu",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mpwmgv0y05mc",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yni99",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0ympw3",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yimcm",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0ybcar",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0ymfau",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yb952",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yq76c",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mpwmgv0ypuna",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mpwmgv0ykuw9",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0y38ae",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yt4d7",
-              "text": "Levantamento de Paredes",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0y289e",
-              "text": "Conferência de medidas de janelas/portas",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0y56ml",
-              "text": "Impermeabilizações",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0ywj6f",
-              "text": "Laje / Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0ynd1j",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0y846y",
-              "text": "Reboco externo iniciado",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0y017t",
-              "text": "Reboco interno iniciado",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0y1ryd",
-              "text": "Batentes",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yx7a3",
-              "text": "Reboco externo concluído",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yv0tq",
-              "text": "Reboco interno concluído",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yeqwl",
-              "text": "Esgoto/pluvial",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0ytjuu",
-              "text": "Conduite do poste ao quadro",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yg7ag",
-              "text": "Telhado + pingadeiras",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yjnyu",
-              "text": "Requadro ou instalações de janelas",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yko5m",
-              "text": "Contrapiso",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yva8e",
-              "text": "Pisos",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0y0q3h",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yeif8",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0ynfad",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0yozi1",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mpwmgv0y837l",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [],
-      "createdAt": "2026-06-02T12:37:04.402Z",
-      "updatedAt": "2026-06-02T12:41:01.192Z",
       "log": []
     },
     {
