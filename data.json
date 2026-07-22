@@ -264,7 +264,7 @@
             {
               "id": "mr40aofbng2d",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mr40aofbi92p",
@@ -310,7 +310,7 @@
             {
               "id": "mr40aofbv0n5",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mr40aofbw26o",
@@ -427,7 +427,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-02T21:18:16.103Z",
-      "updatedAt": "2026-07-22T20:34:02.695Z",
+      "updatedAt": "2026-07-22T20:34:05.940Z",
       "log": [
         {
           "date": "2026-07-16T14:23:09.716Z",
@@ -441,7 +441,8 @@
           "date": "2026-07-22T20:34:02.695Z",
           "note": "Movido para \"INICIALIZAR\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-07-22T20:34:05.940Z"
     },
     {
       "id": "mpwmec6h8cr6",
