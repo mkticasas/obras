@@ -4873,7 +4873,7 @@
             {
               "id": "mpmtoz8wemhf",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8wm6np",
@@ -4923,9 +4923,9 @@
         }
       ],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-07-27T12:34:47.175Z",
+      "updatedAt": "2026-07-27T12:34:48.704Z",
       "log": [],
-      "lastProgressAt": "2026-07-27T12:34:47.175Z"
+      "lastProgressAt": "2026-07-27T12:34:48.704Z"
     },
     {
       "id": "mpmtqbnncm2j",
