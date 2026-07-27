@@ -6100,7 +6100,7 @@
             {
               "id": "mpmtl3r8btp3",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8tdjv",
@@ -6132,14 +6132,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-06-02T12:51:44.103Z",
+      "updatedAt": "2026-07-27T12:40:13.111Z",
       "log": [
         {
           "date": "2026-06-02T12:50:17.626Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:51:44.103Z"
+      "lastProgressAt": "2026-07-27T12:40:13.111Z"
     },
     {
       "id": "mpmtwz84fod4",
