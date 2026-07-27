@@ -2637,7 +2637,7 @@
             {
               "id": "mpb8ny37477n",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny376796",
@@ -2689,7 +2689,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-07-16T14:26:59.288Z",
+      "updatedAt": "2026-07-27T12:32:48.735Z",
       "log": [
         {
           "date": "2026-05-25T20:41:37.942Z",
@@ -2732,7 +2732,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:26:59.288Z"
+      "lastProgressAt": "2026-07-27T12:32:48.735Z"
     },
     {
       "id": "mplofrmbcm6z",
