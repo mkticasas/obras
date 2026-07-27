@@ -1886,7 +1886,7 @@
       "resp": "",
       "equipe": "",
       "status": "",
-      "obs": "",
+      "obs": "PEDREIRO ADAO",
       "tags": [],
       "assignees": [],
       "checklists": [
@@ -2060,7 +2060,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-23T19:20:42.804Z",
-      "updatedAt": "2026-07-02T20:09:38.404Z",
+      "updatedAt": "2026-07-27T12:53:52.231Z",
       "log": [
         {
           "date": "2026-06-30T12:05:03.531Z",
