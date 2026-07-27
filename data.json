@@ -4373,12 +4373,12 @@
             {
               "id": "mplonffndatf",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffn9u73",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mplonffn68nl",
@@ -4516,14 +4516,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:52:42.083Z",
-      "updatedAt": "2026-07-27T12:34:25.512Z",
+      "updatedAt": "2026-07-27T12:34:28.832Z",
       "log": [
         {
           "date": "2026-06-02T12:48:54.674Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-27T12:34:25.512Z"
+      "lastProgressAt": "2026-07-27T12:34:28.832Z"
     },
     {
       "id": "mpmthycywcac",
