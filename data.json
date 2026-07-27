@@ -5362,9 +5362,7 @@
       "status": "",
       "obs": "- ATRASO POR MUDANÇA DE PROJETO E ALTERAÇÕES NA CAIXA.",
       "tags": [
-        "mp4ih8i6bddg",
-        "mpb8bjvuy2j4",
-        "mpmthflla5ph"
+        "mp4ih8i6bddg"
       ],
       "assignees": [],
       "checklists": [
@@ -5546,7 +5544,7 @@
         }
       ],
       "createdAt": "2026-05-26T15:56:10.930Z",
-      "updatedAt": "2026-07-27T12:40:53.075Z",
+      "updatedAt": "2026-07-27T12:40:56.664Z",
       "log": [
         {
           "date": "2026-07-27T12:40:53.075Z",
