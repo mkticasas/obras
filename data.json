@@ -4843,17 +4843,17 @@
             {
               "id": "mpmtoz8wfcih",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8w8loh",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8wbfub",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8whncu",
@@ -4923,9 +4923,9 @@
         }
       ],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-07-17T18:30:49.033Z",
+      "updatedAt": "2026-07-27T12:34:44.127Z",
       "log": [],
-      "lastProgressAt": "2026-07-16T14:29:38.711Z"
+      "lastProgressAt": "2026-07-27T12:34:44.127Z"
     },
     {
       "id": "mpmtqbnncm2j",
