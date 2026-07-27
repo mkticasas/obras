@@ -5906,7 +5906,7 @@
             {
               "id": "mpmtnehs9gua",
               "text": "Pisos",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsh79c",
@@ -5938,14 +5938,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:00:25.120Z",
-      "updatedAt": "2026-06-02T12:51:26.334Z",
+      "updatedAt": "2026-07-27T12:40:26.463Z",
       "log": [
         {
           "date": "2026-06-02T12:50:20.691Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:51:26.334Z"
+      "lastProgressAt": "2026-07-27T12:40:26.463Z"
     },
     {
       "id": "mpmtl3r8s0n7",
