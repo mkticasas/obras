@@ -11884,6 +11884,11 @@
               "id": "mryzx2gttgro",
               "text": "Finalização",
               "done": false
+            },
+            {
+              "id": "ms38idutpzqn",
+              "text": "REUNIAO PRE OBRA",
+              "done": false
             }
           ]
         },
@@ -12011,7 +12016,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-24T13:48:32.573Z",
-      "updatedAt": "2026-07-24T13:50:03.502Z",
+      "updatedAt": "2026-07-27T13:00:08.741Z",
       "log": []
     }
   ],
