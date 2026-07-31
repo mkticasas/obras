@@ -5786,9 +5786,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "ms92qimzpkpo",
+          "userId": "mqi4d058rn20",
+          "text": "O Flávio vai iniciar a pintura dia 03/08",
+          "date": "2026-07-31T15:05:07.547Z"
+        }
+      ],
       "createdAt": "2026-05-26T16:00:25.120Z",
-      "updatedAt": "2026-07-27T12:40:26.463Z",
+      "updatedAt": "2026-07-31T15:05:07.547Z",
       "log": [
         {
           "date": "2026-06-02T12:50:20.691Z",
