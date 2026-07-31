@@ -10782,195 +10782,6 @@
       "log": []
     },
     {
-      "id": "mr24ohc763yq",
-      "name": "DANI E ANDRÉ- MAIS PARQUE",
-      "colId": "col-default",
-      "coverUrl": null,
-      "addr": "",
-      "valor": "",
-      "inicio": "2026-06-25",
-      "prazo": "2027-02-25",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "",
-      "tags": [],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mr24ohc7k9h8",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mr24ohc7eaky",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mr24ohc72nxv",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7fkk5",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7o9by",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mr24ohc77rlr",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mr24ohc76xnh",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7766m",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7yvrw",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mr24ohc7z7ic",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mr24ohc7kn7u",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mr24ohc71bfh",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7d4jk",
-              "text": "Levantamento de Paredes",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7p9wh",
-              "text": "Conferência de medidas de janelas/portas",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7n4k6",
-              "text": "Impermeabilizações",
-              "done": false
-            },
-            {
-              "id": "mr24ohc72lej",
-              "text": "Laje / Cobertura",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7lolf",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7psvj",
-              "text": "Reboco externo iniciado",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7ur42",
-              "text": "Reboco interno iniciado",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7glki",
-              "text": "Batentes",
-              "done": false
-            },
-            {
-              "id": "mr24ohc74i7q",
-              "text": "Reboco externo concluído",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7mwia",
-              "text": "Reboco interno concluído",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7kycd",
-              "text": "Esgoto/pluvial",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7xoq8",
-              "text": "Conduite do poste ao quadro",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7ytji",
-              "text": "Telhado + pingadeiras",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7ggcc",
-              "text": "Requadro ou instalações de janelas",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7epei",
-              "text": "Contrapiso",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7cz54",
-              "text": "Pisos",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7cz4j",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mr24ohc72l8j",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7bw5a",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mr24ohc7i6p2",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mr24ohc746vc",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [],
-      "createdAt": "2026-07-01T13:45:26.215Z",
-      "updatedAt": "2026-07-01T13:46:28.967Z",
-      "log": []
-    },
-    {
       "id": "mr403f6oww20",
       "name": "VINICIUS- MORADA REAL",
       "colId": "col-default",
@@ -11920,6 +11731,200 @@
         }
       ],
       "lastProgressAt": "2026-07-31T21:24:23.875Z"
+    },
+    {
+      "id": "mr24ohc763yq",
+      "name": "DANI E ANDRÉ- MAIS PARQUE",
+      "colId": "mp1jg6ccow2u",
+      "coverUrl": null,
+      "addr": "",
+      "valor": "",
+      "inicio": "2026-06-25",
+      "prazo": "2027-02-25",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mr24ohc7k9h8",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mr24ohc7eaky",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mr24ohc72nxv",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7fkk5",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7o9by",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mr24ohc77rlr",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mr24ohc76xnh",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7766m",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7yvrw",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mr24ohc7z7ic",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mr24ohc7kn7u",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mr24ohc71bfh",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7d4jk",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7p9wh",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7n4k6",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mr24ohc72lej",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7lolf",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7psvj",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7ur42",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7glki",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mr24ohc74i7q",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7mwia",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7kycd",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7xoq8",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7ytji",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7ggcc",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7epei",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7cz54",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7cz4j",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mr24ohc72l8j",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7bw5a",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mr24ohc7i6p2",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mr24ohc746vc",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-07-01T13:45:26.215Z",
+      "updatedAt": "2026-07-31T21:24:36.809Z",
+      "log": [
+        {
+          "date": "2026-07-31T21:24:36.809Z",
+          "note": "Movido para \"INICIALIZAR\""
+        }
+      ]
     },
     {
       "id": "mryzx2gtykfu",
