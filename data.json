@@ -6335,9 +6335,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "ms90tgzmfean",
+          "userId": "mqi4d058rn20",
+          "text": "O Agnaldo começa na segunda 03/08 a elétrica",
+          "date": "2026-07-31T14:11:26.146Z"
+        }
+      ],
       "createdAt": "2026-05-26T16:08:37.630Z",
-      "updatedAt": "2026-07-02T20:10:18.573Z",
+      "updatedAt": "2026-07-31T14:11:26.146Z",
       "log": [],
       "lastProgressAt": "2026-07-02T20:10:18.573Z"
     },
