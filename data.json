@@ -5981,7 +5981,7 @@
             {
               "id": "mpmtl3r8tdjv",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8w0de",
@@ -6008,14 +6008,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-07-27T12:40:13.111Z",
+      "updatedAt": "2026-07-31T15:18:54.675Z",
       "log": [
         {
           "date": "2026-06-02T12:50:17.626Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-07-27T12:40:13.111Z"
+      "lastProgressAt": "2026-07-31T15:18:54.675Z"
     },
     {
       "id": "mpmtwz84fod4",
