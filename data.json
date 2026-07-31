@@ -11749,7 +11749,7 @@
             {
               "id": "mqr105tfmew1",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr105tfcln2",
@@ -11795,7 +11795,7 @@
             {
               "id": "mqr105tfw6yt",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr105tfgkbz",
@@ -11912,13 +11912,14 @@
       ],
       "comments": [],
       "createdAt": "2026-06-23T19:17:04.755Z",
-      "updatedAt": "2026-07-27T12:19:33.385Z",
+      "updatedAt": "2026-07-31T21:24:23.875Z",
       "log": [
         {
           "date": "2026-07-24T20:45:39.531Z",
           "note": "Movido para \"INICIALIZAR\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-07-31T21:24:23.875Z"
     },
     {
       "id": "mryzx2gtykfu",
