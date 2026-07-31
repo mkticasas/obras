@@ -236,9 +236,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "ms90qrmafk3u",
+          "userId": "mqi4d058rn20",
+          "text": "AGENDADA A LIMPEZA PÓS OBRA  01/08\nE ELETRICA FINALIZA 31/07",
+          "date": "2026-07-31T14:09:19.954Z"
+        }
+      ],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-07-31T14:07:25.229Z",
+      "updatedAt": "2026-07-31T14:09:19.954Z",
       "log": [
         {
           "date": "2026-06-02T12:49:44.883Z",
