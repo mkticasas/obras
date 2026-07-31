@@ -6006,9 +6006,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "ms93zaubdnxs",
+          "userId": "mqi4d058rn20",
+          "text": "Agnaldo passou os fios finalizou ontem 30/07",
+          "date": "2026-07-31T15:39:56.963Z"
+        }
+      ],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-07-31T15:18:54.675Z",
+      "updatedAt": "2026-07-31T15:39:56.964Z",
       "log": [
         {
           "date": "2026-06-02T12:50:17.626Z",
