@@ -234,9 +234,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "ms90nz2yapd9",
+          "userId": "mqi4d058rn20",
+          "text": "FOI ENTREGUE NA SEGUNDA 27/07\nE FINALIZAMOS OS DETALHES QUE FALTAVA",
+          "date": "2026-07-31T14:07:09.658Z"
+        }
+      ],
       "createdAt": "2026-05-26T16:03:30.978Z",
-      "updatedAt": "2026-07-31T14:07:07.900Z",
+      "updatedAt": "2026-07-31T14:07:09.658Z",
       "log": [
         {
           "date": "2026-06-02T12:50:42.107Z",
