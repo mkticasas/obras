@@ -105,7 +105,7 @@
             {
               "id": "mpmtfiba5zu3",
               "text": "Acabamento",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtfiba4lq3",
@@ -238,7 +238,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T15:54:16.822Z",
-      "updatedAt": "2026-07-27T12:40:23.217Z",
+      "updatedAt": "2026-07-31T14:07:22.747Z",
       "log": [
         {
           "date": "2026-06-02T12:49:44.883Z",
@@ -249,7 +249,7 @@
           "note": "Movido para \"FINALIZAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:51:13.342Z"
+      "lastProgressAt": "2026-07-31T14:07:22.747Z"
     },
     {
       "id": "mpwmgv0ypb3o",
