@@ -476,7 +476,7 @@
             {
               "id": "mr24ohc7eaky",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mr24ohc72nxv",
@@ -639,7 +639,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-01T13:45:26.215Z",
-      "updatedAt": "2026-08-07T12:57:34.451Z",
+      "updatedAt": "2026-08-07T12:57:37.121Z",
       "log": [
         {
           "date": "2026-07-31T21:24:36.809Z",
@@ -649,7 +649,8 @@
           "date": "2026-08-07T12:57:34.451Z",
           "note": "Movido para \"TERRAPLANAGEM\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-08-07T12:57:37.121Z"
     },
     {
       "id": "mqr17fndia9l",
