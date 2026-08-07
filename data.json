@@ -1534,7 +1534,7 @@
             {
               "id": "mr160x9o8oaa",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mr160x9ohnk2",
@@ -1646,7 +1646,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-30T21:35:20.172Z",
-      "updatedAt": "2026-08-07T13:00:27.370Z",
+      "updatedAt": "2026-08-07T13:00:30.286Z",
       "log": [
         {
           "date": "2026-06-30T21:36:07.360Z",
@@ -1677,7 +1677,7 @@
           "note": "Movido para \"FUNDAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-08-07T13:00:27.370Z"
+      "lastProgressAt": "2026-08-07T13:00:30.286Z"
     },
     {
       "id": "mqr14u2cvsy1",
