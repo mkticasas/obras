@@ -527,7 +527,7 @@
             {
               "id": "mpwmgv0y38ae",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mpwmgv0yt4d7",
@@ -639,7 +639,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-02T12:37:04.402Z",
-      "updatedAt": "2026-08-07T12:48:51.302Z",
+      "updatedAt": "2026-08-07T12:48:53.369Z",
       "log": [
         {
           "date": "2026-07-22T17:41:25.816Z",
@@ -650,7 +650,7 @@
           "note": "Movido para \"TERRAPLANAGEM\""
         }
       ],
-      "lastProgressAt": "2026-08-07T12:48:51.302Z"
+      "lastProgressAt": "2026-08-07T12:48:53.369Z"
     },
     {
       "id": "mpmtfibaz4vm",
