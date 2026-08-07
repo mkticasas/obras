@@ -12048,7 +12048,7 @@
             {
               "id": "mryzx2gtm6o4",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mryzx2gt2dsx",
@@ -12165,9 +12165,9 @@
       ],
       "comments": [],
       "createdAt": "2026-07-24T13:48:32.573Z",
-      "updatedAt": "2026-08-07T21:02:29.230Z",
+      "updatedAt": "2026-08-07T21:02:31.024Z",
       "log": [],
-      "lastProgressAt": "2026-08-07T21:02:29.230Z"
+      "lastProgressAt": "2026-08-07T21:02:31.024Z"
     }
   ],
   "users": [
