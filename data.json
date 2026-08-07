@@ -1753,7 +1753,7 @@
             {
               "id": "mqr14u2cokqk",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr14u2cbsyi",
@@ -1865,7 +1865,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-23T19:20:42.804Z",
-      "updatedAt": "2026-08-07T13:00:42.053Z",
+      "updatedAt": "2026-08-07T13:00:44.072Z",
       "log": [
         {
           "date": "2026-06-30T12:05:03.531Z",
@@ -1880,7 +1880,7 @@
           "note": "Movido para \"FUNDAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-08-07T13:00:42.053Z"
+      "lastProgressAt": "2026-08-07T13:00:44.072Z"
     },
     {
       "id": "mpwmec6h8cr6",
