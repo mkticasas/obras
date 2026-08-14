@@ -645,9 +645,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mst314uub9a1",
+          "userId": "mqi4d058rn20",
+          "text": "Aguardando o cliente com as medidas para fazer o executivos",
+          "date": "2026-08-14T15:08:46.422Z"
+        }
+      ],
       "createdAt": "2026-06-23T19:22:44.089Z",
-      "updatedAt": "2026-08-07T12:55:59.189Z",
+      "updatedAt": "2026-08-14T15:08:46.422Z",
       "log": [
         {
           "date": "2026-07-24T13:46:31.624Z",
