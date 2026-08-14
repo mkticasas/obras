@@ -1469,9 +1469,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mst3j3m6rz5r",
+          "userId": "mqi4d058rn20",
+          "text": "Aguardando ligação da energia e retirada da arvore",
+          "date": "2026-08-14T15:22:44.622Z"
+        }
+      ],
       "createdAt": "2026-06-30T21:35:20.172Z",
-      "updatedAt": "2026-08-07T13:00:30.286Z",
+      "updatedAt": "2026-08-14T15:22:44.622Z",
       "log": [
         {
           "date": "2026-06-30T21:36:07.360Z",
