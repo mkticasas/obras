@@ -231,9 +231,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mst32jfqf283",
+          "userId": "mqi4d058rn20",
+          "text": "Aguardando o pedreiro finalizar Gaby e Igal",
+          "date": "2026-08-14T15:09:51.974Z"
+        }
+      ],
       "createdAt": "2026-06-23T19:18:05.596Z",
-      "updatedAt": "2026-08-07T21:03:16.532Z",
+      "updatedAt": "2026-08-14T15:09:51.974Z",
       "log": [
         {
           "date": "2026-07-16T14:22:45.315Z",
