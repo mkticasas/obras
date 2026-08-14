@@ -12067,7 +12067,7 @@
       "resp": "",
       "equipe": "",
       "status": "",
-      "obs": "",
+      "obs": "PEDREIRO JARBAS",
       "tags": [],
       "assignees": [],
       "checklists": [
@@ -12239,9 +12239,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mst3m0fi8ob5",
+          "userId": "mqi4d058rn20",
+          "text": "Executivo impresso",
+          "date": "2026-08-14T15:25:00.462Z"
+        }
+      ],
       "createdAt": "2026-06-23T19:17:44.115Z",
-      "updatedAt": "2026-08-07T12:37:56.729Z",
+      "updatedAt": "2026-08-14T15:25:00.462Z",
       "log": [
         {
           "date": "2026-08-07T12:37:56.729Z",
