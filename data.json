@@ -11475,195 +11475,6 @@
       "log": []
     },
     {
-      "id": "mr58jbzetavg",
-      "name": "SR ALEX- SÃO THOMAZ      L 13     Q 22",
-      "colId": "col-default",
-      "coverUrl": null,
-      "addr": "",
-      "valor": "",
-      "inicio": "",
-      "prazo": "",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "",
-      "tags": [],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mr58jbzg14hk",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mr58jbzg7m26",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgs97x",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgw57k",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgoan4",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgwvof",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgeluw",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgoojg",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mr58jbzg7u3j",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mr58jbzgflnw",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mr58jbzgwaf6",
-              "text": "Terraplanagem",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgq44p",
-              "text": "Fundação",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgs095",
-              "text": "Levantamento de Paredes",
-              "done": false
-            },
-            {
-              "id": "mr58jbzg1wyh",
-              "text": "Conferência de medidas de janelas/portas",
-              "done": false
-            },
-            {
-              "id": "mr58jbzghvm1",
-              "text": "Impermeabilizações",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgzsm3",
-              "text": "Laje / Cobertura",
-              "done": false
-            },
-            {
-              "id": "mr58jbzg6g7c",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgoioq",
-              "text": "Reboco externo iniciado",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgppei",
-              "text": "Reboco interno iniciado",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgydz6",
-              "text": "Batentes",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgxzn6",
-              "text": "Reboco externo concluído",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgu7da",
-              "text": "Reboco interno concluído",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgkane",
-              "text": "Esgoto/pluvial",
-              "done": false
-            },
-            {
-              "id": "mr58jbzg1ilg",
-              "text": "Conduite do poste ao quadro",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgvtud",
-              "text": "Telhado + pingadeiras",
-              "done": false
-            },
-            {
-              "id": "mr58jbzguei6",
-              "text": "Requadro ou instalações de janelas",
-              "done": false
-            },
-            {
-              "id": "mr58jbzge5yq",
-              "text": "Contrapiso",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgps45",
-              "text": "Pisos",
-              "done": false
-            },
-            {
-              "id": "mr58jbzg8p3o",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mr58jbzg0m00",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mr58jbzg20tu",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgyvv2",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mr58jbzgae8c",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [],
-      "createdAt": "2026-07-03T17:56:42.989Z",
-      "updatedAt": "2026-07-09T14:19:50.745Z",
-      "log": []
-    },
-    {
       "id": "mrkvc2zihguz",
       "name": "JEFFERSON E TAMIRES (PELÉ)",
       "colId": "col-default",
@@ -11851,6 +11662,200 @@
       "createdAt": "2026-07-14T16:31:28.543Z",
       "updatedAt": "2026-07-14T16:32:14.641Z",
       "log": []
+    },
+    {
+      "id": "mr58jbzetavg",
+      "name": "SR ALEX- SÃO THOMAZ      L 13     Q 22",
+      "colId": "mp1jg6ccow2u",
+      "coverUrl": null,
+      "addr": "",
+      "valor": "",
+      "inicio": "",
+      "prazo": "",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mr58jbzg14hk",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mr58jbzg7m26",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgs97x",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgw57k",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgoan4",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgwvof",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgeluw",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgoojg",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mr58jbzg7u3j",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mr58jbzgflnw",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mr58jbzgwaf6",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgq44p",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgs095",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mr58jbzg1wyh",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mr58jbzghvm1",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgzsm3",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mr58jbzg6g7c",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgoioq",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgppei",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgydz6",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgxzn6",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgu7da",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgkane",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mr58jbzg1ilg",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgvtud",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mr58jbzguei6",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mr58jbzge5yq",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgps45",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mr58jbzg8p3o",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mr58jbzg0m00",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mr58jbzg20tu",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgyvv2",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mr58jbzgae8c",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-07-03T17:56:42.989Z",
+      "updatedAt": "2026-08-14T19:15:19.315Z",
+      "log": [
+        {
+          "date": "2026-08-14T19:15:19.315Z",
+          "note": "Movido para \"INICIALIZAR\""
+        }
+      ]
     },
     {
       "id": "mr40b9w6yx4c",
