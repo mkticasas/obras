@@ -8389,12 +8389,12 @@
             {
               "id": "mpmu6h40v6dv",
               "text": "Acabamento",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu6h40g03n",
               "text": "Finalização",
-              "done": false
+              "done": true
             }
           ]
         },
@@ -8522,7 +8522,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:15:14.976Z",
-      "updatedAt": "2026-08-18T21:12:21.363Z",
+      "updatedAt": "2026-08-18T21:12:41.665Z",
       "log": [
         {
           "date": "2026-06-02T12:52:05.017Z",
@@ -8533,7 +8533,7 @@
           "note": "Movido para \"ENTREGUES\""
         }
       ],
-      "lastProgressAt": "2026-08-18T21:12:21.363Z"
+      "lastProgressAt": "2026-08-18T21:12:41.665Z"
     },
     {
       "id": "mpmuie3vloco",
