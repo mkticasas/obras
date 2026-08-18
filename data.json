@@ -8782,12 +8782,12 @@
             {
               "id": "mpmucjum2vmu",
               "text": "Acabamento",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmucjum3epf",
               "text": "Finalização",
-              "done": false
+              "done": true
             }
           ]
         },
@@ -8915,7 +8915,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:19:58.462Z",
-      "updatedAt": "2026-08-18T21:12:27.770Z",
+      "updatedAt": "2026-08-18T21:12:29.570Z",
       "log": [
         {
           "date": "2026-06-02T12:52:29.081Z",
@@ -8926,7 +8926,7 @@
           "note": "Movido para \"ENTREGUES\""
         }
       ],
-      "lastProgressAt": "2026-08-18T21:12:27.770Z"
+      "lastProgressAt": "2026-08-18T21:12:29.570Z"
     },
     {
       "id": "mpmufpatgzc9",
