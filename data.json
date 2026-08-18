@@ -7894,34 +7894,34 @@
             {
               "id": "mpmu57xr4gg0",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xr5w8p",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xrln97",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xri8py",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmu57xr90cg",
               "text": "Entrega",
-              "done": false
+              "done": true
             }
           ]
         }
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:14:16.431Z",
-      "updatedAt": "2026-06-30T13:26:36.589Z",
+      "updatedAt": "2026-08-18T21:12:04.211Z",
       "log": [
         {
           "date": "2026-06-02T12:52:01.427Z",
@@ -7932,7 +7932,7 @@
           "note": "Movido para \"ENTREGUES\""
         }
       ],
-      "lastProgressAt": "2026-06-02T12:53:22.806Z"
+      "lastProgressAt": "2026-08-18T21:12:04.211Z"
     },
     {
       "id": "mpmu47wgb1yf",
