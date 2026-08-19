@@ -5127,12 +5127,12 @@
             {
               "id": "mpb8ny372v5c",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37k0zs",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37lpku",
@@ -5147,17 +5147,17 @@
             {
               "id": "mpb8ny377k3q",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37p6du",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37cb7t",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37uiwf",
@@ -5172,17 +5172,17 @@
             {
               "id": "mpb8ny376796",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37dh34",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37xw28",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny37y2em",
@@ -5219,7 +5219,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-08-19T13:12:32.969Z",
+      "updatedAt": "2026-08-19T13:14:50.405Z",
       "log": [
         {
           "date": "2026-05-25T20:41:37.942Z",
@@ -5266,7 +5266,7 @@
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-07-27T12:32:48.735Z"
+      "lastProgressAt": "2026-08-19T13:14:50.405Z"
     },
     {
       "id": "mplor8rrw1h5",
