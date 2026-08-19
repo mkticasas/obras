@@ -4660,12 +4660,12 @@
             {
               "id": "mploocytnhu9",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocyt3vkg",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocyt00fz",
@@ -4803,7 +4803,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-08-19T13:12:50.657Z",
+      "updatedAt": "2026-08-19T13:15:47.453Z",
       "log": [
         {
           "date": "2026-06-15T12:20:59.182Z",
@@ -4814,7 +4814,7 @@
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:25:54.152Z"
+      "lastProgressAt": "2026-08-19T13:15:47.453Z"
     },
     {
       "id": "mplofrmbcm6z",
