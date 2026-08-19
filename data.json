@@ -1074,233 +1074,6 @@
       "lastProgressAt": "2026-07-31T21:24:23.875Z"
     },
     {
-      "id": "mr160x9of3a8",
-      "name": "andresa",
-      "colId": "mpb84so22w1c",
-      "coverUrl": null,
-      "addr": "SANTA REGINA",
-      "valor": "",
-      "inicio": "2026-05-28",
-      "prazo": "2027-02-28",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "PEDREIRO NELTON",
-      "tags": [],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mr160x9ou20k",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mr160x9oguuz",
-              "text": "Terraplanagem",
-              "done": true
-            },
-            {
-              "id": "mr160x9ogxuz",
-              "text": "Fundação",
-              "done": true
-            },
-            {
-              "id": "mr160x9okif8",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mr160x9ojwdu",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mr160x9oge3t",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mr160x9o73hk",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mr160x9o5j07",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mr160x9okrlk",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mr160x9oqrh7",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mr160x9oo84g",
-              "text": "Terraplanagem",
-              "done": true
-            },
-            {
-              "id": "mr160x9o8oaa",
-              "text": "Fundação",
-              "done": true
-            },
-            {
-              "id": "mr160x9ohnk2",
-              "text": "Levantamento de Paredes",
-              "done": false
-            },
-            {
-              "id": "mr160x9ozgrb",
-              "text": "Conferência de medidas de janelas/portas",
-              "done": false
-            },
-            {
-              "id": "mr160x9ortf1",
-              "text": "Impermeabilizações",
-              "done": false
-            },
-            {
-              "id": "mr160x9o7xic",
-              "text": "Laje / Cobertura",
-              "done": false
-            },
-            {
-              "id": "mr160x9oefd5",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
-            },
-            {
-              "id": "mr160x9o2zwn",
-              "text": "Reboco externo iniciado",
-              "done": false
-            },
-            {
-              "id": "mr160x9ozjey",
-              "text": "Reboco interno iniciado",
-              "done": false
-            },
-            {
-              "id": "mr160x9og4s5",
-              "text": "Batentes",
-              "done": false
-            },
-            {
-              "id": "mr160x9oz5rb",
-              "text": "Reboco externo concluído",
-              "done": false
-            },
-            {
-              "id": "mr160x9o8655",
-              "text": "Reboco interno concluído",
-              "done": false
-            },
-            {
-              "id": "mr160x9ok9rw",
-              "text": "Esgoto/pluvial",
-              "done": false
-            },
-            {
-              "id": "mr160x9o8fjq",
-              "text": "Conduite do poste ao quadro",
-              "done": false
-            },
-            {
-              "id": "mr160x9oxh6w",
-              "text": "Telhado + pingadeiras",
-              "done": false
-            },
-            {
-              "id": "mr160x9ow62d",
-              "text": "Requadro ou instalações de janelas",
-              "done": false
-            },
-            {
-              "id": "mr160x9oms17",
-              "text": "Contrapiso",
-              "done": false
-            },
-            {
-              "id": "mr160x9o2ism",
-              "text": "Pisos",
-              "done": false
-            },
-            {
-              "id": "mr160x9ocmdc",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mr160x9o2cmt",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mr160x9o93nx",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mr160x9ora8o",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mr160x9oytci",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [
-        {
-          "type": "comment",
-          "id": "mst3j3m6rz5r",
-          "userId": "mqi4d058rn20",
-          "text": "Aguardando ligação da energia e retirada da arvore",
-          "date": "2026-08-14T15:22:44.622Z"
-        }
-      ],
-      "createdAt": "2026-06-30T21:35:20.172Z",
-      "updatedAt": "2026-08-14T15:22:44.622Z",
-      "log": [
-        {
-          "date": "2026-06-30T21:36:07.360Z",
-          "note": "Movido para \"INICIALIZAR\""
-        },
-        {
-          "date": "2026-07-01T12:31:54.766Z",
-          "note": "Movido para \"TERRAPLANAGEM\" por EDGARD"
-        },
-        {
-          "date": "2026-07-01T12:32:16.991Z",
-          "note": "Movido para \"INICIALIZAR\""
-        },
-        {
-          "date": "2026-07-16T14:22:48.597Z",
-          "note": "Movido para \"NOVAS OBRAS\""
-        },
-        {
-          "date": "2026-07-16T14:22:49.835Z",
-          "note": "Movido para \"INICIALIZAR\""
-        },
-        {
-          "date": "2026-07-22T16:37:02.316Z",
-          "note": "Movido para \"TERRAPLANAGEM\""
-        },
-        {
-          "date": "2026-07-31T21:25:48.372Z",
-          "note": "Movido para \"FUNDAÇÃO\""
-        }
-      ],
-      "lastProgressAt": "2026-08-07T13:00:30.286Z"
-    },
-    {
       "id": "mryzx2gtykfu",
       "name": "TAMIRES E CESAR-SETVALEY 2",
       "colId": "mpb84so22w1c",
@@ -1710,6 +1483,237 @@
         }
       ],
       "lastProgressAt": "2026-08-07T13:00:44.072Z"
+    },
+    {
+      "id": "mr160x9of3a8",
+      "name": "andresa",
+      "colId": "mpb8563uusn7",
+      "coverUrl": null,
+      "addr": "SANTA REGINA",
+      "valor": "",
+      "inicio": "2026-05-28",
+      "prazo": "2027-02-28",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "PEDREIRO NELTON",
+      "tags": [],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mr160x9ou20k",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mr160x9oguuz",
+              "text": "Terraplanagem",
+              "done": true
+            },
+            {
+              "id": "mr160x9ogxuz",
+              "text": "Fundação",
+              "done": true
+            },
+            {
+              "id": "mr160x9okif8",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mr160x9ojwdu",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mr160x9oge3t",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mr160x9o73hk",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mr160x9o5j07",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mr160x9okrlk",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mr160x9oqrh7",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mr160x9oo84g",
+              "text": "Terraplanagem",
+              "done": true
+            },
+            {
+              "id": "mr160x9o8oaa",
+              "text": "Fundação",
+              "done": true
+            },
+            {
+              "id": "mr160x9ohnk2",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mr160x9ozgrb",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mr160x9ortf1",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mr160x9o7xic",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mr160x9oefd5",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mr160x9o2zwn",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mr160x9ozjey",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mr160x9og4s5",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mr160x9oz5rb",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mr160x9o8655",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mr160x9ok9rw",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mr160x9o8fjq",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mr160x9oxh6w",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mr160x9ow62d",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mr160x9oms17",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mr160x9o2ism",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mr160x9ocmdc",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mr160x9o2cmt",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mr160x9o93nx",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mr160x9ora8o",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mr160x9oytci",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mst3j3m6rz5r",
+          "userId": "mqi4d058rn20",
+          "text": "Aguardando ligação da energia e retirada da arvore",
+          "date": "2026-08-14T15:22:44.622Z"
+        }
+      ],
+      "createdAt": "2026-06-30T21:35:20.172Z",
+      "updatedAt": "2026-08-19T13:17:53.808Z",
+      "log": [
+        {
+          "date": "2026-06-30T21:36:07.360Z",
+          "note": "Movido para \"INICIALIZAR\""
+        },
+        {
+          "date": "2026-07-01T12:31:54.766Z",
+          "note": "Movido para \"TERRAPLANAGEM\" por EDGARD"
+        },
+        {
+          "date": "2026-07-01T12:32:16.991Z",
+          "note": "Movido para \"INICIALIZAR\""
+        },
+        {
+          "date": "2026-07-16T14:22:48.597Z",
+          "note": "Movido para \"NOVAS OBRAS\""
+        },
+        {
+          "date": "2026-07-16T14:22:49.835Z",
+          "note": "Movido para \"INICIALIZAR\""
+        },
+        {
+          "date": "2026-07-22T16:37:02.316Z",
+          "note": "Movido para \"TERRAPLANAGEM\""
+        },
+        {
+          "date": "2026-07-31T21:25:48.372Z",
+          "note": "Movido para \"FUNDAÇÃO\""
+        },
+        {
+          "date": "2026-08-19T13:17:53.808Z",
+          "note": "Movido para \"ESTRUTURA (PAREDES + LAJE)\""
+        }
+      ],
+      "lastProgressAt": "2026-08-07T13:00:30.286Z"
     },
     {
       "id": "mpb8g437cehz",
