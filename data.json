@@ -5071,17 +5071,17 @@
             {
               "id": "mpb8ny36cafp",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny3676k1",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny365vje",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ny36ctkx",
@@ -5219,7 +5219,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:27:30.643Z",
-      "updatedAt": "2026-08-19T13:14:50.405Z",
+      "updatedAt": "2026-08-19T13:14:52.589Z",
       "log": [
         {
           "date": "2026-05-25T20:41:37.942Z",
@@ -5266,7 +5266,7 @@
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:14:50.405Z"
+      "lastProgressAt": "2026-08-19T13:14:52.589Z"
     },
     {
       "id": "mplor8rrw1h5",
