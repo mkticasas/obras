@@ -7102,12 +7102,12 @@
             {
               "id": "mpmtxyim1jnw",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtxyimyno2",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtxyimuh5w",
@@ -7137,9 +7137,9 @@
         }
       ],
       "createdAt": "2026-05-26T16:08:37.630Z",
-      "updatedAt": "2026-07-31T14:11:26.146Z",
+      "updatedAt": "2026-08-19T13:17:13.799Z",
       "log": [],
-      "lastProgressAt": "2026-07-02T20:10:18.573Z"
+      "lastProgressAt": "2026-08-19T13:17:13.799Z"
     },
     {
       "id": "mpmtfibaz4vm",
