@@ -6712,7 +6712,7 @@
             {
               "id": "mpmtl3r8w0de",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8gt8m",
@@ -6742,14 +6742,14 @@
         }
       ],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-07-31T15:39:56.964Z",
+      "updatedAt": "2026-08-19T13:16:42.005Z",
       "log": [
         {
           "date": "2026-06-02T12:50:17.626Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-07-31T15:18:54.675Z"
+      "lastProgressAt": "2026-08-19T13:16:42.005Z"
     },
     {
       "id": "mpmtwz84fod4",
