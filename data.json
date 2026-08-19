@@ -4963,12 +4963,12 @@
             {
               "id": "mplofrmbq0a6",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmb7mt8",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmboznt",
@@ -5005,7 +5005,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-08-19T13:14:34.206Z",
+      "updatedAt": "2026-08-19T13:14:37.821Z",
       "log": [
         {
           "date": "2026-05-26T17:58:12.543Z",
@@ -5028,7 +5028,7 @@
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:14:34.206Z"
+      "lastProgressAt": "2026-08-19T13:14:37.821Z"
     },
     {
       "id": "mpb8ny36m22t",
