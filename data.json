@@ -4736,37 +4736,37 @@
             {
               "id": "mploocyt315x",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocyt3t7x",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytrde5",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytunbf",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocyt3fsf",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocyttm72",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytuch0",
               "text": "Contrapiso",
-              "done": false
+              "done": true
             },
             {
               "id": "mploocytabbc",
@@ -4803,7 +4803,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:53:25.541Z",
-      "updatedAt": "2026-08-19T13:15:47.453Z",
+      "updatedAt": "2026-08-19T13:15:52.005Z",
       "log": [
         {
           "date": "2026-06-15T12:20:59.182Z",
@@ -4814,7 +4814,7 @@
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:15:47.453Z"
+      "lastProgressAt": "2026-08-19T13:15:52.005Z"
     },
     {
       "id": "mplofrmbcm6z",
