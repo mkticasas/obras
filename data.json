@@ -4450,7 +4450,7 @@
             {
               "id": "mpmtqbnn8rn2",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtqbnngv5x",
@@ -4606,14 +4606,14 @@
         }
       ],
       "createdAt": "2026-05-26T16:02:41.411Z",
-      "updatedAt": "2026-08-19T13:13:01.192Z",
+      "updatedAt": "2026-08-19T13:15:39.989Z",
       "log": [
         {
           "date": "2026-08-19T13:13:01.192Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:30:13.272Z"
+      "lastProgressAt": "2026-08-19T13:15:39.989Z"
     },
     {
       "id": "mploocytpfo0",
