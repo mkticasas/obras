@@ -4044,17 +4044,17 @@
             {
               "id": "mplobyxr0fxo",
               "text": "Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxr7bb4",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxre0yz",
               "text": "Reboco",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxrd43w",
@@ -4125,12 +4125,12 @@
             {
               "id": "mplobyxrebcu",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxrzrrb",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxr4p1o",
@@ -4145,12 +4145,12 @@
             {
               "id": "mplobyxr61xq",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxrbwy3",
               "text": "Requadro ou instalações de janelas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplobyxrnif7",
@@ -4192,7 +4192,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:43:47.487Z",
-      "updatedAt": "2026-08-19T13:12:55.018Z",
+      "updatedAt": "2026-08-19T13:15:34.790Z",
       "log": [
         {
           "date": "2026-06-15T12:20:29.077Z",
@@ -4207,7 +4207,7 @@
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-07-24T12:20:50.587Z"
+      "lastProgressAt": "2026-08-19T13:15:34.790Z"
     },
     {
       "id": "mplos4d97x5b",
