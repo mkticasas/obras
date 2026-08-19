@@ -5811,7 +5811,7 @@
             {
               "id": "mpmtoz8wzadt",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtoz8wemhf",
@@ -5888,14 +5888,14 @@
         }
       ],
       "createdAt": "2026-05-26T16:01:38.672Z",
-      "updatedAt": "2026-07-31T14:26:28.866Z",
+      "updatedAt": "2026-08-19T13:14:10.566Z",
       "log": [
         {
           "date": "2026-07-27T12:40:44.026Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-07-27T12:34:48.704Z"
+      "lastProgressAt": "2026-08-19T13:14:10.566Z"
     },
     {
       "id": "mpmttak0cugm",
