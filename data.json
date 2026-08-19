@@ -6601,7 +6601,7 @@
             {
               "id": "mpmtl3r8ovqt",
               "text": "Acabamento",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8jdkh",
@@ -6742,14 +6742,14 @@
         }
       ],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-08-19T13:16:44.966Z",
+      "updatedAt": "2026-08-19T13:16:46.773Z",
       "log": [
         {
           "date": "2026-06-02T12:50:17.626Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:16:44.966Z"
+      "lastProgressAt": "2026-08-19T13:16:46.773Z"
     },
     {
       "id": "mpmtwz84fod4",
