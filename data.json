@@ -3712,7 +3712,7 @@
             {
               "id": "mplom1glsthm",
               "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gljuln",
@@ -3727,27 +3727,27 @@
             {
               "id": "mplom1gllbav",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gl9ejh",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1glpmqz",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gl9fhg",
               "text": "Esgoto/pluvial",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1glmr0d",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mplom1gl0y8m",
@@ -3799,14 +3799,14 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:51:37.317Z",
-      "updatedAt": "2026-08-19T13:20:50.686Z",
+      "updatedAt": "2026-08-19T13:20:57.445Z",
       "log": [
         {
           "date": "2026-06-15T12:20:55.909Z",
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:20:50.686Z"
+      "lastProgressAt": "2026-08-19T13:20:57.445Z"
     },
     {
       "id": "mpmthycywcac",
