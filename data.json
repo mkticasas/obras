@@ -6717,7 +6717,7 @@
             {
               "id": "mpmtl3r8gt8m",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r840wp",
@@ -6742,14 +6742,14 @@
         }
       ],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-08-19T13:16:42.005Z",
+      "updatedAt": "2026-08-19T13:16:44.966Z",
       "log": [
         {
           "date": "2026-06-02T12:50:17.626Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:16:42.005Z"
+      "lastProgressAt": "2026-08-19T13:16:44.966Z"
     },
     {
       "id": "mpmtwz84fod4",
