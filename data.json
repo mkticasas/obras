@@ -476,7 +476,7 @@
             {
               "id": "mr24ohc72nxv",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mr24ohc7fkk5",
@@ -522,7 +522,7 @@
             {
               "id": "mr24ohc71bfh",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mr24ohc7d4jk",
@@ -634,7 +634,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-01T13:45:26.215Z",
-      "updatedAt": "2026-08-19T13:18:02.471Z",
+      "updatedAt": "2026-08-19T13:18:24.790Z",
       "log": [
         {
           "date": "2026-07-31T21:24:36.809Z",
@@ -657,7 +657,7 @@
           "note": "Movido para \"FUNDAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-08-07T12:57:40.932Z"
+      "lastProgressAt": "2026-08-19T13:18:24.790Z"
     },
     {
       "id": "mqr11grgmiqt",
