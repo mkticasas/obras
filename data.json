@@ -6917,7 +6917,7 @@
             {
               "id": "mpmtwz84mlvi",
               "text": "Elétrica",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84ni7m",
@@ -6939,9 +6939,9 @@
       ],
       "comments": [],
       "createdAt": "2026-05-26T16:07:51.892Z",
-      "updatedAt": "2026-08-19T13:17:05.702Z",
+      "updatedAt": "2026-08-19T13:17:08.470Z",
       "log": [],
-      "lastProgressAt": "2026-08-19T13:17:05.702Z"
+      "lastProgressAt": "2026-08-19T13:17:08.470Z"
     },
     {
       "id": "mpmtxyim6fhs",
