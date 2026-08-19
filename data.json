@@ -4898,7 +4898,7 @@
             {
               "id": "mplofrmb1y74",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmb8ayw",
@@ -4933,17 +4933,17 @@
             {
               "id": "mplofrmbd57x",
               "text": "Batentes",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbx8hw",
               "text": "Reboco externo concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbvnvh",
               "text": "Reboco interno concluído",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmb5we4",
@@ -4953,12 +4953,12 @@
             {
               "id": "mplofrmbfqae",
               "text": "Conduite do poste ao quadro",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbysuz",
               "text": "Telhado + pingadeiras",
-              "done": false
+              "done": true
             },
             {
               "id": "mplofrmbq0a6",
@@ -5005,7 +5005,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-25T20:46:44.627Z",
-      "updatedAt": "2026-08-19T13:14:29.070Z",
+      "updatedAt": "2026-08-19T13:14:34.206Z",
       "log": [
         {
           "date": "2026-05-26T17:58:12.543Z",
@@ -5028,7 +5028,7 @@
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:14:29.070Z"
+      "lastProgressAt": "2026-08-19T13:14:34.206Z"
     },
     {
       "id": "mpb8ny36m22t",
