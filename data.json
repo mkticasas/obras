@@ -10392,7 +10392,7 @@
       "coverUrl": null,
       "addr": "",
       "valor": "",
-      "inicio": "",
+      "inicio": "2026-08-06",
       "prazo": "",
       "resp": "",
       "equipe": "",
@@ -10571,7 +10571,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-02T21:18:16.103Z",
-      "updatedAt": "2026-07-24T13:46:21.299Z",
+      "updatedAt": "2026-08-20T18:42:03.599Z",
       "log": [
         {
           "date": "2026-07-16T14:23:09.716Z",
