@@ -3476,7 +3476,7 @@
             {
               "id": "mpwmec6h6trq",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpwmec6h4vzv",
@@ -3583,7 +3583,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-02T12:35:06.665Z",
-      "updatedAt": "2026-08-19T13:17:25.008Z",
+      "updatedAt": "2026-08-20T16:39:49.506Z",
       "log": [
         {
           "date": "2026-06-16T18:46:29.633Z",
@@ -3606,7 +3606,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-08-03T11:38:05.693Z"
+      "lastProgressAt": "2026-08-20T16:39:49.510Z"
     },
     {
       "id": "mpb8asyrdy0f",
