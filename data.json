@@ -12172,7 +12172,7 @@
             {
               "id": "mqr1106r84s0",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr1106rni64",
@@ -12218,7 +12218,7 @@
             {
               "id": "mqr1106r2l7a",
               "text": "Terraplanagem",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr1106r2gkw",
@@ -12343,13 +12343,14 @@
         }
       ],
       "createdAt": "2026-06-23T19:17:44.115Z",
-      "updatedAt": "2026-08-20T02:15:45.545Z",
+      "updatedAt": "2026-08-20T02:16:01.627Z",
       "log": [
         {
           "date": "2026-08-07T12:37:56.729Z",
           "note": "Movido para \"INICIALIZAR\""
         }
-      ]
+      ],
+      "lastProgressAt": "2026-08-20T02:16:01.627Z"
     }
   ],
   "users": [
