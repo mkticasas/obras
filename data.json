@@ -2950,223 +2950,6 @@
       "lastProgressAt": "2026-08-07T12:49:15.074Z"
     },
     {
-      "id": "mpb8ks4imkjl",
-      "name": "LARISSA E GABRIEL",
-      "colId": "mpb8563uusn7",
-      "coverUrl": null,
-      "addr": "PLANALTO",
-      "valor": "",
-      "inicio": "2026-04-24",
-      "prazo": "2026-11-24",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "PEDREIRO FERREIRA",
-      "tags": [
-        "mpb8bjvuy2j4"
-      ],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mpb8ks4izzwr",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mpb8ks4ilgti",
-              "text": "Terraplanagem",
-              "done": true
-            },
-            {
-              "id": "mpb8ks4ipkeq",
-              "text": "Fundação",
-              "done": true
-            },
-            {
-              "id": "mpb8ks4iakmp",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ip0qm",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ihuxl",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4i5vr1",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ipopi",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4i7dmf",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mpb8ks4i6xit",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mpb8ks4i03mv",
-              "text": "Terraplanagem",
-              "done": true
-            },
-            {
-              "id": "mpb8ks4is3uf",
-              "text": "Fundação",
-              "done": true
-            },
-            {
-              "id": "mpb8ks4ibdbc",
-              "text": "Levantamento de Paredes",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4iw6tp",
-              "text": "Conferência de medidas de janelas/portas",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4i3w83",
-              "text": "Impermeabilizações",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ihtf4",
-              "text": "Laje / Cobertura",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ift37",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ij45m",
-              "text": "Reboco externo iniciado",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4irwhg",
-              "text": "Reboco interno iniciado",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ilzdd",
-              "text": "Batentes",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4izn68",
-              "text": "Reboco externo concluído",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4i1iif",
-              "text": "Reboco interno concluído",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4iapkc",
-              "text": "Esgoto/pluvial",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ijbp4",
-              "text": "Conduite do poste ao quadro",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4i6115",
-              "text": "Telhado + pingadeiras",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ipaqy",
-              "text": "Requadro ou instalações de janelas",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4ih42v",
-              "text": "Contrapiso",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4in0v7",
-              "text": "Pisos",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4i0ogl",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4is2pm",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4i6ov0",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4iwt00",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mpb8ks4iip9q",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [],
-      "createdAt": "2026-05-18T13:25:02.946Z",
-      "updatedAt": "2026-08-12T18:33:53.506Z",
-      "log": [
-        {
-          "date": "2026-05-18T13:27:19.973Z",
-          "note": "Movido para \"INICIALIZAR\" por Lugner"
-        },
-        {
-          "date": "2026-05-18T13:27:22.077Z",
-          "note": "Movido para \"NOVAS OBRAS\" por Lugner"
-        },
-        {
-          "date": "2026-06-15T19:40:24.883Z",
-          "note": "Movido para \"INICIALIZAR\""
-        },
-        {
-          "date": "2026-06-30T12:49:57.126Z",
-          "note": "Movido para \"TERRAPLANAGEM\""
-        },
-        {
-          "date": "2026-07-07T11:52:14.014Z",
-          "note": "Movido para \"FUNDAÇÃO\""
-        },
-        {
-          "date": "2026-08-12T18:33:53.506Z",
-          "note": "Movido para \"ESTRUTURA (PAREDES + LAJE)\""
-        }
-      ],
-      "lastProgressAt": "2026-07-16T14:31:06.056Z"
-    },
-    {
       "id": "mqr1ba76yb7v",
       "name": "SAMARA E GUILHERME (SÃO THOMAZ L12 Q22)",
       "colId": "mpb8563uusn7",
@@ -4222,6 +4005,227 @@
         }
       ],
       "lastProgressAt": "2026-07-16T14:25:10.375Z"
+    },
+    {
+      "id": "mpb8ks4imkjl",
+      "name": "LARISSA E GABRIEL",
+      "colId": "mpb85ka3gujh",
+      "coverUrl": null,
+      "addr": "PLANALTO",
+      "valor": "",
+      "inicio": "2026-04-24",
+      "prazo": "2026-11-24",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "PEDREIRO FERREIRA",
+      "tags": [
+        "mpb8bjvuy2j4"
+      ],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mpb8ks4izzwr",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mpb8ks4ilgti",
+              "text": "Terraplanagem",
+              "done": true
+            },
+            {
+              "id": "mpb8ks4ipkeq",
+              "text": "Fundação",
+              "done": true
+            },
+            {
+              "id": "mpb8ks4iakmp",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ip0qm",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ihuxl",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4i5vr1",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ipopi",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4i7dmf",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mpb8ks4i6xit",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mpb8ks4i03mv",
+              "text": "Terraplanagem",
+              "done": true
+            },
+            {
+              "id": "mpb8ks4is3uf",
+              "text": "Fundação",
+              "done": true
+            },
+            {
+              "id": "mpb8ks4ibdbc",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4iw6tp",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4i3w83",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ihtf4",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ift37",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ij45m",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4irwhg",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ilzdd",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4izn68",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4i1iif",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4iapkc",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ijbp4",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4i6115",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ipaqy",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4ih42v",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4in0v7",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4i0ogl",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4is2pm",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4i6ov0",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4iwt00",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mpb8ks4iip9q",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-05-18T13:25:02.946Z",
+      "updatedAt": "2026-08-25T21:36:33.120Z",
+      "log": [
+        {
+          "date": "2026-05-18T13:27:19.973Z",
+          "note": "Movido para \"INICIALIZAR\" por Lugner"
+        },
+        {
+          "date": "2026-05-18T13:27:22.077Z",
+          "note": "Movido para \"NOVAS OBRAS\" por Lugner"
+        },
+        {
+          "date": "2026-06-15T19:40:24.883Z",
+          "note": "Movido para \"INICIALIZAR\""
+        },
+        {
+          "date": "2026-06-30T12:49:57.126Z",
+          "note": "Movido para \"TERRAPLANAGEM\""
+        },
+        {
+          "date": "2026-07-07T11:52:14.014Z",
+          "note": "Movido para \"FUNDAÇÃO\""
+        },
+        {
+          "date": "2026-08-12T18:33:53.506Z",
+          "note": "Movido para \"ESTRUTURA (PAREDES + LAJE)\""
+        },
+        {
+          "date": "2026-08-25T21:36:33.120Z",
+          "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
+        }
+      ],
+      "lastProgressAt": "2026-07-16T14:31:06.056Z"
     },
     {
       "id": "mpmqk8quyy8b",
