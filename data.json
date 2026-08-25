@@ -4087,22 +4087,22 @@
             {
               "id": "mpb8ks4ibdbc",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ks4iw6tp",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ks4i3w83",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ks4ihtf4",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8ks4ift37",
@@ -4194,7 +4194,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:25:02.946Z",
-      "updatedAt": "2026-08-25T21:36:40.382Z",
+      "updatedAt": "2026-08-25T21:36:44.708Z",
       "log": [
         {
           "date": "2026-05-18T13:27:19.973Z",
@@ -4225,7 +4225,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-08-25T21:36:40.382Z"
+      "lastProgressAt": "2026-08-25T21:36:44.708Z"
     },
     {
       "id": "mpmqk8quyy8b",
