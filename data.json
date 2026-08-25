@@ -7857,7 +7857,7 @@
             {
               "id": "mpmtl3r8jdkh",
               "text": "Finalização",
-              "done": false
+              "done": true
             }
           ]
         },
@@ -7973,12 +7973,12 @@
             {
               "id": "mpmtl3r840wp",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtl3r8ero1",
               "text": "Entrega",
-              "done": false
+              "done": true
             }
           ]
         }
@@ -7993,7 +7993,7 @@
         }
       ],
       "createdAt": "2026-05-26T15:58:37.892Z",
-      "updatedAt": "2026-08-25T21:35:47.627Z",
+      "updatedAt": "2026-08-25T21:36:11.604Z",
       "log": [
         {
           "date": "2026-06-02T12:50:17.626Z",
@@ -8008,7 +8008,7 @@
           "note": "Movido para \"ENTREGUES\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:16:46.773Z"
+      "lastProgressAt": "2026-08-25T21:36:11.604Z"
     },
     {
       "id": "mpmtrdwipk0n",
