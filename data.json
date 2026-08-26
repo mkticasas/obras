@@ -7184,10 +7184,17 @@
           "userId": "mqi4d058rn20",
           "text": "Flávio começou parte externa 12/08 e cliente está cobrando as esquadrias de aluminio",
           "date": "2026-08-12T19:12:30.770Z"
+        },
+        {
+          "type": "comment",
+          "id": "mtabv6z3hc5r",
+          "userId": "mqi4d058rn20",
+          "text": "Flávio finalizou, os acabamento foram comprados, aguardando chegar aqui no escritório",
+          "date": "2026-08-26T16:48:10.767Z"
         }
       ],
       "createdAt": "2026-05-26T16:00:25.120Z",
-      "updatedAt": "2026-08-26T16:47:06.672Z",
+      "updatedAt": "2026-08-26T16:48:10.767Z",
       "log": [
         {
           "date": "2026-06-02T12:50:20.691Z",
