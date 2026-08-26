@@ -6507,9 +6507,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mtah343umshn",
+          "userId": "mqi4d058rn20",
+          "text": "Sancler iniciou a parte da limpeza  e nichos  para iniciar os pisos que foram comprados no CIDADE NORTE, e argamassa RIO PRETO CIMENTO E CAU",
+          "date": "2026-08-26T19:14:18.378Z"
+        }
+      ],
       "createdAt": "2026-05-25T20:54:40.259Z",
-      "updatedAt": "2026-08-19T13:16:03.647Z",
+      "updatedAt": "2026-08-26T19:14:18.378Z",
       "log": [
         {
           "date": "2026-06-02T12:49:17.514Z",
