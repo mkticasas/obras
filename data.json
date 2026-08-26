@@ -436,9 +436,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mta7tkzv9wdo",
+          "userId": "mqi4d058rn20",
+          "text": "CELSO ESTÁ COLOCANDO OS ACABAMENTOS HIDRAULICOS, MAIKE VAI COLOCAR AS PEDRAS ATÉ QUINTA/SEXTA",
+          "date": "2026-08-26T14:54:57.163Z"
+        }
+      ],
       "createdAt": "2026-05-26T16:07:51.892Z",
-      "updatedAt": "2026-08-19T13:28:59.383Z",
+      "updatedAt": "2026-08-26T14:54:57.164Z",
       "log": [
         {
           "date": "2026-08-19T13:28:59.383Z",
