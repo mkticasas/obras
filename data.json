@@ -6306,9 +6306,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mtah6pt7dhe2",
+          "userId": "mqi4d058rn20",
+          "text": "O azulejista está finalizando, ver tintas",
+          "date": "2026-08-26T19:17:06.475Z"
+        }
+      ],
       "createdAt": "2026-05-25T20:55:40.071Z",
-      "updatedAt": "2026-08-19T13:13:27.495Z",
+      "updatedAt": "2026-08-26T19:17:06.475Z",
       "log": [
         {
           "date": "2026-06-02T12:49:28.281Z",
