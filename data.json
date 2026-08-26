@@ -7382,9 +7382,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mta7v2o34ckx",
+          "userId": "mqi4d058rn20",
+          "text": "SANCLER ESTÁ FINALIZANDO OS PISOS, AGUARDANDO AS SOLEIRAS, VER SOBRE AS TINTAS C/ CLIENTE",
+          "date": "2026-08-26T14:56:06.723Z"
+        }
+      ],
       "createdAt": "2026-05-25T20:52:42.083Z",
-      "updatedAt": "2026-08-19T13:12:11.401Z",
+      "updatedAt": "2026-08-26T14:56:06.723Z",
       "log": [
         {
           "date": "2026-06-02T12:48:54.674Z",
