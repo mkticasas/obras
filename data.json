@@ -5270,9 +5270,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mtahehp7nkyk",
+          "userId": "mqi4d058rn20",
+          "text": "FINALIZAR COMPRA DOS PISOS (em Fronteira)",
+          "date": "2026-08-26T19:23:09.211Z"
+        }
+      ],
       "createdAt": "2026-05-25T20:56:21.021Z",
-      "updatedAt": "2026-08-19T13:15:26.053Z",
+      "updatedAt": "2026-08-26T19:23:09.211Z",
       "log": [
         {
           "date": "2026-06-02T12:49:40.266Z",
