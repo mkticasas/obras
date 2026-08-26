@@ -5042,9 +5042,17 @@
           ]
         }
       ],
-      "comments": [],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mtahbre3izg1",
+          "userId": "mqi4d058rn20",
+          "text": "VAMOS AGUARDAR RETORNO DO FINANCEIRO PARA DARMOS CONTINUIDADE NO ACABAMENTO",
+          "date": "2026-08-26T19:21:01.803Z"
+        }
+      ],
       "createdAt": "2026-05-25T20:43:47.487Z",
-      "updatedAt": "2026-08-19T13:16:16.901Z",
+      "updatedAt": "2026-08-26T19:21:01.803Z",
       "log": [
         {
           "date": "2026-06-15T12:20:29.077Z",
