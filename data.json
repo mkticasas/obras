@@ -4848,8 +4848,9 @@
           "type": "comment",
           "id": "mtahcvq3gkth",
           "userId": "mqi4d058rn20",
-          "text": "ela precisa do valor que pagamento da mão de obra e tinta",
-          "date": "2026-08-26T19:21:54.075Z"
+          "text": "ela precisa do valor que pagamos da mão de obra e da tinta",
+          "date": "2026-08-26T19:21:54.075Z",
+          "edited": true
         }
       ],
       "createdAt": "2026-05-26T15:56:10.930Z",
