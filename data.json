@@ -7131,7 +7131,7 @@
             {
               "id": "mpmtnehsh79c",
               "text": "Pintura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtnehsgeww",
@@ -7187,14 +7187,14 @@
         }
       ],
       "createdAt": "2026-05-26T16:00:25.120Z",
-      "updatedAt": "2026-08-21T12:36:15.860Z",
+      "updatedAt": "2026-08-26T16:47:06.672Z",
       "log": [
         {
           "date": "2026-06-02T12:50:20.691Z",
           "note": "Movido para \"ACABAMENTOS\""
         }
       ],
-      "lastProgressAt": "2026-07-27T12:40:26.463Z"
+      "lastProgressAt": "2026-08-26T16:47:06.672Z"
     },
     {
       "id": "mplonffncuml",
