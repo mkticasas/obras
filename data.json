@@ -5277,10 +5277,17 @@
           "userId": "mqi4d058rn20",
           "text": "FINALIZAR COMPRA DOS PISOS (em Fronteira)",
           "date": "2026-08-26T19:23:09.211Z"
+        },
+        {
+          "type": "comment",
+          "id": "mtahfpuzaqcx",
+          "userId": "mqi4d058rn20",
+          "text": "VAMOS iniciar a parte da pintura (amaciar) antes do piso, até liberar um AZULEJISTA",
+          "date": "2026-08-26T19:24:06.443Z"
         }
       ],
       "createdAt": "2026-05-25T20:56:21.021Z",
-      "updatedAt": "2026-08-26T19:23:09.211Z",
+      "updatedAt": "2026-08-26T19:24:06.443Z",
       "log": [
         {
           "date": "2026-06-02T12:49:40.266Z",
