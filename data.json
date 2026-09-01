@@ -1924,7 +1924,7 @@
             {
               "id": "mqr105tfcln2",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr105tfjket",
@@ -1970,7 +1970,7 @@
             {
               "id": "mqr105tfgkbz",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr105tfwpk5",
@@ -2082,7 +2082,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-23T19:17:04.755Z",
-      "updatedAt": "2026-08-14T13:58:36.209Z",
+      "updatedAt": "2026-09-01T12:26:34.248Z",
       "log": [
         {
           "date": "2026-07-24T20:45:39.531Z",
@@ -2097,7 +2097,7 @@
           "note": "Movido para \"FUNDAÇÃO\" por GIOVANA"
         }
       ],
-      "lastProgressAt": "2026-07-31T21:24:23.875Z"
+      "lastProgressAt": "2026-09-01T12:26:34.248Z"
     },
     {
       "id": "mryzx2gtykfu",
