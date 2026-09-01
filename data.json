@@ -3835,7 +3835,7 @@
             {
               "id": "mpb8asyryww6",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8asyr9ret",
@@ -3845,7 +3845,7 @@
             {
               "id": "mpb8asyr0wgc",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8asyrefal",
@@ -3988,7 +3988,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:17:17.475Z",
-      "updatedAt": "2026-08-19T13:17:45.887Z",
+      "updatedAt": "2026-09-01T12:27:20.768Z",
       "log": [
         {
           "date": "2026-06-16T18:46:32.709Z",
@@ -4011,7 +4011,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-16T14:31:12.447Z"
+      "lastProgressAt": "2026-09-01T12:27:20.768Z"
     },
     {
       "id": "mplo9v07ehfj",
