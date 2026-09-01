@@ -438,7 +438,7 @@
             {
               "id": "mpmtwz84y7sk",
               "text": "Entrega",
-              "done": true
+              "done": false
             }
           ]
         }
@@ -453,14 +453,14 @@
         }
       ],
       "createdAt": "2026-05-26T16:07:51.892Z",
-      "updatedAt": "2026-09-01T21:16:54.102Z",
+      "updatedAt": "2026-09-01T21:16:58.580Z",
       "log": [
         {
           "date": "2026-08-19T13:28:59.383Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-09-01T21:16:54.102Z"
+      "lastProgressAt": "2026-09-01T21:16:58.580Z"
     },
     {
       "id": "mqr17fndia9l",
