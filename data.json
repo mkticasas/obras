@@ -12332,7 +12332,7 @@
             {
               "id": "mqr1106rni64",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr1106rxdz7",
@@ -12378,7 +12378,7 @@
             {
               "id": "mqr1106r2gkw",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr1106rlstb",
@@ -12498,14 +12498,14 @@
         }
       ],
       "createdAt": "2026-06-23T19:17:44.115Z",
-      "updatedAt": "2026-08-20T02:16:01.627Z",
+      "updatedAt": "2026-09-01T12:26:42.280Z",
       "log": [
         {
           "date": "2026-08-07T12:37:56.729Z",
           "note": "Movido para \"INICIALIZAR\""
         }
       ],
-      "lastProgressAt": "2026-08-20T02:16:01.627Z"
+      "lastProgressAt": "2026-09-01T12:26:42.280Z"
     }
   ],
   "users": [
