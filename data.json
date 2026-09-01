@@ -1688,7 +1688,7 @@
     {
       "id": "mryzx2gtykfu",
       "name": "TAMIRES E CESAR-SETVALEY 2",
-      "colId": "mpb84so22w1c",
+      "colId": "mpb8563uusn7",
       "coverUrl": null,
       "addr": "",
       "valor": "",
@@ -1876,7 +1876,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-24T13:48:32.573Z",
-      "updatedAt": "2026-09-01T12:26:38.672Z",
+      "updatedAt": "2026-09-01T21:18:17.277Z",
       "log": [
         {
           "date": "2026-08-12T18:14:19.139Z",
@@ -1885,6 +1885,10 @@
         {
           "date": "2026-08-12T18:34:30.993Z",
           "note": "Movido para \"FUNDAÇÃO\""
+        },
+        {
+          "date": "2026-09-01T21:18:17.277Z",
+          "note": "Movido para \"ESTRUTURA (PAREDES + LAJE)\""
         }
       ],
       "lastProgressAt": "2026-09-01T12:26:38.672Z"
