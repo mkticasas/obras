@@ -1705,7 +1705,7 @@
             {
               "id": "mqr11grg8nlb",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr11grgffje",
@@ -1751,7 +1751,7 @@
             {
               "id": "mqr11grgvyvk",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mqr11grgqb49",
@@ -1871,7 +1871,7 @@
         }
       ],
       "createdAt": "2026-06-23T19:18:05.596Z",
-      "updatedAt": "2026-08-19T13:18:00.753Z",
+      "updatedAt": "2026-09-01T12:26:30.032Z",
       "log": [
         {
           "date": "2026-07-16T14:22:45.315Z",
@@ -1894,7 +1894,7 @@
           "note": "Movido para \"FUNDAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-07-22T20:34:52.772Z"
+      "lastProgressAt": "2026-09-01T12:26:30.032Z"
     },
     {
       "id": "mqr105tfa0pa",
