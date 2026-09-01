@@ -896,7 +896,7 @@
       "resp": "",
       "equipe": "",
       "status": "",
-      "obs": "",
+      "obs": "FALTA ALVARA",
       "tags": [],
       "assignees": [],
       "checklists": [
@@ -1070,7 +1070,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-23T19:16:41.100Z",
-      "updatedAt": "2026-08-27T17:41:24.987Z",
+      "updatedAt": "2026-09-01T12:22:09.617Z",
       "log": [
         {
           "date": "2026-08-27T17:41:24.987Z",
