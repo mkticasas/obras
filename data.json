@@ -3631,7 +3631,7 @@
             {
               "id": "mpwmec6h9f16",
               "text": "Instalações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpwmec6h6hxl",
@@ -3774,7 +3774,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-02T12:35:06.665Z",
-      "updatedAt": "2026-09-01T12:27:03.032Z",
+      "updatedAt": "2026-09-01T12:27:05.128Z",
       "log": [
         {
           "date": "2026-06-16T18:46:29.633Z",
@@ -3797,7 +3797,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-09-01T12:27:03.032Z"
+      "lastProgressAt": "2026-09-01T12:27:05.128Z"
     },
     {
       "id": "mpb8asyrdy0f",
