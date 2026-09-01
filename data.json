@@ -3672,17 +3672,17 @@
             {
               "id": "mpwmec6h4vzv",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpwmec6he83r",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpwmec6hpyqi",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpwmec6h3gd7",
@@ -3692,12 +3692,12 @@
             {
               "id": "mpwmec6hs2j5",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpwmec6h3eu0",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpwmec6h36uh",
@@ -3774,7 +3774,7 @@
       ],
       "comments": [],
       "createdAt": "2026-06-02T12:35:06.665Z",
-      "updatedAt": "2026-09-01T12:27:05.128Z",
+      "updatedAt": "2026-09-01T12:27:11.417Z",
       "log": [
         {
           "date": "2026-06-16T18:46:29.633Z",
@@ -3797,7 +3797,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-09-01T12:27:05.128Z"
+      "lastProgressAt": "2026-09-01T12:27:11.417Z"
     },
     {
       "id": "mpb8asyrdy0f",
