@@ -211,7 +211,7 @@
             {
               "id": "mpmtxyimyno2",
               "text": "Elétrica",
-              "done": true
+              "done": false
             },
             {
               "id": "mpmtxyimuh5w",
@@ -248,14 +248,14 @@
         }
       ],
       "createdAt": "2026-05-26T16:08:37.630Z",
-      "updatedAt": "2026-08-26T14:55:08.572Z",
+      "updatedAt": "2026-09-01T21:17:08.386Z",
       "log": [
         {
           "date": "2026-08-19T13:29:02.543Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:17:13.799Z"
+      "lastProgressAt": "2026-09-01T21:17:08.386Z"
     },
     {
       "id": "mpmtwz84fod4",
@@ -423,7 +423,7 @@
             {
               "id": "mpmtwz84mlvi",
               "text": "Elétrica",
-              "done": true
+              "done": false
             },
             {
               "id": "mpmtwz84ni7m",
@@ -453,14 +453,14 @@
         }
       ],
       "createdAt": "2026-05-26T16:07:51.892Z",
-      "updatedAt": "2026-09-01T21:16:58.580Z",
+      "updatedAt": "2026-09-01T21:17:00.166Z",
       "log": [
         {
           "date": "2026-08-19T13:28:59.383Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-09-01T21:16:58.580Z"
+      "lastProgressAt": "2026-09-01T21:17:00.166Z"
     },
     {
       "id": "mqr17fndia9l",
