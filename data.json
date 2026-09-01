@@ -312,7 +312,7 @@
             {
               "id": "mpmtwz84izr8",
               "text": "Acabamento",
-              "done": true
+              "done": false
             },
             {
               "id": "mpmtwz847kjk",
@@ -453,14 +453,14 @@
         }
       ],
       "createdAt": "2026-05-26T16:07:51.892Z",
-      "updatedAt": "2026-09-01T21:16:42.033Z",
+      "updatedAt": "2026-09-01T21:16:54.102Z",
       "log": [
         {
           "date": "2026-08-19T13:28:59.383Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-09-01T21:16:42.033Z"
+      "lastProgressAt": "2026-09-01T21:16:54.102Z"
     },
     {
       "id": "mqr17fndia9l",
