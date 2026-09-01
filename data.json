@@ -3881,22 +3881,22 @@
             {
               "id": "mpb8asyrews5",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8asyrx0dd",
               "text": "Conferência de medidas de janelas/portas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8asyrhw4w",
               "text": "Impermeabilizações",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8asyrvzp1",
               "text": "Laje / Cobertura",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8asyrm3mw",
@@ -3906,12 +3906,12 @@
             {
               "id": "mpb8asyri7yk",
               "text": "Reboco externo iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8asyrbvyn",
               "text": "Reboco interno iniciado",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8asyrb766",
@@ -3988,7 +3988,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:17:17.475Z",
-      "updatedAt": "2026-09-01T12:27:20.768Z",
+      "updatedAt": "2026-09-01T12:27:25.440Z",
       "log": [
         {
           "date": "2026-06-16T18:46:32.709Z",
@@ -4011,7 +4011,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-09-01T12:27:20.768Z"
+      "lastProgressAt": "2026-09-01T12:27:25.440Z"
     },
     {
       "id": "mplo9v07ehfj",
