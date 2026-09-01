@@ -1894,6 +1894,213 @@
       "lastProgressAt": "2026-09-01T12:26:38.672Z"
     },
     {
+      "id": "mqr1106ri1nv",
+      "name": "ERIK E DARIELLE (ARY ATTAB)",
+      "colId": "mpb8563uusn7",
+      "coverUrl": null,
+      "addr": "",
+      "valor": "",
+      "inicio": "2026-06-23",
+      "prazo": "2027-02-23",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "PEDREIRO JARBAS",
+      "tags": [],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mqr1106rccoj",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mqr1106r84s0",
+              "text": "Terraplanagem",
+              "done": true
+            },
+            {
+              "id": "mqr1106rni64",
+              "text": "Fundação",
+              "done": true
+            },
+            {
+              "id": "mqr1106rxdz7",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mqr1106rw9l4",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mqr1106rbs9i",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mqr1106rf2f5",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mqr1106r8ohx",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mqr1106rqpwt",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mqr1106rli1t",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mqr1106r2l7a",
+              "text": "Terraplanagem",
+              "done": true
+            },
+            {
+              "id": "mqr1106r2gkw",
+              "text": "Fundação",
+              "done": true
+            },
+            {
+              "id": "mqr1106rlstb",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mqr1106rhvdt",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mqr1106rkzym",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mqr1106rkv72",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mqr1106r6sr6",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mqr1106rkx3l",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mqr1106rbs5c",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mqr1106rlwm9",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mqr1106r6mh2",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mqr1106rx1oh",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mqr1106rzift",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mqr1106r68vx",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mqr1106rjq03",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mqr1106rjfkw",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mqr1106r69jy",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mqr1106r9pr6",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mqr1106r2olc",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mqr1106r5r9n",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mqr1106rwuhx",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mqr1106rj102",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mqr1106robpy",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [
+        {
+          "type": "comment",
+          "id": "mst3m0fi8ob5",
+          "userId": "mqi4d058rn20",
+          "text": "Executivo impresso",
+          "date": "2026-08-14T15:25:00.462Z"
+        }
+      ],
+      "createdAt": "2026-06-23T19:17:44.115Z",
+      "updatedAt": "2026-09-01T21:18:19.437Z",
+      "log": [
+        {
+          "date": "2026-08-07T12:37:56.729Z",
+          "note": "Movido para \"INICIALIZAR\""
+        },
+        {
+          "date": "2026-09-01T21:18:19.437Z",
+          "note": "Movido para \"ESTRUTURA (PAREDES + LAJE)\""
+        }
+      ],
+      "lastProgressAt": "2026-09-01T12:26:42.280Z"
+    },
+    {
       "id": "mqr105tfa0pa",
       "name": "ANA BEATRIZ (MAISPARQUE)",
       "colId": "mpb8563uusn7",
@@ -12315,209 +12522,6 @@
           "note": "Movido para \"INICIALIZAR\""
         }
       ]
-    },
-    {
-      "id": "mqr1106ri1nv",
-      "name": "ERIK E DARIELLE (ARY ATTAB)",
-      "colId": "mpb84so22w1c",
-      "coverUrl": null,
-      "addr": "",
-      "valor": "",
-      "inicio": "2026-06-23",
-      "prazo": "2027-02-23",
-      "resp": "",
-      "equipe": "",
-      "status": "",
-      "obs": "PEDREIRO JARBAS",
-      "tags": [],
-      "assignees": [],
-      "checklists": [
-        {
-          "id": "mqr1106rccoj",
-          "name": "Checklist Geral (MACRO)",
-          "items": [
-            {
-              "id": "mqr1106r84s0",
-              "text": "Terraplanagem",
-              "done": true
-            },
-            {
-              "id": "mqr1106rni64",
-              "text": "Fundação",
-              "done": true
-            },
-            {
-              "id": "mqr1106rxdz7",
-              "text": "Estrutura (paredes + laje)",
-              "done": false
-            },
-            {
-              "id": "mqr1106rw9l4",
-              "text": "Cobertura",
-              "done": false
-            },
-            {
-              "id": "mqr1106rbs9i",
-              "text": "Instalações",
-              "done": false
-            },
-            {
-              "id": "mqr1106rf2f5",
-              "text": "Reboco",
-              "done": false
-            },
-            {
-              "id": "mqr1106r8ohx",
-              "text": "Acabamento",
-              "done": false
-            },
-            {
-              "id": "mqr1106rqpwt",
-              "text": "Finalização",
-              "done": false
-            }
-          ]
-        },
-        {
-          "id": "mqr1106rli1t",
-          "name": "Checklist Detalhado",
-          "items": [
-            {
-              "id": "mqr1106r2l7a",
-              "text": "Terraplanagem",
-              "done": true
-            },
-            {
-              "id": "mqr1106r2gkw",
-              "text": "Fundação",
-              "done": true
-            },
-            {
-              "id": "mqr1106rlstb",
-              "text": "Levantamento de Paredes",
-              "done": false
-            },
-            {
-              "id": "mqr1106rhvdt",
-              "text": "Conferência de medidas de janelas/portas",
-              "done": false
-            },
-            {
-              "id": "mqr1106rkzym",
-              "text": "Impermeabilizações",
-              "done": false
-            },
-            {
-              "id": "mqr1106rkv72",
-              "text": "Laje / Cobertura",
-              "done": false
-            },
-            {
-              "id": "mqr1106r6sr6",
-              "text": "Conduítes / Caixinhas Elétricas",
-              "done": false
-            },
-            {
-              "id": "mqr1106rkx3l",
-              "text": "Reboco externo iniciado",
-              "done": false
-            },
-            {
-              "id": "mqr1106rbs5c",
-              "text": "Reboco interno iniciado",
-              "done": false
-            },
-            {
-              "id": "mqr1106rlwm9",
-              "text": "Batentes",
-              "done": false
-            },
-            {
-              "id": "mqr1106r6mh2",
-              "text": "Reboco externo concluído",
-              "done": false
-            },
-            {
-              "id": "mqr1106rx1oh",
-              "text": "Reboco interno concluído",
-              "done": false
-            },
-            {
-              "id": "mqr1106rzift",
-              "text": "Esgoto/pluvial",
-              "done": false
-            },
-            {
-              "id": "mqr1106r68vx",
-              "text": "Conduite do poste ao quadro",
-              "done": false
-            },
-            {
-              "id": "mqr1106rjq03",
-              "text": "Telhado + pingadeiras",
-              "done": false
-            },
-            {
-              "id": "mqr1106rjfkw",
-              "text": "Requadro ou instalações de janelas",
-              "done": false
-            },
-            {
-              "id": "mqr1106r69jy",
-              "text": "Contrapiso",
-              "done": false
-            },
-            {
-              "id": "mqr1106r9pr6",
-              "text": "Pisos",
-              "done": false
-            },
-            {
-              "id": "mqr1106r2olc",
-              "text": "Pintura",
-              "done": false
-            },
-            {
-              "id": "mqr1106r5r9n",
-              "text": "Elétrica",
-              "done": false
-            },
-            {
-              "id": "mqr1106rwuhx",
-              "text": "Instalações hidráulicas",
-              "done": false
-            },
-            {
-              "id": "mqr1106rj102",
-              "text": "Limpeza",
-              "done": false
-            },
-            {
-              "id": "mqr1106robpy",
-              "text": "Entrega",
-              "done": false
-            }
-          ]
-        }
-      ],
-      "comments": [
-        {
-          "type": "comment",
-          "id": "mst3m0fi8ob5",
-          "userId": "mqi4d058rn20",
-          "text": "Executivo impresso",
-          "date": "2026-08-14T15:25:00.462Z"
-        }
-      ],
-      "createdAt": "2026-06-23T19:17:44.115Z",
-      "updatedAt": "2026-09-01T12:26:42.280Z",
-      "log": [
-        {
-          "date": "2026-08-07T12:37:56.729Z",
-          "note": "Movido para \"INICIALIZAR\""
-        }
-      ],
-      "lastProgressAt": "2026-09-01T12:26:42.280Z"
     },
     {
       "id": "mtj3dltu3peh",
