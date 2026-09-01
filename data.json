@@ -428,17 +428,17 @@
             {
               "id": "mpmtwz84ni7m",
               "text": "Instalações hidráulicas",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz840q5f",
               "text": "Limpeza",
-              "done": false
+              "done": true
             },
             {
               "id": "mpmtwz84y7sk",
               "text": "Entrega",
-              "done": false
+              "done": true
             }
           ]
         }
@@ -453,14 +453,14 @@
         }
       ],
       "createdAt": "2026-05-26T16:07:51.892Z",
-      "updatedAt": "2026-08-26T14:54:57.164Z",
+      "updatedAt": "2026-09-01T21:16:38.742Z",
       "log": [
         {
           "date": "2026-08-19T13:28:59.383Z",
           "note": "Movido para \"FINALIZAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:17:08.470Z"
+      "lastProgressAt": "2026-09-01T21:16:38.742Z"
     },
     {
       "id": "mqr17fndia9l",
