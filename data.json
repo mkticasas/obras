@@ -1545,7 +1545,7 @@
             {
               "id": "mr24ohc7d4jk",
               "text": "Levantamento de Paredes",
-              "done": false
+              "done": true
             },
             {
               "id": "mr24ohc7p9wh",
@@ -1652,7 +1652,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-01T13:45:26.215Z",
-      "updatedAt": "2026-08-19T13:18:24.790Z",
+      "updatedAt": "2026-09-01T12:26:23.008Z",
       "log": [
         {
           "date": "2026-07-31T21:24:36.809Z",
@@ -1675,7 +1675,7 @@
           "note": "Movido para \"FUNDAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-08-19T13:18:24.790Z"
+      "lastProgressAt": "2026-09-01T12:26:23.008Z"
     },
     {
       "id": "mqr11grgmiqt",
