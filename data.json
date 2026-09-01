@@ -2127,7 +2127,7 @@
             {
               "id": "mryzx2gtoh0f",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mryzx2gt9yxl",
@@ -2178,7 +2178,7 @@
             {
               "id": "mryzx2gt2dsx",
               "text": "Fundação",
-              "done": false
+              "done": true
             },
             {
               "id": "mryzx2gt4ofq",
@@ -2290,7 +2290,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-24T13:48:32.573Z",
-      "updatedAt": "2026-08-12T18:34:30.993Z",
+      "updatedAt": "2026-09-01T12:26:38.672Z",
       "log": [
         {
           "date": "2026-08-12T18:14:19.139Z",
@@ -2301,7 +2301,7 @@
           "note": "Movido para \"FUNDAÇÃO\""
         }
       ],
-      "lastProgressAt": "2026-08-07T21:02:31.024Z"
+      "lastProgressAt": "2026-09-01T12:26:38.672Z"
     },
     {
       "id": "mqr14u2cvsy1",
