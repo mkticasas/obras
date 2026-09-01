@@ -1284,7 +1284,7 @@
       "resp": "",
       "equipe": "",
       "status": "",
-      "obs": "JA TEM PEDREIRO, VOU CONFIRMAR O NOME COM O LUCAS",
+      "obs": "PEDREIRO AROUDO",
       "tags": [],
       "assignees": [],
       "checklists": [
@@ -1458,7 +1458,7 @@
       ],
       "comments": [],
       "createdAt": "2026-07-02T21:15:42.832Z",
-      "updatedAt": "2026-09-01T12:25:10.744Z",
+      "updatedAt": "2026-09-01T20:42:05.921Z",
       "log": [
         {
           "date": "2026-08-07T12:38:08.324Z",
@@ -3400,7 +3400,7 @@
             {
               "id": "mpb8k4ib9pxn",
               "text": "Estrutura (paredes + laje)",
-              "done": false
+              "done": true
             },
             {
               "id": "mpb8k4ibhlsj",
@@ -3553,7 +3553,7 @@
       ],
       "comments": [],
       "createdAt": "2026-05-18T13:24:32.339Z",
-      "updatedAt": "2026-08-19T13:17:19.887Z",
+      "updatedAt": "2026-09-01T20:49:05.009Z",
       "log": [
         {
           "date": "2026-06-02T12:31:14.025Z",
@@ -3584,7 +3584,7 @@
           "note": "Movido para \"REBOCO/COBERTURA/INSTALAÇÕES\""
         }
       ],
-      "lastProgressAt": "2026-07-07T11:54:41.866Z"
+      "lastProgressAt": "2026-09-01T20:49:05.009Z"
     },
     {
       "id": "mpwmec6h8cr6",
