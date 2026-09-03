@@ -13476,15 +13476,16 @@
   "users": [
     {
       "id": "6a0490ad4zlb",
-      "name": "Marketing",
-      "role": "Marketing",
+      "name": "Cris",
+      "role": "Cris",
       "login": "lucas",
       "passwordHash": "83c8021abe29a775ca013cca3f39b9601971a5c09802fa7697716ea1328f98df",
       "phone": "",
       "telegramChatId": "1463787845",
       "photo": "",
       "isAdmin": true,
-      "log": []
+      "log": [],
+      "wppApiKey": ""
     },
     {
       "id": "mp4gew4c3szt",
