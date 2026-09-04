@@ -690,6 +690,8 @@ const CHECKLIST_DETAIL=[
   'Contrapiso','Pisos','Pintura','Elétrica','Instalações hidráulicas','Limpeza','Entrega'
 ];
 const CFG={user:'mkticasas',repo:'obras',token:'',cloud:'dokugqml2',preset:'kanban_obras',days:1};
+const SB_URL='https://xwnbieookrbdcxaydjdo.supabase.co';
+const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh3bmJpZW9va3JiZGN4YXlkamRvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3Njg4MTIsImV4cCI6MjA5NDM0NDgxMn0.YCHvH5bKjjatzzRcu6Efz95LSM9hNBEqxaajQZYKWbs';
 
 // ══════ STATE ══════
 let state={columns:[],cards:[],users:[]};
@@ -753,19 +755,20 @@ async function loadGH(){
   }
 }
 
-async function saveGH(retry=0){
+async function saveGH(){
   setSS('spin','Salvando...');
   try{
-    // Always fetch fresh SHA to avoid 409 conflicts
-    const rGet=await fetch(ghUrl(),{headers:{'Accept':'application/vnd.github.v3+json'}});
-    if(!rGet.ok)throw new Error(rGet.status);
-    const jGet=await rGet.json();
-    fileSHA=jGet.sha;
-    const content=btoa(unescape(encodeURIComponent(JSON.stringify(state,null,2))));
-    const r=await fetch(ghUrl(),{method:'PUT',headers:ghH(),body:JSON.stringify({message:'Kanban atualizado',content,sha:fileSHA})});
-    if(r.status===409&&retry<3){await new Promise(res=>setTimeout(res,800));return saveGH(retry+1);}
+    const r=await fetch(`${SB_URL}/rest/v1/kanban_obras?id=eq.state`,{
+      method:'PATCH',
+      headers:{
+        'apikey':SB_KEY,
+        'Authorization':`Bearer ${SB_KEY}`,
+        'Content-Type':'application/json',
+        'Prefer':'return=minimal'
+      },
+      body:JSON.stringify({data:state,updated_at:new Date().toISOString()})
+    });
     if(!r.ok)throw new Error(r.status);
-    fileSHA=(await r.json()).content.sha;
     setSS('ok','Salvo ✓');
   }catch(e){setSS('err','Erro ao salvar');console.error(e);}
 }
