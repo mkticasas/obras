@@ -756,6 +756,11 @@ async function loadGH(){
 async function saveGH(){
   setSS('spin','Salvando...');
   try{
+    // Always fetch fresh SHA to avoid 409 conflicts
+    const rGet=await fetch(ghUrl(),{headers:{'Accept':'application/vnd.github.v3+json'}});
+    if(!rGet.ok)throw new Error(rGet.status);
+    const jGet=await rGet.json();
+    fileSHA=jGet.sha;
     const content=btoa(unescape(encodeURIComponent(JSON.stringify(state,null,2))));
     const r=await fetch(ghUrl(),{method:'PUT',headers:ghH(),body:JSON.stringify({message:'Kanban atualizado',content,sha:fileSHA})});
     if(!r.ok)throw new Error(r.status);
