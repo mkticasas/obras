@@ -706,16 +706,31 @@ const ghUrl=()=>`https://api.github.com/repos/${CFG.user}/${CFG.repo}/contents/d
 const ghH=(write=false)=>{const h={'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'};if(CFG.token)h['Authorization']=`token ${CFG.token}`;return h;};
 
 async function loadGH(){
-  // Load token from localStorage if not set
-  if(!CFG.token){
-    CFG.token = localStorage.getItem('gh_token')||'';
-  }
-  if(!CFG.token){
-    const t = prompt('Cole o token do GitHub para continuar:\n(Será salvo localmente, não precisa digitar novamente)');
-    if(!t){setSS('err','Token necessário');return;}
-    CFG.token = t.trim();
-    localStorage.setItem('gh_token', CFG.token);
-  }
+  setSS('spin','Carregando...');
+  try{
+    const r=await fetch(`${SB_URL}/rest/v1/kanban_obras?id=eq.state&select=data`,{
+      headers:{'apikey':SB_KEY,'Authorization':`Bearer ${SB_KEY}`,'Accept':'application/json'}
+    });
+    if(!r.ok)throw new Error(r.status);
+    const rows=await r.json();
+    state=rows.length&&rows[0].data?rows[0].data:{};
+    ['users','columns','cards'].forEach(k=>{if(!state[k])state[k]=[];});
+    let needsSave=false;
+    (state.cards||[]).forEach(c=>{
+      if(c.resp&&!c.resp.includes(' ')&&c.resp.length>8){c.resp='';needsSave=true;}
+      if(c.equipe&&!c.equipe.includes(' ')&&c.equipe.length>8){c.equipe='';needsSave=true;}
+    });
+    if(!state.tags)state.tags=[
+      {id:'atencao',name:'Atenção',bg:'#78350f',color:'#fde68a'},
+      {id:'urgente',name:'Urgente',bg:'#7f1d1d',color:'#fca5a5'},
+      {id:'ok',name:'OK',bg:'#14532d',color:'#86efac'},
+      {id:'info',name:'Info',bg:'#1e3a5f',color:'#93c5fd'}
+    ];
+    restoreUser(); updateHeaderUser(); render(); checkAlerts();
+    if(needsSave)saveGH();
+    setSS('ok','Sincronizado');
+  }catch(e){setSS('err','Erro ao carregar');console.error(e);}
+}
 
   setSS('spin','Carregando...');
   localStorage.removeItem('kanban-state-cache');
