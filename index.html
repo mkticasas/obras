@@ -620,6 +620,15 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
       </div>
     </div>
     <div class="admin-tab-panel" id="tab-config">
+      <div class="form-group" style="margin-bottom:16px;">
+        <label>Token GitHub</label>
+        <div style="display:flex;gap:8px;">
+          <input type="password" id="gh-token-input" placeholder="ghp_..." style="flex:1;" value=""/>
+          <button class="btn-secondary" onclick="saveGhToken()">Salvar</button>
+          <button class="btn-ghost" onclick="clearGhToken()" style="color:#f87171;">Limpar</button>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">Salvo localmente no seu browser. Nunca vai para o servidor.</div>
+      </div>
       <div class="form-group"><label>Alerta após (dias sem atualização)</label><input type="number" id="c-days" min="1" max="30" style="width:80px" value="1"/></div>
       <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px;">
         <button class="btn-primary btn-sm" onclick="saveConfigTab()">Salvar</button>
@@ -680,7 +689,7 @@ const CHECKLIST_DETAIL=[
   'Conduite do poste ao quadro','Telhado + pingadeiras','Requadro ou instalações de janelas',
   'Contrapiso','Pisos','Pintura','Elétrica','Instalações hidráulicas','Limpeza','Entrega'
 ];
-const CFG={user:'mkticasas',repo:'obras',token:'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',cloud:'dokugqml2',preset:'kanban_obras',days:1};
+const CFG={user:'mkticasas',repo:'obras',token:'',cloud:'dokugqml2',preset:'kanban_obras',days:1};
 
 // ══════ STATE ══════
 let state={columns:[],cards:[],users:[]};
@@ -695,6 +704,17 @@ const ghUrl=()=>`https://api.github.com/repos/${CFG.user}/${CFG.repo}/contents/d
 const ghH=(write=false)=>{const h={'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'};if(CFG.token)h['Authorization']=`token ${CFG.token}`;return h;};
 
 async function loadGH(){
+  // Load token from localStorage if not set
+  if(!CFG.token){
+    CFG.token = localStorage.getItem('gh_token')||'';
+  }
+  if(!CFG.token){
+    const t = prompt('Cole o token do GitHub para continuar:\n(Será salvo localmente, não precisa digitar novamente)');
+    if(!t){setSS('err','Token necessário');return;}
+    CFG.token = t.trim();
+    localStorage.setItem('gh_token', CFG.token);
+  }
+
   setSS('spin','Carregando...');
   localStorage.removeItem('kanban-state-cache');
   try{
@@ -721,7 +741,16 @@ async function loadGH(){
     ];
     restoreUser(); updateHeaderUser(); render(); checkAlerts();
     if(needsSave)saveGH();
-  }catch(e){setSS('err','Erro ao carregar');console.error(e);}
+  }catch(e){
+    if(e.message==='401'){
+      localStorage.removeItem('gh_token');
+      CFG.token='';
+      alert('Token inválido ou expirado. Por favor, cole um novo token.');
+      loadGH();
+    } else {
+      setSS('err','Erro ao carregar');console.error(e);
+    }
+  }
 }
 
 async function saveGH(){
@@ -1357,6 +1386,10 @@ function confirmDeleteCol(id){
 
 // ══════ ADMIN ══════
 function openAdminModal(){
+  const stored = localStorage.getItem('gh_token')||'';
+  const inp = document.getElementById('gh-token-input');
+  if(inp) inp.value = stored;
+
   renderUserList();document.getElementById('c-days').value=CFG.days||1;
   document.getElementById('admin-modal').classList.add('show');
 }
@@ -1534,6 +1567,22 @@ function clearSearch(){
   if(input){ input.value = ''; filterCards(''); input.focus(); }
 }
 
+
+function saveGhToken(){
+  const t = document.getElementById('gh-token-input').value.trim();
+  if(!t){alert('Digite o token.');return;}
+  CFG.token = t;
+  localStorage.setItem('gh_token', t);
+  alert('Token salvo! Recarregando...');
+  loadGH();
+}
+
+function clearGhToken(){
+  localStorage.removeItem('gh_token');
+  CFG.token = '';
+  document.getElementById('gh-token-input').value = '';
+  alert('Token removido.');
+}
 // TAG MANAGEMENT
 let editingTagId=null,selectedTagBg='#78350f',selectedTagFg='#fde68a';
 
