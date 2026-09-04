@@ -680,7 +680,7 @@ const CHECKLIST_DETAIL=[
   'Conduite do poste ao quadro','Telhado + pingadeiras','Requadro ou instalações de janelas',
   'Contrapiso','Pisos','Pintura','Elétrica','Instalações hidráulicas','Limpeza','Entrega'
 ];
-const CFG={user:'mkticasas',repo:'obras',token:'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',cloud:'dokugqml2',preset:'kanban_obras',days:1};
+const CFG={user:'mkticasas',repo:'obras',token:'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',cloud:'dokugqml2',preset:'kanban_obras',days:1};
 
 // ══════ STATE ══════
 let state={columns:[],cards:[],users:[]};
@@ -692,13 +692,13 @@ let fileSHA=null;
 
 // ══════ GITHUB ══════
 const ghUrl=()=>`https://api.github.com/repos/${CFG.user}/${CFG.repo}/contents/data.json`;
-const ghH=()=>({'Authorization':`token ${CFG.token}`,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'});
+const ghH=(write=false)=>{const h={'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'};if(CFG.token)h['Authorization']=`token ${CFG.token}`;return h;};
 
 async function loadGH(){
   setSS('spin','Carregando...');
   localStorage.removeItem('kanban-state-cache');
   try{
-    const r=await fetch(ghUrl(),{headers:ghH()});
+    const r=await fetch(ghUrl(),{headers:{'Accept':'application/vnd.github.v3+json'}});
     if(!r.ok)throw new Error(r.status);
     const j=await r.json();
     fileSHA=j.sha;
