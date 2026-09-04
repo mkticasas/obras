@@ -13471,6 +13471,195 @@
       "createdAt": "2026-09-01T20:25:16.558Z",
       "updatedAt": "2026-09-01T20:25:35.831Z",
       "log": []
+    },
+    {
+      "id": "mtnl728zgham",
+      "name": "23123",
+      "colId": "mp44j4gncbh1",
+      "coverUrl": null,
+      "addr": "",
+      "valor": "",
+      "inicio": "",
+      "prazo": "",
+      "resp": "",
+      "equipe": "",
+      "status": "",
+      "obs": "",
+      "tags": [],
+      "assignees": [],
+      "checklists": [
+        {
+          "id": "mtnl728zes2x",
+          "name": "Checklist Geral (MACRO)",
+          "items": [
+            {
+              "id": "mtnl728zusef",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mtnl728z5rab",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mtnl728zbpk7",
+              "text": "Estrutura (paredes + laje)",
+              "done": false
+            },
+            {
+              "id": "mtnl728zxnt0",
+              "text": "Cobertura",
+              "done": false
+            },
+            {
+              "id": "mtnl728zgmbi",
+              "text": "Instalações",
+              "done": false
+            },
+            {
+              "id": "mtnl728zrl9b",
+              "text": "Reboco",
+              "done": false
+            },
+            {
+              "id": "mtnl728zzpmd",
+              "text": "Acabamento",
+              "done": false
+            },
+            {
+              "id": "mtnl728zdbbg",
+              "text": "Finalização",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "mtnl728zvsev",
+          "name": "Checklist Detalhado",
+          "items": [
+            {
+              "id": "mtnl728zcw2z",
+              "text": "Terraplanagem",
+              "done": false
+            },
+            {
+              "id": "mtnl728z1uiz",
+              "text": "Fundação",
+              "done": false
+            },
+            {
+              "id": "mtnl728z17jb",
+              "text": "Levantamento de Paredes",
+              "done": false
+            },
+            {
+              "id": "mtnl728ze31j",
+              "text": "Conferência de medidas de janelas/portas",
+              "done": false
+            },
+            {
+              "id": "mtnl728zznao",
+              "text": "Impermeabilizações",
+              "done": false
+            },
+            {
+              "id": "mtnl728zl3lb",
+              "text": "Laje / Cobertura",
+              "done": false
+            },
+            {
+              "id": "mtnl728z8rzs",
+              "text": "Conduítes / Caixinhas Elétricas",
+              "done": false
+            },
+            {
+              "id": "mtnl728z5ufm",
+              "text": "Reboco externo iniciado",
+              "done": false
+            },
+            {
+              "id": "mtnl7290v5rs",
+              "text": "Reboco interno iniciado",
+              "done": false
+            },
+            {
+              "id": "mtnl72906dwx",
+              "text": "Batentes",
+              "done": false
+            },
+            {
+              "id": "mtnl7290qu6f",
+              "text": "Reboco externo concluído",
+              "done": false
+            },
+            {
+              "id": "mtnl7290d0vo",
+              "text": "Reboco interno concluído",
+              "done": false
+            },
+            {
+              "id": "mtnl7290bmnj",
+              "text": "Esgoto/pluvial",
+              "done": false
+            },
+            {
+              "id": "mtnl729059zd",
+              "text": "Conduite do poste ao quadro",
+              "done": false
+            },
+            {
+              "id": "mtnl7290qhnu",
+              "text": "Telhado + pingadeiras",
+              "done": false
+            },
+            {
+              "id": "mtnl72903olp",
+              "text": "Requadro ou instalações de janelas",
+              "done": false
+            },
+            {
+              "id": "mtnl72903sux",
+              "text": "Contrapiso",
+              "done": false
+            },
+            {
+              "id": "mtnl7290wl4l",
+              "text": "Pisos",
+              "done": false
+            },
+            {
+              "id": "mtnl72906mj8",
+              "text": "Pintura",
+              "done": false
+            },
+            {
+              "id": "mtnl7290epks",
+              "text": "Elétrica",
+              "done": false
+            },
+            {
+              "id": "mtnl729068rf",
+              "text": "Instalações hidráulicas",
+              "done": false
+            },
+            {
+              "id": "mtnl7290182t",
+              "text": "Limpeza",
+              "done": false
+            },
+            {
+              "id": "mtnl7290t3sj",
+              "text": "Entrega",
+              "done": false
+            }
+          ]
+        }
+      ],
+      "comments": [],
+      "createdAt": "2026-09-04T23:30:21.348Z",
+      "updatedAt": "2026-09-04T23:30:23.963Z",
+      "log": []
     }
   ],
   "users": [
