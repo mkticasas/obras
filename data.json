@@ -13473,8 +13473,8 @@
       "log": []
     },
     {
-      "id": "mtnl8ntsdjxg",
-      "name": "Teste 1",
+      "id": "mtnl9lcyyj5v",
+      "name": "qweqwe",
       "colId": "mp44j4gncbh1",
       "coverUrl": null,
       "addr": "",
@@ -13489,167 +13489,167 @@
       "assignees": [],
       "checklists": [
         {
-          "id": "mtnl8ntsrig5",
+          "id": "mtnl9lcy3gh4",
           "name": "Checklist Geral (MACRO)",
           "items": [
             {
-              "id": "mtnl8ntsvpu9",
+              "id": "mtnl9lcy5xs5",
               "text": "Terraplanagem",
               "done": false
             },
             {
-              "id": "mtnl8ntshtu6",
+              "id": "mtnl9lcys2v4",
               "text": "Fundação",
               "done": false
             },
             {
-              "id": "mtnl8ntswlsw",
+              "id": "mtnl9lcyszlv",
               "text": "Estrutura (paredes + laje)",
               "done": false
             },
             {
-              "id": "mtnl8nts9vk9",
+              "id": "mtnl9lcylaq9",
               "text": "Cobertura",
               "done": false
             },
             {
-              "id": "mtnl8nts14it",
+              "id": "mtnl9lcy0lr4",
               "text": "Instalações",
               "done": false
             },
             {
-              "id": "mtnl8ntsbp31",
+              "id": "mtnl9lcyxe6n",
               "text": "Reboco",
               "done": false
             },
             {
-              "id": "mtnl8ntsoxj6",
+              "id": "mtnl9lcy4j7q",
               "text": "Acabamento",
               "done": false
             },
             {
-              "id": "mtnl8ntsv4qd",
+              "id": "mtnl9lcydgkb",
               "text": "Finalização",
               "done": false
             }
           ]
         },
         {
-          "id": "mtnl8nts2mss",
+          "id": "mtnl9lcydpaw",
           "name": "Checklist Detalhado",
           "items": [
             {
-              "id": "mtnl8ntsegsd",
+              "id": "mtnl9lcy1d2y",
               "text": "Terraplanagem",
               "done": false
             },
             {
-              "id": "mtnl8ntsdbmx",
+              "id": "mtnl9lcyj710",
               "text": "Fundação",
               "done": false
             },
             {
-              "id": "mtnl8nts7e6k",
+              "id": "mtnl9lcy440r",
               "text": "Levantamento de Paredes",
               "done": false
             },
             {
-              "id": "mtnl8ntsic4x",
+              "id": "mtnl9lcyd89x",
               "text": "Conferência de medidas de janelas/portas",
               "done": false
             },
             {
-              "id": "mtnl8ntsobb4",
+              "id": "mtnl9lcyr98b",
               "text": "Impermeabilizações",
               "done": false
             },
             {
-              "id": "mtnl8ntshxd5",
+              "id": "mtnl9lcyyj60",
               "text": "Laje / Cobertura",
               "done": false
             },
             {
-              "id": "mtnl8ntswdzc",
+              "id": "mtnl9lcy1ay9",
               "text": "Conduítes / Caixinhas Elétricas",
               "done": false
             },
             {
-              "id": "mtnl8ntsrso9",
+              "id": "mtnl9lcyu1ch",
               "text": "Reboco externo iniciado",
               "done": false
             },
             {
-              "id": "mtnl8ntstzkj",
+              "id": "mtnl9lcydqs4",
               "text": "Reboco interno iniciado",
               "done": false
             },
             {
-              "id": "mtnl8ntsuo32",
+              "id": "mtnl9lcy3kix",
               "text": "Batentes",
               "done": false
             },
             {
-              "id": "mtnl8ntsyog9",
+              "id": "mtnl9lcy8ccz",
               "text": "Reboco externo concluído",
               "done": false
             },
             {
-              "id": "mtnl8nts9w5v",
+              "id": "mtnl9lcy5sms",
               "text": "Reboco interno concluído",
               "done": false
             },
             {
-              "id": "mtnl8ntsyffa",
+              "id": "mtnl9lcyjink",
               "text": "Esgoto/pluvial",
               "done": false
             },
             {
-              "id": "mtnl8ntsk1k3",
+              "id": "mtnl9lcynrf9",
               "text": "Conduite do poste ao quadro",
               "done": false
             },
             {
-              "id": "mtnl8nts0fht",
+              "id": "mtnl9lcyyg0k",
               "text": "Telhado + pingadeiras",
               "done": false
             },
             {
-              "id": "mtnl8ntsedid",
+              "id": "mtnl9lcyuf10",
               "text": "Requadro ou instalações de janelas",
               "done": false
             },
             {
-              "id": "mtnl8ntswc5m",
+              "id": "mtnl9lcy3hi4",
               "text": "Contrapiso",
               "done": false
             },
             {
-              "id": "mtnl8ntsgtej",
+              "id": "mtnl9lcy4mh3",
               "text": "Pisos",
               "done": false
             },
             {
-              "id": "mtnl8ntshhyz",
+              "id": "mtnl9lcytwqd",
               "text": "Pintura",
               "done": false
             },
             {
-              "id": "mtnl8ntsfhc7",
+              "id": "mtnl9lcyh5e9",
               "text": "Elétrica",
               "done": false
             },
             {
-              "id": "mtnl8ntspcvw",
+              "id": "mtnl9lcyf519",
               "text": "Instalações hidráulicas",
               "done": false
             },
             {
-              "id": "mtnl8ntsyhrs",
+              "id": "mtnl9lcy0iv4",
               "text": "Limpeza",
               "done": false
             },
             {
-              "id": "mtnl8ntsfqet",
+              "id": "mtnl9lcyrmfb",
               "text": "Entrega",
               "done": false
             }
@@ -13657,8 +13657,8 @@
         }
       ],
       "comments": [],
-      "createdAt": "2026-09-04T23:31:35.968Z",
-      "updatedAt": "2026-09-04T23:31:40.274Z",
+      "createdAt": "2026-09-04T23:32:19.426Z",
+      "updatedAt": "2026-09-04T23:33:59.866Z",
       "log": []
     }
   ],
