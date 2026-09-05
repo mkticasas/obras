@@ -6,28 +6,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  keep-alive:
-    runs-on: ubuntu-latest
-    if: github.event.schedule == '0 11 * * 0'
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Keep-alive commit
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit --allow-empty -m "chore: keep-alive [skip ci]"
-          git push
-
   check-obras:
-    if: github.event.schedule != '0 11 * * 0' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repositorio
-        uses: actions/checkout@v4
-
       - name: Verificar obras e enviar alertas via Telegram
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -36,16 +17,26 @@ jobs:
           import json, urllib.request, os, sys
           from datetime import datetime, timezone
 
-          with open("data.json", "r", encoding="utf-8") as f:
-              data = json.load(f)
+          SB_URL = "https://xwnbieookrbdcxaydjdo.supabase.co"
+          SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh3bmJpZW9va3JiZGN4YXlkamRvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3Njg4MTIsImV4cCI6MjA5NDM0NDgxMn0.YCHvH5bKjjatzzRcu6Efz95LSM9hNBEqxaajQZYKWbs"
+
+          # Fetch state from Supabase
+          req = urllib.request.Request(
+              f"{SB_URL}/rest/v1/kanban_obras?id=eq.state&select=data",
+              headers={"apikey": SB_KEY, "Authorization": f"Bearer {SB_KEY}", "Accept": "application/json"}
+          )
+          with urllib.request.urlopen(req) as r:
+              rows = json.loads(r.read().decode())
+          
+          data = rows[0]["data"] if rows else {}
 
           token = os.environ.get("TELEGRAM_TOKEN","").strip()
           config     = data.get("config", {})
           alert_days = int(config.get("alertDays", 1))
           alert_secs = alert_days * 86400
-          now     = datetime.now(timezone.utc)
-          columns = data.get("columns", [])
-          col_map = {c["id"]: c["name"] for c in columns}
+          now        = datetime.now(timezone.utc)
+          columns    = data.get("columns", [])
+          col_map    = {c["id"]: c["name"] for c in columns}
 
           SKIP_COLS = set()
           for c in columns:
@@ -80,19 +71,15 @@ jobs:
           for card in cards:
               if card.get("colId","") in SKIP_COLS:
                   continue
-
-              # Usa lastProgressAt se existir, senão createdAt
-              # updatedAt é ignorado pois reseta ao abrir o card
-              progress_at = card.get("lastProgressAt") or card.get("createdAt","")
-
-              if progress_at and seconds_since(progress_at) >= alert_secs:
+              upd = card.get("updatedAt", card.get("createdAt",""))
+              if upd and seconds_since(upd) >= alert_secs:
                   overdue.append({
                       "name":    card.get("name","(sem nome)"),
                       "col":     col_map.get(card.get("colId",""),"--"),
                       "resp":    card.get("resp","--"),
                       "addr":    card.get("addr","--"),
-                      "elapsed": elapsed(seconds_since(progress_at)),
-                      "upd":     fmt(progress_at),
+                      "elapsed": elapsed(seconds_since(upd)),
+                      "upd":     fmt(upd),
                   })
 
           if not overdue:
@@ -100,16 +87,17 @@ jobs:
               sys.exit(0)
 
           print(f"{len(overdue)} obra(s) parada(s) ha mais de {alert_days}d.")
-          lines = ["iCasas - Alerta de Obras", f"🔴 {len(overdue)} obra(s) sem progresso ha mais de {alert_days} dia(s)", ""]
+          lines = ["Kanban de Obras - Alerta", f"({len(overdue)} obra(s) sem atualizacao ha mais de {alert_days} dia(s))", ""]
           for o in overdue:
               lines += [
-                  f"🏢 Obra: {o['name']}",
-                  f"📌 Coluna: {o['col']}",
-                  f"📍 Endereco: {o['addr']}",
-                  f"🕐 Ultimo progresso: {o['upd']} ({o['elapsed']} atras)",
+                  f"Obra: {o['name']}",
+                  f"Coluna: {o['col']}",
+                  f"Responsavel: {o['resp']}",
+                  f"Endereco: {o['addr']}",
+                  f"Ultima atualizacao: {o['upd']} ({o['elapsed']} atras)",
                   ""
               ]
-          lines.append("👉 Acesse o Kanban e atualize!")
+          lines.append("Acesse o Kanban e atualize!")
           msg = "\n".join(lines)
 
           recipients = [u for u in users if u.get("telegramChatId")]
@@ -124,27 +112,9 @@ jobs:
               with urllib.request.urlopen(req, timeout=15) as r:
                   return json.loads(r.read().decode())
 
-          def send_tg_chunks(chat_id, text, max_len=3800):
-              # Split into chunks to avoid Telegram 4096 char limit
-              lines = text.split("\n")
-              chunks = []
-              current = []
-              current_len = 0
-              for line in lines:
-                  if current_len + len(line) + 1 > max_len and current:
-                      chunks.append("\n".join(current))
-                      current = []
-                      current_len = 0
-                  current.append(line)
-                  current_len += len(line) + 1
-              if current:
-                  chunks.append("\n".join(current))
-              for chunk in chunks:
-                  send_tg(chat_id, chunk)
-
           for user in recipients:
               try:
-                  send_tg_chunks(user["telegramChatId"], msg)
+                  send_tg(user["telegramChatId"], msg)
                   print(f"Enviado para {user.get('name','?')}")
               except Exception as e:
                   print(f"Erro para {user.get('name','?')}: {e}")
