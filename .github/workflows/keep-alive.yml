@@ -8,12 +8,18 @@ on:
 permissions:
   contents: write
 
+# Impede dois runs simultâneos — era isso que fazia o push ser rejeitado.
+concurrency:
+  group: keep-alive
+  cancel-in-progress: false
+
 jobs:
   keep-alive:
     runs-on: ubuntu-latest
     steps:
       # 1. Acorda o Supabase — é isto que impede a pausa por inatividade.
       #    O banco só conta como "em uso" quando recebe requisição de verdade.
+      #    Este passo é o crítico: se ele falhar, o workflow falha.
       - name: Ping Supabase
         env:
           SB_URL: https://xwnbieookrbdcxaydjdo.supabase.co
@@ -38,12 +44,27 @@ jobs:
       #    O GitHub desativa workflows agendados em repositórios sem
       #    atividade por 60 dias, e execuções de workflow não contam
       #    como atividade. Sem isso, o cron morre sozinho em dois meses.
+      #    É secundário: se falhar, avisa mas não derruba o workflow.
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Commit keep-alive
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git commit --allow-empty -m "chore: keep-alive [skip ci]"
-          git push
+
+          # Tenta até 3 vezes, trazendo o que mudou no remoto antes de cada envio.
+          for TENTATIVA in 1 2 3; do
+            if git pull --rebase --quiet origin main && git push --quiet origin HEAD:main; then
+              echo "Commit enviado na tentativa $TENTATIVA."
+              exit 0
+            fi
+            echo "Tentativa $TENTATIVA falhou, repetindo em 5s..."
+            sleep 5
+          done
+
+          echo "::warning::Nao foi possivel enviar o commit de keep-alive."
+          echo "O ping no Supabase funcionou, que e o que importa para evitar a pausa."
+          exit 1
