@@ -2,7 +2,10 @@ name: Keep Alive
 
 on:
   schedule:
-    - cron: '0 11 * * *'  # 8h Brasília (11h UTC), todo dia
+    # De 6 em 6 horas: 2h, 8h, 14h e 20h de Brasília.
+    # Era 1x por dia e o projeto pausava mesmo assim — testando se
+    # frequência maior mantém o Supabase fora do critério de baixa atividade.
+    - cron: '0 5,11,17,23 * * *'
   workflow_dispatch:
 
 permissions:
@@ -51,6 +54,14 @@ jobs:
       - name: Commit keep-alive
         continue-on-error: true
         run: |
+          # O ping roda 4x ao dia, mas o commit só precisa de 1x —
+          # senão o histórico enche de commit vazio. Só na execução das 11h UTC.
+          HORA=$(date -u +%H)
+          if [ "$HORA" != "11" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            echo "Execução das ${HORA}h UTC — commit roda só às 11h. Nada a fazer."
+            exit 0
+          fi
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git commit --allow-empty -m "chore: keep-alive [skip ci]"
