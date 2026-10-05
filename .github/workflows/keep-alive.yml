@@ -28,4 +28,22 @@ jobs:
           cat /tmp/resposta.txt
 
           if [ "$CODE" != "200" ]; then
-            echo "::error::Supabase respondeu $CODE — o projeto pode estar
+            echo "::error::Supabase respondeu $CODE - projeto pausado ou chave invalida."
+            exit 1
+          fi
+
+          echo "Supabase respondeu normalmente."
+
+      # 2. Commit vazio — mantém o REPOSITÓRIO ativo.
+      #    O GitHub desativa workflows agendados em repositórios sem
+      #    atividade por 60 dias, e execuções de workflow não contam
+      #    como atividade. Sem isso, o cron morre sozinho em dois meses.
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Commit keep-alive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: keep-alive [skip ci]"
+          git push
