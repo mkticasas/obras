@@ -90,6 +90,11 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;border:none;border-radius
 .card{flex-shrink:0;background:var(--surface2);border-radius:10px;border:1px solid var(--border);cursor:pointer;transition:all .15s;position:relative;overflow:hidden;user-select:none;}
 .card:hover{border-color:#3d4a6b;transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,0,0,.35);}
 .card.dragging{opacity:.4;}
+.card{-webkit-touch-callout:none;-webkit-user-select:none;}
+.card.press-hold{transform:scale(.97);transition:transform .35s;}
+.drag-ghost{position:fixed;z-index:9999;pointer-events:none;opacity:.95;transform:rotate(2deg) scale(1.03);box-shadow:0 12px 32px rgba(0,0,0,.55);border-color:var(--accent)!important;transition:none!important;}
+.drop-indicator{height:3px;background:var(--accent);border-radius:2px;flex-shrink:0;margin:-3px 0;}
+body.touch-dragging,body.touch-dragging *{touch-action:none!important;}
 .card-cover{width:100%;height:6px;object-fit:cover;display:block;border-radius:var(--radius) var(--radius) 0 0;}
 .card-body{padding:11px 12px 10px;display:flex;flex-direction:column;gap:5px;}
 .card-status-bar{position:absolute;left:0;top:0;bottom:0;width:3px;}
@@ -1478,6 +1483,9 @@ function onDragOver(e,colId){e.preventDefault();document.getElementById('drop-'+
 function onDragLeave(e,colId){document.getElementById('drop-'+colId)?.classList.remove('drop-target');}
 async function onDrop(e,colId){
   e.preventDefault();
+  await dropCardAt(colId,e.clientY);
+}
+async function dropCardAt(colId,clientY){
   document.getElementById('drop-'+colId)?.classList.remove('drop-target');
   document.querySelectorAll('.drop-indicator').forEach(el=>el.remove());
   if(!dragCardId)return;
@@ -1490,7 +1498,7 @@ async function onDrop(e,colId){
   let insertBefore=null;
   for(const el of cardEls){
     const rect=el.getBoundingClientRect();
-    if(e.clientY<rect.top+rect.height/2){insertBefore=el.id.replace('card-','');break;}
+    if(clientY<rect.top+rect.height/2){insertBefore=el.id.replace('card-','');break;}
   }
   // reorder state.cards
   state.cards=state.cards.filter(c=>c.id!==dragCardId);
@@ -1510,6 +1518,103 @@ async function onDrop(e,colId){
   }
   dragCardId=null;render();await saveGH();
 }
+
+// ══════ TOUCH DRAG (clicar e segurar no celular) ══════
+(function(){
+  const HOLD_MS=380, MOVE_TOL=10, EDGE=50, SPEED=12;
+  let holdTimer=null,startX=0,startY=0,pressCard=null,ghost=null,offX=0,offY=0;
+  let lastX=0,lastY=0,overCol=null,scrollRAF=null,suppressClick=false;
+
+  function cancelHold(){
+    clearTimeout(holdTimer);holdTimer=null;
+    if(pressCard)pressCard.classList.remove('press-hold');
+    if(!ghost)pressCard=null;
+  }
+  function colFromPoint(x,y){
+    const el=document.elementFromPoint(x,y);
+    const cont=el?.closest('.cards-container')||el?.closest('.column')?.querySelector('.cards-container');
+    return cont?cont.id.replace('drop-',''):null;
+  }
+  function updateIndicator(colId,y){
+    document.querySelectorAll('.drop-indicator').forEach(el=>el.remove());
+    document.querySelectorAll('.cards-container.drop-target').forEach(z=>{if(z.id!=='drop-'+colId)z.classList.remove('drop-target');});
+    if(!colId)return;
+    const cont=document.getElementById('drop-'+colId);if(!cont)return;
+    cont.classList.add('drop-target');
+    const els=[...cont.querySelectorAll('.card:not([id="card-'+dragCardId+'"])')];
+    const ind=document.createElement('div');ind.className='drop-indicator';
+    const before=els.find(el=>{const r=el.getBoundingClientRect();return y<r.top+r.height/2;});
+    before?cont.insertBefore(ind,before):cont.appendChild(ind);
+  }
+  function autoScroll(){
+    const board=document.getElementById('board');
+    if(lastX<EDGE)board.scrollLeft-=SPEED;
+    else if(lastX>window.innerWidth-EDGE)board.scrollLeft+=SPEED;
+    const cont=overCol&&document.getElementById('drop-'+overCol);
+    if(cont){
+      const r=cont.getBoundingClientRect();
+      if(lastY<r.top+EDGE)cont.scrollTop-=SPEED;
+      else if(lastY>r.bottom-EDGE)cont.scrollTop+=SPEED;
+    }
+    const c=colFromPoint(lastX,lastY);
+    if(c!==overCol)overCol=c;
+    updateIndicator(overCol,lastY);
+    scrollRAF=requestAnimationFrame(autoScroll);
+  }
+  function startDrag(){
+    holdTimer=null;
+    const id=pressCard.id.replace('card-','');
+    dragCardId=id;suppressClick=true;
+    if(navigator.vibrate)navigator.vibrate(30);
+    const r=pressCard.getBoundingClientRect();
+    offX=startX-r.left;offY=startY-r.top;
+    ghost=pressCard.cloneNode(true);
+    ghost.removeAttribute('id');ghost.classList.remove('press-hold');ghost.classList.add('drag-ghost');
+    ghost.style.width=r.width+'px';ghost.style.left=r.left+'px';ghost.style.top=r.top+'px';
+    document.body.appendChild(ghost);
+    pressCard.classList.remove('press-hold');pressCard.classList.add('dragging');
+    document.body.classList.add('touch-dragging');
+    lastX=startX;lastY=startY;
+    scrollRAF=requestAnimationFrame(autoScroll);
+  }
+  function endDrag(commit){
+    cancelAnimationFrame(scrollRAF);scrollRAF=null;
+    ghost?.remove();ghost=null;
+    document.body.classList.remove('touch-dragging');
+    pressCard?.classList.remove('dragging');pressCard=null;
+    const col=overCol;overCol=null;
+    if(commit&&col&&dragCardId){dropCardAt(col,lastY);}
+    else{document.querySelectorAll('.drop-indicator').forEach(el=>el.remove());document.querySelectorAll('.cards-container').forEach(z=>z.classList.remove('drop-target'));dragCardId=null;}
+    setTimeout(()=>{suppressClick=false;},350);
+  }
+
+  document.addEventListener('touchstart',e=>{
+    if(e.touches.length!==1)return;
+    const card=e.target.closest('#board .card');
+    if(!card||e.target.closest('.card-tag-dot,button,input,a'))return;
+    const t=e.touches[0];startX=t.clientX;startY=t.clientY;
+    pressCard=card;card.classList.add('press-hold');
+    holdTimer=setTimeout(startDrag,HOLD_MS);
+  },{passive:true});
+
+  document.addEventListener('touchmove',e=>{
+    const t=e.touches[0];
+    if(holdTimer){
+      if(Math.abs(t.clientX-startX)>MOVE_TOL||Math.abs(t.clientY-startY)>MOVE_TOL)cancelHold();
+      return;
+    }
+    if(!ghost)return;
+    e.preventDefault();
+    lastX=t.clientX;lastY=t.clientY;
+    ghost.style.left=(lastX-offX)+'px';ghost.style.top=(lastY-offY)+'px';
+  },{passive:false});
+
+  document.addEventListener('touchend',()=>{if(ghost)endDrag(true);else cancelHold();});
+  document.addEventListener('touchcancel',()=>{if(ghost)endDrag(false);else cancelHold();});
+  document.addEventListener('contextmenu',e=>{if(e.target.closest('#board .card'))e.preventDefault();});
+  // evita abrir o card ao soltar depois de arrastar
+  document.addEventListener('click',e=>{if(suppressClick&&e.target.closest('.card')){e.stopPropagation();e.preventDefault();}},true);
+})();
 
 // ══════ UTILS ══════
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
@@ -1697,6 +1802,12 @@ function closeMobileMenu(){
     <div style="display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;">
 
       <div style="border-left:3px solid var(--accent);padding-left:12px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.20 — Nov 2026 · 17:15</div>
+        <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Arrastar card segurando (celular)</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5;">No celular, segure o card por meio segundo até vibrar e arraste para outra coluna ou posição. A tela rola sozinha ao chegar na borda. Toque rápido continua abrindo o card.</div>
+      </div>
+
+      <div style="border-left:3px solid var(--border);padding-left:12px;">
         <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">v3.19 — Jun 2026 · 09:30</div>
         <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;">Fix alerta ignorando obras entregues</div>
         <div style="font-size:12px;color:var(--muted);line-height:1.5;">Sino de alerta agora usa lastProgressAt (igual ao bot do Telegram) e ignora corretamente a coluna ENTREGUES.</div>
